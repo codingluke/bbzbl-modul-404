@@ -2,7 +2,6 @@
 
 Eine **Fachklasse** ist eine Klasse, die nur "im Hintergrund" arbeitet und **nicht für die Interaktion mit dem Benutzer zuständig ist**.
 
-
 ## Klassenstruktur
 
 Gemäss aktuellem Wissensstand folgen Klassen folgendem **Schema**:

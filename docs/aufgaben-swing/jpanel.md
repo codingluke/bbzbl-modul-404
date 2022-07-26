@@ -1,8 +1,8 @@
 ---
-sidebar_position: 8
+sidebar_position: 9
 ---
 
-# 8. JPanel
+# 9. JPanel
 
 Für diejenigen, die mit JPanels arbeiten wollen, dient folgendes Beispielprogramm als Inspiration.
 

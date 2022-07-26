@@ -4,7 +4,7 @@ sidebar_position: 5
 
 # 5. Fahrenheit-Celsius Konverter
 
-> :point_up: **Machen Sie sich mit dem Konzept der [Static](../konzepte/static) bekannt bevor Sie weiterfahren!**
+> :point_up: **Machen Sie sich mit dem Konzept der [Static](../konzepte/static.md) bekannt bevor Sie weiterfahren!**
 
 ## Ausgangslage
 

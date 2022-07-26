@@ -3,7 +3,7 @@ sidebar_position: 3
 ---
 # 3. Refactoring Account Applikation
 
-> :point_up: **Machen Sie sich mit dem Konzept der [Fachklassen](../konzepte/fachklassen) bekannt bevor Sie weiterfahren!**
+> :point_up: **Machen Sie sich mit dem Konzept der [Fachklassen](../konzepte/fachklassen.md) bekannt bevor Sie weiterfahren!**
 
 :::note Refactoring
 Bezeichnung im Programmieren, dass man den **vorhandenen Code neu Strukturiert, ohne neue Funktionalität hinzuzufügen**. Refactoring dient dazu, dass die Applikation/Software auf lange Zeit besser wartbar und erweiterbar ist.
