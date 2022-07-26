@@ -6,7 +6,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Module 404',
+  title: 'Modul 404',
   tagline: 'Objektbasiert programmieren nach Vorgabe',
   url: 'https://your-docusaurus-test-site.com',
   baseUrl: '/',

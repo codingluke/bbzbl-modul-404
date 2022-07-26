@@ -9,7 +9,7 @@ sidebar_position: 1
 | **Richtzeit** | ca. 45 Minuten |
 | **Sozialform** | Einzelaufgabe |
 
-## Auftrag hallo
+## Auftrag
 
 Erstellen Sie anhand des Wissens und Könnens aus dem Modul 403 ein Programm, welches einen einfachen Dialog für ein Bankkonto realisiert.
 

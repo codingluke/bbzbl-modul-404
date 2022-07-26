@@ -1,3 +1,7 @@
+---
+sidebar_position: 8
+---
+
 # UML
 
 Mit dem Aufkommen der Programmierung wurde auch die Frage der Kommunikation über Programme immer wichtiger. Bei Einführung der Objektorientierung kam man bald nicht mehr mit Flussdiagrammen weiter und behalf sich mit einer neuen Notation, der **UML, Unified Modelling Language**. Sie hat sich inzwischen breit durchgesetzt, beispielsweise bis in den Businessbereich und damit der **Vermittlung zwischen Fachabteilung und Softwareentwicklung**, und für komplexe Projekte mit Tools, die eine automatische Umwandlung zwischen bestimmten Diagrammtypen und Quelltext beherrschen.
