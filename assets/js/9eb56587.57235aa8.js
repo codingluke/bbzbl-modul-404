@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkdocosaurus_rex=self.webpackChunkdocosaurus_rex||[]).push([[875],{6859:e=>{e.exports=JSON.parse('{"title":"Lektionen","slug":"/category/lektionen","permalink":"/docs/category/lektionen","navigation":{"previous":{"title":"Allgemeine Informationen","permalink":"/docs/"},"next":{"title":"Woche 1 - 29.04.2022","permalink":"/docs/lektionen/w01"}}}')}}]);
