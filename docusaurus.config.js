@@ -9,7 +9,7 @@ const config = {
   title: 'Modul 404',
   tagline: 'Objektbasiert programmieren nach Vorgabe',
   url: 'https://codingluke.github.io',
-  baseUrl: '/',
+  baseUrl: '/bbzbl-modul-404/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.png',
