@@ -8,7 +8,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const config = {
   title: 'Modul 404',
   tagline: 'Objektbasiert programmieren nach Vorgabe',
-  url: 'https://your-docusaurus-test-site.com',
+  url: 'https://codingluke.github.io',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -16,15 +16,15 @@ const config = {
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'BBZBL', // Usually your GitHub org/user name.
-  projectName: 'm404', // Usually your repo name.
+  organizationName: 'codingluke', // Usually your GitHub org/user name.
+  projectName: 'bbzbl-modul-404', // Usually your repo name.
 
   // Even if you don't use internalization, you can use this field to set useful
   // metadata like html lang. For example, if your site is Chinese, you may want
   // to replace "en" with "zh-Hans".
   i18n: {
-    defaultLocale: 'en',
-    locales: ['en'],
+    defaultLocale: 'de',
+    locales: ['de'],
   },
 
   presets: [
