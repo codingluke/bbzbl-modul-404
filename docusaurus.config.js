@@ -3,6 +3,7 @@
 
 const lightCodeTheme = require('prism-react-renderer/themes/github');
 const darkCodeTheme = require('prism-react-renderer/themes/dracula');
+const oembed = require('@agentofuser/remark-oembed');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
@@ -10,9 +11,13 @@ const config = {
   tagline: 'Objektbasiert programmieren nach Vorgabe',
   url: 'https://codingluke.github.io',
   baseUrl: '/bbzbl-modul-404/',
-  onBrokenLinks: 'throw',
+  onBrokenLinks: 'log',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.png',
+
+  markdown: {
+    mermaid: true,
+  },
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
@@ -27,17 +32,31 @@ const config = {
     locales: ['de'],
   },
 
+  themes: [
+    [
+      require.resolve("@easyops-cn/docusaurus-search-local"),
+      {
+        hashed: true,
+        language: ["de"],
+        indexBlog: false,
+        indexPages: true
+      },
+    ],
+    require.resolve("@docusaurus/theme-mermaid"),
+  ],
+
   presets: [
     [
-      'classic',
+      '@docusaurus/preset-classic',
       /** @type {import('@docusaurus/preset-classic').Options} */
-      ({
+      {
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
             'https://github.com/codingluke/bbzbl-modul-404/tree/main/',
+          remarkPlugins: [oembed],
         },
         // blog: {
         //   showReadingTime: true,
@@ -49,13 +68,16 @@ const config = {
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
         },
-      }),
+      },
     ],
   ],
 
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
+      mermaid: {
+        theme: { light: 'neutral', dark: 'forest' },
+      },
       navbar: {
         title: 'Modul 404',
         logo: {
@@ -67,11 +89,11 @@ const config = {
             type: 'doc',
             docId: 'index',
             position: 'left',
-            label: 'Themen',
+            label: 'Unterlagen',
           },
-          // {to: '/blog', label: 'Blog', position: 'left'},
+          { to: '/slides/', label: 'Präsentationen', position: 'left' },
           {
-            href: 'https://github.com/facebook/docusaurus',
+            href: 'https://github.com/codingluke/bbzbl-modul-404',
             label: 'GitHub',
             position: 'right',
           },
@@ -79,47 +101,6 @@ const config = {
       },
       footer: {
         style: 'dark',
-        // links: [
-        //   {
-        //     title: 'Docs',
-        //     items: [
-        //       {
-        //         label: 'Tutorial',
-        //         to: '/docs/intro',
-        //       },
-        //     ],
-        //   },
-        //   {
-        //     title: 'Community',
-        //     items: [
-        //       {
-        //         label: 'Stack Overflow',
-        //         href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-        //       },
-        //       {
-        //         label: 'Discord',
-        //         href: 'https://discordapp.com/invite/docusaurus',
-        //       },
-        //       {
-        //         label: 'Twitter',
-        //         href: 'https://twitter.com/docusaurus',
-        //       },
-        //     ],
-        //   },
-        //   {
-        //     title: 'More',
-        //     items: [
-        //       {
-        //         label: 'Blog',
-        //         to: '/blog',
-        //       },
-        //       {
-        //         label: 'GitHub',
-        //         href: 'https://github.com/facebook/docusaurus',
-        //       },
-        //     ],
-        //   },
-        // ],
         copyright: `Made with ❤️ in Pratteln`,
       },
       prism: {
@@ -129,5 +110,5 @@ const config = {
       },
     }),
 };
-
 module.exports = config;
+
