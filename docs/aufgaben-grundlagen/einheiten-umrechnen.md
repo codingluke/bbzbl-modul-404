@@ -4,19 +4,69 @@ sidebar_position: 5
 
 # 5. Fahrenheit-Celsius Konverter
 
-> :point_up: **Machen Sie sich mit dem Konzept der [Static](../konzepte/static.md) bekannt bevor Sie weiterfahren!**
+:::danger WICHTIG
+
+:point_up: **Machen Sie sich mit dem Konzept der [Static](../konzepte/static.md) bekannt bevor Sie weiterfahren!**
+
+:::
 
 ## Ausgangslage
 
-Gegeben sind folgende Klassen:
+Gegeben sind folgende Klassen welche diesen Dialog ausgeben:
+
+```bash title="Der Dialog-Ablauf"
+Möchten Sie (1) Fahrenheit nach Celsius oder (2) Celsius nach Fahrenheit umrechnen?
+Bitte Geben Sie Ihre Wahl, 1 oder 2, ein: 1
+Bitte geben Sie die Temperatur ein: 32
+Die urgerechnete Temperatur beträgt: 0.0
+Möchten Sie noch eine Temperatur umrechnen? Dann 1 eingeben
+```
 
 ```java title="Starter.java"
 package converter;
   public class Starter {
     public static void main(String[] args) {
-      // highlight-next-line
-      Converter ui = new Converter(); // Die Klasse `Converter` fehlt und sollt ihr umsetzen
+      Converter ui = new Converter();
       ui.dialog();
+  }
+}
+```
+
+```java title="Converter.java"
+package converter;
+import java.util.Scanner;
+
+public class Converter {
+  public void dialog() {
+    Scanner scanner = new Scanner(System.in);
+    double convtemp;
+    // highlight-next-line
+    // Geht es ohne `new`, rsp. ohne Objekt `converter`? 
+    // highlight-next-line
+    DegreesConverter converter = new DegreesConverter(); 
+    int userEntry = 0;
+    do {
+      System.out.println("Möchten Sie (1) Fahrenheit nach Celsius oder (2) Celsius nach Fahrenheit umrechnen?");
+      System.out.print("Bitte geben Sie Ihre Wahl 1 oder 2 ein: ");
+      userEntry = scanner.nextInt();
+      System.out.print("Bitte geben Sie die Temperatur ein: ");
+      double temp = scanner.nextDouble();
+      if (userEntry == 1) {
+        // highlight-next-line
+        // Was muss hier geändert werden wenn es kein Objekt `converter` mehr gibt?
+        // highlight-next-line
+        convtemp = converter.toCelsius(temp); 
+      } else {
+        // highlight-next-line
+        // Was muss hier geändert werden wenn es kein Objekt `converter` mehr gibt?
+        // highlight-next-line
+        convtemp = converter.toFahrenheit(temp);
+      }
+      System.out.println("Die umgerechnete Temperatur beträgt: " + convtemp);
+      System.out.print("Möchten Sie noch eine Temperatur umrechnen? Dann 1 eingeben. ");
+      userEntry = scanner.nextInt();
+    } while (userEntry == 1);
+    scanner.close();
   }
 }
 ```
@@ -25,29 +75,25 @@ package converter;
 package converter;
 public class DegreesConverter {
 
-  public double toFahrenheit(double celsius) {
+  // highlight-next-line
+  public double toFahrenheit(double celsius) { // was muss hier hinzugefügt werden?
     return (celsius * 9.0/5.0) + 32.0;
   }
 
-  public double toCelsius(double fahrenheit) {
+  // highlight-next-line
+  public double toCelsius(double fahrenheit) { // was muss hier hinzugefügt werden?
     return (fahrenheit - 32.0) * 5.0/9.0;
   }
 
 }
 ```
 
+
 ## Aufgabe
 
-Erstellen Sie eine Klasse `Converter`, welche die Methode `dialog` enthält. 
-Darin wird die Benutzerschnittstelle implementiert. 
-
-```bash title="Der Dialog-Ablauf soll so aussehen"
-Möchten Sie (1) Fahrenheit nach Celsius oder (2) Celsius nach Fahrenheit umrechnen?
-Bitte Geben Sie Ihre Wahl, 1 oder 2, ein: 1
-Bitte geben Sie die Temperatur ein: 32
-Die urgerechnete Temperatur beträgt: 0.0
-Möchten Sie noch eine Temperatur umrechnen? Dann 1 eingeben
-```
+1. Kopieren Sie den Code der Klassen `Starter`, `Converter` und `DegreesConverter` von oben 
+2. Bringen Sie die Applikation in Eclipse zum laufen.
+3. Ändern Sie die Methoden `toFahrenheit` und `toCelsius` so dass die Klasse `DegreesConverter` **statisch, also ohne `new`** verwendet werden kann.
 
 ## Musterlösung
 
@@ -60,60 +106,20 @@ import java.util.Scanner;
 
 public class Converter {
   public void dialog() {
-    Scanner sc = new Scanner(System.in);
-    DegreesConverter converter = new DegreesConverter();
-    int wahl = 0;
-    do {
-      System.out.println("Möchten Sie (1) Fahrenheit nach Celsius oder (2) Celsius nach Fahrenheit umrechnen?");
-      System.out.print("Bitte geben Sie Ihre Wahl 1 oder 2 ein: ");
-      wahl = sc.nextInt();
-      System.out.print("Bitte geben Sie die Temperatur ein: ");
-      double temp = sc.nextDouble();
-      double convtemp;
-      if (wahl == 1) {
-        convtemp = converter.toCelsius(temp);
-      } else {
-        convtemp = converter.toFahrenheit(temp);
-      }
-      System.out.println("Die umgerechnete Temperatur beträgt: " + convtemp);
-      System.out.print("Möchten Sie noch eine Temperatur umrechnen? Dann 1 eingeben. ");
-      wahl = sc.nextInt();
-    } while (wahl == 1);
-  }
-}
-```
-
-</details>
-
-## Zusatz Aufgabe
-
-Der `DegreeConverter` ist eine Klasse **ohne statische Methoden**, wie beim Konto. Ist das hier sinnvoll? Könnte man evt. die Methoden `toFahrenheit` und `toCelsius` als `static` definieren? Wenn ja, wie würde man nun die Klasse `Converter` aussehen?
-
-## Musterlösung
-
-<details>
-<summary>Nur zum Überprüfen der eigenen Implementation!</summary>
-
-```java title="Converter.java"
-package converter;
-import java.util.Scanner;
-
-public class Converter {
-  public void dialog() {
-    Scanner sc = new Scanner(System.in);
+    Scanner scanner = new Scanner(System.in);
+    double convtemp;
     // highlight-next-line
     // Die nächste Linie kann man auskommentieren, we braucht nun kein Objekt mehr
     // highlight-next-line
     // DegreesConverter converter = new DegreesConverter(); 
-    int wahl = 0;
+    int userEntry = 0;
     do {
       System.out.println("Möchten Sie (1) Fahrenheit nach Celsius oder (2) Celsius nach Fahrenheit umrechnen?");
       System.out.print("Bitte geben Sie Ihre Wahl 1 oder 2 ein: ");
-      wahl = sc.nextInt();
+      userEntry = scanner.nextInt();
       System.out.print("Bitte geben Sie die Temperatur ein: ");
-      double temp = sc.nextDouble();
-      double convtemp;
-      if (wahl == 1) {
+      double temp = scanner.nextDouble();
+      if (userEntry == 1) {
         // highlight-next-line
         // convtemp = converter.toCelsius(temp); 
         // highlight-next-line
@@ -126,8 +132,9 @@ public class Converter {
       }
       System.out.println("Die umgerechnete Temperatur beträgt: " + convtemp);
       System.out.print("Möchten Sie noch eine Temperatur umrechnen? Dann 1 eingeben. ");
-      wahl = sc.nextInt();
-    } while (wahl == 1);
+      userEntry = scanner.nextInt();
+    } while (userEntry == 1);
+    scanner.close();
   }
 }
 ```
@@ -136,11 +143,13 @@ public class Converter {
 package converter;
 public class DegreesConverter {
 
+  // Hinzufügen des keywords `static`
   // highlight-next-line
   public static double toFahrenheit(double celsius) {
     return (celsius * 9.0/5.0) + 32.0;
   }
 
+  // Hinzufügen des keywords `static`
   // highlight-next-line
   public static double toCelsius(double fahrenheit) {
     return (fahrenheit - 32.0) * 5.0/9.0;
