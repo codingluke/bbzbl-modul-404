@@ -58,20 +58,40 @@ Es gibt viele UML Diagrammtypen, wirklich Verwendung finden vor allem folgende:
 <div class="container"><div class="row"><div class="col col--6">
 
 **Klasse verwendet ein `new` Objekt**
-
 - gestrichelter Pfeil
 
 **Klasse `implements` ein Interface**
-
 - gestrichelter Pfeil mit **Dreiecksspitze**
 
 **Klasse `extends` eine Klasse**
-
 - durchgezogener Pfeil mit **Dreiecksspitze**
 
 </div><div class="col col--6">
 
-![](./img/uml-dependencies.png)
+```mermaid
+classDiagram
+    class ActionListener
+    class JFrame
+    <<interface>> ActionListener
+    class Starter {
+      +main(args: String[])
+    }
+
+    class Gui {
+        -logic: Logic
+        +actionPerformed(action: ActionEvent)
+        +showDialog()
+    }
+
+    class Logic {
+        +doSomething()
+    }
+
+    Starter ..> Gui : verwendet "new Gui()"
+    Gui ..> Logic : Gui verwendet "new Logic()"
+    Gui --|> JFrame : extends
+    Gui ..|> ActionListener : implements
+```
 
 </div></div></div>
 
