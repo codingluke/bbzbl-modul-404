@@ -74,7 +74,7 @@ classDiagram
     class JFrame
     <<interface>> ActionListener
     class Starter {
-      +main(args: String[])
+      +main(args: String[])$
     }
 
     class Gui {
