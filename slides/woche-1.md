@@ -314,4 +314,30 @@ String command = sc.nextString();
 
 # Abschluss / Lernjournal
 
+---
+
+```mermaid
+classDiagram
+    class ActionListener
+    class JFrame
+    <<interface>> ActionListener
+    class Starter {
+      +main(args: String[])$
+    }
+
+    class Gui {
+        -logic: Logic
+        +actionPerformed(action: ActionEvent)
+        +showDialog()
+    }
+
+    class Logic {
+        +doSomething()
+    }
+
+    Starter ..> Gui : verwendet "new Gui()"
+    Gui ..> Logic : Gui verwendet "new Logic()"
+    Gui --|> JFrame : extends
+    Gui ..|> ActionListener : implements
+```
 
