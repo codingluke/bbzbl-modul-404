@@ -12,8 +12,16 @@ sidebar_position: 1
 ## Auftrag
 
 Erstellen Sie anhand des Wissens und Könnens aus dem Modul 403 ein Programm, welches einen einfachen Dialog für ein Bankkonto realisiert.
+Es soll möglich sein Geld:
+- **einzuzahlen**
+- **abzuheben**
+- den Kontostand **anzuzeigen**
 
-Es soll möglich sein Geld `einzuzahlen`, `abzuheben` und den Kontostand `anzuzeigen`. Diese Operationen sollen jeweils **durch eine Methode realisiert** sein.
+:::info Wichtig!
+
+Die Operationen zum `einzuzahlen` und `abzuheben` sollen jeweils **durch eine Methode realisiert** sein.
+
+:::
 
 **Die Interaktion mit dem Benutzer soll so aussehen, wie nachfolgend gezeigt.**
 
@@ -36,12 +44,64 @@ Please enter the amount, 0 (zero) to terminate
 Final balance: 35.0
 ```
 
+
+:::info Erste Hilfe
+
+<details>
+<summary> Bitte diese Tipps versuchen bevor Ihr zur Musterlösung greift!</summary>
+
+```java
+import java.util.Scanner;
+
+public class AccountApplication {
+  public static void main(String[] args) {
+    Scanner sc = new Scanner(System.in);
+    double balance = 0;
+    double amount = 0;
+    String command = "";
+
+    System.out.println("Welcome to the account application");
+    do {
+      System.out.println("Please enter the amount, 0 (zero) to terminate");
+      amount = sc.nextDouble();
+      if (amount != 0) {
+        System.out.println("To deposit, press +, to withdraw press -");
+        command = sc.next();
+        if (command.equals("+")) {
+          // was kommt wohl hier?
+        } else if (command.equals("-")) {
+          // was kommt wohl hier?
+        }
+      }
+    } while (amount != 0);
+    System.out.println("Final balance: " + "attribute balance"); // was soll hier ausgegeben werden?
+
+    sc.close();
+  }
+
+  // deposit => einzahlen
+  public static double deposit(double balance, double amount) {
+    return 0.0; // implementiere mich
+  }
+
+  // withdraw => abheben
+  public static double withdraw(double balance, double amount) {
+    return 0.0; // implementiere mich
+  }
+}
+```
+
+</details>
+
+:::
+
 ### Zusatzaufgaben für Schnelle
 
 - Ermöglichen Sie zusätzlich zu + und - die Menüauswahl = um jederzeit den Kontostand abzufragen.
 - Geben Sie am Schluss vor dem Schlusssaldo eine Auflistung aller Transaktionen (Ein- und Auszahlungen) aus.
 
 ## Musterlösung
+
 
 <details>
 <summary>Nur zum Überprüfen der eigenen Implementation!</summary>
@@ -50,41 +110,40 @@ Final balance: 35.0
 import java.util.Scanner;
 
 public class AccountApplication {
-	public static void main(String[] args) {
-		System.out.println("Welcome to the account application");
-		double kontostand = 0;
-		double amount = 0;
-		String command = "";
-		do {
-			Scanner sc = new Scanner(System.in);
-			System.out.println("Please enter the amount, 0 (zero) to terminate");
-			amount = sc.nextDouble();
-			if (amount != 0) {
-				System.out.println("To deposit, press +, to withdraw press -");
-				command = sc.next();
-				if (command.equals("+")) {
-					kontostand = einzahlen(kontostand, amount);
-				} else if (command.equals("-")) {
-					kontostand = abheben(kontostand, amount);
-				}
-			}
-		} while (amount != 0);
-		System.out.println("Final balance: " + aktuellerKontostand(kontostand));
-	}
+  public static void main(String[] args) {
+    Scanner sc = new Scanner(System.in);
+    double balance = 0;
+    double amount = 0;
+    String command = "";
 
-	public static double einzahlen(double ks, double betrag) {
-		return ks + betrag;
-	}
+    System.out.println("Welcome to the account application");
+    do {
+      System.out.println("Please enter the amount, 0 (zero) to terminate");
+      amount = sc.nextDouble();
+      if (amount != 0) {
+        System.out.println("To deposit, press +, to withdraw press -");
+        command = sc.next();
+        if (command.equals("+")) {
+          balance = deposit(balance, amount);
+        } else if (command.equals("-")) {
+          balance = withdraw(balance, amount);
+        };
+      }
+    } while (amount != 0);
+    System.out.println("Final balance: " + balance);
 
-	public static double abheben(double ks, double betrag) {
-		return ks - betrag;
-	}
+    sc.close();
+  }
 
-	// diese Methode macht keinen Sinn
-	// es ging bei der Aufgabe aber darum, wieder ein paar Methoden zu schreiben
-	public static double aktuellerKontostand(double ks) {
-		return ks;
-	}	
+  // deposit => einzahlen
+  public static double deposit(double balance, double amount) {
+    return balance + amount;
+  }
+
+  // withdraw => abheben
+  public static double withdraw(double balance, double amount) {
+    return balance - amount;
+  }
 }
 ```
 

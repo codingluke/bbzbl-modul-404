@@ -48,28 +48,31 @@ public class Starter {
 ```java title="AccountApplication.java"
 import java.util.Scanner;
 
-public class AccountApplication {
-	public void start() {
-		System.out.println("Welcome to the account application");
-		Account account = new Account();  // hier wird ein Objekt der Klasse `Account` erstellt
-		double amount = 0;
-		String command = "";
-		do {
-			Scanner sc = new Scanner(System.in);
-			System.out.println("Please enter the amount, 0 (zero) to terminate");
-			amount = sc.nextDouble();
-			if (amount != 0) {
-				System.out.println("To deposit, press +, to withdraw press -");
-				command = sc.next();
-				if (command.equals("+")) {
-					account.deposit(amount);
-				} else if (command.equals("-")) {
-					account.withdraw(amount);
-				}
-			}
-		} while (amount != 0);
-		System.out.println("Final balance: " + account.getBalance());
-	}
+public class AccountApplicationV2 {
+  public static void main(String[] args) {
+    Scanner scanner = new Scanner(System.in);
+    Account account = new Account();  // hier wird ein Objekt der Klasse `Account` erstellt
+    double amount = 0;
+    String command = "";
+
+    System.out.println("Welcome to the account application");
+    do {
+      System.out.println("Please enter the amount, 0 (zero) to terminate");
+      amount = scanner.nextDouble();
+      if (amount != 0) {
+        System.out.println("To deposit, press +, to withdraw press -");
+        command = scanner.next();
+        if (command.equals("+")) {
+          account.deposit(amount);
+        } else if (command.equals("-")) {
+          account.withdraw(amount); 
+        }
+      }
+    } while (amount != 0);
+    System.out.println("Final balance: " + account.getBalance()); 
+
+    scanner.close();
+  }
 }
 ```
 

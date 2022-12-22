@@ -3,10 +3,16 @@ sidebar_position: 3
 ---
 # 3. Refactoring Account Applikation
 
-> :point_up: **Machen Sie sich mit dem Konzept der [Fachklassen](../konzepte/fachklassen.md) bekannt bevor Sie weiterfahren!**
+:::danger WICHTIG
+
+:point_up: **Machen Sie sich mit dem Konzept der [Fachklassen](../konzepte/fachklassen.md) bekannt bevor Sie weiterfahren!**
+
+:::
 
 :::note Refactoring
+
 Bezeichnung im Programmieren, dass man den **vorhandenen Code neu Strukturiert, ohne neue Funktionalität hinzuzufügen**. Refactoring dient dazu, dass die Applikation/Software auf lange Zeit besser wartbar und erweiterbar ist.
+
 :::
 
 ## Ausgangslage
@@ -15,9 +21,6 @@ Bezeichnung im Programmieren, dass man den **vorhandenen Code neu Strukturiert, 
 1. Die Arbeit wollen wir **in zwei Klassen aufteilen**
   - `AccountApplication` (Beinhaltet die Benutzerinteraktion und `main` Methode)
   - `Account` rsp. `Konto` (Beinhaltet die Fachlogik)
-
-
-![Fachlasse](../img/fachklassen.png)
 
 ## Einführung der Klasse `Account`/`Konto`
 
@@ -72,8 +75,8 @@ Bauen Sie Ihr Programm nun so um, dass es aus zwei Klassen besteht (die ursprün
 - Löschen Sie in der ursprüngliche Klasse (`AccountApplication`) die Variable `double balance`;
 - Legen Sie dafür ein **Objekt** der Klasse `Account` an.
 - Jetzt erscheinen Fehler im Quellcode. 
-  - Überall dort müssen Sie das Programm anpassen und mit dem neuen Objekt der Klasse `Account` arbeiten.
-- Die Methoden `einzahlen`,`abheben` und `aktuellerKontostand` der ursprünglichen Klasse `AccountApplication` **sollten nun gelöscht werden können**.
+  - Überall dort müssen Sie das Programm anpassen und mit dem **Objekt** der Klasse `Account` arbeiten.
+- Die Methoden `deposit` und `withdraw` der ursprünglichen Klasse `AccountApplication` **müssen nun gelöscht werden können**.
 
 ## Musterlösung
 
@@ -84,27 +87,35 @@ Bauen Sie Ihr Programm nun so um, dass es aus zwei Klassen besteht (die ursprün
 import java.util.Scanner;
 
 public class AccountApplicationV2 {
-	public static void main(String[] args) {
-		System.out.println("Welcome to the account application");
-		Account account = new Account();  // hier wird ein Objekt der Klasse `Account` erstellt
-		double amount = 0;
-		String command = "";
-		do {
-			Scanner sc = new Scanner(System.in);
-			System.out.println("Please enter the amount, 0 (zero) to terminate");
-			amount = sc.nextDouble();
-			if (amount != 0) {
-				System.out.println("To deposit, press +, to withdraw press -");
-				command = sc.next();
-				if (command.equals("+")) {
-					account.deposit(amount);
-				} else if (command.equals("-")) {
-					account.withdraw(amount);
-				}
-			}
-		} while (amount != 0);
-		System.out.println("Final balance: " + account.getBalance());
-	}
+  public static void main(String[] args) {
+    Scanner scanner = new Scanner(System.in);
+    // highlight-next-line
+    Account account = new Account();  // hier wird ein Objekt der Klasse `Account` erstellt
+    double amount = 0;
+    String command = "";
+
+    System.out.println("Welcome to the account application");
+    do {
+      System.out.println("Please enter the amount, 0 (zero) to terminate");
+      amount = scanner.nextDouble();
+      if (amount != 0) {
+        System.out.println("To deposit, press +, to withdraw press -");
+        command = scanner.next();
+        if (command.equals("+")) {
+          // highlight-next-line
+          account.deposit(amount); // nun wird das Objekt "account" verwendet
+        } else if (command.equals("-")) {
+          // highlight-next-line
+          account.withdraw(amount); // nun wird das Object "account" verwendet
+        }
+      }
+    } while (amount != 0);
+    // Die balance/Kontostand wird direkt im Objekt "account" berechnet
+    // highlight-next-line
+    System.out.println("Final balance: " + account.getBalance()); 
+
+    scanner.close();
+  }
 }
 ```
 
