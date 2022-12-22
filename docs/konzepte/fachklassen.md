@@ -194,8 +194,8 @@ int intVariable = 1;
 // `accountObjektVariable` beinhaltet ein Objekt der Klasse Account
 // `intVariable` beinhaltet den den Wert 1 vom `primitiven` Datentyp int
 
-variable1.getClass(); // Ein Objekt besitzt Methoden welche ausgeführt werden können
-variable2.getClass(); // führt zu einem ERROR. (versuche es in `eclipse`!)
+accountObjektVariable.getClass(); // Ein Objekt besitzt Methoden welche ausgeführt werden können
+intVariable.getClass(); // führt zu einem ERROR. (versuche es in `eclipse`!)
 ```
 
 :::tip Faustregel
