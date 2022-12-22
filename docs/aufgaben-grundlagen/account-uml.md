@@ -4,7 +4,11 @@ sidebar_position: 8
 
 # 7. Account - Klassendiagramm
 
-> :point_up: **Machen Sie sich mit den [UML Klassendiagrammen](../uml.md) bekannt bevor Sie weiterfahren!**
+:::danger WICHTIG
+
+:point_up: **Machen Sie sich mit den [UML Klassendiagrammen](../uml.md) bekannt bevor Sie weiterfahren!**
+
+:::
 
 ## Aufgabe
 
@@ -29,6 +33,14 @@ public class Account {
 <details>
 <summary>Nur zum Überprüfen der eigenen Implementation!</summary>
 
-![](../img/account-uml-solved.svg)
+```mermaid
+classDiagram
+    class Account{
+      -balance: double
+      +getBalance(): double
+      +deposit(amount: double)
+      +withdraw(amount: double)
+    }
+```
 
 </details>
