@@ -101,5 +101,9 @@ classDiagram
   - IntelliJ finden Sie auf unseren **Widnows VMs** 
 - [ObjektAid for Eclipse](https://github.com/AbbaouiAmine/objectAidArchive)
   - [Video mit Installationsanleitung](https://www.youtube.com/watch?v=UtSRX9swc1w)
+- [Mermaid](https://mermaid.js.org/) :mermaid:
+  - wird auf dieser Seite verwendet
+  - [Mermaid Dokumentation](https://mermaid.js.org/syntax/classDiagram.html)
+  - [Mermaid Live im Browser](https://mermaid.live)
 
 
