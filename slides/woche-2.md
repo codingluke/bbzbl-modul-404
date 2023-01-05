@@ -193,7 +193,7 @@ public class Starter {
 Es ist immer gut sich im Internet weiterzubilden (:thinking: zumindest für IT-Themen)
 
 
-www.java-tutorial.org ist eine Webseite die Java, sowie `Swing` im detail erklärt:
+www.java-tutorial.org ist eine Webseite die Java, sowie `Swing` im Detail erklärt:
 
 - [Deutsches `Swing`-Tutorial als Zusatzinfo für Interessierte](https://www.java-tutorial.org/swing.html)
 
@@ -204,7 +204,7 @@ www.java-tutorial.org ist eine Webseite die Java, sowie `Swing` im detail erklä
 
 ---
 
-# Swing: `JFrame`, [JFrame auf Java Tutorial](https://www.java-tutorial.org/jframe.html)
+# Swing: `JFrame` 
 
 Möchte man eine Klasse als `Fenster` erstellen, muss man der Klasse die Java Klasse `JFrame` **vererben**. Dies geht mit dem Ausdruck `extends JFrame`
 
@@ -222,12 +222,15 @@ public class PureWindow extends JFrame {
 
 _:information_source: Was genau Vererbung ist, und wie man es selbst verwendet ist Teil eines späteren Moduls. **Hier wenden wir es einfach Mal blindlings an.**_
 
+::: footnotes
 
+[:link: JFrame auf Java Tutorial](https://www.java-tutorial.org/jframe.html)
 
+:::
 
 --- 
-# `JFrame` Cheat Cheet :bulb:
 
+# `JFrame` Cheat Cheet :bulb:
 
 ```java
 setLayout(null); // Standard Layout deaktivieren
@@ -247,12 +250,13 @@ add(textfield) // Textfeld hinzufügen
 JButton button = new JButton("press me"); // Ein Button
 button.setBounds(x, y, wigh, height) // Bestimmen wo sich der Button befindet
 add(button) // Textfeld hinzufügen
-
 ```
 
 ---
 
-# `Swing` Aufgaben :pencil:
+# :keyboard: `Swing` Aufgaben
+
+[:link:](http://localhost:3000/bbzbl-modul-404/docs/category/aufgaben-swing)
 
 Lest die beiden PDFs auf der [Modulwebseite](https://sites.google.com/bbzbl-it.ch/modul404-lh/themen/ui/swing) genau durch und bearbeiten Sie die **Aufgaben 1 - 4**.
 

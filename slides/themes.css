@@ -30,6 +30,10 @@ section.code { font-family: 'Fira Code', monospace;  }
 .italic{font-style: italic;}
 .oblique{font-style: oblique;}
 
+.mermaid {
+  text-align: center;
+}
+
 section.emoji-list ul {
   list-style-type: none;
   padding-left: 2rem;

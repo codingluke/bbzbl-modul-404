@@ -1,4 +1,5 @@
 const { deflateSync } = require('zlib')
+const mermaidConfig = require('./mermaid.init')
 
 const krokiLangs = [
   'actdiag',
@@ -27,6 +28,7 @@ const krokiLangs = [
 ]
 
 const entrypoint = 'https://kroki.io/'
+const mermaidInit = `%%{init: ${JSON.stringify(mermaidConfig)} }%%`
 
 const marpKrokiPlugin = (md) => {
   const { fence } = md.renderer.rules
@@ -35,13 +37,25 @@ const marpKrokiPlugin = (md) => {
     const info = md.utils.unescapeAll(tokens[idx].info).trim()
 
     if (info) {
-      const [lang] = info.split(/(\s+)/g)
+      const [_, lang, divAttributes] = info.match(/(\w+)\s*(?:\s*(.+)\s*)?/)
 
       if (krokiLangs.includes(lang)) {
-        const data = deflateSync(tokens[idx].content).toString('base64url')
+        const data = tokens[idx].content
+        const dataWithInit = lang === "mermaid"
+          ? `${mermaidInit}\n${data}`
+          : data
+        const escapedData = deflateSync(dataWithInit).toString('base64url')
 
         // <marp-auto-scaling> is working only with Marp Core v3
-        return `<p><marp-auto-scaling data-downscale-only><img src="${entrypoint}${lang}/svg/${data}"/></marp-auto-scaling></p>`
+        return (`
+          <div class="mermaid">
+            <marp-auto-scaling data-downscale-only>
+              <img src="${entrypoint}${lang}/svg/${escapedData}" 
+                   ${divAttributes ? divAttributes : ""}
+              />
+            </marp-auto-scaling>
+          </div>
+        `)
       }
     }
 
