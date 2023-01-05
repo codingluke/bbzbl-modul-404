@@ -21,8 +21,6 @@ footer: BBZBL / Lukas Hodel / Objektbasiert programmieren nach Vorgabe
 
 - [:brain: Repetition Fachklassen](https://codingluke.github.io/bbzbl-modul-404/docs/konzepte/fachklassen)
 
-- [:keyboard: Repetition Arrays](https://codingluke.github.io/bbzbl-modul-404/docs/repetition/arrays) ([PDF](https://drive.google.com/file/d/1Bt4NgySXrhMeorOTuSBs_6thNwXPRbNN/view))
-
 - [:brain: Konzept Static](https://codingluke.github.io/bbzbl-modul-404/docs/konzepte/static)
   - [:keyboard: Aufgabe Starterklasse](https://codingluke.github.io/bbzbl-modul-404/docs/aufgaben-grundlagen/starterklasse)
   - [:keyboard: Aufgabe Temperaturkonvertierer](https://codingluke.github.io/bbzbl-modul-404/docs/aufgaben-grundlagen/einheiten-umrechnen)
@@ -35,6 +33,11 @@ footer: BBZBL / Lukas Hodel / Objektbasiert programmieren nach Vorgabe
   - [:keyboard: Aufgabe JFrame Komponenten](https://codingluke.github.io/bbzbl-modul-404/docs/aufgaben-swing/komponenten)
 
 :::
+
+### :superhero: Optional
+
+- [:keyboard: Repetition Arrays](https://codingluke.github.io/bbzbl-modul-404/docs/repetition/arrays) ([PDF](https://drive.google.com/file/d/1Bt4NgySXrhMeorOTuSBs_6thNwXPRbNN/view))
+
 
 ---
 
@@ -50,56 +53,61 @@ footer: BBZBL / Lukas Hodel / Objektbasiert programmieren nach Vorgabe
 
 - Nennen wir es :sushi: **Sushi-Code**, das Gegenteil von :spaghetti: _Spaghetti-Code_
 
----
-
-# :keyboard: Repetition Arrays (20min) [:link:](https://codingluke.github.io/bbzbl-modul-404/docs/repetition/arrays)
-
-Im folgenden PDF ist beschrieben wie man in Java mit Arrays, also Listen von Datentypen, arbeitet.
-
-- [Repetition Arrays](https://codingluke.github.io/bbzbl-modul-404/docs/repetition/arrays) ([:book: PDF](https://drive.google.com/file/d/1Bt4NgySXrhMeorOTuSBs_6thNwXPRbNN/view)) bitte genau studieren
-- Diese **Aufgaben sind Optional** und müssen im **Selbststudium** gemacht werden.
-- Am Ende der Sildes wird auf eine weitere Art von Arrays (Listen) eingeganen. 
-    - Diese ist **nicht Pflicht** jedoch häufig einfacher.
-
-### :superhero: Dies ist eine Grundlage, welche Ihr im allgemeinen begreifen müsst um die beiden LBs mit einer `6` zu bestehen
 
 ---
 
-# Was kann `static`? :rock: <- in Stein gemeisselt
 
-- Kann ohne `new` aufgerufen werden.
+# :brain: Konzept `static`: :rock: <- in Stein gemeisselt
+
+- Kann ohne `new` aufgerufen werden
 - Kann wiederum andere `static` Methoden aufrufen
-- Kann `static` Variablen verwenden (diese können nicht geändert werden!)
-- Kann mit `new` ein `Objekt`/`Instanz` einer beliebigen Klasse erstellen.
+- Kann `static` Variablen verwenden
+- Kann mit `new` eine `Instanz` einer beliebigen Klasse erstellen.
 
-# Für was sind `static` Methoden gut?
+::: columns
 
-- Die Java `main` Methode ist immer `static` (Entrypoint)
-- Generelle/Universelle Helfermethoden :toolbox: **ohne Datenstand**
-  - Z.B. die Java Klasse `Math` ist komplett statisch `Math.sqrt(64);`
+### Für was sind `static` Methoden gut?
+
+- Die Java `main` Methode (entrypoint)
+- Helfermethoden **(ohne Datenstand)**
+  _Z.B. `Math.sqrt(64);`_
+
+::: split
+
+### :scream: Limitationen
+
+**Können nicht** auf **eigene** `Instanz-Methoden/Varaiblen` zugreifen!
+
+:::
 
 ---
 
-# `Instanz-Methoden` ? :hatching_chick: <- Es lebt!
+# :brain: Konzept `Instanz`<sup>\*</sup>: :hatching_chick: <- Es lebt!
 
-- Können auf **Instanz-Variablen zugreifen**
-- Können andere **Instanz-Methoden ausführen**
+- Beinhalten `Instanz-Methoden`:
+  - `Instanz-Methoden` können auf `Instanz-Variablen` zugreifen
+  - `Instanz-Methoden` können andere `Instanz-Methoden` ausführen
 - Es können von einer **Klasse mehrere Instanzen** erstellt werden
-  - Diese sind **gekapselt** und **besitzen einen individuellen Datenstand**
-- Können nur über ein `Obejkt`/`Instanz` ausgeführt werden (`new`)
+- Ein `Instanz` wird durch `Klasse variableName = new Klasse()` erstellt
+
+### :information_source: Instanzen sind gekapselt und **besitzen einen individuellen Datenstand**
 
 ```java
-// Alle Objekte haben ihren eigen "gekapselten" Datenstand
 Account accountObject1 = new Account();
 Account accountObject2 = new Account();
-Account accountObject3 = new Account();
 ```
+
+:::footnotes
+
+\* **Instanzen** und **Objekte** sind **Synonym** verwendbar!
+
+:::
 
 ---
 
 # :brain: Static vs Instanz-Methoden
 
-Eine `static` Methode einer `Klasse` kann direkt aufgerufen werden, ohne dass ein `Object`/`Instanz` der Klasse erstellt werden muss. 
+Eine `static` Methode einer `Klasse` kann direkt aufgerufen werden, ohne dass ein `Object`/`Instanz` der Klasse erstellt werden muss:
 
 ```Java
 public class MixedExample {
@@ -270,6 +278,19 @@ Lest die beiden PDFs auf der [Modulwebseite](https://sites.google.com/bbzbl-it.c
 <!-- _class: big center -->
 
 # Abschluss / Lernjournal
+
+---
+
+# :keyboard: Repetition Arrays (20min) [:link:](https://codingluke.github.io/bbzbl-modul-404/docs/repetition/arrays)
+
+Im folgenden PDF ist beschrieben wie man in Java mit Arrays, also Listen von Datentypen, arbeitet.
+
+- [Repetition Arrays](https://codingluke.github.io/bbzbl-modul-404/docs/repetition/arrays) ([:book: PDF](https://drive.google.com/file/d/1Bt4NgySXrhMeorOTuSBs_6thNwXPRbNN/view)) bitte genau studieren
+- Diese **Aufgaben sind Optional** und müssen im **Selbststudium** gemacht werden.
+- Am Ende der Sildes wird auf eine weitere Art von Arrays (Listen) eingeganen. 
+    - Diese ist **nicht Pflicht** jedoch häufig einfacher.
+
+### :superhero: Dies ist eine Grundlage, welche Ihr im allgemeinen begreifen müsst um die beiden LBs mit einer `6` zu bestehen
 
 ---
 
