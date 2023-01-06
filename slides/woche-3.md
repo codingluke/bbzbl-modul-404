@@ -13,31 +13,30 @@ footer: BBZBL / Lukas Hodel / Objektbasiert programmieren nach Vorgabe
 
 ---
 
-<!-- _class: emoji-list -->
-
 # Agenda
 
 ::: columns
 
-## Input
+## :brain: Input
 
-- :brain: [Projekt Klassenstruktur](https://codingluke.github.io/bbzbl-modul-404/docs/uml#abhängigkeiten)
+- [Projekt Klassenstruktur](https://codingluke.github.io/bbzbl-modul-404/docs/uml#abhängigkeiten)
 
-- :brain: [Java Interface](https://codingluke.github.io/bbzbl-modul-404/docs/konzepte/actionlistener)
+- [Java Interface](https://codingluke.github.io/bbzbl-modul-404/docs/konzepte/actionlistener)
 
 ::: split
 
-## Swing Aufgaben
+## :keyboard: Aufgaben Swing
 
-- [:keyboard: Buttons aktivieren](https://codingluke.github.io/bbzbl-modul-404/docs/aufgaben-swing/buttons-aktivieren)
-- [:keyboard: Strings in Zahlen umwandeln](https://codingluke.github.io/bbzbl-modul-404/docs/aufgaben-swing/strings-nach-int-umwandeln)
-- [:keyboard: Account Applikation in Swing](https://codingluke.github.io/bbzbl-modul-404/docs/aufgaben-swing/account-application) 
+- [Buttons aktivieren](https://codingluke.github.io/bbzbl-modul-404/docs/aufgaben-swing/buttons-aktivieren)
+- [Strings in Zahlen umwandeln](https://codingluke.github.io/bbzbl-modul-404/docs/aufgaben-swing/strings-nach-int-umwandeln)
+- [Account Applikation in Swing](https://codingluke.github.io/bbzbl-modul-404/docs/aufgaben-swing/account-application) 
 
 <hr>
 
-- [Weitere Swing-Aufgaben :superhero:](https://drive.google.com/file/d/1205D0XsyQvoArLIax3nemDP6xg7FHgag/view)
+Optional
 
-- Vertieftes Wissen zu Interfaces
+- [:superhero: Weitere Swing-Aufgaben](https://drive.google.com/file/d/1205D0XsyQvoArLIax3nemDP6xg7FHgag/view)
+- :bulb: Vertieftes Wissen zu Interfaces
 
 :::
 

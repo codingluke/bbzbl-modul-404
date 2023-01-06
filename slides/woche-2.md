@@ -15,27 +15,25 @@ footer: BBZBL / Lukas Hodel / Objektbasiert programmieren nach Vorgabe
 
 # Agenda
 
-<!-- _class: emoji-list -->
-
 ::: columns
 
-## Input
+## :brain: Input
 
-- [:brain: Repetition Fachklassen](https://codingluke.github.io/bbzbl-modul-404/docs/konzepte/fachklassen)
-- [:brain: Konzept Static](https://codingluke.github.io/bbzbl-modul-404/docs/konzepte/static)
-- [:brain: Einstieg in Swing](https://codingluke.github.io/bbzbl-modul-404/docs/aufgaben-swing/einstieg-in-swing)
+- [Repetition Fachklassen](https://codingluke.github.io/bbzbl-modul-404/docs/konzepte/fachklassen)
+- [Konzept Static](https://codingluke.github.io/bbzbl-modul-404/docs/konzepte/static)
+- [Einstieg in Swing](https://codingluke.github.io/bbzbl-modul-404/docs/aufgaben-swing/einstieg-in-swing)
 
 ::: split
 
-## Grundlagen Aufgaben
+## :keyboard: Aufgaben Grundlagen 
 
-- [:keyboard: Starterklasse](https://codingluke.github.io/bbzbl-modul-404/docs/aufgaben-grundlagen/starterklasse)
+- [Starterklasse](https://codingluke.github.io/bbzbl-modul-404/docs/aufgaben-grundlagen/starterklasse)
 
-- [:keyboard: Temperaturkonvertierer](https://codingluke.github.io/bbzbl-modul-404/docs/aufgaben-grundlagen/einheiten-umrechnen)
-## Swing Aufgaben
+- [Temperaturkonvertierer](https://codingluke.github.io/bbzbl-modul-404/docs/aufgaben-grundlagen/einheiten-umrechnen)
+## :keyboard: Aufgaben Swing
 
-- [:keyboard: JFrame](https://codingluke.github.io/bbzbl-modul-404/docs/aufgaben-swing/fenster)
-- [:keyboard: Komponenten](https://codingluke.github.io/bbzbl-modul-404/docs/aufgaben-swing/komponenten)
+- [Frame](https://codingluke.github.io/bbzbl-modul-404/docs/aufgaben-swing/fenster)
+- [Komponenten](https://codingluke.github.io/bbzbl-modul-404/docs/aufgaben-swing/komponenten)
 <hr>
 
 - [:superhero: Optional Repetition Arrays](https://codingluke.github.io/bbzbl-modul-404/docs/repetition/arrays) ([PDF](https://drive.google.com/file/d/1Bt4NgySXrhMeorOTuSBs_6thNwXPRbNN/view))
