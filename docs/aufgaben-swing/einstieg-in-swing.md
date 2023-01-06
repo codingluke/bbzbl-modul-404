@@ -19,3 +19,4 @@ Je besser Ihr diese beherrscht, desto einfacher fällt euch das Projekt!
 - Kopieren der aufgaben ist nicht klug, es bringt euch nix! :bulb:
   - Tippt die Aufgaben ab wenn ihr nicht weiter kommt! :technologist:
 :::
+

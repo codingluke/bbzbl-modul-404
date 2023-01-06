@@ -5,9 +5,29 @@
 - Ohne dieses Wissen ist das Projekt und auch die Prüfung nicht zu bestehen!
 :::
 
-Das nachfolgende Programm zeigt ein Swing-Programm, das in einfacher Art interaktiv ist. Bei jedem Klick auf den Button wird in einem `JLabel` das aktuelle Datum mit Uhrzeit angezeigt. (Die Starterklasse ist weggelassen.)
+## Das Interface `ActionListener`
+
+- `ActionListener` ist ein Interface, welches von Java mitgeliefert wird.
+- Es **definiert** die Methode `public void actionPerformed(ActionEvent e);`
+- Alle Klasse die den ActionListener implementieren (`implements ActionListener`) **müssen** auch die Methode `public void actionPerformed(ActionEvent e);` implementieren
+- Die JavaDoc findet man [hier](https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/ActionListener.html)
+
+```java title="java.awt.event.ActionListener"
+package java.awt.event;
+
+import java.util.EventListener;
+
+public interface ActionListener extends EventListener {
+
+    public void actionPerformed(ActionEvent e);
+
+}
+```
+
 
 ## ActionListener Beispiel: TimeButton Klasse
+
+Das nachfolgende Programm zeigt ein Swing-Programm, das in einfacher Art interaktiv ist. Bei jedem Klick auf den Button wird in einem `JLabel` das aktuelle Datum mit Uhrzeit angezeigt. (Die Starterklasse ist weggelassen.)
 
 ```java
 import java.awt.event.ActionEvent;
@@ -106,3 +126,4 @@ public class TimeButton extends JFrame implements ActionListener {
 
 }
 ```
+

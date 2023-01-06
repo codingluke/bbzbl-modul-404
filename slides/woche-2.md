@@ -19,24 +19,28 @@ footer: BBZBL / Lukas Hodel / Objektbasiert programmieren nach Vorgabe
 
 ::: columns
 
-- [:brain: Repetition Fachklassen](https://codingluke.github.io/bbzbl-modul-404/docs/konzepte/fachklassen)
+## Input
 
+- [:brain: Repetition Fachklassen](https://codingluke.github.io/bbzbl-modul-404/docs/konzepte/fachklassen)
 - [:brain: Konzept Static](https://codingluke.github.io/bbzbl-modul-404/docs/konzepte/static)
-  - [:keyboard: Aufgabe Starterklasse](https://codingluke.github.io/bbzbl-modul-404/docs/aufgaben-grundlagen/starterklasse)
-  - [:keyboard: Aufgabe Temperaturkonvertierer](https://codingluke.github.io/bbzbl-modul-404/docs/aufgaben-grundlagen/einheiten-umrechnen)
+- [:brain: Einstieg in Swing](https://codingluke.github.io/bbzbl-modul-404/docs/aufgaben-swing/einstieg-in-swing)
 
 ::: split
 
-- [:brain: Einstieg in Swing](https://codingluke.github.io/bbzbl-modul-404/docs/aufgaben-swing/einstieg-in-swing)
+## Grundlagen Aufgaben
 
-  - [:keyboard: Aufgaben JFrame](https://codingluke.github.io/bbzbl-modul-404/docs/aufgaben-swing/fenster)
-  - [:keyboard: Aufgabe JFrame Komponenten](https://codingluke.github.io/bbzbl-modul-404/docs/aufgaben-swing/komponenten)
+- [:keyboard: Starterklasse](https://codingluke.github.io/bbzbl-modul-404/docs/aufgaben-grundlagen/starterklasse)
+
+- [:keyboard: Temperaturkonvertierer](https://codingluke.github.io/bbzbl-modul-404/docs/aufgaben-grundlagen/einheiten-umrechnen)
+## Swing Aufgaben
+
+- [:keyboard: JFrame](https://codingluke.github.io/bbzbl-modul-404/docs/aufgaben-swing/fenster)
+- [:keyboard: Komponenten](https://codingluke.github.io/bbzbl-modul-404/docs/aufgaben-swing/komponenten)
+<hr>
+
+- [:superhero: Optional Repetition Arrays](https://codingluke.github.io/bbzbl-modul-404/docs/repetition/arrays) ([PDF](https://drive.google.com/file/d/1Bt4NgySXrhMeorOTuSBs_6thNwXPRbNN/view))
 
 :::
-
-### :superhero: Optional
-
-- [:keyboard: Repetition Arrays](https://codingluke.github.io/bbzbl-modul-404/docs/repetition/arrays) ([PDF](https://drive.google.com/file/d/1Bt4NgySXrhMeorOTuSBs_6thNwXPRbNN/view))
 
 
 ---
@@ -153,50 +157,30 @@ public class Starter {
 
 ---
 
-# :keyboard: Starterklasse (20min)  [:link:](https://codingluke.github.io/bbzbl-modul-404/docs/aufgaben-grundlagen/starterklasse)
+# :keyboard: Grundlagen Aufgaben [:link:](https://codingluke.github.io/bbzbl-modul-404/docs/aufgaben-grundlagen)
 
-:link: [Aufgabe Starterklasse](https://codingluke.github.io/bbzbl-modul-404/docs/aufgaben-grundlagen/starterklasse) öffnen
-
-- Es ist eine _gute Praxis_ in der `main` Methode nicht viel Logik zu implementieren.
-- Bestenfalls besteht die **Methode `main`** nur mit der **Instanzisierung einer Applikations Klasse** welche die eigentliche App verwaltet.
-
-```java
-public class Starter {
-    public static void main(String[] args) { // Startpunkt des Programms, ist immer static!
-
-    MyNewShinyApp app = new MyNewShinyApp(); // `new` ist innerhalb von `static` erlaubt
-    app.start(); // starten der eigentlichen App
-}
-```
-
+- [Aufgabe Starterklasse](https://codingluke.github.io/bbzbl-modul-404/docs/aufgaben-grundlagen/starterklasse)
+- [Aufgabe Temperaturkonvertierer](https://codingluke.github.io/bbzbl-modul-404/docs/aufgaben-grundlagen/einheiten-umrechnen)
+## <!--fit--> :superhero: Versucht es immer zuerst ohne Musterlösung!
 
 ---
 
-# :keyboard: Refactoring Temperaturkonvertierer 
+# :brain: Einstieg `Swing` 
 
-:link: [Aufgabe Temperaturkonvertierer](https://codingluke.github.io/bbzbl-modul-404/docs/aufgaben-grundlagen/einheiten-umrechnen)
+`Swing` ist eine **Bibliothek für grafische Oberflächen** :framed_picture:. Dadurch ist es möglich die bis jetzt textuelle Benutzerinteraktion mit grafischen Elemente umzusetzen. 
 
-- Es existiert ein Temperaturkonvertierer der **als Objekt** implementiert wurde.
-- Ist dies hier sinnvoll oder gibt es eine bessere Art diesen zu implementieren?
-- Dies sollt Ihr euch in der Aufgabe überlegen. **Könnte hier `static` was vereinfachen**?
-
-
----
-
-# Einstieg `Swing` :framed_picture:
-
-`Swing` ist eine **Bibliothek für grafische Oberflächen**. Dadurch ist es möglich die bis jetzt textuelle Benutzerinteraktion mit grafischen Elemente, auch `GUI - Graphical User Interface` genannt, umzusetzen. 
+- **`GUI`** - `Graphical User Interface` genannt
 
 ##  :rotating_light: Achtung!
 
-- Das Verständis davon ist essenziell um im **LB1** eine gute Note zu erhalten!
+- Das Verständnis davon ist essenziell um im **LB1** eine gute Note zu erhalten!
 - Auf dieser Grundlage wird auch das Projekt (**LB2**) umgesetzt!
 
 ## :point_up:  Nehmt euch also die **Zeit** dies zu verstehen!
 
 ---
 
-# Hilfe im Web! :rocket:
+# :rocket: Hilfe im Web!
 
 Es ist immer gut sich im Internet weiterzubilden (:thinking: zumindest für IT-Themen)
 
@@ -212,9 +196,9 @@ www.java-tutorial.org ist eine Webseite die Java, sowie `Swing` im Detail erklä
 
 ---
 
-# Swing: `JFrame` 
+# :brain: Swing: `JFrame` 
 
-Möchte man eine Klasse als `Fenster` erstellen, muss man der Klasse die Java Klasse `JFrame` **vererben**. Dies geht mit dem Ausdruck `extends JFrame`
+Möchte man eine Klasse als `Fenster` erstellen, muss man der Klasse die Java Klasse `JFrame` **vererben**. Dies geht mit dem Ausdruck **`extends JFrame`**
 
 ```java
 public class PureWindow extends JFrame {
@@ -228,17 +212,17 @@ public class PureWindow extends JFrame {
 }
 ```
 
-_:information_source: Was genau Vererbung ist, und wie man es selbst verwendet ist Teil eines späteren Moduls. **Hier wenden wir es einfach Mal blindlings an.**_
 
 ::: footnotes
 
 [:link: JFrame auf Java Tutorial](https://www.java-tutorial.org/jframe.html)
+_:information_source: Was genau Vererbung ist, und wie man es selbst verwendet ist Teil eines späteren Moduls. Hier wenden wir es einfach Mal an._
 
 :::
 
 --- 
 
-# `JFrame` Cheat Cheet :bulb:
+# :bulb: `JFrame` Cheat Cheet
 
 ```java
 setLayout(null); // Standard Layout deaktivieren
@@ -264,12 +248,10 @@ add(button) // Textfeld hinzufügen
 
 # :keyboard: `Swing` Aufgaben
 
-[:link:](http://localhost:3000/bbzbl-modul-404/docs/category/aufgaben-swing)
+- [Einstieg in Swing](https://codingluke.github.io/bbzbl-modul-404/docs/aufgaben-swing/einstieg-in-swing)
 
-Lest die beiden PDFs auf der [Modulwebseite](https://sites.google.com/bbzbl-it.ch/modul404-lh/themen/ui/swing) genau durch und bearbeiten Sie die **Aufgaben 1 - 4**.
-
-- [Einstiegs Aufgaben PDF :book:](https://drive.google.com/file/d/1272v3tDlreVjaaSSdyaAF4uIt0PRgCsK/view)
-- [Einstiegs Musterlösungen :book:](https://drive.google.com/file/d/162-Nz5D3EC0jpsIXkb6Dz4a1K64gt8m5/view)
+- [JFrame](https://codingluke.github.io/bbzbl-modul-404/docs/aufgaben-swing/fenster)
+- [Komponenten](https://codingluke.github.io/bbzbl-modul-404/docs/aufgaben-swing/komponenten)
 
 ## <!--fit--> :superhero: Versucht es immer zuerst ohne Musterlösung!
 
@@ -301,7 +283,7 @@ Primitive Java Arrays sind umständlich und können häufig durch die Klasse `Li
 Hier ein Beispiel für eine `List<String>`, also eine Liste von Wörtern:
 
 ```java
-List<String> list = Arrays.asList("Element 1", "Element 2");
+list<string> list = arrays.aslist("element 1", "element 2");
 list.add("element 3"); // es können Elemente dynamisch hinzugefügt werden
 
 // über die gesamte Liste iterieren ist viel einfacher als bei "primitiven" Arrays

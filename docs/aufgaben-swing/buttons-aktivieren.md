@@ -6,9 +6,7 @@ sidebar_position: 4
 
 > :point_up: **Machen Sie sich mit dem Konzept des [ActionListener](../konzepte/actionlistener) bekannt bevor Sie weiterfahren!**
 
-## Aufgabe 1
-
-> Einen Wert kopieren
+## Aufgabe 1: Einen Wert kopieren
 
 Erstellen Sie das Programm unten. Das Ziel ist, dass bei Anklicken der Schaltfläche der Wert aus dem Textfeld in das Label unterhalb kopiert wird, während das obere Textfeld geleert wird.
 
@@ -59,9 +57,7 @@ public class Aufgabe1 extends JFrame implements ActionListener {
 </details>
 
 
-## Aufgabe 2
-
-> Mehrere Buttons auswerten
+## Aufgabe 2: Mehrere Buttons auswerten
 
 Erstellen Sie das Programm unten. Das Ziel ist, dass bei Anklicken der Schaltfläche der Wert aus dem Textfeld in das Label unterhalb kopiert wird, während das obere Textfeld geleert wird.
 
@@ -124,3 +120,26 @@ public class Aufgabe2 extends JFrame implements ActionListener {
 ```
 
 </details>
+
+## Cheat Sheet
+
+:::note Code snippets funktionieren nur im richtigen Kontext ;)
+:::
+
+```java
+// Die Klasse definieren
+class MyClass extends JFrame implements ActionListener
+
+// ActionListener registrieren
+button.addActionListener(this); 
+
+// Method actionPerformed implementieren
+@Override
+public void actionPerformed(ActionEvent e) {
+  if (e.getSource() == button) {
+    // do this
+  } elseif (e.getSource() == button2) {
+    // do that
+  }
+}
+```

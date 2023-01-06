@@ -1,8 +1,8 @@
 ---
-sidebar_position: 7
+sidebar_position: 5
 ---
 
-# 7. Strings in Zahlen umwandeln
+# 5. Strings in Zahlen umwandeln
 
 Das nachfolgende Programm zeigt ein Swing-Programm, bei dem eine Zahl eingelesen wird, damit eine einfache Rechnung angestellt und das Ergebnis wieder ausgegeben wird.
 

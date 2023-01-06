@@ -70,3 +70,26 @@ Erstellt nun ein neues Programm, kopiert den Code von Oben und schaut, ob es bei
 2. Merkt Ihr, dass der Editor vorschläge macht!
 3. Erhält Ihr ein besseres "Gefühl" wie es ist zu programmieren :superhero:
 :::
+
+## Cheat Sheet
+
+```java
+setLayout(null); // Standard Layout deaktivieren
+setDefaultCloseOperation(EXIT_ON_CLOSE); // Beim schliessen des Fensters, das ganze Programm beenden
+setSize(300, 300); // Grösse vom Fenster festlegen
+setTitle("Ich bin der Fenster Titel"); // Titel des Fensters festlegen
+setVisible(true); // Fenster sichtbar machen
+
+JLabel label = new JLabel("Beschriftung"); // Ein Label
+label.setBounds(x, y, wigh, height) // Bestimmen wo sich das Label befindet
+add(label) // Label hinzufügen
+
+JTextField textfield = new JTextField(); // Ein Textfeld
+textfield.setBounds(x, y, wigh, height) // Bestimmen wo sich das Textfeld befindet
+add(textfield) // Textfeld hinzufügen
+
+JButton button = new JButton("press me"); // Ein Button
+button.setBounds(x, y, wigh, height) // Bestimmen wo sich der Button befindet
+add(button) // Textfeld hinzufügen
+```
+
