@@ -60,12 +60,8 @@
 </div><div class="undefined">
 <h2><img class="emoji" draggable="false" alt="⌨️" src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/2328.svg" data-marp-twemoji=""/> Aufgaben Grundlagen</h2>
 <ul>
-<li>
-<p><a href="https://codingluke.github.io/bbzbl-modul-404/docs/aufgaben-grundlagen/starterklasse" class="external-link" target="_blank" rel="noopener noreferrer">Starterklasse</a></p>
-</li>
-<li>
-<p><a href="https://codingluke.github.io/bbzbl-modul-404/docs/aufgaben-grundlagen/einheiten-umrechnen" class="external-link" target="_blank" rel="noopener noreferrer">Temperaturkonvertierer</a></p>
-</li>
+<li><a href="https://codingluke.github.io/bbzbl-modul-404/docs/aufgaben-grundlagen/starterklasse" class="external-link" target="_blank" rel="noopener noreferrer">Starterklasse</a></li>
+<li><a href="https://codingluke.github.io/bbzbl-modul-404/docs/aufgaben-grundlagen/einheiten-umrechnen" class="external-link" target="_blank" rel="noopener noreferrer">Temperaturkonvertierer</a></li>
 </ul>
 <h2><img class="emoji" draggable="false" alt="⌨️" src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/2328.svg" data-marp-twemoji=""/> Aufgaben Swing</h2>
 <ul>
@@ -153,19 +149,19 @@
 <h1><img class="emoji" draggable="false" alt="🧠" src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/1f9e0.svg" data-marp-twemoji=""/> Static vs Instanz-Methoden</h1>
 <p>Eine <code>static</code> Methode einer <code>Klasse</code> kann direkt aufgerufen werden, ohne dass ein <code>Object</code>/<code>Instanz</code> der Klasse erstellt werden muss:</p>
 <pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-Java"><span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">MixedExample</span> {
-    <span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">final</span> <span class="hljs-type">double</span> <span class="hljs-variable">PI</span> <span class="hljs-operator">=</span> <span class="hljs-number">3.14</span>; <span class="hljs-comment">// Konstante, kann nicht geändert werden!</span>
-    <span class="hljs-keyword">private</span> <span class="hljs-type">String</span> <span class="hljs-variable">greeting</span> <span class="hljs-operator">=</span> <span class="hljs-string">&quot;Hello&quot;</span>;     <span class="hljs-comment">// Instanz-Variablen, kann geändert werden</span>
+  <span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">final</span> <span class="hljs-type">double</span> <span class="hljs-variable">PI</span> <span class="hljs-operator">=</span> <span class="hljs-number">3.14</span>; <span class="hljs-comment">// Konstante, kann nicht geändert werden!</span>
+  <span class="hljs-keyword">private</span> <span class="hljs-type">String</span> <span class="hljs-variable">greeting</span> <span class="hljs-operator">=</span> <span class="hljs-string">&quot;Hello&quot;</span>;     <span class="hljs-comment">// Instanz-Variablen, kann geändert werden</span>
 
-    <span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-type">double</span> <span class="hljs-title function_">staticCircle</span><span class="hljs-params">(<span class="hljs-type">double</span> radiant)</span> { 
-        <span class="hljs-keyword">return</span> radiant * radiant * PI; <span class="hljs-comment">// Kann auf `PI` zugreifen nicht aber auf `greeting`</span>
-    }
+  <span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-type">double</span> <span class="hljs-title function_">staticCircle</span><span class="hljs-params">(<span class="hljs-type">double</span> radiant)</span> { 
+    <span class="hljs-keyword">return</span> radiant * radiant * PI; <span class="hljs-comment">// Kann auf `PI` zugreifen nicht aber auf `greeting`</span>
+  }
 
-    <span class="hljs-keyword">public</span> String <span class="hljs-title function_">instanceGreeting</span><span class="hljs-params">(String name)</span> {
-        <span class="hljs-keyword">return</span> greeting + <span class="hljs-string">&quot; &quot;</span> + name;  <span class="hljs-comment">// Kann auf `greeting` zugreifen</span>
-                                       <span class="hljs-comment">// Könnte theoretisch auch auf `PI` zugreifen</span>
-    }
+  <span class="hljs-keyword">public</span> String <span class="hljs-title function_">instanceGreeting</span><span class="hljs-params">(String name)</span> {
+    <span class="hljs-keyword">return</span> greeting + <span class="hljs-string">&quot; &quot;</span> + name;  <span class="hljs-comment">// Kann auf `greeting` zugreifen</span>
+                                   <span class="hljs-comment">// Könnte theoretisch auch auf `PI` zugreifen</span>
+  }
 
-    <span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">setGreeting</span><span class="hljs-params">(String greeting)</span> { <span class="hljs-built_in">this</span>.greeting = greeting; }
+  <span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">setGreeting</span><span class="hljs-params">(String greeting)</span> { <span class="hljs-built_in">this</span>.greeting = greeting; }
 }
 </code></pre>
 <footer>BBZBL / Lukas Hodel / Objektbasiert programmieren nach Vorgabe</footer>
@@ -174,21 +170,20 @@
 <header>Modul 404 - Woche 2</header>
 <h1><img class="emoji" draggable="false" alt="🧠" src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/1f9e0.svg" data-marp-twemoji=""/> Verwenden von <code>MixedExample</code></h1>
 <pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-java"><span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">Starter</span> {
-    <span class="hljs-comment">// Startpunkt des Programms, ist immer static!</span>
-    <span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">main</span><span class="hljs-params">(String[] args)</span> { 
+  <span class="hljs-comment">// Startpunkt des Programms, ist immer static!</span>
+  <span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">main</span><span class="hljs-params">(String[] args)</span> { 
+    <span class="hljs-comment">// Statische Methoden können ohne new ausgeführt werden!</span>
+    <span class="hljs-type">double</span> <span class="hljs-variable">circle</span> <span class="hljs-operator">=</span> MixedExample.staticCircle(<span class="hljs-number">1.5d</span>); 
 
-        <span class="hljs-comment">// Statische Methoden können ohne new ausgeführt werden!</span>
-        <span class="hljs-type">double</span> <span class="hljs-variable">circle</span> <span class="hljs-operator">=</span> MixedExample.staticCircle(<span class="hljs-number">1.5d</span>); 
+    <span class="hljs-comment">// Um instanceMethoden aufzurufen, muss zuerst eine Instanz erstellt werden</span>
+    <span class="hljs-type">MixedExample</span> <span class="hljs-variable">mixedExampleInstance</span> <span class="hljs-operator">=</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">MixedExample</span>(); 
+    <span class="hljs-type">String</span> <span class="hljs-variable">greeting</span> <span class="hljs-operator">=</span> mixedExampleInstance.instanceGreeting(<span class="hljs-string">&quot;Lukas&quot;</span>);
+    <span class="hljs-comment">// Wert ist &quot;Hallo Lukas&quot;;</span>
 
-        <span class="hljs-comment">// Um instanceMethoden aufzurufen, muss zuerst eine Instanz erstellt werden</span>
-        <span class="hljs-type">MixedExample</span> <span class="hljs-variable">mixedExampleInstance</span> <span class="hljs-operator">=</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">MixedExample</span>(); 
-        <span class="hljs-type">String</span> <span class="hljs-variable">greeting</span> <span class="hljs-operator">=</span> mixedExampleInstance.instanceGreeting(<span class="hljs-string">&quot;Lukas&quot;</span>);
-        <span class="hljs-comment">// Wert ist &quot;Hallo Lukas&quot;;</span>
-
-        mixedExampleInstance.setGreeting(<span class="hljs-string">&quot;Ciao&quot;</span>) <span class="hljs-comment">// Objekt ändern</span>
-        greeting = mixedExampleInstance.instanceGreeting(<span class="hljs-string">&quot;Lukas&quot;</span>);
-        <span class="hljs-comment">// Wert ist &quot;Ciao Lukas&quot;;</span>
-    }
+    mixedExampleInstance.setGreeting(<span class="hljs-string">&quot;Ciao&quot;</span>) <span class="hljs-comment">// Objekt ändern</span>
+    greeting = mixedExampleInstance.instanceGreeting(<span class="hljs-string">&quot;Lukas&quot;</span>);
+    <span class="hljs-comment">// Wert ist &quot;Ciao Lukas&quot;;</span>
+  }
 }
 </code></pre>
 <footer>BBZBL / Lukas Hodel / Objektbasiert programmieren nach Vorgabe</footer>
@@ -240,13 +235,13 @@
 <h1><img class="emoji" draggable="false" alt="🧠" src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/1f9e0.svg" data-marp-twemoji=""/> Swing: <code>JFrame</code></h1>
 <p>Möchte man eine Klasse als <code>Fenster</code> erstellen, muss man der Klasse die Java Klasse <code>JFrame</code> <strong>vererben</strong>. Dies geht mit dem Ausdruck <strong><code>extends JFrame</code></strong></p>
 <pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-java"><span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">PureWindow</span> <span class="hljs-keyword">extends</span> <span class="hljs-title class_">JFrame</span> {
-    <span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">start</span><span class="hljs-params">()</span> {                        <span class="hljs-comment">// oder auch showDialog, oder was gefällt</span>
-        setLayout(<span class="hljs-literal">null</span>);                         <span class="hljs-comment">// Standard Layout deaktivieren</span>
-        setDefaultCloseOperation(EXIT_ON_CLOSE); <span class="hljs-comment">// Beim schliessen des Fensters, das ganze Programm beenden</span>
-        setSize(<span class="hljs-number">300</span>, <span class="hljs-number">300</span>);                       <span class="hljs-comment">// Grösse vom Fenster festlegen</span>
-        setTitle(<span class="hljs-string">&quot;Ich bin der Fenster Titel&quot;</span>);   <span class="hljs-comment">// Titel des Fensters festlegen</span>
-        setVisible(<span class="hljs-literal">true</span>);                        <span class="hljs-comment">// Fenster sichtbar machen</span>
-    }
+  <span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">start</span><span class="hljs-params">()</span> {                        <span class="hljs-comment">// oder auch showDialog, oder was gefällt</span>
+    setLayout(<span class="hljs-literal">null</span>);                         <span class="hljs-comment">// Standard Layout deaktivieren</span>
+    setDefaultCloseOperation(EXIT_ON_CLOSE); <span class="hljs-comment">// Beim schliessen des Fensters, das ganze Programm beenden</span>
+    setSize(<span class="hljs-number">300</span>, <span class="hljs-number">300</span>);                       <span class="hljs-comment">// Grösse vom Fenster festlegen</span>
+    setTitle(<span class="hljs-string">&quot;Ich bin der Fenster Titel&quot;</span>);   <span class="hljs-comment">// Titel des Fensters festlegen</span>
+    setVisible(<span class="hljs-literal">true</span>);                        <span class="hljs-comment">// Fenster sichtbar machen</span>
+  }
 }
 </code></pre>
 <div class="footnotes undefined"><p><a href="https://www.java-tutorial.org/jframe.html" class="external-link" target="_blank" rel="noopener noreferrer"><img class="emoji" draggable="false" alt="🔗" src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/1f517.svg" data-marp-twemoji=""/> JFrame auf Java Tutorial</a><br />
