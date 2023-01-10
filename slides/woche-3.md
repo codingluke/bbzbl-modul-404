@@ -47,12 +47,14 @@ Optional
 ::: columns 
 
 **Starter** - started das GUI (`main`)
+
 ```java
 Gui g = new Guid();
 g.dialog();
 ```
 
 **GUI** - rendert die Grafik
+
 - `extends JFrame` (erbt)
 - `implements ActionListener`
 
@@ -67,13 +69,11 @@ logic.do();
 
 ```mermaid
 classDiagram
-
   class JFrame
   class ActionListener {
     <<interface>>
     +actionPerformed(...) 
   }
-
   class Starter {
     +main(args: String[])$
   }
@@ -166,7 +166,6 @@ public class GUI extends JFrame implements ActionListener {
 
 - `this` bezieht sich auf sich selbst, in diesem Beispiel das Objekt der Klasse `GUI`. Theoretisch könnte dies aber auch ein anderes Objekt sein.
 
-
 ---
 
 # :keyboard: Nun seit Ihr dran!
@@ -190,11 +189,9 @@ Löst auf der Modulwebeite die Aufgaben selbständig weiter.
 
 Ihr dürft den "Konstruktor" und "Easy Dice Game" überspringen, diese werden nächste Woche genauer betrachtet.
 
-
 :::
 
 ---
-
 
 # :bulb: JFrames mit mehreren Buttons
 
@@ -274,6 +271,7 @@ public class GUI implements ActionListener {
   public void halloWelt() {
     System.out.println("hallo welt")!
   }
+
 }
 ```
 
@@ -300,7 +298,6 @@ public class Starter {
     actionListener.halloWelt(); // ERROR!
   }
 }
-
 ```
 
 :::
@@ -310,10 +307,11 @@ public class Starter {
 ## Was macht nun `button.addActionListener` ?
 
 ```java
-    public void addActionListener(ActionListener l) {
-        listenerList.add(ActionListener.class, l);
-    }
+public void addActionListener(ActionListener l) {
+  listenerList.add(ActionListener.class, l);
+}
 ```
+
 - JavaDoc [JButton.addActionListener](https://docs.oracle.com/javase/7/docs/api/javax/swing/AbstractButton.html#addActionListener(java.awt.event.ActionListener))
 
 - Die Methode `addActionListener` erwartet einen Typ **`ActionListener` als Parameter**

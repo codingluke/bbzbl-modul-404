@@ -28,10 +28,9 @@ footer: BBZBL / Lukas Hodel / Objektbasiert programmieren nach Vorgabe
 
 ## :keyboard: Aufgaben
 
--  [Konstruktor](https://codingluke.github.io/bbzbl-modul-404/docs/aufgaben-swing/konstruktor)
--  [Account UML](https://codingluke.github.io/bbzbl-modul-404/docs/aufgaben-grundlagen/account-uml)
+- [Konstruktor](https://codingluke.github.io/bbzbl-modul-404/docs/aufgaben-swing/konstruktor)
+- [Account UML](https://codingluke.github.io/bbzbl-modul-404/docs/aufgaben-grundlagen/account-uml)
 - [DiceGame](https://codingluke.github.io/bbzbl-modul-404/docs/aufgaben-swing/dice-game)
-
 - Freiwillige Aufgaben vor LB1 Vorbereitung gibt es [hier](https://sites.google.com/bbzbl-it.ch/modul404-lh/themen/aufgaben)
 
 :::
@@ -199,12 +198,12 @@ public class Starter {
 
 :point_up: **`+|-methodennamen( variablenNamen: DatenTyp ) : returnDatenTyp`**
 
-| UML | Java Signatur |
-|-------------- | -------------- | 
-| `+setName(name : String)`  | `public void setName(String name)` |
-| `+getName() : String`  | `public String getName()` |
-| <u>`+sum(a : int, b: int) : int`</u>  | `public static int sum(int a, int b)` |
-| `-secret(key : String) : String`</u>  | `private String secret(String key)` |
+| UML                                  | Java Signatur                         |
+| --------------                       | --------------                        |
+| `+setName(name : String)`            | `public void setName(String name)`    |
+| `+getName() : String`                | `public String getName()`             |
+| <u>`+sum(a : int, b: int) : int`</u> | `public static int sum(int a, int b)` |
+| `-secret(key : String) : String`</u> | `private String secret(String key)`   |
 
 ---
 
@@ -212,11 +211,11 @@ public class Starter {
 
 **:point_up: `+|- variablenNamen : Datentyp`**
 
-| UML | Java |
-|-------------- | -------------- | 
-| `-name : String`  | `private String name;` |
-| `+year : int`  | `public int year;` |
-| <u>`+PI : double`</u>  | `public static double PI;` |
+| UML                   | Java                       |
+| --------------        | --------------             |
+| `-name : String`      | `private String name;`     |
+| `+year : int`         | `public int year;`         |
+| <u>`+PI : double`</u> | `public static double PI;` |
 
 ---
 
@@ -277,8 +276,8 @@ public class Starter {
 # :brain: Quiz Time!
 
 - Ich versende gleich einen Link
-- Alle sollen sich mit **einem Nickname anmelden**
 
+- Alle sollen sich mit **einem Nickname anmelden**
 - Der Link für alle Fragen und Antworten wird im Anschluss hier erscheinen :wink:
 
 ---
@@ -291,16 +290,7 @@ public class Starter {
 - :bulb: [Details auf der Modulwebseite](https://codingluke.github.io/bbzbl-modul-404/docs/beurteilungen/lb1)
 
 - :superhero: Geht **alle Aufgaben** nochmals durch und **versteht Sie**!
-
 - :superhero_woman: Lernt ein UML-Klassendiagram in Java umzuwandeln :wink:
-
 - :mage: **Arrays** sollte man anwenden können
-
 - :supervillain: Schaut euch die **DiceGame** Würfel-Logik genau an
-
-
-
-
-
-
 

@@ -28,18 +28,18 @@ footer: BBZBL / Lukas Hodel / Objektbasiert programmieren nach Vorgabe
 ## :keyboard: Aufgaben Grundlagen 
 
 - [Starterklasse](https://codingluke.github.io/bbzbl-modul-404/docs/aufgaben-grundlagen/starterklasse)
-
 - [Temperaturkonvertierer](https://codingluke.github.io/bbzbl-modul-404/docs/aufgaben-grundlagen/einheiten-umrechnen)
+
 ## :keyboard: Aufgaben Swing
 
 - [Frame](https://codingluke.github.io/bbzbl-modul-404/docs/aufgaben-swing/fenster)
 - [Komponenten](https://codingluke.github.io/bbzbl-modul-404/docs/aufgaben-swing/komponenten)
+
 <hr>
 
 - [:superhero: Optional Repetition Arrays](https://codingluke.github.io/bbzbl-modul-404/docs/repetition/arrays) ([PDF](https://drive.google.com/file/d/1Bt4NgySXrhMeorOTuSBs_6thNwXPRbNN/view))
 
 :::
-
 
 ---
 
@@ -54,7 +54,6 @@ footer: BBZBL / Lukas Hodel / Objektbasiert programmieren nach Vorgabe
   - **besserer Qualität**
 
 - Nennen wir es :sushi: **Sushi-Code**, das Gegenteil von :spaghetti: _Spaghetti-Code_
-
 
 ---
 
@@ -113,19 +112,19 @@ Eine `static` Methode einer `Klasse` kann direkt aufgerufen werden, ohne dass ei
 
 ```Java
 public class MixedExample {
-    private static final double PI = 3.14; // Konstante, kann nicht geändert werden!
-    private String greeting = "Hello";     // Instanz-Variablen, kann geändert werden
+  private static final double PI = 3.14; // Konstante, kann nicht geändert werden!
+  private String greeting = "Hello";     // Instanz-Variablen, kann geändert werden
 
-    public static double staticCircle(double radiant) { 
-        return radiant * radiant * PI; // Kann auf `PI` zugreifen nicht aber auf `greeting`
-    }
+  public static double staticCircle(double radiant) { 
+    return radiant * radiant * PI; // Kann auf `PI` zugreifen nicht aber auf `greeting`
+  }
 
-    public String instanceGreeting(String name) {
-        return greeting + " " + name;  // Kann auf `greeting` zugreifen
-                                       // Könnte theoretisch auch auf `PI` zugreifen
-    }
+  public String instanceGreeting(String name) {
+    return greeting + " " + name;  // Kann auf `greeting` zugreifen
+                                   // Könnte theoretisch auch auf `PI` zugreifen
+  }
 
-    public void setGreeting(String greeting) { this.greeting = greeting; }
+  public void setGreeting(String greeting) { this.greeting = greeting; }
 }
 ```
 
@@ -135,21 +134,20 @@ public class MixedExample {
 
 ```java
 public class Starter {
-    // Startpunkt des Programms, ist immer static!
-    public static void main(String[] args) { 
+  // Startpunkt des Programms, ist immer static!
+  public static void main(String[] args) { 
+    // Statische Methoden können ohne new ausgeführt werden!
+    double circle = MixedExample.staticCircle(1.5d); 
 
-        // Statische Methoden können ohne new ausgeführt werden!
-        double circle = MixedExample.staticCircle(1.5d); 
+    // Um instanceMethoden aufzurufen, muss zuerst eine Instanz erstellt werden
+    MixedExample mixedExampleInstance = new MixedExample(); 
+    String greeting = mixedExampleInstance.instanceGreeting("Lukas");
+    // Wert ist "Hallo Lukas";
 
-        // Um instanceMethoden aufzurufen, muss zuerst eine Instanz erstellt werden
-        MixedExample mixedExampleInstance = new MixedExample(); 
-        String greeting = mixedExampleInstance.instanceGreeting("Lukas");
-        // Wert ist "Hallo Lukas";
-
-        mixedExampleInstance.setGreeting("Ciao") // Objekt ändern
-        greeting = mixedExampleInstance.instanceGreeting("Lukas");
-        // Wert ist "Ciao Lukas";
-    }
+    mixedExampleInstance.setGreeting("Ciao") // Objekt ändern
+    greeting = mixedExampleInstance.instanceGreeting("Lukas");
+    // Wert ist "Ciao Lukas";
+  }
 }
 ```
 
@@ -182,7 +180,6 @@ public class Starter {
 
 Es ist immer gut sich im Internet weiterzubilden (:thinking: zumindest für IT-Themen)
 
-
 www.java-tutorial.org ist eine Webseite die Java, sowie `Swing` im Detail erklärt:
 
 - [Deutsches `Swing`-Tutorial als Zusatzinfo für Interessierte](https://www.java-tutorial.org/swing.html)
@@ -200,16 +197,15 @@ Möchte man eine Klasse als `Fenster` erstellen, muss man der Klasse die Java Kl
 
 ```java
 public class PureWindow extends JFrame {
-    public void start() {                        // oder auch showDialog, oder was gefällt
-        setLayout(null);                         // Standard Layout deaktivieren
-        setDefaultCloseOperation(EXIT_ON_CLOSE); // Beim schliessen des Fensters, das ganze Programm beenden
-        setSize(300, 300);                       // Grösse vom Fenster festlegen
-        setTitle("Ich bin der Fenster Titel");   // Titel des Fensters festlegen
-        setVisible(true);                        // Fenster sichtbar machen
-    }
+  public void start() {                        // oder auch showDialog, oder was gefällt
+    setLayout(null);                         // Standard Layout deaktivieren
+    setDefaultCloseOperation(EXIT_ON_CLOSE); // Beim schliessen des Fensters, das ganze Programm beenden
+    setSize(300, 300);                       // Grösse vom Fenster festlegen
+    setTitle("Ich bin der Fenster Titel");   // Titel des Fensters festlegen
+    setVisible(true);                        // Fenster sichtbar machen
+  }
 }
 ```
-
 
 ::: footnotes
 
