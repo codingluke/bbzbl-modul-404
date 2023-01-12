@@ -7,7 +7,6 @@ footer: BBZBL / Lukas Hodel / Objektbasiert programmieren nach Vorgabe
 ---
 
 <!-- _class: big center -->
-
 # Woche 1
 ## Modul 404
 
@@ -21,7 +20,6 @@ footer: BBZBL / Lukas Hodel / Objektbasiert programmieren nach Vorgabe
 - **13:00** | [Moduleinführung](https://codingluke.github.io/bbzbl-modul-404/docs)
   - [Quartalsplan](https://codingluke.github.io/bbzbl-modul-404/docs/lektionen)
   - [LB1](https://codingluke.github.io/bbzbl-modul-404/docs/beurteilungen/lb1), [LB2 - Projektarbeit](https://codingluke.github.io/bbzbl-modul-404/docs/beurteilungen/lb2/)
-
 - **13:10** | [WarmUp](https://codingluke.github.io/bbzbl-modul-404/docs/repetition/lernkarten) / [Card2Brain](https://card2brain.ch/box/20200416_repetition)
 - **13:30** | 5 Min. Pause 
 - **13:35** | [Erste Aufgabe](https://codingluke.github.io/bbzbl-modul-404/docs/aufgaben-grundlagen/account-application)
@@ -33,7 +31,6 @@ footer: BBZBL / Lukas Hodel / Objektbasiert programmieren nach Vorgabe
 - **15:00** | [Input Fachklassen](https://codingluke.github.io/bbzbl-modul-404/docs/konzepte/fachklassen)
 - **15:30** | 5 Min. Pause
 - **15:35** | [Refactoring Account](https://codingluke.github.io/bbzbl-modul-404/docs/aufgaben-grundlagen/refactoring-account-application)
-- **16:00** | Abschluss / Lernjournal
 
 :::
 
@@ -80,7 +77,6 @@ footer: BBZBL / Lukas Hodel / Objektbasiert programmieren nach Vorgabe
 6. Programm auf Einhaltung der Funktionalität testen, Fehler erkennen und beheben. **_(Manuelles Testen)_**
 
 ---
-
 
 # Leistungsbeurteilungsvorgabe :muscle: 
 
@@ -150,7 +146,6 @@ Prüfungsrelevante Infos
 **Repetition**
 Repetitionen vom Modul 319 / 403
 
-
 ::: split
 
 **:pencil: Aufgaben Grundlagen**
@@ -211,6 +206,7 @@ Ihr könnt zu Hause im **Selbststudium** alle Aufgaben lösen.
 # :keyboard: Account Applikation (45 Minuten) [:link:](https://codingluke.github.io/bbzbl-modul-404/docs/aufgaben-grundlagen/account-application)
 
 ::: columns
+
 - :link: [Account Application](https://codingluke.github.io/bbzbl-modul-404/docs/aufgaben-grundlagen/account-application) öffnen
 
 - :keyboard: Es handelt sich um eine Teminal Applikation
