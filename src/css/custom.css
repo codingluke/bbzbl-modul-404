@@ -66,3 +66,7 @@ table {
   table-layout: auto;
   width: 100%;
 }
+
+table hr {
+  background-color: var(--ifm-color-primary-darkest);
+}

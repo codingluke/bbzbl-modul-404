@@ -1,8 +1,8 @@
 ---
-sidebar_position: 8
+sidebar_position: 6
 ---
 
-# 8. Account Applikation
+# 6. Account Applikation
 
 In der ersten Woche haben wir eine Konsolenapplikation implementiert, wobei man einen Betrag auf ein Konto einzahlen und abheben konnte, zusätzlich wurde zum Schluss der Kontostand angezeigt.
 
@@ -20,6 +20,13 @@ Das Programm muss nicht genau so aussehen. Aber vielleicht möchten Sie etwas au
 - Durch Betätigen des Buttons «Withdraw!» wird der eingegebene Betrag dem Konto abgezogen und die Anzeige oberhalb (Balance:) aktualisiert. Anschliessend wird das Textfeld mit der Eingabe geleert.
 
 ## Musterlösung
+
+:::info
+
+Die Musterlösung ist mit einem [Konstruktor](../konzepte/Konstruktor) erstellt, Ihr müsst es jedoch nicht so machen!
+
+:::
+
 
 <details>
 <summary>Immer zuerste selber versuchen! Lösung abtippen, nicht kopieren ;)</summary>

@@ -1,8 +1,8 @@
 ---
-sidebar_position: 6
+sidebar_position: 7
 ---
 
-# 6. Konstruktor
+# 7. Konstruktor
 
 > :point_up: **Machen Sie sich mit dem Konzept der [Konstruktor](../konzepte/Konstruktor) bekannt bevor Sie weiterfahren!**
 

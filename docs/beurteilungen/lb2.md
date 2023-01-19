@@ -5,13 +5,17 @@
 | **Restliche Zeit** des Moduls | **50%** der Modulnote |
 
 :::danger Plagiat
+
 - Sollten Plagiate (auch Teilplagiate) abgegeben werden, so erhalten alle Beteiligten für das Projekt die **Note 1**
 - Es wird darauf verzichtet, Nachforschungen anzustellen, wer Quelle und wer Empfänger war
+
 :::
 
 :::tip Privates Git Repository
+
 - Wenn Ihr euren Code mit **git** versioniert ist das super! 
 - Aber bitte verwendet ein **privates Repository** auf Github und co., damit nicht zukünftige Kameraden von Ihnen klauen könnt!
+
 :::
 
 ## Einleitung

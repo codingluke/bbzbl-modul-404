@@ -18,6 +18,7 @@ public class Starter {
 - In der `main`-Methode der Klasse `Starter` wird ein Objekt der Klasse `PureWindow` erzeugt und in der Variable `pureWindow` gespeichert. Die Variable `pureWindow` wird dann verwendet, um die Methode `showDialog()` aufzurufen.
 
 :::tip
+
 - `PureWindow` ist die Klasse sowie der `Datentyp`
 - `pureWindow` (klein) ist die Variable, die das Objekt beinhaltet.
 
@@ -36,7 +37,6 @@ public class PureWindow extends JFrame {
     setTitle("Mein toller Titel"); // Setzt den Titel des Fensters
     setVisible(true); // Muss am Ende stehen! Ohne das wird nichts angezeigt!
   }
-
 }
 ```
 
