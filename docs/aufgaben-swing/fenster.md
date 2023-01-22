@@ -46,11 +46,15 @@ public class PureWindow extends JFrame {
   - `PureWindow.showDialog()` ist nicht zulässig!
 
 :::info
+
 Die Klasse haben wir `PureWindow` genannt. Deutsch heisst das soviel wie "reines Fenster". Die Klasse kann beliebig benannt werden. `PureWindow` eignet sich, da es sich um ein Beispiel für das Grundgerüst handelt, ohne weiteren Inhalt.
+
 :::
 
 :::tip 
+
 Lesen Sie auch die Kommentare im Code, löschen Sie die einzelnen Zeilen und schauen was passiert!
+
 :::
 
 ## Programm starten
@@ -66,9 +70,11 @@ Erstellt nun ein neues Programm, kopiert den Code von Oben und schaut, ob es bei
 - Löscht einzelne Zeilen und analysiert den Effekt
 
 :::tip Anstatt copy/paste tippt ihr den Text am besten selber ab!
+
 1. Lernt Ihr so besser
 2. Merkt Ihr, dass der Editor vorschläge macht!
 3. Erhält Ihr ein besseres "Gefühl" wie es ist zu programmieren :superhero:
+
 :::
 
 ## Cheat Sheet
