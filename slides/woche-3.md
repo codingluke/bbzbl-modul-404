@@ -19,7 +19,7 @@ footer: BBZBL / Lukas Hodel / Objektbasiert programmieren nach Vorgabe
 
 ## :brain: Input
 
-- [Projekt Klassenstruktur](https://codingluke.github.io/bbzbl-modul-404/docs/uml#abhängigkeiten)
+- [Projekt Klassenstruktur](https://codingluke.github.io/bbzbl-modul-404/docs/konzepte/uml#abhängigkeiten)
 
 - [Java Interface](https://codingluke.github.io/bbzbl-modul-404/docs/konzepte/actionlistener)
 

@@ -22,7 +22,7 @@ footer: BBZBL / Lukas Hodel / Objektbasiert programmieren nach Vorgabe
 - :teacher: Kontoverwaltung in Swing
 - :hammer: [Konstruktor](https://codingluke.github.io/bbzbl-modul-404/docs/konzepte/konstruktor)
 - :triangular_ruler: [Formatierung](https://codingluke.github.io/bbzbl-modul-404/docs/konzepte/formatierung)
-- :crayon: [UML Klassendiagram](https://codingluke.github.io/bbzbl-modul-404/docs/uml)
+- :crayon: [UML Klassendiagram](https://codingluke.github.io/bbzbl-modul-404/docs/konzepte/uml)
 
 ::: split
 

@@ -22,7 +22,7 @@ footer: BBZBL / Lukas Hodel / Objektbasiert programmieren nach Vorgabe
   - [LB1](https://codingluke.github.io/bbzbl-modul-404/docs/beurteilungen/lb1), [LB2 - Projektarbeit](https://codingluke.github.io/bbzbl-modul-404/docs/beurteilungen/lb2/)
 - **13:10** | [WarmUp](https://codingluke.github.io/bbzbl-modul-404/docs/repetition/lernkarten) / [Card2Brain](https://card2brain.ch/box/20200416_repetition)
 - **13:30** | 5 Min. Pause 
-- **13:35** | [Erste Aufgabe](https://codingluke.github.io/bbzbl-modul-404/docs/aufgaben-grundlagen/account-application)
+- **13:35** | :teacher: [Erste Aufgabe](https://codingluke.github.io/bbzbl-modul-404/docs/aufgaben-grundlagen/account-application)
 - **14:20** | 20 Min. Pause 
 
 ::: split
@@ -203,7 +203,7 @@ Ihr könnt zu Hause im **Selbststudium** alle Aufgaben lösen.
 
 <!-- _class: emoji-list -->
 
-# :keyboard: Account Applikation (45 Minuten) [:link:](https://codingluke.github.io/bbzbl-modul-404/docs/aufgaben-grundlagen/account-application)
+# :film_projector: Account Applikation (45 Minuten) [:link:](https://codingluke.github.io/bbzbl-modul-404/docs/aufgaben-grundlagen/account-application)
 
 ::: columns
 
@@ -212,6 +212,7 @@ Ihr könnt zu Hause im **Selbststudium** alle Aufgaben lösen.
 - :keyboard: Es handelt sich um eine Teminal Applikation
 - :keyboard: Lesen und lösen Sie die Aufgabe
 - :black_joker: Unterhalb existierte eine Musterlösung <sup>\*</sup>
+- :teacher: Die machen wir zusammen!
 
 ::: split
 

@@ -22,7 +22,7 @@ sidebar_position: 1
 ### Grundlagen
 
 - [Repetition Modul 319/403](../repetition/repetition.md) (Lernkarten)
-- [Account Applikation](../aufgaben-grundlagen/account-application.md) (Terminal Applikation)
+- [Account Applikation](../aufgaben-grundlagen/account-application.md) (:performing_arts: **Live-Coding**)
 - [Analyse Account Appliktion](../aufgaben-grundlagen/analyse-account-application.md)
 - [Refactoring Account Analyse](../aufgaben-grundlagen/refactoring-account-application.md)
 
@@ -33,6 +33,4 @@ sidebar_position: 1
 - startet nächste Woche!
 
 </div></div>
-
-
 

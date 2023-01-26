@@ -4,7 +4,7 @@ sidebar_position: 8
 
 # 8. Easy Dice Game
 
-> - :point_up: **Machen Sie sich mit den [UML Klassendiagrammen](../uml.md) bekannt bevor Sie weiterfahren!**
+> - :point_up: **Machen Sie sich mit den [UML Klassendiagrammen](../konzepte/uml.md) bekannt bevor Sie weiterfahren!**
 > - :point_up: **Für diese Aufgabe müsst Ihr den [ActionListener](../konzepte/actionlistener) verstanden haben!**
 
 ## Aufgabe

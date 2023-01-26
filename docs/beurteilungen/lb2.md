@@ -40,7 +40,7 @@ Pro Runde darf ein Spieler maximal 5 mal würfeln. Die gewürfelten Augenzahlen 
 
 Hier sehen Sie einen möglichen Spielverlauf mit einer Visualisierung:
 
-![](https://placehold.co/400)
+![](../img/spielverlauf.jpg)
 
 Wer am Ende der festgelegten Rundenzahl am meisten Punkte hat, gewinnt das Spiel. 
 
@@ -90,4 +90,7 @@ Das Klassendiagramm gehört in die Dokumentation.
 
 Das Produkt (mit der Dokumentation) muss bis am **Tag, Datum um Zeit Uhr** über den **Abgabeordner auf der Modulseite** abgegeben werden.
 
+## Strukturidee
+
+![](../img/projektstruktur.jpg)
 

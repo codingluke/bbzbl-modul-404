@@ -15,7 +15,7 @@ sidebar_position: 4
 - Kontoverwaltung in Swing (Live Coding!)
 - [Konstruktor](../konzepte/konstruktor.md)
 - [Formattierung](../konzepte/formatierung.md)
-- [UML Klassendiagram](../uml.md)
+- [UML Klassendiagram](../konzepte/uml.md)
 
 ## :pencil: Aufgaben
 

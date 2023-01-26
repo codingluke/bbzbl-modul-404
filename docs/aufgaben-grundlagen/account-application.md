@@ -4,10 +4,17 @@ sidebar_position: 1
 
 # 1. Account Applikation 
 
+:::note Live Coding!
+
+Sicherzustellen, dass alle die Entwicklungsumgebung zum laufen haben und auch wieder in Schwung gekommen ist, werden wir diese Aufgabe zusammen lösen!
+
+:::
+
 | **Material** | Wissen und Faktenblatt Modul 403 |
 |:----|:----|
 | **Richtzeit** | ca. 45 Minuten |
-| **Sozialform** | Einzelaufgabe |
+| **Sozialform** | :performing_arts: **Live Coding** mit Lehrer! |
+
 
 ## Auftrag
 
@@ -97,7 +104,7 @@ public class AccountApplication {
 
 ### Zusatzaufgaben für Schnelle
 
-- Ermöglichen Sie zusätzlich zu + und - die Menüauswahl = um jederzeit den Kontostand abzufragen.
+- Ermöglichen Sie zusätzlich zu `+` und `-` die Menüauswahl `=` um jederzeit den Kontostand abzufragen.
 - Geben Sie am Schluss vor dem Schlusssaldo eine Auflistung aller Transaktionen (Ein- und Auszahlungen) aus.
 
 ## Musterlösung
