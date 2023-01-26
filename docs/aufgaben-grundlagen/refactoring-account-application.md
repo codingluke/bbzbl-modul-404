@@ -88,33 +88,32 @@ import java.util.Scanner;
 
 public class AccountApplicationV2 {
   public static void main(String[] args) {
-    Scanner scanner = new Scanner(System.in);
+    System.out.println("Welcome to the account application");
     // highlight-next-line
     Account account = new Account();  // hier wird ein Objekt der Klasse `Account` erstellt
     double amount = 0;
     String command = "";
 
-    System.out.println("Welcome to the account application");
-    do {
-      System.out.println("Please enter the amount, 0 (zero) to terminate");
-      amount = scanner.nextDouble();
-      if (amount != 0) {
-        System.out.println("To deposit, press +, to withdraw press -");
-        command = scanner.next();
-        if (command.equals("+")) {
-          // highlight-next-line
-          account.deposit(amount); // nun wird das Objekt "account" verwendet
-        } else if (command.equals("-")) {
-          // highlight-next-line
-          account.withdraw(amount); // nun wird das Object "account" verwendet
-        }
-      }
-    } while (amount != 0);
-    // Die balance/Kontostand wird direkt im Objekt "account" berechnet
-    // highlight-next-line
-    System.out.println("Final balance: " + account.getBalance()); 
-
-    scanner.close();
+    try(Scanner scanner = new Scanner(System.in)) {
+        do {
+          System.out.println("Please enter the amount, 0 (zero) to terminate");
+          amount = scanner.nextDouble();
+          if (amount != 0) {
+            System.out.println("To deposit, press +, to withdraw press -");
+            command = scanner.next();
+            if ("+".equals(command)) {
+              // highlight-next-line
+              account.deposit(amount); // nun wird das Objekt "account" verwendet
+            } else if ("-".equals(command)) {
+              // highlight-next-line
+              account.withdraw(amount); // nun wird das Object "account" verwendet
+            }
+          }
+        } while (amount != 0);
+        // Die balance/Kontostand wird direkt im Objekt "account" berechnet
+        // highlight-next-line
+        System.out.println("Final balance: " + account.getBalance()); 
+    }
   }
 }
 ```

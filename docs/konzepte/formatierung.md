@@ -20,7 +20,7 @@ Wir sind keine Maschinen sondern **Menschen**. Um einen Text gut lesen zu könne
 - Eclipse hat damit keine Probleme und meldet auch zu Recht keinen Fehler
 
 ```java
-import java.util.Scanner; public class XYZ { public static void main(String[] args) { System.out.println("Welcome to the account application"); double k = 0; double a = 0; String c = ""; do { Scanner sc = new Scanner(System.in); System.out.println("Please enter the a, 0 (zero) to terminate"); a = sc.nextDouble(); if (a != 0) { System.out.println("To deposit, press +, to withdraw press -"); c = sc.next(); if (c.equals("+")) { k = e(k, a); } else if (c.equals("-")) { k = ab(k, a); } } } while (a != 0); System.out.println("Final balance: " + ak(k)); } public static double e(double ks, double b) { return ks + b; } public static double ab(double ks, double bt) { return ks - bt; } public static double ak(double ks) { return ks; }	}
+import java.util.Scanner; public class XYZ { public static void main(String[] args) { System.out.println("Welcome to the account application"); double k = 0; double a = 0; String c = ""; do { Scanner sc = new Scanner(System.in); System.out.println("Please enter the a, 0 (zero) to terminate"); a = sc.nextDouble(); if (a != 0) { System.out.println("To deposit, press +, to withdraw press -"); c = sc.next(); if (c.equals("+")) { k = e(k, a); } else if (c.equals("-")) { k = ab(k, a); } } } while (a != 0); System.out.println("Final balance: " + ak(k)); } public static double e(double ks, double b) { return ks + b; } public static double ab(double ks, double bt) { return ks - bt; } public static double ak(double ks) { return ks; } }
 ```
 
 :::tip
@@ -38,39 +38,40 @@ import java.util.Scanner; public class XYZ { public static void main(String[] ar
 import java.util.Scanner;
 
 public class Xyz {
-	public static void main(String[] args) {
-		System.out.println("Welcome to the account application");
-		double k = 0;
-		double a = 0;
-		String c = "";
-		do {
-			Scanner sc = new Scanner(System.in);
-			System.out.println("Please enter the a, 0 (zero) to terminate");
-			a = sc.nextDouble();
-			if (a != 0) {
-				System.out.println("To deposit, press +, to withdraw press -");
-				c = sc.next();
-				if (c.equals("+")) {
-					k = e(k, a);
-				} else if (c.equals("-")) {
-					k = ab(k, a);
-				}
-			}
-		} while (a != 0);
-		System.out.println("Final balance: " + ak(k));
-	}
+  public static void main(String[] args) {
+    System.out.println("Welcome to the account application");
+    double k = 0;
+    double a = 0;
+    String c = "";
+    try(Scanner sc = new Scanner(System.in)) {
+      do {
+        System.out.println("Please enter the a, 0 (zero) to terminate");
+        a = sc.nextDouble();
+        if (a != 0) {
+          System.out.println("To deposit, press +, to withdraw press -");
+          c = sc.next();
+          if ("+".equals(c)) {
+            k = e(k, a);
+          } else if ("-".equals(c)) {
+            k = ab(k, a);
+          }
+        }
+      } while (a != 0);
+    };
+    System.out.println("Final balance: " + ak(k));
+  }
 
-	public static double e(double ks, double bt) {
-		return ks + bt;
-	}
+  public static double e(double ks, double bt) {
+    return ks + bt;
+  }
 
-	public static double ab(double ks, double bt) {
-		return ks - bt;
-	}
+  public static double ab(double ks, double bt) {
+    return ks - bt;
+  }
 
-	public static double ak(double ks) {
-		return ks;
-	}	
+  public static double ak(double ks) {
+    return ks;
+  }
 }
 ```
 
@@ -81,39 +82,40 @@ public class Xyz {
 import java.util.Scanner;
 
 public class AccountApplication {
-	public static void main(String[] args) {
-		System.out.println("Welcome to the account application");
-		double balance = 0;
-		double amount = 0;
-		String command = "";
-		do {
-			Scanner sc = new Scanner(System.in);
-			System.out.println("Please enter the amount, 0 (zero) to terminate");
-			amount = sc.nextDouble();
-			if (amount != 0) {
-				System.out.println("To deposit, press +, to withdraw press -");
-				command = sc.next();
-				if (command.equals("+")) {
-					balance = deposit(balance, amount);
-				} else if (command.equals("-")) {
-					balance = withdraw(balance, amount);
-				}
-			}
-		} while (amount != 0);
-		System.out.println("Final balance: " + getBalance(balance));
-	}
+  public static void main(String[] args) {
+    System.out.println("Welcome to the account application");
+    double balance = 0;
+    double amount = 0;
+    String command = "";
+    try(Scanner sc = new Scanner(System.in)) {
+      do {
+        System.out.println("Please enter the amount, 0 (zero) to terminate");
+        amount = sc.nextDouble();
+        if (amount != 0) {
+          System.out.println("To deposit, press +, to withdraw press -");
+          command = sc.next();
+          if ("+".equals(command)) {
+            balance = deposit(balance, amount);
+          } else if ("-".equals(command)) {
+            balance = withdraw(balance, amount);
+          }
+        }
+      } while (amount != 0);
+    }
+    System.out.println("Final balance: " + getBalance(balance));
+  }
 
-	public static double deposit(double balance, double amount) {
-		return balance + amount;
-	}
+  public static double deposit(double balance, double amount) {
+    return balance + amount;
+  }
 
-	public static double withdraw(double balance, double amount) {
-		return balance - amount;
-	}
+  public static double withdraw(double balance, double amount) {
+    return balance - amount;
+  }
 
-	public static double getBalance(double balance) {
-		return balance;
-	}	
+  public static double getBalance(double balance) {
+    return balance;
+  }
 }
 ```
 

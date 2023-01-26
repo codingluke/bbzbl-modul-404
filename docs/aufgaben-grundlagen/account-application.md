@@ -74,9 +74,9 @@ public class AccountApplication {
       if (amount != 0) {
         System.out.println("To deposit, press +, to withdraw press -");
         command = sc.next();
-        if (command.equals("+")) {
+        if ("+".equals(command)) {
           // was kommt wohl hier?
-        } else if (command.equals("-")) {
+        } else if ("-".equals(command)) {
           // was kommt wohl hier?
         }
       }
@@ -118,28 +118,27 @@ import java.util.Scanner;
 
 public class AccountApplication {
   public static void main(String[] args) {
-    Scanner sc = new Scanner(System.in);
+    System.out.println("Welcome to the account application");
     double balance = 0;
     double amount = 0;
     String command = "";
 
-    System.out.println("Welcome to the account application");
-    do {
-      System.out.println("Please enter the amount, 0 (zero) to terminate");
-      amount = sc.nextDouble();
-      if (amount != 0) {
-        System.out.println("To deposit, press +, to withdraw press -");
-        command = sc.next();
-        if (command.equals("+")) {
-          balance = deposit(balance, amount);
-        } else if (command.equals("-")) {
-          balance = withdraw(balance, amount);
-        };
-      }
-    } while (amount != 0);
-    System.out.println("Final balance: " + balance);
-
-    sc.close();
+    try(Scanner sc = new Scanner(System.in)) {
+      do {
+        System.out.println("Please enter the amount, 0 (zero) to terminate");
+        amount = sc.nextDouble();
+        if (amount != 0) {
+          System.out.println("To deposit, press +, to withdraw press -");
+          command = sc.next();
+          if ("+".equals(command)) {
+            balance = deposit(balance, amount);
+          } else if ("-".equals(command)) {
+            balance = withdraw(balance, amount);
+          };
+        }
+      } while (amount != 0);
+      System.out.println("Final balance: " + balance);
+    }
   }
 
   // deposit => einzahlen

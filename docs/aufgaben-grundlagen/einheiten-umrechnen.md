@@ -38,35 +38,35 @@ import java.util.Scanner;
 
 public class Converter {
   public void dialog() {
-    Scanner scanner = new Scanner(System.in);
     double convtemp;
     // highlight-next-line
     // Geht es ohne `new`, rsp. ohne Objekt `converter`? 
     // highlight-next-line
     DegreesConverter converter = new DegreesConverter(); 
     int userEntry = 0;
-    do {
-      System.out.println("Möchten Sie (1) Fahrenheit nach Celsius oder (2) Celsius nach Fahrenheit umrechnen?");
-      System.out.print("Bitte geben Sie Ihre Wahl 1 oder 2 ein: ");
-      userEntry = scanner.nextInt();
-      System.out.print("Bitte geben Sie die Temperatur ein: ");
-      double temp = scanner.nextDouble();
-      if (userEntry == 1) {
-        // highlight-next-line
-        // Was muss hier geändert werden wenn es kein Objekt `converter` mehr gibt?
-        // highlight-next-line
-        convtemp = converter.toCelsius(temp); 
-      } else {
-        // highlight-next-line
-        // Was muss hier geändert werden wenn es kein Objekt `converter` mehr gibt?
-        // highlight-next-line
-        convtemp = converter.toFahrenheit(temp);
-      }
-      System.out.println("Die umgerechnete Temperatur beträgt: " + convtemp);
-      System.out.print("Möchten Sie noch eine Temperatur umrechnen? Dann 1 eingeben. ");
-      userEntry = scanner.nextInt();
-    } while (userEntry == 1);
-    scanner.close();
+    try(Scanner scanner = new Scanner(System.in)) {
+      do {
+        System.out.println("Möchten Sie (1) Fahrenheit nach Celsius oder (2) Celsius nach Fahrenheit umrechnen?");
+        System.out.print("Bitte geben Sie Ihre Wahl 1 oder 2 ein: ");
+        userEntry = scanner.nextInt();
+        System.out.print("Bitte geben Sie die Temperatur ein: ");
+        double temp = scanner.nextDouble();
+        if (userEntry == 1) {
+          // highlight-next-line
+          // Was muss hier geändert werden wenn es kein Objekt `converter` mehr gibt?
+          // highlight-next-line
+          convtemp = converter.toCelsius(temp); 
+        } else {
+          // highlight-next-line
+          // Was muss hier geändert werden wenn es kein Objekt `converter` mehr gibt?
+          // highlight-next-line
+          convtemp = converter.toFahrenheit(temp);
+        }
+        System.out.println("Die umgerechnete Temperatur beträgt: " + convtemp);
+        System.out.print("Möchten Sie noch eine Temperatur umrechnen? Dann 1 eingeben. ");
+        userEntry = scanner.nextInt();
+      } while (userEntry == 1);
+    }
   }
 }
 ```
@@ -106,35 +106,35 @@ import java.util.Scanner;
 
 public class Converter {
   public void dialog() {
-    Scanner scanner = new Scanner(System.in);
     double convtemp;
     // highlight-next-line
     // Die nächste Linie kann man auskommentieren, we braucht nun kein Objekt mehr
     // highlight-next-line
     // DegreesConverter converter = new DegreesConverter(); 
     int userEntry = 0;
-    do {
-      System.out.println("Möchten Sie (1) Fahrenheit nach Celsius oder (2) Celsius nach Fahrenheit umrechnen?");
-      System.out.print("Bitte geben Sie Ihre Wahl 1 oder 2 ein: ");
-      userEntry = scanner.nextInt();
-      System.out.print("Bitte geben Sie die Temperatur ein: ");
-      double temp = scanner.nextDouble();
-      if (userEntry == 1) {
-        // highlight-next-line
-        // convtemp = converter.toCelsius(temp); 
-        // highlight-next-line
-        convtemp = DegreesConverter.toCelsius(temp); // es braucht kein Objekt!
-      } else {
-        // highlight-next-line
-        //convtemp = converter.toFahrenheit(temp); 
-        // highlight-next-line
-        convtemp = DegreesConverter.toFahrenheit(temp); // es braucht kein Objekt!
-      }
-      System.out.println("Die umgerechnete Temperatur beträgt: " + convtemp);
-      System.out.print("Möchten Sie noch eine Temperatur umrechnen? Dann 1 eingeben. ");
-      userEntry = scanner.nextInt();
-    } while (userEntry == 1);
-    scanner.close();
+    try(Scanner scanner = new Scanner(System.in)) {
+      do {
+        System.out.println("Möchten Sie (1) Fahrenheit nach Celsius oder (2) Celsius nach Fahrenheit umrechnen?");
+        System.out.print("Bitte geben Sie Ihre Wahl 1 oder 2 ein: ");
+        userEntry = scanner.nextInt();
+        System.out.print("Bitte geben Sie die Temperatur ein: ");
+        double temp = scanner.nextDouble();
+        if (userEntry == 1) {
+          // highlight-next-line
+          // convtemp = converter.toCelsius(temp); 
+          // highlight-next-line
+          convtemp = DegreesConverter.toCelsius(temp); // es braucht kein Objekt!
+        } else {
+          // highlight-next-line
+          //convtemp = converter.toFahrenheit(temp); 
+          // highlight-next-line
+          convtemp = DegreesConverter.toFahrenheit(temp); // es braucht kein Objekt!
+        }
+        System.out.println("Die umgerechnete Temperatur beträgt: " + convtemp);
+        System.out.print("Möchten Sie noch eine Temperatur umrechnen? Dann 1 eingeben. ");
+        userEntry = scanner.nextInt();
+      } while (userEntry == 1);
+    }
   }
 }
 ```
