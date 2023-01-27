@@ -27,7 +27,7 @@ Programme mit einer grafischen Oberfläche zu schreiben.
 
 - Die Anforderungen an eine Fachklasse erforschen und formulieren.
 - Eine grafische Benutzeroberfläche programmieren.
-- Die eigene Arbeit mit Klassendiagrammen dokumentieren.
+- Die eigene Arbeit mit Klassendiagrammen [dokumentieren][Dokumentation].
 - Sauberen Quellcode schreiben.
 
 ## Aufgabenstellung
@@ -62,9 +62,9 @@ Ausserdem besteht Ihr Produkt aus (mindestens) drei Klassen:
 
 Der Quellcode ist sauber formatiert. Alle Klassen, Methoden und Attribute haben aussagekräftige Namen. 
 
-Die von Ihnen erstellten Klassen dokumentieren Sie mit einem UML-Klassendiagramm, das alle Klassen enthält. Auch die Beziehungen zwischen den Klassen müssen dargestellt sein. In einer Dokumentation beschreiben Sie Ihr Programm. Notieren Sie, was Sie wie herausgefunden haben. Wenn zur Zeit der Abgabe noch nicht alles funktioniert, dann beschreiben Sie was nicht funktioniert und was das Problem ist. 
+Die von Ihnen erstellten Klassen dokumentieren Sie mit einem UML-Klassendiagramm, das alle Klassen enthält. Auch die Beziehungen zwischen den Klassen müssen dargestellt sein. In einer [Dokumentation] beschreiben Sie Ihr Programm. Notieren Sie, was Sie wie herausgefunden haben. Wenn zur Zeit der Abgabe noch nicht alles funktioniert, dann beschreiben Sie was nicht funktioniert und was das Problem ist. 
 
-Das Klassendiagramm gehört in die Dokumentation.
+Das Klassendiagramm gehört in die [Dokumentation].
 
 ## Bewertung
 
@@ -88,9 +88,10 @@ Das Klassendiagramm gehört in die Dokumentation.
 
 ## Termin
 
-Das Produkt (mit der Dokumentation) muss bis am **Tag, Datum um Zeit Uhr** über den **Abgabeordner auf der Modulseite** abgegeben werden.
+Das Produkt (mit der [Dokumentation]) muss bis am **Freitag, 21.04.2023, 16:15** über den **Abgabeordner auf der Modulseite** abgegeben werden.
 
 ## Strukturidee
 
 ![](../img/projektstruktur.jpg)
 
+[Dokumentation]: https://docs.google.com/document/d/1mD7wykSI7ge63gUXXk2SVPEKErBKok09cdiTBuET7VQ/edit
