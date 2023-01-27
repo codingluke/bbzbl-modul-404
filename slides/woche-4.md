@@ -2,7 +2,7 @@
 marp: true
 theme: bbzbl
 paginate: true
-header: Modul 404 - Woche 4 / 18.02.2022
+header: Modul 404 - Woche 4
 footer: BBZBL / Lukas Hodel / Objektbasiert programmieren nach Vorgabe
 ---
 

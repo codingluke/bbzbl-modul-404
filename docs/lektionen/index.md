@@ -3,8 +3,8 @@
 Woche | Datum | Thema | Leistungsbewertung
 :---:|:---:|:---|:---
 [Woche&nbsp;1][w1] | 27.01.2023 | Repetition / Klassen / Objekte | 
-<hr/>|:steam_locomotive:|<hr/>|<hr/>
 [Woche&nbsp;2][w2] | 03.02.2023 | Fachklassen / Static / Swing | 
+<hr/>|:steam_locomotive:|<hr/>|<hr/>
 [Woche&nbsp;3][w3] | 10.02.2023 | Klassenstruktur / Java Interface - ActionListener | 
 [Woche&nbsp;4][w4] | 17.02.2023 | Konstruktor / Formatierung / UML | 
 || _24.02.2023_<br/>_03.03.2023_| :japanese_goblin: *Fasnachtsferien* | 
