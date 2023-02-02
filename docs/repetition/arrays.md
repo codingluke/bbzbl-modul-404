@@ -6,20 +6,27 @@ sidebar_position: 2
 
 Arrays sind ein besonderer Datentyp, da sie es erlauben, mehrere Werte in einer Variablen zu speichern. Diese Variable kann dazu mit einem int Wert angesprochen werden, der als Index benutzt wird, und den Zugriff auf die unterschiedlichen Werte ermöglicht.
 
-## Aufgaben
+Anschliessend findet Ihr Aufgaben für die wichtigsten use-cases von Arrays.
 
-<!-- TODO:  Das PFD in die Webeite einverleiben -->
+:::tip
 
-- [:pencil: Arrays Repetition PFD](https://drive.google.com/file/d/1Bt4NgySXrhMeorOTuSBs_6thNwXPRbNN/view)
+Diese Aufgaben werden euch im Projekt sicher was bringen!
 
-## Musterlösungen
-
-:::tip Übung macht den Meister! :muscle:
-Ihr lernt für euch! Ihr stellt euch selbst ein Bein, wenn Ihr einfach die Musterlösungen kopiert!
 :::
 
+## Array Chars
+
+Verwenden Sie eine for-Schleife, um den folgenden Array auszugeben:
+
+```java
+char[] text = {'h','a','l','l','o',' ','w','e','l','t'};
+```
+
+- Geben Sie danach den Array in **umgekehrter Reihenfolge** aus, also von hinten nach vorne. 
+- Verwenden Sie dafür auch wieder eine for-Schleife.
+
 <details>
-<summary>Aufgabe 1 - Array Chars</summary>
+<summary>Lösung Array Chars</summary>
 
 ```java
 public class ArrayChars {
@@ -45,26 +52,57 @@ public class ArrayChars {
 
 </details>
 
+## String sortieren
+
+1. Kopieren Sie den untenstehenden Code in ein Eclipse-Projekt und lassen Sie ihn laufen. 
+2. Erweitern Sie das Programm so, dass der Array sortiert und danach wieder ausgegeben wird.
+
+```java
+public class SortString {
+
+  public static void main (String[] args) {
+    String beruf[] = {
+      "Wurstmacher",
+      "Holzbearbeiter",
+      "Laufbursche",
+      "Taxifahrer",
+      "Velokurier",
+      "Wasserfahrer",
+      "Zitronenfalter",
+      "Fensterputzer",
+      "Halsabschneider",
+    }
+    //Ausgabe aller Werte des Arrays
+    for (int i = 0; i < beruf.length; i++){
+        System.out.println(i + ". " + beruf[i]);
+    }
+    // highlight-next-line
+    // Erweitern Sie hier das Programm.
+  }
+
+}
+```
+
 <details>
-<summary>Aufgabe 2 - Felder</summary>
+<summary>Lösung: String sortieren</summary>
 
 ```java
 import java.util.Arrays;
 
-public class Felder {
+public class SortString {
 
   public static void main(String[] args) {
-    String[] beruf = new String[9];
-
-    beruf[0] = "Wurstmacher";
-    beruf[1] = "Holzbearbeiter";
-    beruf[2] = "Laufbursche";
-    beruf[3] = "Taxifahrer";
-    beruf[4] = "Velokurier";
-    beruf[5] = "Wasserfahrer";
-    beruf[6] = "Zitronenbearbeiter";
-    beruf[7] = "Fensterputzer";
-    beruf[8] = "Halsabschneider";
+    String beruf[] = {
+      "Wurstmacher",
+      "Holzbearbeiter",
+      "Laufbursche",
+      "Taxifahrer",
+      "Velokurier",
+      "Wasserfahrer",
+      "Zitronenfalter",
+      "Fensterputzer",
+      "Halsabschneider",
+    }
 
     System.out.println("Ausgabe VOR der Sotierung");
     for(int i = 0; i < beruf.length; i++) {
@@ -84,8 +122,17 @@ public class Felder {
 ```
 </details>
 
+## Array negativ
+
+Gegeben ist Array a. Geben Sie alle Elemente mit einem negativen Wert untereinander auf der
+Konsole aus. Verwenden Sie auch wieder eine for-Schleife.
+
+```java
+int[] a = { 1, -2, -25, 6, -3, 5 };
+```
+
 <details>
-<summary>Aufgabe 3 - Array Negative</summary>
+<summary>Lösung: Array negativ</summary>
 
 ```java
 public class ArrayNegativ {
@@ -105,8 +152,18 @@ public class ArrayNegativ {
 
 </details>
 
+## Add Arrays
+
+Gegeben sind drei Arrays `a`, `b` und `c`. Verändern Sie durch Java-Code den Array `c` so, dass im Element `c[0]` die Summe `a[0]` plus `b[0]` steht und entsprechend für die Elemente 1, 2, 3.
+
+```java
+int[] a = { 1, 2, 25, 6 };  //   {  1,  2, 25,  6 }
+int[] b = { 9, 18, 5, 34 }; // + {  9, 18,  5, 34 }
+int[] c = new int[4];       // = { 10, 20, 30, 40 }
+```
+
 <details>
-<summary>Aufgabe 4 - Add Arrays</summary>
+<summary>Lösung: Add Arrays</summary>
 
 ```java
 public class AddArrays {
@@ -132,8 +189,17 @@ public class AddArrays {
 
 </details>
 
+## Combine Arrays
+
+Gegeben sind zwei Arrays `a` und `b`. Erzeugen Sie einen neuen Array `c`, der so lang ist wie `a` und `b` zusammengenommen und auch die Werte von `a` und `b` (in dieser Reihenfolge) enthält.
+
+```java
+int[] a = { 1, 2, 25 };
+int[] b = { 9, 18 };
+```
+
 <details>
-<summary>Aufgabe 5 - Combine Arrays</summary>
+<summary>Lösung: Combine Arrays</summary>
 
 ```java
 public class CombineArrays {
@@ -184,8 +250,17 @@ public class CombineArrays {
 
 </details>
 
+## Combine Arrays with Methods
+
+Verwende den Code von [Combine Arrays](#combine-arrays). 
+
+Nun versuche die Aufgabe so zu lösen, dass das Kopieren und Ausgeben in zwei Methoden gemacht wird. Die Signatur der Methoden sind folgende:
+
+- `public static void copyArray(int[] source, int[] destination, int destination_index)`
+- `public static void showArray(String name, int[] array)`
+
 <details>
-<summary>Aufgabe 5a - Combine Arrays with Methods</summary>
+<summary>Lösung: Combine Arrays with Methods</summary>
 
 ```java
 public class CombineArraysWithMethods {
@@ -231,8 +306,23 @@ public class CombineArraysWithMethods {
 
 </details>
 
+## Noten
+
+Erstellen Sie ein Programm, welches Noten einlesen kann und in einem Array speichert.
+
+- Zuerst soll es nach der Anzahl Noten fragen...
+    - ... und dann mit diesem Wert einen neuen Array anlegen.
+- Dann sollen alle Werte vom Benutzer eingegeben werden, wobei...
+    - ... nach jedem Wert der Durchschnitt der bisher eingegebenen Noten berechnet und angezeigt wird.
+
+:::tip
+
+Die Arbeit mit Methoden kann Ihr Programm übersichtlicher machen.
+
+:::
+
 <details>
-<summary>Aufgabe 6 - Noten</summary>
+<summary>Lösung: Noten</summary>
 
 ```java
 import java.util.Scanner;
@@ -274,11 +364,39 @@ public class Noten {
 
 </details>
 
-<details>
-<summary>Aufgabe 7 - Dice</summary>
+## Dice
+
+1. Erstellen Sie einen Array mit sechs 0en.
+2. Würfeln Sie 100 mal mit der Methode `rollDice()`
+    - Bei jedem Wurf zählen Sie für die gewürfelte Zahl der entsprechende index im Array hoch.
+3. Geben Sie aus wie häufig die jeweiligen Zahlen gewürfelt wurden.
+
+:::Tip
+
+Diese Aufgabe ist besonders interessant für das Projekt
+
+:::
 
 ```java
-public class Dice3 {
+public class Dice {
+
+  public static void main(String[] args) {
+    // highlight-next-line
+    // die Aufgabe hier implementieren
+  }
+
+  public static int rollDice() {
+    return (int)(Math.random() * (6 - 1 + 1)) + 1;
+  }
+
+}
+```
+
+<details>
+<summary>Lösung - Dice</summary>
+
+```java
+public class Dice {
 
   public static void main(String[] args) {
     int countAll   = 0;
@@ -296,13 +414,8 @@ public class Dice3 {
     }
   }
 
-  public static int getRandomNumber(int min, int max) {
-    int number = (int)(Math.random() * (max - min + 1)) + min;
-    return number;
-  }
-
   public static int rollDice() {
-    return getRandomNumber(1, 6);
+    return (int)(Math.random() * (6 - 1 + 1)) + 1;
   }
 
 }
