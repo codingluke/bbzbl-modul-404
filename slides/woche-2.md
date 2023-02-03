@@ -216,7 +216,7 @@ _:information_source: Was genau Vererbung ist, und wie man es selbst verwendet i
 
 --- 
 
-# :bulb: `JFrame` Cheat Cheet
+# :bulb: `JFrame` Cheat Sheet
 
 ```java
 setLayout(null); // Standard Layout deaktivieren
