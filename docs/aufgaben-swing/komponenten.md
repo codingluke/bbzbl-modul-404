@@ -16,7 +16,7 @@ JLabel label = new JLabel("Beschriftung");
 // Wichtige Methoden
 label.setBounds(x, y, width, height); // setzt die Koordinaten der Komponente auf dem Fenster
 label.setText("Eine neue Beschriftung"); // Setzt einen neuen Text
-String text = label.getText() // gibt den Text des Labels zurück
+String text = label.getText(); // gibt den Text des Labels zurück
 ```
 
 - Der Parameter dient zur Initialisierung eines Textes
@@ -39,7 +39,7 @@ JTextField textfield = new JTextField();
 
 // Wichtige Methoden
 textfield.setBounds(x, y, width, height); // setzt die Koordinaten der Komponente auf dem Fenster
-String text = textfield.getText() // gibt den Text des Textfeldes zurück
+String text = textfield.getText(); // gibt den Text des Textfeldes zurück
 textfield.setText("setzt ein Text"); // Setzt einen neuen Text
 ```
 
