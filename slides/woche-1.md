@@ -258,7 +258,7 @@ String command = sc.nextString();
   - _In unserem Fall wäre das Fachproblem die Kontoverwaltung_
 
 - Mit **Fachklassen** lassen sich **Programme entkoppeln**
-  - **einfacherer Wartbarkiet**
+  - **einfacherer Wartbarkeit**
   - **besserer Testbarkeit**
   - **besserer Qualität**
 

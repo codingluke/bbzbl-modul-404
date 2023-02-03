@@ -64,7 +64,7 @@ System.out.println(girokonto.getBalance()); // => -20;
 ```
 :::tip Objekte haben eigenen Speicherbereich!
 - Das Objekt `sparkonto` und `girokonto` **teilen sich den Code** der Klasse `Account`. 
-- Die **Werte der Instanz-Variable** `private doubel balance;` sind jedoch **unabhängig**!
+- Die **Werte der Instanz-Variable** `private double balance;` sind jedoch **unabhängig**!
 :::
 
 ## Aufgabe

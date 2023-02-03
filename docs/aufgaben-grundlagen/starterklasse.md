@@ -39,7 +39,7 @@ public class Starter {
 ```java title="Starter.java"
 public class Starter {
   public static void main(String[] args) {
-    AccountApplication app = new ApplicationForStarter();
+    ApplicationForStarter app = new ApplicationForStarter();
     app.start();
   }
 }
@@ -48,8 +48,8 @@ public class Starter {
 ```java title="AccountApplication.java"
 import java.util.Scanner;
 
-public class AccountApplicationV2 {
-  public static void main(String[] args) {
+public class ApplicationForStarter {
+  public void start() {
     System.out.println("Welcome to the account application");
     Account account = new Account();  // hier wird ein Objekt der Klasse `Account` erstellt
     double amount = 0;
