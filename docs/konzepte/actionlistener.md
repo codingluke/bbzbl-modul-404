@@ -9,7 +9,7 @@
 
 - `ActionListener` ist ein Interface, welches von Java mitgeliefert wird.
 - Es **definiert** die Methode `public void actionPerformed(ActionEvent e);`
-- Alle Klasse die den ActionListener implementieren (`implements ActionListener`) **müssen** auch die Methode `public void actionPerformed(ActionEvent e);` implementieren
+- Alle Klassen die den ActionListener implementieren (`implements ActionListener`) **müssen** auch die Methode `public void actionPerformed(ActionEvent e);` implementieren
 - Die JavaDoc findet man [hier](https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/ActionListener.html)
 
 ```java title="java.awt.event.ActionListener"

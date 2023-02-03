@@ -67,30 +67,32 @@ logic.do();
 
 ::: split
 
-```mermaid
-classDiagram
-  class JFrame
-  class ActionListener {
-    <<interface>>
-    +actionPerformed(...) 
-  }
-  class Starter {
-    +main(args: String[])$
-  }
-  class Gui {
-    -logic: Logic
-    +actionPerformed(...)
-    +dialog()
-  }
-  class Logic {
-    +do()
-  }
+// mermaid kroki.io down!
 
-  Starter --> "1" Gui : uses
-  Gui --> "1" Logic : uses
-  Gui --|> JFrame : extends
-  Gui ..|> ActionListener : implements
-```
+<!-- ```mermaid -->
+<!-- classDiagram -->
+<!--   class JFrame -->
+<!--   class ActionListener { -->
+<!--     <<interface>> -->
+<!--     +actionPerformed(...)  -->
+<!--   } -->
+<!--   class Starter { -->
+<!--     +main(args: String[])$ -->
+<!--   } -->
+<!--   class Gui { -->
+<!--     -logic: Logic -->
+<!--     +actionPerformed(...) -->
+<!--     +dialog() -->
+<!--   } -->
+<!--   class Logic { -->
+<!--     +do() -->
+<!--   } -->
+
+<!--   Starter --> "1" Gui : uses -->
+<!--   Gui --> "1" Logic : uses -->
+<!--   Gui --|> JFrame : extends -->
+<!--   Gui ..|> ActionListener : implements -->
+<!-- ``` -->
 
 :::
 

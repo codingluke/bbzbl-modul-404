@@ -87,15 +87,15 @@ setTitle("Ich bin der Fenster Titel"); // Titel des Fensters festlegen
 setVisible(true); // Fenster sichtbar machen
 
 JLabel label = new JLabel("Beschriftung"); // Ein Label
-label.setBounds(x, y, wigh, height) // Bestimmen wo sich das Label befindet
-add(label) // Label hinzufügen
+label.setBounds(x, y, wigh, height); // Bestimmen wo sich das Label befindet
+add(label); // Label hinzufügen
 
 JTextField textfield = new JTextField(); // Ein Textfeld
-textfield.setBounds(x, y, wigh, height) // Bestimmen wo sich das Textfeld befindet
-add(textfield) // Textfeld hinzufügen
+textfield.setBounds(x, y, wigh, height); // Bestimmen wo sich das Textfeld befindet
+add(textfield); // Textfeld hinzufügen
 
 JButton button = new JButton("press me"); // Ein Button
-button.setBounds(x, y, wigh, height) // Bestimmen wo sich der Button befindet
-add(button) // Textfeld hinzufügen
+button.setBounds(x, y, wigh, height); // Bestimmen wo sich der Button befindet
+add(button); // Textfeld hinzufügen
 ```
 
