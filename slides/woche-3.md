@@ -44,7 +44,6 @@ Optional
 
 # :brain: Projekt Klassenstruktur
 
-::: columns 
 
 **Starter** - started das GUI (`main`)
 
@@ -65,10 +64,7 @@ logic.do();
 
 **Logik** - beinhaltet die Spielregeln
 
-::: split
-
-// mermaid kroki.io down!
-
+![bg right:40% w:80%](images/projekt-uml-klassenstruktur.png)
 <!-- ```mermaid -->
 <!-- classDiagram -->
 <!--   class JFrame -->
@@ -93,8 +89,6 @@ logic.do();
 <!--   Gui --|> JFrame : extends -->
 <!--   Gui ..|> ActionListener : implements -->
 <!-- ``` -->
-
-:::
 
 ---
 
