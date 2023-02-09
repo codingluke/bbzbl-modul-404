@@ -35,7 +35,7 @@ footer: BBZBL / Lukas Hodel / Objektbasiert programmieren nach Vorgabe
 
 Optional
 
-- [:superhero: Weitere Swing-Aufgaben](https://drive.google.com/file/d/1205D0XsyQvoArLIax3nemDP6xg7FHgag/view)
+- [:superhero: Weitere Swing-Aufgaben](https://codingluke.github.io/bbzbl-modul-404/docs/aufgaben-swing/zusatz)
 - :bulb: Vertieftes Wissen zu Interfaces
 
 :::

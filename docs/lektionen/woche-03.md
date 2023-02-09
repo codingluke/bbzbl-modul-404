@@ -27,8 +27,8 @@ sidebar_position: 3
 
 ### :superhero: Optional
 
-- [Weitere Swing-Aufgaben (PDF)](https://drive.google.com/file/d/1205D0XsyQvoArLIax3nemDP6xg7FHgag/view)
-- Vertieftes Wissen zu Interfaces in den Folien am Schluss!
+- [Weitere Swing-Aufgaben](../aufgaben-swing/zusatz.md)
+- Vertieftes Wissen zu Interfaces **in den Folien am Schluss!**
 
 </div><div>
 
