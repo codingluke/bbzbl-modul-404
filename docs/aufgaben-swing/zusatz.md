@@ -2,7 +2,13 @@
 sidebar_position: 10
 ---
 
-# Zusatzaufgaben
+# 🦸 Zusatzaufgaben
+
+:::important
+
+Versucht alle Aufgaben mit **Fachklassen** zu lösen!
+
+:::
 
 ## Zusatzufgabe 1 - einfach
 
