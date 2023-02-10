@@ -31,7 +31,7 @@ footer: BBZBL / Lukas Hodel / Objektbasiert programmieren nach Vorgabe
 - [Konstruktor](https://codingluke.github.io/bbzbl-modul-404/docs/aufgaben-swing/konstruktor)
 - [Account UML](https://codingluke.github.io/bbzbl-modul-404/docs/aufgaben-grundlagen/account-uml)
 - [DiceGame](https://codingluke.github.io/bbzbl-modul-404/docs/aufgaben-swing/dice-game)
-- Freiwillige Aufgaben vor LB1 Vorbereitung gibt es [hier](https://sites.google.com/bbzbl-it.ch/modul404-lh/themen/aufgaben)
+- [:superhero: Weitere Swing-Aufgaben](https://codingluke.github.io/bbzbl-modul-404/docs/aufgaben-swing/zusatz)
 
 :::
 
@@ -267,7 +267,7 @@ public class Starter {
 3. Implementieren Sie das [DiceGame](https://codingluke.github.io/bbzbl-modul-404/docs/aufgaben-swing/dice-game)
     - **Diese Aufgabe würde ich besonders gut anschauen! :wink:**
 
-- Freiwillige Aufgaben vor LB1 Vorbereitung gibt es [hier](https://sites.google.com/bbzbl-it.ch/modul404-lh/themen/aufgaben)
+- [:superhero: Weitere Swing-Aufgaben](https://codingluke.github.io/bbzbl-modul-404/docs/aufgaben-swing/zusatz)
 
 ---
 

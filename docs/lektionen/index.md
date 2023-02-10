@@ -5,8 +5,8 @@ Woche | Datum | Thema | Leistungsbewertung
 [Woche&nbsp;1][w1] | 27.01.2023 | Repetition / Klassen / Objekte | 
 [Woche&nbsp;2][w2] | 03.02.2023 | Fachklassen / Static / Swing | 
 [Woche&nbsp;3][w3] | 10.02.2023 | Klassenstruktur / Java Interface - ActionListener | 
-<hr/>|:steam_locomotive:|<hr/>|<hr/>
 [Woche&nbsp;4][w4] | 17.02.2023 | Konstruktor / Formatierung / UML | 
+<hr/>|:steam_locomotive:|<hr/>|<hr/>
 || _24.02.2023_<br/>_03.03.2023_| :japanese_goblin: *Fasnachtsferien* | 
 [**Woche&nbsp;5**][w5] | **10.03.2023** | **1. Leistungsbewertung / Projektstart** | **[LB1]**
 [Woche&nbsp;6][w6] | 17.03.2023 | Arbeiten am Projekt | 
