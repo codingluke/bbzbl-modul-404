@@ -48,11 +48,11 @@ Optional
 **Starter** - started das GUI (`main`)
 
 ```java
-Gui g = new Guid();
+Gui g = new Gui();
 g.dialog();
 ```
 
-**GUI** - rendert die Grafik
+**Gui** - rendert die Grafik
 
 - `extends JFrame` (erbt)
 - `implements ActionListener`
@@ -235,8 +235,7 @@ Ich kann euch nur wärmstens empfehlen diese Aufgaben zu machen. Die Erste Seite
 
 ## <!--fit--> :superhero: Natürlich wird die Projektarbeit davon profitieren!
 
-- [Weitere Swing-Aufgaben :book:](https://drive.google.com/file/d/1205D0XsyQvoArLIax3nemDP6xg7FHgag/view)
-
+- [:superhero: Weitere Swing-Aufgaben](https://codingluke.github.io/bbzbl-modul-404/docs/aufgaben-swing/zusatz)
 
 ---
 

@@ -9,10 +9,12 @@ sidebar_position: 4
 
 ```java title="Starter.java als Beispiel"
 public class Starter {
-    public static void main(String[] args) { // Startpunkt des Programms, ist immer static!
 
-    MyNewShinyApp app = new MyNewShinyApp(); // `new` ist innerhalb von `static` erlaubt
-    app.start(); // starten der eigentlichen App
+    public static void main(String[] args) { // Startpunkt des Programms, ist immer static!
+        MyNewShinyApp app = new MyNewShinyApp(); // `new` ist innerhalb von `static` erlaubt
+        app.start(); // starten der eigentlichen App
+    }
+
 }
 ```
 
@@ -38,10 +40,12 @@ public class Starter {
 
 ```java title="Starter.java"
 public class Starter {
+
   public static void main(String[] args) {
     ApplicationForStarter app = new ApplicationForStarter();
     app.start();
   }
+
 }
 ```
 
@@ -49,6 +53,7 @@ public class Starter {
 import java.util.Scanner;
 
 public class ApplicationForStarter {
+
   public void start() {
     System.out.println("Welcome to the account application");
     Account account = new Account();  // hier wird ein Objekt der Klasse `Account` erstellt
@@ -72,6 +77,7 @@ public class ApplicationForStarter {
       System.out.println("Final balance: " + account.getBalance()); 
     }
   }
+
 }
 ```
 

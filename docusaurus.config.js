@@ -45,7 +45,7 @@ const config = {
     ],
     require.resolve("@docusaurus/theme-mermaid"),
   ],
-  
+
   plugins: [
     ["devserver-config",
       {
@@ -59,8 +59,9 @@ const config = {
           [`/${modulConfig.repoName}/slides`]: {
             target: "http://localhost:3003",
             pathRewrite: function(/** @type {string} */ path, /** @type {any} */ _req) {
-              if (path.match(/.*\..*$/))
+              if (path.match(/.*\..*$/)) {
                 return path.replace(`/${modulConfig.repoName}/slides`, '');
+              }
               return path.replace(`/${modulConfig.repoName}/slides`, '') + ".md";
             }
           }
