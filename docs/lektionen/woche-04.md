@@ -14,7 +14,7 @@ sidebar_position: 4
 
 - Kontoverwaltung in Swing (Live Coding!)
 - [Konstruktor](../konzepte/konstruktor.md)
-- [Formattierung](../konzepte/formatierung.md)
+- [Formatierung](../konzepte/formatierung.md)
 - [UML Klassendiagram](../konzepte/uml.md)
 
 ## :pencil: Aufgaben
@@ -28,13 +28,13 @@ sidebar_position: 4
 
 ### :superhero: Optional 
 
-- [Freiwillige Aufgaben](https://sites.google.com/bbzbl-it.ch/modul404-lh/themen/aufgaben) (Auf alter Modulwebseite)
+- [Weitere Swing-Aufgaben](../aufgaben-swing/zusatz.md)
 
 </div><div>
 
 ### Grundlagen
 
-- [Formattierung](../aufgaben-grundlagen/formatierung.md)
+- [Formatierung](../aufgaben-grundlagen/formatierung.md)
 - [Account UML](../aufgaben-grundlagen/account-uml.md)
 
 </div></div>
