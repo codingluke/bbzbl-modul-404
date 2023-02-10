@@ -6,7 +6,7 @@ sidebar_position: 10
 
 :::important
 
-Versucht alle Aufgaben mit **Fachklassen** zu lösen!
+Versucht alle Aufgaben mit einer **Starter**, **Gui** und **Fachklasse** zu lösen!
 
 :::
 
