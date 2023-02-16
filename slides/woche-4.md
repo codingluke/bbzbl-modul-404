@@ -35,13 +35,13 @@ footer: BBZBL / Lukas Hodel / Objektbasiert programmieren nach Vorgabe
 
 :::
 
-## :brain: Quiz
-
 ---
+
+<!-- _class: big center -->
 
 # Kontoverwaltung in Swing
 
-- Meine Lösung erläutern
+## :teacher: Musterlösung erläutern
 
 ---
 
@@ -270,18 +270,6 @@ public class Starter {
 - [:superhero: Weitere Swing-Aufgaben](https://codingluke.github.io/bbzbl-modul-404/docs/aufgaben-swing/zusatz)
 
 ---
-
-<!-- _class: big -->
-
-# :brain: Quiz Time!
-
-- Ich versende gleich einen Link
-
-- Alle sollen sich mit **einem Nickname anmelden**
-- Der Link für alle Fragen und Antworten wird im Anschluss hier erscheinen :wink:
-
----
-
 
 <!-- _class: big -->
 
