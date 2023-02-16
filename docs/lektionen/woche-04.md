@@ -12,7 +12,7 @@ sidebar_position: 4
 
 ## :brain: Input
 
-- Kontoverwaltung in Swing (Live Coding!)
+- Kontoverwaltung in Swing (Erläutern)
 - [Konstruktor](../konzepte/konstruktor.md)
 - [Formatierung](../konzepte/formatierung.md)
 - [UML Klassendiagram](../konzepte/uml.md)
@@ -24,7 +24,7 @@ sidebar_position: 4
 ### :nail_care: Swing
 
 - [Konstruktor](../aufgaben-swing/konstruktor.md)
-- [DiceGame](../aufgaben-swing/dice-game.md)
+- [DiceGame](../aufgaben-swing/dice-game.md) (:performing_arts: **Live-Coding**)
 
 ### :superhero: Optional 
 
