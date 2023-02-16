@@ -33,14 +33,16 @@ Die Musterlösung ist mit einem [Konstruktor](../konzepte/Konstruktor) erstellt,
 
 ```java title="Starter.java"
 public class Starter {
-  public static void main(String[] args) {
-    AccountGui gui = new AccountGui();
-    gui.showDialog();
-  }
+	public static void main(String[] args) {
+		AccountGui gui = new AccountGui();
+		gui.showDialog();
+	}
 }
 ```
 
 ```java title="AccountGui.java"
+import java.awt.Color;
+import java.awt.Font;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
@@ -50,98 +52,101 @@ import javax.swing.JLabel;
 import javax.swing.JTextField;
 
 public class AccountGui extends JFrame implements ActionListener {
-  Account account;
-  JButton deposit;
-  JButton withdraw;
-  JLabel balanceLabel;
-  JTextField amountTextField;
-  
-  public AccountGui() {
-    // Initialisieren der Werte im Konstruktor
-    account = new Account();
-    deposit = new JButton("einzahlen");
-    withdraw = new JButton("auszahlen");
-    balanceLabel = new JLabel();
-    amountTextField = new JTextField();
-  }
-  
-  public AccountGui(double startBalance) {
-    // Initialisieren der Werte mit einem startguthaben
-    account = new Account();
-    account.deposit(startBalance);
-    deposit = new JButton("einzahlen");
-    withdraw = new JButton("auszahlen");
-    balanceLabel = new JLabel();
-    amountTextField = new JTextField();
-  }
+	Account account;
+	JButton deposit = new JButton("Deposit!");;
+	JButton withdraw = new JButton("Withdraw!");
+	JLabel balanceLabel = new JLabel("Balance:");
+	JLabel balanceAmountLabel = new JLabel();
+	JTextField amountTextField = new JTextField();
 
-  public void showDialog() {
-    this.setLayout(null);
+	public AccountGui() {
+		// Initialisieren vom Account im Konstruktor
+		account = new Account();
+	}
 
-    amountTextField.setBounds(10, 10, 250, 20);
-    balanceLabel.setBounds(10, 40, 250, 20);
-    deposit.setBounds(10, 70, 250, 20);
-    withdraw.setBounds(10, 100, 250, 20);
+	public AccountGui(double startBalance) {
+		// Initialisieren vom Account mit einem startguthaben
+		account = new Account();
+		account.deposit(startBalance);
+	}
 
-    this.add(amountTextField);
-    this.add(balanceLabel);
-    this.add(deposit);
-    this.add(withdraw);
+	public void showDialog() {
+		this.setLayout(null);
 
-    deposit.addActionListener(this);
-    withdraw.addActionListener(this);
+		amountTextField.setBounds(170, 50, 370, 90);
+		amountTextField.setFont(new Font("Arial", Font.BOLD, 80));
+		amountTextField.setForeground(Color.blue);
 
-    this.setTitle("Account GUI Application");
-    this.setDefaultCloseOperation(EXIT_ON_CLOSE);
-    this.setSize(300, 300);
-    this.setVisible(true);
-  }
+		balanceLabel.setBounds(10, 10, 100, 30);
+		balanceLabel.setFont(new Font("Arial", Font.BOLD, 24));
 
-  @Override
-  public void actionPerformed(ActionEvent e) {
-    if (e.getSource() == deposit) {
-        account.deposit(getAmount());
-    } else if (e.getSource() == withdraw) {
-        account.withdraw(getAmount());
-    }
-    refreshBalance();
-    clearAmount();
-  }
+		balanceAmountLabel.setBounds(10, 40, 250, 20);
+		balanceAmountLabel.setBounds(170, 10, 390, 30);
+		balanceAmountLabel.setFont(new Font("Arial", Font.BOLD, 24));
 
-  // Es ist guter Stil, wenn private Methoden unterhalb der public Methoden stehen
-  // Am besten sortiert nach der Verwendung. Dies vereinfacht das Lesen des Codes!
+		deposit.setBounds(10, 50, 150, 40);
+		deposit.addActionListener(this);
 
-  private double getAmount() {
-    return Double.parseDouble(amountTextField.getText());
-  }
+		withdraw.setBounds(10, 100, 150, 40);
+		withdraw.addActionListener(this);
 
-  private void refreshBalance() {
-    double balance = account.getBalance();
-    balanceLabel.setText(balance + "");
-    //balanceLabel.setText(Double.toString(balance)); // alternative Möglichkeit
-  }
+		this.add(amountTextField);
+		this.add(balanceLabel);
+		this.add(balanceAmountLabel);
+		this.add(deposit);
+		this.add(withdraw);
 
-  private void clearAmount() {
-    amountTextField.getText("");
-  }
+		this.setTitle("Account GUI Application");
+		this.setDefaultCloseOperation(EXIT_ON_CLOSE);
+		this.setSize(580, 200);
+		this.setVisible(true);
+	}
+
+	@Override
+	public void actionPerformed(ActionEvent e) {
+		if (e.getSource() == deposit) {
+			account.deposit(getAmount());
+		} else if (e.getSource() == withdraw) {
+			account.withdraw(getAmount());
+		}
+		refreshBalance();
+		clearAmount();
+	}
+
+	// Es ist guter Stil, wenn private Methoden unterhalb der public Methoden stehen
+	// Am Besten sortiert nach der Verwendung. Dies vereinfacht das Lesen des Codes!
+
+	private double getAmount() {
+		return Double.parseDouble(amountTextField.getText());
+	}
+
+	private void refreshBalance() {
+		double balance = account.getBalance();
+		balanceAmountLabel.setText(balance + "");
+		// balanceLabel.setText(Double.toString(balance)); // alternative Möglichkeit
+	}
+
+	private void clearAmount() {
+		amountTextField.setText("");
+	}
 }
 ```
 
 ```java title="Account.java"
 public class Account {
-  private double balance;
+	private double balance;
 
-  public double getBalance() {
-    return balance;
-  }
+	public double getBalance() {
+		return balance;
+	}
 
-  public void deposit(double value) {
-    this.balance += value;
-  }
-  
-  public void withdraw(double value) {
-    this.balance -= value;
-  }
+	public void deposit(double value) {
+		this.balance += value;
+	}
+
+	public void withdraw(double value) {
+		this.balance -= value;
+	}
 }
 ```
 
