@@ -50,12 +50,6 @@ const config = {
     ["devserver-config",
       {
         proxy: {
-          // [`/${modulConfig.repoName}/slides/images`]: { // must be first! 
-          //   target: "http://localhost:3003",
-          //   pathRewrite: function(/** @type {string} */ path, /** @type {any} */ _req) {
-          //     return path.replace(`/${modulConfig.repoName}/slides`, '');
-          //   }
-          // },
           [`/${modulConfig.repoName}/slides`]: {
             target: "http://localhost:3003",
             pathRewrite: function(/** @type {string} */ path, /** @type {any} */ _req) {

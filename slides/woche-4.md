@@ -47,7 +47,7 @@ footer: BBZBL / Lukas Hodel / Objektbasiert programmieren nach Vorgabe
 
 # :hammer: Konstruktor
 
-- Methodename ist **immer gleich** wie die Klasse
+- Methodenname ist **immer gleich** wie die Klasse
 - ist **nicht explizit aufrufbar**
 - wird **ausgeführt wenn ein Objekt erstellt wird** (:bulb: in Verbindung mit **`new`**)
 - hat **keinen Rückgabewert**
@@ -55,7 +55,7 @@ footer: BBZBL / Lukas Hodel / Objektbasiert programmieren nach Vorgabe
 - werden **keine Parameter** angegeben, nennt man ihn **Standardkonstruktor**
 - dient dazu das **Objekt** mit gültigen Werten zu **initialisieren**
 
-## :tv: [Viedo auf Youtube über Konstruktoren](https://www.youtube.com/watch?v=FKdxjjNdCYM)
+## :tv: [Video auf Youtube über Konstruktoren](https://www.youtube.com/watch?v=FKdxjjNdCYM)
 
 ---
 
@@ -70,7 +70,7 @@ public class MyClass {
     this.name = "Startwert"; // `name = "Startwert"` ohne `this` ist auch gültig
   }
 
-  public myclass(string name) { // konstruktor mit gleichnamigem parameter
+  public MyClass(String name) { // konstruktor mit gleichnamigem parameter
     this.name = name; // `this` ist notwendig da gleichnamig
   }
   
