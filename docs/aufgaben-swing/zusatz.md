@@ -16,9 +16,9 @@ Dieser Auftrag besteht darin, einfache Eingaben für ein Benutzer-Profil zu erst
 
 <div class="grid"><div>
 
-- Erstellen Sie ein GUI, in welchem man ein einfaches Profil, mit Namen, bevorzugter Farbe und Sportart eintragen kann. 
+- Erstellen Sie ein GUI, in welchem man ein einfaches Profil, mit Namen, bevorzugter Farbe und Sportart eintragen kann.
 - Erstellen Sie eine **Fachklasse** `Profil` für die Logik
-    - Darin sollen die im GUI eingegebenen Daten gespeichert und verarbeitet werden.
+  - Darin sollen die im GUI eingegebenen Daten gespeichert und verarbeitet werden.
 - Nach Click auf einen Button wird das **kombinierte Profil** in einem `JLabel` angezeigt.
 
 </div><div>
@@ -128,7 +128,6 @@ public class ProfileGUIStarter {
 
 </details>
 
-
 <!-- Durch SOL
 ### Punkte
 
@@ -139,7 +138,7 @@ public class ProfileGUIStarter {
 
 ## Zusatzaufgabe 2 - mittel
 
-Dieser Auftrag besteht in zwei Varianten: 
+Dieser Auftrag besteht in zwei Varianten:
 
 - a) das Programm simuliert ein einmaliges würfeln, indem eine der Augenzahlen 1 bis 6 entsprechende Zahl zufällig erzeugt wird.
 - b) es werden 100 Würfeldurchgänge simuliert und die zufällige Verteilung angezeigt.
@@ -222,7 +221,6 @@ public class DiceGUI extends JFrame implements ActionListener {
 }
 ```
 
-
 ```java title="DiceGUIStarter.java"
 public class DiceGUIStarter {
 
@@ -272,7 +270,7 @@ public class MultiDice {
 	public static void main(String[] args) {
         // hier könnte man auch 217 mal würfeln
         // dann müsste man die % Angaben aber auch normalisieren!
-		int[] counts = MultiDice.rollTimes(100); 
+		int[] counts = MultiDice.rollTimes(100);
 		for (int i = 0; i < counts.length; i++) {
 			System.out.println((i + 1) + ": " + counts[i] + "%");
 		}
@@ -348,7 +346,7 @@ public class MultiDiceGUI extends JFrame implements ActionListener {
 	}
 
 	public void actionPerformed(ActionEvent arg0) {
-		int[] counts = MultiDice.rollTimes(100); 
+		int[] counts = MultiDice.rollTimes(100);
 		oneLabel.setText(counts[0] + "%");
 		twoLabel.setText(counts[1] + "%");
 		threeLabel.setText(counts[2] + "%");
@@ -382,14 +380,16 @@ Punkte:
 
 <div class="grid"><div>
 
-Dieser Auftrag besteht darin ein GUI zu entwickeln, welches einen Login-Dialog simuliert. 
+Dieser Auftrag besteht darin ein GUI zu entwickeln, welches einen Login-Dialog simuliert.
 
 Dabei werden feste Werte erwartet:
-- Benutzer: *"peter"*
-- Passwort: *"gibm"*
+
+- Benutzer: _"peter"_
+- Passwort: _"gibm"_
 
 Es wird ausgegeben, ob der Login erfolgreich war:
-- werden die falschen Anmeldeinformationen eingegeben, erscheint eine entsprechende Fehlermeldung. 
+
+- werden die falschen Anmeldeinformationen eingegeben, erscheint eine entsprechende Fehlermeldung.
 - Sind die Angaben jedoch korrekt, wird eine Bestätigung angezeigt, dass man nun eingeloggt ist.
 
 </div><div>
@@ -434,7 +434,7 @@ public class Login {
 	}
 
 	private boolean isSuccessfull() {
-		return this.password.equals(this.passwordAnswer) 
+		return this.password.equals(this.passwordAnswer)
             && this.userName.equals(this.userNameAnswer);
 	}
 
@@ -506,12 +506,12 @@ public class LoginGUI extends JFrame implements ActionListener {
 
 ```java title="LoginStarter.java"
 public class LoginStarter {
-	
+
 	public static void main(String[] args) {
 		LoginGUI gui = new LoginGUI();
 		gui.showDialog();
 	}
-	
+
 }
 ```
 
@@ -532,8 +532,8 @@ Dieser Auftrag besteht darin ein GUI zu entwickeln, in welchem die **monatlichen
 
 Wenn alle Angaben vorhanden sind, erscheint bei **einem Klick auf "calculate"** wieviel jeden Monat für die Abzahlung bezahlt werden muss.
 
-- *Optional* kann **zusätzlich ein Ökologie-Faktor** anhand der Abzahldauer berechnet werden, wobei angenommen wird, dass die Nutzungsdauer nicht länger als die Abzahldauer ist.
-- *Optional* kann die Anwendung so erweitert werden, dass **zwei Telefone oder Laufzeiten** nebeneinander verglichen werden können.
+- _Optional_ kann **zusätzlich ein Ökologie-Faktor** anhand der Abzahldauer berechnet werden, wobei angenommen wird, dass die Nutzungsdauer nicht länger als die Abzahldauer ist.
+- _Optional_ kann die Anwendung so erweitert werden, dass **zwei Telefone oder Laufzeiten** nebeneinander verglichen werden können.
 
 </div><div>
 
@@ -591,10 +591,10 @@ public class PhoneCalculator {
 			return "expensive, and strong environmental damages are likely";
 		} else if (months >= 14 && months <= 24) {
 			return "expensive, and environmental damages are likely";
-		} 
+		}
 		return "less environmental damages due to longer usage period";
 	}
-	
+
     // nur zum testen von sich selbst
 	public static void main(String[] args) {
 		PhoneCalculator calculator = new PhoneCalculator();
@@ -691,7 +691,7 @@ public class PhoneCalculatorGUIStarter {
 		PhoneCalulatorGUI gui = new PhoneCalulatorGUI();
 		gui.showDialog();
 	}
-	
+
 }
 ```
 

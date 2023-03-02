@@ -4,7 +4,7 @@ Mit dem Aufkommen der Programmierung wurde auch die Frage der Kommunikation übe
 
 Es gibt viele UML Diagrammtypen, wirklich Verwendung finden vor allem folgende:
 
-- [Klassendiagramm](#klassendiagram)
+- [Klassendiagramm](#Klassendiagramm)
 - [Sequenzdiagramm](https://www.websequencediagrams.com/)
 - ERM, Entity Relationship Diagram (Für Datenbanken)
 
@@ -27,11 +27,10 @@ Es gibt viele UML Diagrammtypen, wirklich Verwendung finden vor allem folgende:
 
 </div></div></div>
 
-
 ### Methoden
 
 | UML                                     | Java Signatur                         |
-| --------------                          | --------------                        |
+| --------------------------------------- | ------------------------------------- |
 | `+setName(name : String)`               | `public void setName(String name)`    |
 | `+getName() : String`                   | `public String getName()`             |
 | <u>`+sum(a : int, b: int) : int`</u>    | `public static int sum(int a, int b)` |
@@ -44,7 +43,7 @@ Es gibt viele UML Diagrammtypen, wirklich Verwendung finden vor allem folgende:
 **:point_up: `+|- variablenNamen : Datentyp`**
 
 | UML                   | Java                       |
-| --------------        | --------------             |
+| --------------------- | -------------------------- |
 | `-name : String`      | `private String name;`     |
 | `+year : int`         | `public int year;`         |
 | <u>`+PI : double`</u> | `public static double PI;` |
@@ -54,12 +53,15 @@ Es gibt viele UML Diagrammtypen, wirklich Verwendung finden vor allem folgende:
 <div class="container"><div class="row"><div class="col col--6">
 
 **Klasse verwendet ein `new` Objekt**
+
 - gestrichelter Pfeil
 
 **Klasse `implements` ein Interface**
+
 - gestrichelter Pfeil mit **Dreiecksspitze**
 
 **Klasse `extends` eine Klasse**
+
 - durchgezogener Pfeil mit **Dreiecksspitze**
 
 </div><div class="col col--6">
@@ -91,15 +93,13 @@ classDiagram
 
 </div></div></div>
 
-## UML Tools :toolbox: 
+## UML Tools :toolbox:
 
 - [IntelliJ Diagrams](https://www.jetbrains.com/help/idea/class-diagram.html) _jedoch nicht 100% UML Standard!!_
-  - IntelliJ finden Sie auf unseren **Widnows VMs** 
+  - IntelliJ finden Sie auf unseren **Widnows VMs**
 - [ObjektAid for Eclipse](https://github.com/AbbaouiAmine/objectAidArchive)
   - [Video mit Installationsanleitung](https://www.youtube.com/watch?v=UtSRX9swc1w)
 - [Mermaid](https://mermaid.js.org/) :mermaid:
   - wird auf dieser Seite verwendet
   - [Mermaid Dokumentation](https://mermaid.js.org/syntax/classDiagram.html)
   - [Mermaid Live im Browser](https://mermaid.live)
-
-

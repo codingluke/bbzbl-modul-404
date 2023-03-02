@@ -1,8 +1,10 @@
-# ActionListener
+# ActionListener asdf
 
 :::danger Allerwesentlichster Part!
-- Dies sollen alle **vor dem LB1 verstanden und verinnerlicht haben**! 
+
+- Dies sollen alle **vor dem LB1 verstanden und verinnerlicht haben**!
 - Ohne dieses Wissen ist das Projekt und auch die Prüfung nicht zu bestehen!
+
 :::
 
 ## Das Interface `ActionListener`
@@ -23,7 +25,6 @@ public interface ActionListener extends EventListener {
 
 }
 ```
-
 
 ## ActionListener Beispiel: TimeButton Klasse
 
@@ -57,7 +58,7 @@ public class TimeButton extends JFrame implements ActionListener {
 
     // Hier wird die Klasse beim Button `commandButton` registriert
     // Ohne diese Anweisung macht der `commandButton` nix!
-    commandButton.addActionListener(this); 
+    commandButton.addActionListener(this);
 
     // highlight-end
     setDefaultCloseOperation(EXIT_ON_CLOSE);
@@ -71,7 +72,7 @@ public class TimeButton extends JFrame implements ActionListener {
   @Override // dies signalisiert, dass wir die Methode definieren müssen!
   public void actionPerformed(ActionEvent e) {
     // Wenn der `commandButton` gedrückt wird, wird ein neues Datum ins `outputLabel` geschrieben
-    outputLabel.setText("" + new Date()); 
+    outputLabel.setText("" + new Date());
   }
 
   // highlight-end
@@ -89,7 +90,7 @@ public class TimeButton extends JFrame implements ActionListener {
 ## Feststellen, welcher Button gedrückt wurde
 
 Falls ein Fenster mehrere Buttons hat, muss sich die Fensterklasse bei jedem Button registrieren, damit sie bei einem Klick benachrichtigt wird. Jedes Mal, wenn ein Button gedrückt wird, erfolgt ein Aufruf der Methode actionPerformed. In dieser Methode muss nun herausgefunden werden, wer
-der Urheber des Aufrufs ist. 
+der Urheber des Aufrufs ist.
 
 Dies lässt sich wie folgt feststellen:
 
@@ -115,7 +116,7 @@ public class TimeButton extends JFrame implements ActionListener {
   public void actionPerformed(ActionEvent e) {
     // highlight-start
 
-    if (e.getSource() == commandButton) { // 
+    if (e.getSource() == commandButton) { //
       // wird ausgeführt, wenn der `commandButton` gedrückt wurde
     } else if (e.getSource() == otherButton) {
       // wird ausgeführt, wenn der `otherButton` gedrückt wurde
@@ -126,4 +127,3 @@ public class TimeButton extends JFrame implements ActionListener {
 
 }
 ```
-

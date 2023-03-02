@@ -4,7 +4,7 @@ sidebar_position: 4
 
 # 4. JButton Aktivieren
 
-> :point_up: **Machen Sie sich mit dem Konzept des [ActionListener](../konzepte/actionlistener) bekannt bevor Sie weiterfahren!**
+> :point_up: **Machen Sie sich mit dem Konzept des [ActionListener](../konzepte/actionlistener.md) bekannt bevor Sie weiterfahren!**
 
 ## Aufgabe 1: Einen Wert kopieren
 
