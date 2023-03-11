@@ -8,8 +8,8 @@ Woche | Datum | Thema | Leistungsbewertung
 [Woche&nbsp;4][w4] | 17.02.2023 | Konstruktor / Formatierung / UML | 
 || _24.02.2023_<br/>_03.03.2023_| :japanese_goblin: *Fasnachtsferien* | 
 [**Woche&nbsp;5**][w5] | **10.03.2023** | **1. Leistungsbewertung / Projektstart** | **[LB1]**
-<hr/>|:steam_locomotive:|<hr/>|<hr/>
 [Woche&nbsp;6][w6] | 17.03.2023 | Arbeiten am Projekt | 
+<hr/>|:steam_locomotive:|<hr/>|<hr/>
 [Woche&nbsp;7][w7] | 24.03.2023 | Arbeiten am Projekt | 
 [Woche&nbsp;8][w8] | 31.03.2023 | Arbeiten am Projekt | 
 || _07.04.2023_<br/>_14.04.2023_ | :egg: *Osterferien*  | 

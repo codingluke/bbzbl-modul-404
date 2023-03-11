@@ -40,9 +40,9 @@ public class Converter {
   public void dialog() {
     double convtemp;
     // highlight-next-line
-    // Geht es ohne `new`, rsp. ohne Objekt `converter`? 
+    // Geht es ohne `new`, rsp. ohne Objekt `converter`?
     // highlight-next-line
-    DegreesConverter converter = new DegreesConverter(); 
+    DegreesConverter converter = new DegreesConverter();
     int userEntry = 0;
     try(Scanner scanner = new Scanner(System.in)) {
       do {
@@ -55,7 +55,7 @@ public class Converter {
           // highlight-next-line
           // Was muss hier geändert werden wenn es kein Objekt `converter` mehr gibt?
           // highlight-next-line
-          convtemp = converter.toCelsius(temp); 
+          convtemp = converter.toCelsius(temp);
         } else {
           // highlight-next-line
           // Was muss hier geändert werden wenn es kein Objekt `converter` mehr gibt?
@@ -88,10 +88,9 @@ public class DegreesConverter {
 }
 ```
 
-
 ## Aufgabe
 
-1. Kopieren Sie den Code der Klassen `Starter`, `Converter` und `DegreesConverter` von oben 
+1. Kopieren Sie den Code der Klassen `Starter`, `Converter` und `DegreesConverter` von oben
 2. Bringen Sie die Applikation in Eclipse zum laufen.
 3. Ändern Sie die Methoden `toFahrenheit` und `toCelsius` so dass die Klasse `DegreesConverter` **statisch, also ohne `new`** verwendet werden kann.
 
@@ -110,7 +109,7 @@ public class Converter {
     // highlight-next-line
     // Die nächste Linie kann man auskommentieren, we braucht nun kein Objekt mehr
     // highlight-next-line
-    // DegreesConverter converter = new DegreesConverter(); 
+    // DegreesConverter converter = new DegreesConverter();
     int userEntry = 0;
     try(Scanner scanner = new Scanner(System.in)) {
       do {
@@ -121,12 +120,12 @@ public class Converter {
         double temp = scanner.nextDouble();
         if (userEntry == 1) {
           // highlight-next-line
-          // convtemp = converter.toCelsius(temp); 
+          // convtemp = converter.toCelsius(temp);
           // highlight-next-line
           convtemp = DegreesConverter.toCelsius(temp); // es braucht kein Objekt!
         } else {
           // highlight-next-line
-          //convtemp = converter.toFahrenheit(temp); 
+          //convtemp = converter.toFahrenheit(temp);
           // highlight-next-line
           convtemp = DegreesConverter.toFahrenheit(temp); // es braucht kein Objekt!
         }
@@ -159,6 +158,3 @@ public class DegreesConverter {
 ```
 
 </details>
-
-
-
