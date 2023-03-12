@@ -12,7 +12,7 @@ sidebar_position: 2
 
 ## :brain: Input
 
-- [Repetition Fachklassen](../konzepte/fachklassen.md) 
+- [Repetition Fachklassen](../konzepte/fachklassen.md)
 - [Static](../konzepte/static.md)
 - [Einstieg in Swing](../aufgaben-swing/einstieg-in-swing.md)
 
@@ -33,5 +33,3 @@ sidebar_position: 2
 - [JFrame Komponenten](../aufgaben-swing/komponenten.md)
 
 </div></div>
-
-

@@ -1,7 +1,7 @@
 # LB 1
 
-| **Dauer** | **Gewichtung** |
-| :--- | :--- |
+| **Dauer**  | **Gewichtung**        |
+| :--------- | :-------------------- |
 | 90 Minuten | **50%** der Modulnote |
 
 ## Mögliche Aufgaben
@@ -14,8 +14,8 @@
 - [Swing-Komponenten](../aufgaben-swing/komponenten.md) anwenden (`JLabel`, `JTextField`, `JButton`)
 - [`ActionListener`](../konzepte/actionlistener.md) implementieren
 - [Klassendiagramm](../konzepte/uml.md) zeichnen
-    - Programmieren gemäss einem Klassendiagramm
-- [Konstruktor](../konzepte/konstruktor.md) anwenden 
+  - Programmieren gemäss einem Klassendiagramm
+- [Konstruktor](../konzepte/konstruktor.md) anwenden
 
 :::tip
 

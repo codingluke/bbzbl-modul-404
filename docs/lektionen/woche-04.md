@@ -26,7 +26,7 @@ sidebar_position: 4
 - [Konstruktor](../aufgaben-swing/konstruktor.md)
 - [DiceGame](../aufgaben-swing/dice-game.md) (:performing_arts: **Live-Coding**)
 
-### :superhero: Optional 
+### :superhero: Optional
 
 - [Weitere Swing-Aufgaben](../aufgaben-swing/zusatz.md)
 
@@ -38,6 +38,3 @@ sidebar_position: 4
 - [Account UML](../aufgaben-grundlagen/account-uml.md)
 
 </div></div>
-
-
-

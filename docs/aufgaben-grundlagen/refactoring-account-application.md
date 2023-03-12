@@ -1,6 +1,7 @@
 ---
 sidebar_position: 3
 ---
+
 # 3. Refactoring Account Applikation
 
 :::danger WICHTIG
@@ -19,12 +20,13 @@ Bezeichnung im Programmieren, dass man den **vorhandenen Code neu Strukturiert, 
 
 1. Das Konto-Programm bearbeitet zu viele Aufgaben (Verantwortlichkeiten) in einer Klasse
 1. Die Arbeit wollen wir **in zwei Klassen aufteilen**
-  - `AccountApplication` (Beinhaltet die Benutzerinteraktion und `main` Methode)
-  - `Account` rsp. `Konto` (Beinhaltet die Fachlogik)
+
+- `AccountApplication` (Beinhaltet die Benutzerinteraktion und `main` Methode)
+- `Account` rsp. `Konto` (Beinhaltet die Fachlogik)
 
 ## Einführung der Klasse `Account`/`Konto`
 
-Die **Fachlogik** der `AccountApplication` kann in eine eigene Klasse `Account` ausgelagert werden. 
+Die **Fachlogik** der `AccountApplication` kann in eine eigene Klasse `Account` ausgelagert werden.
 
 ```java title="Account.java"
 public class Account {
@@ -38,7 +40,7 @@ public class Account {
     balance -= value;
   }
 
-  public double getBalance() { 
+  public double getBalance() {
     return balance;
   }
 }
@@ -62,10 +64,12 @@ girokonto.withdraw(20); // dem Girokonto 20 Franken abheben
 System.out.println(sparkonto.getBalance()); // => 30;
 System.out.println(girokonto.getBalance()); // => -20;
 ```
+
 :::tip Objekte haben eigenen Speicherbereich!
-- Das Objekt `sparkonto` und `girokonto` **teilen sich den Code** der Klasse `Account`. 
+
+- Das Objekt `sparkonto` und `girokonto` **teilen sich den Code** der Klasse `Account`.
 - Die **Werte der Instanz-Variable** `private double balance;` sind jedoch **unabhängig**!
-:::
+  :::
 
 ## Aufgabe
 
@@ -74,7 +78,7 @@ Bauen Sie Ihr Programm nun so um, dass es aus zwei Klassen besteht (die ursprün
 - Erstellen und implementieren Sie die Klasse `Account`.
 - Löschen Sie in der ursprüngliche Klasse (`AccountApplication`) die Variable `double balance`;
 - Legen Sie dafür ein **Objekt** der Klasse `Account` an.
-- Jetzt erscheinen Fehler im Quellcode. 
+- Jetzt erscheinen Fehler im Quellcode.
   - Überall dort müssen Sie das Programm anpassen und mit dem **Objekt** der Klasse `Account` arbeiten.
 - Die Methoden `deposit` und `withdraw` der ursprünglichen Klasse `AccountApplication` **müssen nun gelöscht werden können**.
 
@@ -112,7 +116,7 @@ public class AccountApplicationV2 {
         } while (amount != 0);
         // Die balance/Kontostand wird direkt im Objekt "account" berechnet
         // highlight-next-line
-        System.out.println("Final balance: " + account.getBalance()); 
+        System.out.println("Final balance: " + account.getBalance());
     }
   }
 }

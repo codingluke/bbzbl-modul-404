@@ -22,7 +22,7 @@ Verwenden Sie eine for-Schleife, um den folgenden Array auszugeben:
 char[] text = {'h','a','l','l','o',' ','w','e','l','t'};
 ```
 
-- Geben Sie danach den Array in **umgekehrter Reihenfolge** aus, also von hinten nach vorne. 
+- Geben Sie danach den Array in **umgekehrter Reihenfolge** aus, also von hinten nach vorne.
 - Verwenden Sie dafür auch wieder eine for-Schleife.
 
 <details>
@@ -54,7 +54,7 @@ public class ArrayChars {
 
 ## String sortieren
 
-1. Kopieren Sie den untenstehenden Code in ein Eclipse-Projekt und lassen Sie ihn laufen. 
+1. Kopieren Sie den untenstehenden Code in ein Eclipse-Projekt und lassen Sie ihn laufen.
 2. Erweitern Sie das Programm so, dass der Array sortiert und danach wieder ausgegeben wird.
 
 ```java
@@ -120,6 +120,7 @@ public class SortString {
 
 }
 ```
+
 </details>
 
 ## Array negativ
@@ -252,7 +253,7 @@ public class CombineArrays {
 
 ## Combine Arrays with Methods
 
-Verwende den Code von [Combine Arrays](#combine-arrays). 
+Verwende den Code von [Combine Arrays](#combine-arrays).
 
 Nun versuche die Aufgabe so zu lösen, dass das Kopieren und Ausgeben in zwei Methoden gemacht wird. Die Signatur der Methoden sind folgende:
 
@@ -311,9 +312,9 @@ public class CombineArraysWithMethods {
 Erstellen Sie ein Programm, welches Noten einlesen kann und in einem Array speichert.
 
 - Zuerst soll es nach der Anzahl Noten fragen...
-    - ... und dann mit diesem Wert einen neuen Array anlegen.
+  - ... und dann mit diesem Wert einen neuen Array anlegen.
 - Dann sollen alle Werte vom Benutzer eingegeben werden, wobei...
-    - ... nach jedem Wert der Durchschnitt der bisher eingegebenen Noten berechnet und angezeigt wird.
+  - ... nach jedem Wert der Durchschnitt der bisher eingegebenen Noten berechnet und angezeigt wird.
 
 :::tip
 
@@ -368,7 +369,7 @@ public class Noten {
 
 1. Erstellen Sie einen Array mit sechs 0en.
 2. Würfeln Sie 100 mal mit der Methode `rollDice()`
-    - Bei jedem Wurf zählen Sie für die gewürfelte Zahl der entsprechende index im Array hoch.
+   - Bei jedem Wurf zählen Sie für die gewürfelte Zahl der entsprechende index im Array hoch.
 3. Geben Sie aus wie häufig die jeweiligen Zahlen gewürfelt wurden.
 
 :::Tip
@@ -422,5 +423,3 @@ public class Dice {
 ```
 
 </details>
-
-

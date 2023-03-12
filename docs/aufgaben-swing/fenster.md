@@ -24,7 +24,6 @@ public class Starter {
 
 :::
 
-
 ```java title="PureWindow.java"
 import javax.swing.JFrame;
 
@@ -42,7 +41,7 @@ public class PureWindow extends JFrame {
 
 - Die Klasse `PureWindow` muss von der Klasse `JFrame` alle Fähigkeiten übernehmen. Dies geschieht durch die Anweisung `extends JFrame`. Damit wird die Klasse `PureWindow` zu einem `JFrame`.
 - Die Methode `showDialog()` führt die **grundlegenden Konfigurationsschritte** aus. Diese werden bei allen Fenstern benötigt.
-- Die Methode `showDialog()` ist **nicht als static** markiert. Sie muss also über das Objekt `pureWindow.showDialog()` aufgerufen werden. 
+- Die Methode `showDialog()` ist **nicht als static** markiert. Sie muss also über das Objekt `pureWindow.showDialog()` aufgerufen werden.
   - `PureWindow.showDialog()` ist nicht zulässig!
 
 :::info
@@ -51,7 +50,7 @@ Die Klasse haben wir `PureWindow` genannt. Deutsch heisst das soviel wie "reines
 
 :::
 
-:::tip 
+:::tip
 
 Lesen Sie auch die Kommentare im Code, löschen Sie die einzelnen Zeilen und schauen was passiert!
 
@@ -98,4 +97,3 @@ JButton button = new JButton("press me"); // Ein Button
 button.setBounds(x, y, width, height); // Bestimmen wo sich der Button befindet
 add(button); // Textfeld hinzufügen
 ```
-

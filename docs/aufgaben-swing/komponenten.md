@@ -10,7 +10,7 @@ Neben JFrame werden hier drei für unser Modul unverzichtbare Komponenten vorges
 
 > Eine Komponente zur Beschriftung
 
-```java 
+```java
 JLabel label = new JLabel("Beschriftung");
 
 // Wichtige Methoden
@@ -84,7 +84,7 @@ Der Elementare `do/while`-Loop einer Konsolenapplikation wird in einer GUI Appli
 
 ## Komponenten in ein Fenster einfügen
 
-Um eine Swing-Komponente  in einem Fenster sichtbar zu machen, sind noch **zwei Anweisungen** notwendig. Dafür nehmen wir eine Komponente in der Variable `component` an. Die Variable `component` darf also auch anders heissen! Muss jedoch ein Objekt einer der oben vorgestellten Komponenten beinhalten.
+Um eine Swing-Komponente in einem Fenster sichtbar zu machen, sind noch **zwei Anweisungen** notwendig. Dafür nehmen wir eine Komponente in der Variable `component` an. Die Variable `component` darf also auch anders heissen! Muss jedoch ein Objekt einer der oben vorgestellten Komponenten beinhalten.
 
 ### `component.setBounds(x, y, width, heigth)`
 
@@ -94,7 +94,7 @@ Der Aufruf von `component.setBounds(x, y, width, heigth)` **positioniert die Kom
 - `component.setBounds(10, 10, 100, 15);` bedeutet somit:
   - 10 Pixel von oben
   - 10 Pixel von links
-  - 100 Pixel lang und 
+  - 100 Pixel lang und
   - 15 Pixel hoch.
 
 ### `this.add(component)`
@@ -135,7 +135,7 @@ Komponenten sollte immer als **Instanz-Variablen** initialisiert werden! So hat 
 
 ## Aufgaben
 
-### Aufgabe 1 
+### Aufgabe 1
 
 > Ein Fenster mit zwei Label
 
@@ -258,7 +258,7 @@ public class Aufgabe4 extends JFrame {
     labelFirstName.setBounds(10, 40, 100, 20);
     textFieldFirstName.setBounds(120, 40, 150, 20);
     submitButton.setBounds(120, 70, 100, 30);
-    
+
     add(labelName);
     add(textFieldName);
     add(labelFirstName);

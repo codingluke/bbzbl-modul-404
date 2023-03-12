@@ -2,12 +2,12 @@
 sidebar_position: 2
 ---
 
-# 2. Analyse Account Applikation 
+# 2. Analyse Account Applikation
 
-| **Material** | Abbildung unterhalb |
-|:----|:----|
-| **Richtzeit** | ca. 15 Minuten |
-| **Sozialform** | Zweier Teams |
+| **Material**   | Abbildung unterhalb |
+| :------------- | :------------------ |
+| **Richtzeit**  | ca. 15 Minuten      |
+| **Sozialform** | Zweier Teams        |
 
 ## Auftrag
 
@@ -26,7 +26,7 @@ Sie haben nun ein kleines Programm geschrieben, das vom Benutzer Eingaben über 
 
 1. Begrüssung im Terminal
 2. Anweisung einen Betrag im Terminal einzugeben
-    - Wenn `0` soll das Programm abbrechen
+   - Wenn `0` soll das Programm abbrechen
 3. Einlesen der Antwort/Eingabe als `double` in die Variable `amount`
 4. Wenn nicht `0` eingegeben wurde wird aufgefordert einen Betrag einzugeben
    - Einlesen der Antwort/Eingabe als `double` in die Variable `command`

@@ -50,14 +50,13 @@ public class CastingExample extends JFrame implements ActionListener {
 ### Erläuterung zum Code:
 
 - Neu ist hier `Double.parseDouble(String string)`, welches demnach einen String als Parameter entgegen nimmt. Diese Methode verwandelt den String, welcher durch `entryField.getText()` zurück gegeben wird in eine Zahl vom Typ `double`, mit der dann gerechnet wird. Anschliessend wird das Resultat im outputLabel ausgegeben.
-- Da das `outputLabel` aber einen String-Wert erwartet, wird der Datentyp durch die Methode `Double.toString(double value)` in einen String umgewandelt. 
-
+- Da das `outputLabel` aber einen String-Wert erwartet, wird der Datentyp durch die Methode `Double.toString(double value)` in einen String umgewandelt.
 
 :::tip
 Solche Methoden gibt es nicht nur für den Datentyp `double`, sondern auch für `foat` und `int`. Da heissen die Methoden dann entsprechend `Float.parseFloat(String value)` und `Integer.parseInt(String value)`.
 
 - :bulb: Nach `String` kann **jeder Datentyp** mit `"" + variable` umgewandelt werden! :bulb:
-:::
+  :::
 
 ## Aufgabe
 

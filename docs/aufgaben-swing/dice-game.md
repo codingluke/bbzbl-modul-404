@@ -24,11 +24,12 @@ In der Methode `rollTheDice()` ist folgende Berechnung nötig, um eine zufällig
 ```java title="Zufallszahl zwischen 1 und 6"
 (int) (Math.random() * 6 + 1);
 ```
+
 :::
 
 ## Arbeitsschritte
 
 1. Programmieren Sie die Fachklasse `GamePlayer`. Untersuchen Sie, was `Math.random()` macht, und warum die weiteren Anweisungen notwendig sind.
-1. Um sich mit der Klasse vertraut zu machen, erstellen Sie eine Instanz der Fachklasse und rufen die Methode `rollTheDice()` wiederholt auf, z.B. mittels einer for-Schleife. 
+1. Um sich mit der Klasse vertraut zu machen, erstellen Sie eine Instanz der Fachklasse und rufen die Methode `rollTheDice()` wiederholt auf, z.B. mittels einer for-Schleife.
 1. Entwerfen Sie ein mögliches GUI. Überlegen Sie: welche Interaktionselemente (Schaltflächen, Textanzeige, etc.) sind nötig für das Spiel?
 1. Implementieren Sie nun das GUI gemäss Ihrer Skizze.

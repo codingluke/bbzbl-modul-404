@@ -13,7 +13,7 @@ sidebar_position: 1
 ## :brain: Input
 
 - [Modulidentifikation](../index.md)
-- [Fachklasse](../konzepte/fachklassen.md) 
+- [Fachklasse](../konzepte/fachklassen.md)
 
 ## :pencil: Aufgaben
 
@@ -33,4 +33,3 @@ sidebar_position: 1
 - startet nächste Woche!
 
 </div></div>
-

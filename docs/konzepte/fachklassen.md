@@ -79,7 +79,7 @@ public class ClassName { // Klassendeklaration Start
 } // Klassendeklaration Ende
 ```
 
-- `Instanz-Variablen` sind Variablen welche im `Klassen-Body` definiert werden. 
+- `Instanz-Variablen` sind Variablen welche im `Klassen-Body` definiert werden.
 - Daher befinden sie sich **nicht innerhalb** einer `Methode`.
 - Instanzvariablen können innerhalb **aller `Instanz-Methoden`** zugegriffen werden.
 - Das Wort `private` bedeutet, dass die Variable aber nur innerhalb der Klasse sichtbar ist, **nicht von ausserhalb**.
@@ -138,20 +138,24 @@ public class ClassName { // Klassendeklaration Start
 </Tabs>
 
 :::tip Keine `main` Methode in einer Fachklasse
+
 - Es gibt **keine** Methode `public static void main(String[] args)`.
 - Diese sollte **nur** in der `Starter` Klasse existieren
 - Es ist theoretisch möglich mehrere `main` Methoden zu haben, dies ist jedoch **schlechter Stil**
+
 :::
 
 :::danger Klickt durch die Tabs!
+
 Bitte clicked alle Tabs oberhalb einmal an und **versucht zu verstehen**, wie eine Klasse genau aufgebaut ist!
+
 :::
 
 ## Instanziierung und Verwendung eines Objekts/Instanz
 
 Objekte lassen sich im Code wie folgt erstellen:
 
-```java 
+```java
 // Datentyp    Variable       Objektzuweisung  Objekterstellung
    ClassName   variablenName         =         new ClassName();
 
@@ -159,7 +163,7 @@ Objekte lassen sich im Code wie folgt erstellen:
    ClassName   otherClassName        =         new ClassName();
 
 //               Mit einem Punkt "." wird auf die Instanz-Methoden zugegriffen!
-   variablenName.setMyInstanceVariable(12); 
+   variablenName.setMyInstanceVariable(12);
 
 // Der Rückgrabewert einer Methode kann in einer Variablen gespeichert werden
    int value = variablenName.getMyInstanceVariable();
@@ -169,6 +173,7 @@ Objekte lassen sich im Code wie folgt erstellen:
 ```
 
 :::tip Je besser die Namen desto leserlicher wird der Code!
+
 `ClassName` ist in dem oberen Beispiel generisch gewählt da es sich um ein generelles Beispiel handelt. Anstatt `ClassName` sollte später ein **spezifischer Namen** gewählt werden, wie z.B. `Account`. Der Name der Variable kann beliebig sein. Das gleiche gilt für `Variablen` und `Methoden`
 
 ```java
@@ -179,7 +184,9 @@ Xyz b = new Xzy();                     // Evt. nicht ganz so toll ;)
 :::
 
 :::note Instanz oder Objekt, WTF :confused: ?!?
+
 Die Wörter Objekt und Instanz sind **Synonyme**, können also beliebig vertauscht werden.
+
 :::
 
 ## 🦸 Unterschied von einem Objekt und einer Variable
@@ -188,8 +195,8 @@ Die Wörter Objekt und Instanz sind **Synonyme**, können also beliebig vertausc
 - Eine Variable muss aber nicht immer ein Objekt beinhalten
 
 ```java
-Account accountObjektVariable = new Account(); 
-int intVariable = 1;                 
+Account accountObjektVariable = new Account();
+int intVariable = 1;
 
 // `accountObjektVariable` beinhaltet ein Objekt der Klasse Account
 // `intVariable` beinhaltet den den Wert 1 vom `primitiven` Datentyp int
@@ -199,8 +206,10 @@ intVariable.getClass(); // führt zu einem ERROR. (versuche es in `eclipse`!)
 ```
 
 :::tip Faustregel
+
 - Wenn der **Datentyp** mit einem **Grossbuchstaben** anfängt (`String`, `Account`, ...) handelt es sich um ein **Objekt**
 - Wenn der **Datentyp** mit einem **Kleinbuchstaben** anfängt (`int`, `double`, `char`, ...) ist es **kein Objekt**
 - Ein **Objekt besitzt Methoden**, welche man ausführen kann, ein **primitiver Datentyp nicht**
   - **Jedes Objekt** besitzt die Methode `getClass()`;
+
 :::

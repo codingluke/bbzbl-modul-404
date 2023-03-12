@@ -21,14 +21,14 @@ In der Regel erstellt man eine **Starterklasse**, welche die Methode `public sta
 
 ## Static vs Instanz-Methoden
 
-Eine `static` Methode einer `Klasse` kann direkt aufgerufen werden, ohne dass ein `Object`/`Instanz` der Klasse erstellt werden muss. 
+Eine `static` Methode einer `Klasse` kann direkt aufgerufen werden, ohne dass ein `Object`/`Instanz` der Klasse erstellt werden muss.
 
 ```java
 public class MixedExample {
     private static final double PI = 3.14; // Konstante, kann nicht geändert werden!
     private String greeting = "Hello";     // Instanz-Variablen, kann geändert werden
 
-    public static double staticCircle(double radiant) { 
+    public static double staticCircle(double radiant) {
         return radiant * radiant * PI; // Kann auf `PI` zugreifen nicht aber auf `greeting`
     }
 
@@ -46,13 +46,13 @@ public class MixedExample {
 ```java
 public class Starter {
     // Startpunkt des Programms, ist immer static!
-    public static void main(String[] args) { 
+    public static void main(String[] args) {
 
         // Statische Methoden können ohne new ausgeführt werden!
-        double circle = MixedExample.staticCircle(1.5d); 
+        double circle = MixedExample.staticCircle(1.5d);
 
         // Um instanceMethoden aufzurufen, muss zuerst eine Instanz erstellt werden
-        MixedExample mixedExampleInstance = new MixedExample(); 
+        MixedExample mixedExampleInstance = new MixedExample();
         String greeting = mixedExampleInstance.instanceGreeting("Lukas");
         // Wert ist "Hallo Lukas";
 
@@ -62,3 +62,4 @@ public class Starter {
     }
 }
 
+```

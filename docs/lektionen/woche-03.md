@@ -13,7 +13,7 @@ sidebar_position: 3
 ## :brain: Input
 
 - [Projekt Klassenstruktur](../konzepte/uml.md#abhängigkeiten)
-- [Java Interface](../konzepte/actionlistener.md) 
+- [Java Interface](../konzepte/actionlistener.md)
 
 ## :pencil: Aufgaben
 
@@ -37,6 +37,3 @@ sidebar_position: 3
 - nächste Woche wieder
 
 </div></div>
-
-
-

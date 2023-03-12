@@ -37,7 +37,6 @@ public class Starter {
 <details>
 <summary>Nur zum Überprüfen der eigenen Implementation!</summary>
 
-
 ```java title="Starter.java"
 public class Starter {
 
@@ -70,11 +69,11 @@ public class ApplicationForStarter {
           if ("+".equals(command)) {
             account.deposit(amount);
           } else if ("-".equals(command)) {
-            account.withdraw(amount); 
+            account.withdraw(amount);
           }
         }
       } while (amount != 0);
-      System.out.println("Final balance: " + account.getBalance()); 
+      System.out.println("Final balance: " + account.getBalance());
     }
   }
 
@@ -93,7 +92,7 @@ public class Account {
     balance -= value;
   }
 
-  public double getBalance() { 
+  public double getBalance() {
     return balance;
   }
 }

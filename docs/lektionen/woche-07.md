@@ -12,4 +12,4 @@ sidebar_position: 7
 
 ## :pencil: Aufgaben
 
-- :alembic: Arbeiten am  [Projekt](../beurteilungen/lb2.md)
+- :alembic: Arbeiten am [Projekt](../beurteilungen/lb2.md)

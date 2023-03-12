@@ -2,7 +2,7 @@
 sidebar_position: 1
 ---
 
-# 1. Account Applikation 
+# 1. Account Applikation
 
 :::note Live Coding!
 
@@ -10,16 +10,16 @@ Sicherzustellen, dass alle die Entwicklungsumgebung zum laufen haben und auch wi
 
 :::
 
-| **Material** | Wissen und Faktenblatt Modul 403 |
-|:----|:----|
-| **Richtzeit** | ca. 45 Minuten |
+| **Material**   | Wissen und Faktenblatt Modul 403              |
+| :------------- | :-------------------------------------------- |
+| **Richtzeit**  | ca. 45 Minuten                                |
 | **Sozialform** | :performing_arts: **Live Coding** mit Lehrer! |
-
 
 ## Auftrag
 
 Erstellen Sie anhand des Wissens und Könnens aus dem Modul 403 ein Programm, welches einen einfachen Dialog für ein Bankkonto realisiert.
 Es soll möglich sein Geld:
+
 - **einzuzahlen**
 - **abzuheben**
 - den Kontostand **anzuzeigen**
@@ -50,7 +50,6 @@ Please enter the amount, 0 (zero) to terminate
 0
 Final balance: 35.0
 ```
-
 
 :::info Erste Hilfe
 
@@ -108,7 +107,6 @@ public class AccountApplication {
 - Geben Sie am Schluss vor dem Schlusssaldo eine Auflistung aller Transaktionen (Ein- und Auszahlungen) aus.
 
 ## Musterlösung
-
 
 <details>
 <summary>Nur zum Überprüfen der eigenen Implementation!</summary>

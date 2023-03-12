@@ -56,7 +56,6 @@ public class Aufgabe1 extends JFrame implements ActionListener {
 
 </details>
 
-
 ## Aufgabe 2: Mehrere Buttons auswerten
 
 Erstellen Sie das Programm unten. Das Ziel ist, dass bei Anklicken der Schaltfläche der Wert aus dem Textfeld in das Label unterhalb kopiert wird, während das obere Textfeld geleert wird.
@@ -131,7 +130,7 @@ public class Aufgabe2 extends JFrame implements ActionListener {
 class MyClass extends JFrame implements ActionListener
 
 // ActionListener registrieren
-button.addActionListener(this); 
+button.addActionListener(this);
 
 // Method actionPerformed implementieren
 @Override

@@ -26,16 +26,16 @@ public class PanelFrame extends JFrame implements ActionListener {
 
   private JButton btnNewRound = new JButton("new round");
   private JPanel pnl1 = new JPanel(); //Panel, welches andere Panels aufnimmt
-  private JScrollPane scrollpane = new JScrollPane(pnl1, 
+  private JScrollPane scrollpane = new JScrollPane(pnl1,
       JScrollPane.VERTICAL_SCROLLBAR_AS_NEEDED, JScrollPane.HORIZONTAL_SCROLLBAR_NEVER);
 
   // Würde hier ein Array Sinn machen?
   // Wie kann man alle Panels aller Runden speichern?
-  private RoundPanel panel = new RoundPanel(); 
+  private RoundPanel panel = new RoundPanel();
   // Wie löse ich es für den Player zwei?
 
   private int y = 0; // Vertikale verschiebung der Panels
-  
+
   // Ersetzt Starter.java für dieses Beispiel
   public static void main(String[] args) {
     new PanelFrame();
@@ -74,14 +74,14 @@ public class PanelFrame extends JFrame implements ActionListener {
 
 ```java title="RoundPanel.java"
 package panelExample;
-  
+
 import java.awt.Color;
-  
+
 import javax.swing.JLabel;
 import javax.swing.JPanel;
-  
+
 public class RoundPanel extends JPanel {
-  
+
   // Könnte man hier auch einen Array machen?
   // Was würde ein Array für Vorteile bringen?
   private JLabel lbl1 = new JLabel("6");
@@ -89,16 +89,16 @@ public class RoundPanel extends JPanel {
   private JLabel lbl3 = new JLabel("4");
   private JLabel lbl4 = new JLabel("4");
   private JLabel lbl5 = new JLabel("2");
-  
+
   public RoundPanel() {
     this.setLayout(null);
-    
+
     lbl1.setBounds(10, 10, 30, 30);
     lbl2.setBounds(40, 10, 30, 30);
     lbl3.setBounds(70, 10, 30, 30);
     lbl4.setBounds(100, 10, 30, 30);
     lbl5.setBounds(130, 10, 30, 30);
-    
+
     add(lbl1);
     add(lbl2);
     add(lbl3);

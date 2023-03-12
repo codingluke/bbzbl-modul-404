@@ -26,7 +26,7 @@ public class MyClass {
   public MyClass(String name) { // Konstruktor mit gleichnamigem Parameter
     this.name = name; // `this` ist notwendig da gleichnamig
   }
-  
+
   public MyClass(String aName, int year) { // Konstruktor mit zwei Variablen
     name = aName;     // `this` darf weggelassen werden (muss aber nicht!)
     this.year = year; // `this` ist notwendig da gleichnamig
@@ -40,7 +40,7 @@ public class MyClass {
 public class Starter {
   public static void main(String[] args) {
     // Standardkonstruktor wird ausgeführt!
-    MyClass myClass = new MyClass(); 
+    MyClass myClass = new MyClass();
 
     // Konstruktor mit einem Parameter wird ausgeführt
     MyClass myClass2 = new MyClass("Neuer Startwert");
@@ -60,4 +60,3 @@ public class Starter {
   - Das Objekt im zweiten Aufruf in main ist also gleich mit dem Startwert "Neuer Startwert" inizialisiert
 - Wenn der **Name von Parametern gleich ist wie der Name einer Variablen**, dann muss mit dem Schlüsselwort `this` gearbeitet werden
   - Der Einsatz dieses Wortes bedeutet, dass damit die Instanzvariable gemeint ist und nicht der Parameter
-

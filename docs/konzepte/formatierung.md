@@ -5,11 +5,11 @@ Wir sind keine Maschinen sondern **Menschen**. Um einen Text gut lesen zu könne
 ## Unsere Regeln
 
 - Wir verwenden **keine Umlaute** im Code (Ausnahmen sind Kommentare)
-- Jede **Klasse** 
-  - beginnt mit einem **Grossbuchstaben** 
+- Jede **Klasse**
+  - beginnt mit einem **Grossbuchstaben**
   - hat einen `AusdrucksstarkenNamen` in :camel: [`UpperCamelCase` :link:](http://wiki.c2.com/?UpperCamelCase)
 - Jede **Methode**
-  - beginnt mit einem **Kleinbuchstaben** 
+  - beginnt mit einem **Kleinbuchstaben**
   - hat einen `ausdrucksstarkenNamen` in :camel: [`lowerCamelCase` :link:](http://wiki.c2.com/?LowerCamelCase)
 - Blöcke `{}` werden eingerückt (:keyboard: **Ctrl-Shift-F** :apple: **Command-Shift-F**)
 - **Standard-Encoding `UTF-8`**: `Preferences > General > Workspace` -> `UTF-8`
@@ -24,9 +24,10 @@ import java.util.Scanner; public class XYZ { public static void main(String[] ar
 ```
 
 :::tip
+
 - Damit andere Entwickler unseren Code gut lesen können (und wir selbst auch), werden wir uns an [**einige Regeln**](#unsere-regeln) halten.
 - Viele Firmen haben übrigens eine ganze Reihe definierter Regeln, wie Quellcode aussehen soll. [Hier](https://google.github.io/styleguide/javaguide.html) finden Sie zum Beispiel die Regeln, wie bei [Google Java Code zu formatieren ist](https://google.github.io/styleguide/javaguide.html).
-:::
+  :::
 
 ## Formatiert mit schlechte Namen
 
@@ -75,7 +76,6 @@ public class Xyz {
 }
 ```
 
-
 ## Formatiert und gut Benannt
 
 ```java
@@ -118,4 +118,3 @@ public class AccountApplication {
   }
 }
 ```
-

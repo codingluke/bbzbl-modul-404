@@ -27,7 +27,6 @@ Die Musterlösung ist mit einem [Konstruktor](../konzepte/Konstruktor) erstellt,
 
 :::
 
-
 <details>
 <summary>Immer zuerste selber versuchen! Lösung abtippen, nicht kopieren ;)</summary>
 
@@ -151,4 +150,3 @@ public class Account {
 ```
 
 </details>
-
