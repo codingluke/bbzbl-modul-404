@@ -17,65 +17,72 @@ footer: BBZBL / Lukas Hodel / Objektbasiert programmieren nach Vorgabe
 
 # Agenda
 
+- :checkered_flag: LB1 Vorbereitung
+- :question: Fragen zum Test (:stopwatch: 10 Minuten)
+- :student: LB 1 (:stopwatch: 90 Minuten)
 - :alembic: Start vom Projekt (LB2)
+
+---
+
+<!-- _class: big emoji-list -->
+
+# :checkered_flag: LB 1 / **Vorbereitung**
+
+- :arrows_counterclockwise: Workstation neustarten
+- :bust_in_silhouette: **`e-`** `vorname.nachname` _(wie gewohnt, mit **e-** vorangestellt!)_
+
+- :file_folder: **`L:\Klassenarbeiten\M404-LB1-INB22A`**
+  - **`eclipse-workspace.7z`** entzippen
+  - in Eclipse **`File -> Open Projects from File System...`**
+
+---
+
+![bg right fit](./images/eclipse-uft8.png)
+
+# :symbols: `UTF-8` in Eclipse!
+
+**Eclipse Preferences** öffnen:
+
+1. **General** auswählen
+2. **Workspace** auswählen
+3. **Default (UTF-8)** setzen
+
+4. Speichern
+
+> :scream: **Sonst compiliert euer Code auf meinem Mac nicht!**
+
+
+---
+
+# <!--fit--> :bulb: `UML` Klassendiagram
+
+![bg right fit](./images/class-to-uml.png)
+
+- Eine Klasse ist ein Rechteck
+- Klassenname ist zentrierter Titel
+- Sichtbarkeit
+  - `-` ist `private`
+  - `+` ist `public`
+- Obenhalb: Instanz**variablen**
+- Unterhalb: Instanz**methoden**
+- <u>`Unterstrichen`</u>: `static`
 
 ---
 
 <!-- _class: big -->
 
-# :alembic: Projekt 
+# :student: LB 1 / :stopwatch: 90 Minuten
+
+- Immer **1 Person, auf die Toilette**
+- **Faktenblätter** sind erlaubt!
+
+---
+
+<!-- _class: big -->
+
+# :alembic: Projektarbeit (LB 2)
 
 ## <!--fit--> :book: Bitte studiert nun alle den [Projektbeschrieb](https://codingluke.github.io/bbzbl-modul-404/docs/beurteilungen/lb2)
 
 - Ab jetzt arbeiten wir nur noch am Projekt
 
----
-
-# :policeman: Spielregeln
-
-![bg fit right](./images/Projekt-GUI.png)
-
-- 2 Spieler / X Runden
-
-- 5 Würfe _max_ pro Spieler/Runde
-- **Gerader Wurf** aufsummieren
-- **Ungerader Wurf** beendet die Runde des Spielers **mit 0**
-- Runde darf abgebrochen werden
-
-> :point_up: Die Regeln dürfen abgewandelt werden!
-
----
-
-![bg fit right](./images/projekt-beispiel-uml.png)
-
-# :keyboard: Implementation
-
-**Fachklassen**
-
-- Spieler _(Player)_, Spielregeln _(Game)_, Würfel _(Dice)_
-
-**GameGui**
-
-- Eingabe der Spielernamen
-- Darstellung des Spiels
-    - ([JPanel](https://codingluke.github.io/bbzbl-modul-404/docs/aufgaben-swing/jpanel), 
-    - [JTable](https://sites.google.com/bbzbl-it.ch/modul404-lh/themen/ui/jtable))
-- Würfeln / Abbrechen
-
----
-
-# :pencil: Dokumentation [:book: **Google Docs Dokument**](https://docs.google.com/document/d/1mD7wykSI7ge63gUXXk2SVPEKErBKok09cdiTBuET7VQ/edit)
-
-**:triangular_ruler: Planung**
-
-- Erste **Skizze** und mögliches **Klassendiagram**. Diese müssen nicht dem Endprodukt entsprechen
-
-**:hammer: Implementation**
-
-- **Screenshots** und das **Klassendiagram** des **fertigen Programms** 
-- Die einzelnen Klassen sollen kurz erläutert werden
-
-**:mirror: Arbeitsablauf und Reflexion** 
-
-- Reflexion der Arbeit
-- Dokumentieren vorhandener Probleme _(nur wenn vorhanden)_

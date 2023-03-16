@@ -13,7 +13,10 @@ sidebar_position: 6
 ## :brain: Input
 
 - Klassenstruktur Beispiel wiederholen
+- Beispielprojekt zeigen
 
 ## :pencil: Aufgaben
 
+- :checkered_flag: [LB1](../beurteilungen/lb1.md)
 - :alembic: Arbeiten am [Projekt](../beurteilungen/lb2.md)
+- :superhero: [JPanel](../aufgaben-swing/jpanel.md), wichtige Aufgabe um den Punktestand anzuzeigen
