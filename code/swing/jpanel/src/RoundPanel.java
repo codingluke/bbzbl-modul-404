@@ -3,24 +3,39 @@ import java.awt.Color;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 
+/**
+ * Das RoundPanel dient dazu die fünf Würfe einer Runde nebeneinander
+ * darzustellen. Die Werte der Würfe können durch die Methode
+ * `setDiceLabelValue` gesetzt werden.
+ */
 public class RoundPanel extends JPanel {
 
-	private JLabel[] labels = new JLabel[5];
+	// Ein Array für 5 Würfe!
+	private JLabel[] diceLabels = new JLabel[5];
+
+	// Könnte man hier noch Ergänzungen machen um auch das Total und die Rundensumme
+	// darzustellen? Es fehlt auch noch die Rundennummer.
 
 	public RoundPanel() {
 		this.setLayout(null);
 
-		for (int i = 0; i < labels.length; i++) {
-			labels[i] = new JLabel();
-			labels[i].setBounds(10 + (i * 30), 10, 30, 30);
-			add(labels[i]);
+		for (int i = 0; i < diceLabels.length; i++) {
+			diceLabels[i] = new JLabel();
+			diceLabels[i].setBounds(10 + (i * 30), 10, 30, 30);
+			add(diceLabels[i]);
 		}
 
 		this.setBackground(Color.LIGHT_GRAY);
 	}
 
-	public void setLabelText(int index, String value) {
-		labels[index].setText(value);
+	/**
+	 * Ermöglicht das Setzen eines Würfelwertes
+	 * 
+	 * @param index - Der index vom Wurf startet bei 0
+	 * @param value - Der Wert vom Wurf als int
+	 **/
+	public void setDiceLabelValue(int index, int value) {
+		diceLabels[index].setText("" + value);
 	}
 
 }

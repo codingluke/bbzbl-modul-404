@@ -4,6 +4,15 @@ import java.awt.event.ActionListener;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 
+/**
+ * Das GameGui ist die Hauptklasse. Sie zeichnet das Spiel-Fenseter.
+ * 
+ * - Es werden zwei `PlayerPanel`'s erstellt.
+ * - Momentan wird nur das PlayerPanel vom Spieler 1 aktiv verwendet!
+ * - Auch werden immer automatisch 5 Würfe gemacht.
+ * - Versuchen Sie nun darauf aufbauend das GUI zu erweitern und auch
+ *   die Spiellogik zu erstellen.
+ */
 public class GameGui extends JFrame implements ActionListener {
 	
 	private PlayerPanel player1Panel = new PlayerPanel();

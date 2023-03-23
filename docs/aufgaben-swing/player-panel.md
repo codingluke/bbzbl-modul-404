@@ -1,7 +1,6 @@
 ---
 sidebar_position: 10
 ---
-
 # 10. PlayerPanel
 
 Hier gibt es nun noch ein JPanel Beispiel welches es durch folgende Methoden ermöglicht von aussen die neue Runden zu erstellen und auch die Würfelwerte der aktuellen Runde zu setzen. 
@@ -38,6 +37,14 @@ import java.awt.event.ActionListener;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 
+/**
+ * Das GameGui ist die Hauptklasse. Sie zeichnet das Spiel-Fenseter.
+ * - Es werden zwei `PlayerPanel`'s erstellt.
+ * - Momentan wird nur das PlayerPanel vom Spieler 1 aktiv verwendet!
+ * - Auch werden immer automatisch 5 Würfe gemacht.
+ * - Versuchen Sie nun darauf aufbauend das GUI zu erweitern und auch
+ *   die Spiellogik zu erstellen.
+ */
 public class GameGui extends JFrame implements ActionListener {
 	
 	private PlayerPanel player1Panel = new PlayerPanel();
@@ -94,6 +101,10 @@ import java.awt.Color;
 import javax.swing.BorderFactory;
 import javax.swing.JPanel;
 
+/**
+ * PlayerPanel koordiniert und zeichnet RoundPanel's für einen Spieler. Die
+ * Klasse dient nur zur Darstellung und beinhaltet keine Spiellogik.
+ */
 public class PlayerPanel extends JPanel {
 
 	private JPanel parentPanel = new JPanel();
@@ -111,19 +122,32 @@ public class PlayerPanel extends JPanel {
 		this.setVisible(true);
 	}
 
+	/**
+	 * Ermöglicht das Setzen eines Würfelwertes. Delegiert an das RoundPanel der
+	 * aktiven Runde.
+	 *
+	 * @param index - Der index vom Wurf, startet bei 0
+	 * @param value - Der Wert vom Wurf als int (1-6)
+	 */
 	public void setDiceValue(int index, int value) {
 		if (this.currentRoundPanel == null) {
-			return; // Schützt vor nullpointer!
+			return; // Schützt vor NullPointer!
 		}
-		this.currentRoundPanel.setLabelText(index, "" + value);
+		// Hier werden die Werte delegiert, also weitergereicht
+		this.currentRoundPanel.setDiceLabelValue(index, value);
 	}
 
+	/**
+	 * Startet eine neue Runde. Erstellt ein neues RoundPanel und speichert es als
+	 * aktives RoundPanel in der Instanz-Variable "currentRoundPanel". Sobald eine
+	 * neue Runde gestartet wurde, kann auf die vorherigen Runden nicht mehr
+	 * zugegriffen werden!
+	 */
 	public void startNewRound() {
-		// `this.` darf auch weggelassen werden
 		this.currentRoundPanel = new RoundPanel(); // neues Panel Objekt pro Runde
 		this.currentRoundPanel.setBounds(1, y, 398, 60);
 		this.y += 61; // y-Position des nächsten Runden Panels
-		this.parentPanel.add(currentRoundPanel); // zum scrollbaren Panel hinzufügen
+		this.parentPanel.add(currentRoundPanel); // zum parentPanel hinzufügen
 		this.repaint(); // Alles neu zeichnen
 	}
 }
@@ -135,27 +159,43 @@ import java.awt.Color;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 
+/**
+ * Das RoundPanel dient dazu die fünf Würfe einer Runde nebeneinander
+ * darzustellen. Die Werte der Würfe können durch die Methode
+ * `setDiceLabelValue` gesetzt werden.
+ */
 public class RoundPanel extends JPanel {
 
-	private JLabel[] labels = new JLabel[5];
+	// Ein Array für 5 Würfe!
+	private JLabel[] diceLabels = new JLabel[5];
+
+	// Könnte man hier noch Ergänzungen machen um auch das Total und die Rundensumme
+	// darzustellen? Es fehlt auch noch die Rundennummer.
 
 	public RoundPanel() {
 		this.setLayout(null);
 
-		for (int i = 0; i < labels.length; i++) {
-			labels[i] = new JLabel();
-			labels[i].setBounds(10 + (i * 30), 10, 30, 30);
-			add(labels[i]);
+		for (int i = 0; i < diceLabels.length; i++) {
+			diceLabels[i] = new JLabel();
+			diceLabels[i].setBounds(10 + (i * 30), 10, 30, 30);
+			add(diceLabels[i]);
 		}
 
 		this.setBackground(Color.LIGHT_GRAY);
 	}
 
-	public void setLabelText(int index, String value) {
-		labels[index].setText(value);
+	/**
+	 * Ermöglicht das Setzen eines Würfelwertes
+	 * 
+	 * @param index - Der index vom Wurf startet bei 0
+	 * @param value - Der Wert vom Wurf als int
+	 **/
+	public void setDiceLabelValue(int index, int value) {
+		diceLabels[index].setText("" + value);
 	}
 
 }
+
 ```
 
 ## Aufgabe
