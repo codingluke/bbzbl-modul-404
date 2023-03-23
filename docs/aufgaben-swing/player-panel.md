@@ -18,7 +18,52 @@ So ist es möglich für zwei Spieler <u>je eine eigene Instanz</u> der gleichen 
 
 :::
 
+## Darstellung
+
 ![](../img/playerpanel.png)
+
+## UML
+
+```mermaid
+classDiagram
+    direction LR
+    class Starter {
+      +main(args: String[])$
+    }
+
+    class GameGui {
+        -PlayerPanel player1Panel
+        -PlayerPanel player2Panel
+        -JButton newRoundButton
+        -JButton diceButton
+        +GameGui()
+        +actionPerformed(action: ActionEvent)
+    }
+
+    class PlayerPanel {
+       -RoundPanel currentRoundPanel
+       -int y
+       +PlayerPanel()
+       +setDiceValue(int index, int value)
+       +startNewRound()
+    }
+
+    class RoundPanel {
+        -JLabel[] diceLabels
+        +RoundPanel()
+        +setDiceLabelValue(int index, int value)
+    }
+
+    Starter ..> GameGui : new GameGui()
+    GameGui ..> PlayerPanel: new PlayerPanel()
+    PlayerPanel ..> RoundPanel: new RoundPanel()
+    GameGui --|> JFrame : extends
+    GameGui ..|> ActionListener : implements
+    PlayerPanel --|> JPanel: extends
+    RoundPanel --|> JPanel: extends
+```
+
+## Java Code
 
 ```java title="Starter.java"
 public class Starter {
