@@ -4,12 +4,20 @@ sidebar_position: 10
 
 # 10. PlayerPanel
 
-Hier gibt es nun noch ein JPanel Beispiel welches es durch folgende Mehtoden ermöglicht von aussen die neue Runden zu erstellen und auch die Würfelwerte der aktuellen Runde zu setzen. 
+Hier gibt es nun noch ein JPanel Beispiel welches es durch folgende Methoden ermöglicht von aussen die neue Runden zu erstellen und auch die Würfelwerte der aktuellen Runde zu setzen. 
 
 - `playerPanel.startNewRound()`
 - `playerPanel.setDiceValue(index, value)`
 
-So ist es möglich für zwei Spieler <u>je eine eigene Instanz</u> der gleichen Klasse `PlayerPanel` zu erstellen. So können nun die Runden und Punke dargestellt werden.
+So ist es möglich für zwei Spieler <u>je eine eigene Instanz</u> der gleichen Klasse `PlayerPanel` zu erstellen. Dies ermöglicht die Darstellung der Runden und den Punkteverlauf.
+
+:::tip `JPanel` wie `<div></div>` in HTML
+
+- Ein `JPanel` ist ein Container, der Swing Componenten Gruppieren kann. 
+- `JPanel`'s können beliebig geschachtelt werden.
+- Sie entsprechen damit dem `<div></div>` Tag in HTML.
+
+:::
 
 ![](../img/playerpanel.png)
 
