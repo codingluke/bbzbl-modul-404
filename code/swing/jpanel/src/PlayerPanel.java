@@ -9,18 +9,13 @@ import javax.swing.JPanel;
  */
 public class PlayerPanel extends JPanel {
 
-	private JPanel parentPanel = new JPanel();
+	// private JPanel parentPanel = new JPanel();
 	private RoundPanel currentRoundPanel;
 	private int y = 1; // Vertikale verschiebung der Panels
 
 	public PlayerPanel() {
-		this.setLayout(null); // fixe Positionierungen
-		parentPanel.setLayout(null);
-		parentPanel.setBorder(BorderFactory.createLineBorder(Color.black));
-		parentPanel.setBounds(10, 10, 400, 367);
-		this.add(parentPanel);
-
-		this.setSize(450, 450);
+		this.setLayout(null);
+		this.setBorder(BorderFactory.createLineBorder(Color.black));
 		this.setVisible(true);
 	}
 
@@ -47,9 +42,11 @@ public class PlayerPanel extends JPanel {
 	 */
 	public void startNewRound() {
 		this.currentRoundPanel = new RoundPanel(); // neues Panel Objekt pro Runde
-		this.currentRoundPanel.setBounds(1, y, 398, 60);
+		// mit `this.getBounds().width` wird garantiert, dass das RoundPanel
+		// gleich breit ist wie das PlayerPanel.
+		this.currentRoundPanel.setBounds(1, y, this.getBounds().width - 2, 60);
 		this.y += 61; // y-Position des nächsten Runden Panels
-		this.parentPanel.add(currentRoundPanel); // zum parentPanel hinzufügen
+		this.add(currentRoundPanel); // zum parentPanel hinzufügen
 		this.repaint(); // Alles neu zeichnen
 	}
 }
