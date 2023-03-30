@@ -177,6 +177,7 @@ public class PlayerPanel extends JPanel {
 		this.currentRoundPanel.setDiceLabelValue(index, value);
 	}
 
+
 	/**
 	 * Startet eine neue Runde. Erstellt ein neues RoundPanel und speichert es als
 	 * aktives RoundPanel in der Instanz-Variable "currentRoundPanel". Sobald eine
