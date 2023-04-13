@@ -29,6 +29,7 @@ Programme mit einer grafischen Oberfläche zu schreiben.
 - Eine grafische Benutzeroberfläche programmieren.
 - Die eigene Arbeit mit Klassendiagrammen [dokumentieren][Dokumentation].
 - Sauberen Quellcode schreiben.
+- Programmcode und **[Dokumentation]** im eigenen Subordner des **[Google Drive Abgabeordner]** hochgeladen
 
 ## Aufgabenstellung
 
@@ -88,10 +89,11 @@ Das Klassendiagramm gehört in die [Dokumentation].
 
 ## Termin
 
-Das Produkt (mit der [Dokumentation]) muss bis am **Freitag, 21.04.2023, 16:15** über den **Abgabeordner auf der Modulseite** abgegeben werden.
+Das Produkt (inklusive der [Dokumentation]) muss bis am **Freitag, 21.04.2023, 16:15** über den eigenen Unterordner im **[Google Drive Abgabeordner]** abgegeben werden.
 
 ## Strukturidee
 
 ![](../img/projektstruktur.jpg)
 
 [Dokumentation]: https://docs.google.com/document/d/1mD7wykSI7ge63gUXXk2SVPEKErBKok09cdiTBuET7VQ/edit
+[Google Drive Abgabeordner]: https://drive.google.com/drive/folders/13euoa9uiYaPLvuyFy0Fioa9OnXjXsVtj?usp=share_link

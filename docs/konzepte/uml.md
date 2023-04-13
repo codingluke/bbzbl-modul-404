@@ -95,11 +95,17 @@ classDiagram
 
 ## UML Tools :toolbox:
 
+:::info die einfachste Art!
+
 - [IntelliJ Diagrams](https://www.jetbrains.com/help/idea/class-diagram.html) _jedoch nicht 100% UML Standard!!_
   - IntelliJ finden Sie auf unseren **Widnows VMs**
-- [ObjektAid for Eclipse](https://github.com/AbbaouiAmine/objectAidArchive)
-  - [Video mit Installationsanleitung](https://www.youtube.com/watch?v=UtSRX9swc1w)
+
+:::
+
 - [Mermaid](https://mermaid.js.org/) :mermaid:
   - wird auf dieser Seite verwendet
   - [Mermaid Dokumentation](https://mermaid.js.org/syntax/classDiagram.html)
   - [Mermaid Live im Browser](https://mermaid.live)
+- ObjektAid funktioniert nur bis **Eclipse 2022-06 (4.24.0)**
+  - [<s>ObjektAid for Eclipse</s>](https://github.com/AbbaouiAmine/objectAidArchive)
+  - [<s>Video mit Installationsanleitung</s>](https://www.youtube.com/watch?v=UtSRX9swc1w)
