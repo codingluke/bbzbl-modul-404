@@ -1,9 +1,10 @@
 ---
 sidebar_position: 10
 ---
+
 # 10. PlayerPanel
 
-Hier gibt es nun noch ein JPanel Beispiel welches es durch folgende Methoden ermöglicht von aussen die neue Runden zu erstellen und auch die Würfelwerte der aktuellen Runde zu setzen. 
+Hier gibt es nun noch ein JPanel Beispiel welches es durch folgende Methoden ermöglicht von aussen die neue Runden zu erstellen und auch die Würfelwerte der aktuellen Runde zu setzen.
 
 - `playerPanel.startNewRound()`
 - `playerPanel.setDiceValue(index, value)`
@@ -12,7 +13,7 @@ So ist es möglich für zwei Spieler <u>je eine eigene Instanz</u> der gleichen 
 
 :::tip `JPanel` wie `<div></div>` in HTML
 
-- Ein `JPanel` ist ein Container, der Swing Componenten Gruppieren kann. 
+- Ein `JPanel` ist ein Container, der Swing Componenten Gruppieren kann.
 - `JPanel`'s können beliebig geschachtelt werden.
 - Sie entsprechen damit dem `<div></div>` Tag in HTML.
 
@@ -84,7 +85,7 @@ import javax.swing.JFrame;
 
 /**
  * Das GameGui ist die Hauptklasse. Sie zeichnet das Spiel-Fenseter.
- * 
+ *
  * Es werden zwei `PlayerPanel`'s erstellt. Momentan wird nur das PlayerPanel
  * vom Spieler 1 aktiv verwendet! Auch werden immer automatisch 5 Würfe gemacht.
  * Versuchen Sie nun darauf aufbauend das GUI zu erweitern und auch die
@@ -229,7 +230,7 @@ public class RoundPanel extends JPanel {
 
 	/**
 	 * Ermöglicht das Setzen eines Würfelwertes
-	 * 
+	 *
 	 * @param index - Der index vom Wurf startet bei 0
 	 * @param value - Der Wert vom Wurf als int
 	 **/
