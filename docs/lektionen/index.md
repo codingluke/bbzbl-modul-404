@@ -1,19 +1,17 @@
 # Quartalsübersicht
 
-|         Woche          |             Datum             | Thema                                             | Leistungsbewertung |
-| :--------------------: | :---------------------------: | :------------------------------------------------ | :----------------- |
-|   [Woche&nbsp;1][w1]   |          27.01.2023           | Repetition / Klassen / Objekte                    |
-|   [Woche&nbsp;2][w2]   |          03.02.2023           | Fachklassen / Static / Swing                      |
-|   [Woche&nbsp;3][w3]   |          10.02.2023           | Klassenstruktur / Java Interface - ActionListener |
-|   [Woche&nbsp;4][w4]   |          17.02.2023           | Konstruktor / Formatierung / UML                  |
-|                        | _24.02.2023_<br/>_03.03.2023_ | :japanese_goblin: *Fasnachtsferien*              |
-| [**Woche&nbsp;5**][w5] |        **10.03.2023**         | **<s>LB 1</s>** / Projektstart                    | **[LB1]**          |
-|   [Woche&nbsp;6][w6]   |          17.03.2023           | **LB 1** / Arbeiten am Projekt                    | **[LB1]**          |
-|   [Woche&nbsp;7][w7]   |          24.03.2023           | Arbeiten am Projekt                               |
-|   [Woche&nbsp;8][w8]   |          31.03.2023           | Arbeiten am Projekt                               |
-|                        | _07.04.2023_<br/>_14.04.2023_ | :egg: _Osterferien_                               |
-| [**Woche&nbsp;9**][w9] |        **21.04.2023**         | **Abgabe / Präsentation des Projekts**            | **[LB2]**          |
-|         <hr/>          |      :steam_locomotive:       | <hr/>                                             | <hr/>              |
+|                    |         Woche          |     Datum      | Thema                                             | Leistungsbewertung |
+| ------------------ | :--------------------: | :------------: | :------------------------------------------------ | :----------------- |
+| :steam_locomotive: |   [Woche&nbsp;1][w1]   |   28.04.2023   | Repetition / Klassen / Objekte                    |
+|                    |   [Woche&nbsp;2][w2]   |   05.05.2023   | Fachklassen / Static / Swing                      |
+|                    |   [Woche&nbsp;3][w3]   |   12.05.2023   | Klassenstruktur / Java Interface - ActionListener |
+|                    |                        |  _19.05.2023_  | :star: _Auffahrt_ :star:                          |
+|                    |   [Woche&nbsp;4][w4]   |   26.05.2023   | Konstruktor / Formatierung / UML                  |
+|                    | [**Woche&nbsp;5**][w5] | **02.06.2023** | **LB 1** / Projektstart                           | **[LB1]**          |
+|                    |   [Woche&nbsp;6][w6]   |   09.06.2023   | Arbeiten am Projekt                               |
+|                    |   [Woche&nbsp;7][w7]   |   16.06.2023   | Arbeiten am Projekt                               |
+|                    |   [Woche&nbsp;8][w8]   |   23.06.2023   | Arbeiten am Projekt                               |
+|                    | [**Woche&nbsp;9**][w9] | **30.06.2023** | **Abgabe / Präsentation des Projekts**            | **[LB2]**          |
 
 [w1]: ./woche-01.md
 [w2]: ./woche-02.md
