@@ -1,8 +1,8 @@
 # LB 2 - Projekt
 
-| **Dauer**                     | **Gewichtung**        |
-| :---------------------------- | :-------------------- |
-| **Restliche Zeit** des Moduls | **50%** der Modulnote |
+| Dauer                       | Gewichtung            |
+| :-------------------------- | :-------------------- |
+| **02.06.2023 - 30.06.2023** | **50%** der Modulnote |
 
 :::danger Plagiat
 
@@ -69,31 +69,35 @@ Das Klassendiagramm gehört in die [Dokumentation].
 
 ## Bewertung
 
-| Punkte | Kriterium                                                                                                                                    |
-| :----: | :------------------------------------------------------------------------------------------------------------------------------------------- |
-|   1    | Die Starterklasse funktioniert                                                                                                               |
-|   5    | Die Fachklassen beinhalten die Logik / verwalten den Spielstand (ohne UI-Elemente)                                                           |
-|   3    | Der Punktestand wird pro Spieler angezeigt - der Spieler kann eine Runde beenden                                                             |
-|   3    | Der Punkteverlauf wird pro Spieler angezeigt                                                                                                 |
-|   4    | Die grafische Oberfläche zeigt die gewürfelten Punkte pro Runde als Text an                                                                  |
-|   2    | oder die gewürfelten Punkte pro Runde werden bildlich dargestellt                                                                            |
-|   3    | Der Würfelverlauf wird über mehrere Runden angezeigt (nicht nur die aktuelle)                                                                |
-|   3    | Das Programm läuft und lässt das beschriebene Spiel zu                                                                                       |
-|   3    | Der Quellcode ist korrekt formatiert (Einrückungen)                                                                                          |
-|   3    | Die Namen der Klassen, Methoden und Attribute sind aussagekräftig und einheitlich                                                            |
-|   3    | _Dokumentation:_ die Beschreibung des Programms ist vollständig                                                                              |
-|   3    | _Dokumentation:_ das Klassendiagramm ist korrekt nach UML-Standard                                                                           |
-| **36** | **TOTAL**                                                                                                                                    |
-|        | **Bonus**                                                                                                                                    |
-|  _2_   | _Das Programm übersteigt die oben beschriebenen Minimalanforderungen an das Spiel **wesentlich** und **ist auch vollumfänglich lauffähig**._ |
+|                            | Punkte | Kriterium                                                                                                                                    |
+| -------------------------- | :----: | :------------------------------------------------------------------------------------------------------------------------------------------- |
+|                            |   1    | Die Starterklasse funktioniert                                                                                                               |
+|                            |   3    | Das Programm läuft und lässt das beschriebene Spiel zu                                                                                       |
+|                            |   2    | Die Spieler können Ihre Namen selber eingeben                                                                                                |
+|                            |   2    | Der aktuelle Punktestand wird pro Spieler angezeigt                                                                                          |
+|                            |   2    | Der aktuelle Spieler kann eine Runde beenden                                                                                                 |
+|                            |   2    | Die Benutzerführung _(UX)_ macht Sinn _(Buttons werden ein/ausgeblendet rsp. de/aktiviert)_                                                  |
+|                            |   2    | Die gewürfelten Punkte pro Runde werden als Text angezeigt                                                                                   |
+|                            |   3    | Der Würfelverlauf wird über mehrere Runden angezeigt _(nicht nur die aktuelle)_                                                              |
+|                            |   3    | Der Quellcode ist korrekt formatiert _(Einrückungen)_                                                                                        |
+|                            |   3    | Die Namen der Klassen, Methoden und Attribute sind aussagekräftig und einheitlich                                                            |
+|                            |   3    | _Dokumentation:_ die Beschreibung des Programms ist vollständig                                                                              |
+|                            |   3    | _Dokumentation:_ die Reflexion ist tiefgründig und geht auf die Probleme ein                                                                 |
+| :sweat_smile:              | _(29)_ | _**Volle Punktzahl bis hier ergeben eine <u>5.0</u>**_                                                                                       |
+| :chart_with_upwards_trend: |   2    | Der **Verlauf des Punktestands** aller bereits gespielten Runden wird pro Spieler angezeigt                                                  |
+| :game_die:                 |   2    | Die gewürfelten Punkte pro Runde werden **bildlich** dargestellt                                                                             |
+| :sushi:                    |   3    | Die **Fachklassen** beinhalten die **Logik** / verwalten den **Spielstand** (ohne UI-Elemente)                                               |
+| :checkered_flag:           | **36** | **TOTAL**                                                                                                                                    |
+|                            |        | **Bonus**                                                                                                                                    |
+| :superhero:                |  _2_   | _Das Programm übersteigt die oben beschriebenen Minimalanforderungen an das Spiel **wesentlich** und **ist auch vollumfänglich lauffähig**._ |
 
 ## Termin
 
-Das Produkt (inklusive der [Dokumentation]) muss bis am **Freitag, 21.04.2023, 16:15** über den eigenen Unterordner im **[Google Drive Abgabeordner]** abgegeben werden.
+Das Produkt (inklusive der [Dokumentation]) muss bis am **Freitag, 30.06.2023, 16:15** über den eigenen Unterordner im **[Google Drive Abgabeordner]** abgegeben werden.
 
 ## Strukturidee
 
 ![](../img/projektstruktur.jpg)
 
-[Dokumentation]: https://docs.google.com/document/d/1mD7wykSI7ge63gUXXk2SVPEKErBKok09cdiTBuET7VQ/edit
-[Google Drive Abgabeordner]: https://drive.google.com/drive/folders/13euoa9uiYaPLvuyFy0Fioa9OnXjXsVtj?usp=share_link
+[Dokumentation]: https://docs.google.com/document/d/1OhUYxLkwIWsxuk3SwcycjGUcRzkJQPRYRnbpkjiLEho/edit
+[Google Drive Abgabeordner]: https://drive.google.com/drive/folders/11b3TCKZeapIwKUNCDz6ul-kLnfkrJAjN
