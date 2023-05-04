@@ -93,7 +93,7 @@ Das Klassendiagramm gehört in die [Dokumentation].
 
 ## Termin
 
-Das Produkt (inklusive der [Dokumentation]) muss bis am **Freitag, 30.06.2023, 16:15** über den eigenen Unterordner im **[Google Drive Abgabeordner]** abgegeben werden.
+Das a Produkt (inklusive der [Dokumentation]) muss bis am **Freitag, 30.06.2023, 16:15** über den eigenen Unterordner im **[Google Drive Abgabeordner]** abgegeben werden.
 
 ## Strukturidee
 

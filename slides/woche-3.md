@@ -285,8 +285,7 @@ public class Starter {
     ActionListener actionListener = (ActionListener) gui;
 
     // actionPerformed kann immer noch aufgerufen werden
-    // INFO: `new ActionEvent(...)` ist dummy-code und 
-    //       wird nicht kompilieren
+    // INFO: `new ActionEvent(...)` ist dummy-code und wird nicht kompilieren
     actionListener.actionPerformed(new ActionEvent(...))
 
     // halloWelt existiert nicht mehr!
