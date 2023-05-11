@@ -20,16 +20,16 @@ type variableName = value;
 In Java gibt es eine beachtliche Anzahl an Datentypen gemäss folgender Tabelle.
 Vorerst nutzen wir die _primitiven_ Datentypen. Diese sind erkennbar, indem der **Datentyp kleingeschrieben** ist.
 
-| Datentyp | Grösse  | Beschreibung                                                                              | Spezifika
-| ---      | ---     | ---                                                                                       | ---
+| Datentyp | Grösse  | Beschreibung                                                                              | Spezifika |
+| -------- | ------- | ----------------------------------------------------------------------------------------- | --------- |
 | boolean  | 1 bit   | Speichert `true` _(wahr)_ oder `false` _(falsch)_ Werte                                   |
 | byte     | 1 byte  | Speichert ganze Zahlen von `-128` bis `127`                                               |
 | short    | 2 bytes | Speichert ganze Zahlen von `-32'768` bis `32'767`                                         |
-| char     | 2 bytes | Speichert ein einzelnes Zeichen oder [ASCII]                                              | `''`
+| char     | 2 bytes | Speichert ein einzelnes Zeichen oder [ASCII]                                              | `''`      |
 | int      | 4 bytes | Speichert ganze Zahlen `-2'147'483'648` bis `2'147'483'647`                               |
-| float    | 4 bytes | Speichert Gleitkommazahlen von `6` bis `7` Dezimalstellen                                 | `f`
-| long     | 8 bytes | Speichert ganze Zahlen von `-9'223'372'036'854'775'808l` bis `9'223'372'036'854'775'807l` | `l`
-| double   | 8 bytes | Speichert Gleitkommazahlen von `15` Dezimalstellen                                        | `d`
+| float    | 4 bytes | Speichert Gleitkommazahlen von `6` bis `7` Dezimalstellen                                 | `f`       |
+| long     | 8 bytes | Speichert ganze Zahlen von `-9'223'372'036'854'775'808l` bis `9'223'372'036'854'775'807l` | `l`       |
+| double   | 8 bytes | Speichert Gleitkommazahlen von `15` Dezimalstellen                                        | `d`       |
 
 [ASCII]: https://de.wikipedia.org/wiki/American_Standard_Code_for_Information_Interchange
 
@@ -61,9 +61,9 @@ Die Initialisierung der Werte verwendet spezifische Zeichen für die verscheiden
 
 Der Datentyp `String` **dient zur Speicherung von Zeichenfolgen**, also allgemeiner Text. Der Text muss immer zwischen zwei **"doppelten Anführungszeichen"** gestellt werden.
 
-| Datentyp | Grösse             | Beschreibung              | Spezifika
-| ---      | ---                | ---                       | ---
-| String   | 2 byte pro Zeichen | Speichert beliebigen Text | `""`
+| Datentyp | Grösse             | Beschreibung              | Spezifika |
+| -------- | ------------------ | ------------------------- | --------- |
+| String   | 2 byte pro Zeichen | Speichert beliebigen Text | `""`      |
 
 ### Strings initialisieren
 
@@ -91,20 +91,20 @@ System.out.println("Your name is" + name);
 :::note Höhere Datentypen sind Grossgeschrieben
 
 - `String` ist Gross geschrieben, da es sich um einen _höheren_ Datentyp handelt.
-- Ein `String` baut auf dem _primitiven_ Datentyp `char` auf _(:bulb: daher höher)_ 
+- Ein `String` baut auf dem _primitiven_ Datentyp `char` auf _(:bulb: daher höher)_
   - Evt. Hilft die Analogie von "Atome (primitiv)" zu "Moleküle (höher)".
 - _Höhere_ Datentypen sind auch Objekte.
   - Was Objekte genau sind, erfahrt ihr im Folgemodul 404 und ist noch nicht relevant!
 
 :::
 
-### Strings mit Zahlen zusammensetzen 
+### Strings mit Zahlen zusammensetzen
 
 Strings können auch mit allen _primitiven_ Datentypen, also auch mit numerischen Werten, durch das Plus-Zeichen `+` zu einer Zeichenfolge kombiniert werden. Der _primitive_ Datentyp wird dadurch automatisch zu einem String!
 
 ```java title="String mit Zahlen kombinieren"
 System.out.println("Ihre Geschwindigkeit lautet " + 21);
-//                  Ihre Geschwindigkeit lautet 21 
+//                  Ihre Geschwindigkeit lautet 21
 ```
 
 :::tip Eine Zahl in einen String umwandeln
@@ -115,6 +115,7 @@ Werden Zahlen mit einem **leeren String ""** konkatiniert, wird die Zahl alleine
 String zahl = "" + 21;
 // zahl ist nun "21"
 ```
+
 :::
 
 ## Operatoren
@@ -280,7 +281,7 @@ true  != true; // false
 
 ### Vergleichen von Strings `equals`
 
-Strings, und andere höhere Datentypen, können **nicht durch Vergleichsoperatoren verglichen werden**.
+Strings und andere höhere Datentypen, können **nicht durch Vergleichsoperatoren verglichen werden**.
 
 - Höhere Datentypen sind Datentypen die durch **Klassen** definiert werden
 - Diese sind **immer gross geschrieben**
@@ -288,10 +289,10 @@ Strings, und andere höhere Datentypen, können **nicht durch Vergleichsoperator
 
 ```java
 String text = new String("Hallo Welt");
-String test2 = new String("Hallo Welt");
+String text2 = new String("Hallo Welt");
 
-test == test2;     // false! Die Speicherorte der Objekte `text` und `text2` sind unterschiedlich
-test.equals(test2) // true!  Der Inhalt von beiden Objekte ist jedoch gleich.
+text == text2;     // false! Die Speicherorte der Objekte `text` und `text2` sind unterschiedlich
+text.equals(text2) // true!  Der Inhalt von beiden Objekte ist jedoch gleich.
 ```
 
 #### Wieso ist dies nun so?
@@ -300,26 +301,26 @@ test.equals(test2) // true!  Der Inhalt von beiden Objekte ist jedoch gleich.
 
 1. Durch **`String text = new String("Hallo Welt");`** wird ein **Objekt** erzeugt.
    Dieses besitzt einen **eigenen Speicherbereich** in der Variable `text`
-2. Durch **`String test2 = new String("Hallo Welt");`** wird ebenfalls ein **neues Objekt** erzeugt.
+2. Durch **`String text2 = new String("Hallo Welt");`** wird ebenfalls ein **neues Objekt** erzeugt.
    Dieses besitzt wiederum einen **eigenen Speicherbereich** in der Variable `text2`
 3. Werden nun die zwei Objekte durch `==` verglichen, wird nicht deren Inhalt, sondern deren **Speicherort verglichen**!
-4. **Mit `equals` wird nun aber der Inhalt verglichen.** Zwei Pakete mit dem gleichen Inhalt sind zwar eigenständig aber sie sind sich gleich.
+4. **Mit `equals` wird nun aber der Inhalt verglichen.** Zwei Pakete mit dem gleichen Inhalt sind zwar eigenständig, aber sie sind sich gleich.
 
 **Verständlich:**
 
-1. Stellen wir uns **ein Paket** vor, in welches von Hand ausgeschnittene Buchstaben "Hallo Welt" gelegt werden.
-2. Stellen wir uns **ein zweites Paket** vor, in welches neue, von Hand ausgeschnittene Buchstaben, "Hallo Welt" gelegt werden.
-3. Zwei Pakete mit gleichem Inhalt sind auch in der uns bekannten Welt immer noch zwei unterschiedliche Pakete oder?
+1. Stellen wir uns **ein Paket**, Paket1, vor, in welches die Druckletter H,a,l,l,o, ,W,e,l und t gelegt werden
+2. Stellen wir uns **ein zweites Paket**, Paket2, vor, in welches ebenfalls die Druckletter H,a,l,l,o, ,W,e,l und t gelegt werden
+3. Zwei Pakete mit gleichem Inhalt sind auch in der uns bekannten Welt immer noch zwei unterschiedliche Pakete, oder?
    - **Mit `==` werden die Pakete** und nicht deren Inhalt "Hallo Welt" verglichen.
-4. Selbst wenn die von Hand ausgeschnitten Buchstaben nicht 100% gleich ausgeschnitten wurden ist ihre Bedeutung (Semantik) jedoch die gleiche.
+4. Vergleicht man jedoch der Inhalt befinden sich in Beiden Paketen die gleichen Druckletter in der gleichen Reihenfolge.
    - **Mit `equals` wird der Inhalt** und nicht die Pakete verglichen.
 
 #### Und wieso darf man nun primitiven Datentypen mit == vergleichen?
 
 Primitive Datentypen sind in Java **keine Objekte**, sie werden somit nicht in ein Paket verpackt.
 
-- Die Nummer `4` ist die Nummer `4`. Fertig. Pasta.
-- Das Zeichen `c` ist das Zeichen `c`. Fertig. Pasta.
+- Die Nummer `4` ist die Nummer `4`. Punkt.
+- Das Zeichen `c` ist das Zeichen `c`. Punkt.
 - Aber der Satz "Hallo Welt" Könnte man
   - alphabetisch sortieren
   - gross schreiben
@@ -335,7 +336,7 @@ String text = new String("String ist eine Klasse und kann somit auch mit new ini
 ```
 
 Da jedoch so oft Strings verwendet werden und die Klasse somit fest in die Sprache verankert ist, **wurde Ihr
-durch den Kompiler ein paar Sonderheiten verliehen**. So kann das `new String()` weggelassen werden.
+durch den Compiler ein paar Sonderheiten verliehen**. So kann das `new String()` weggelassen werden.
 
 ```java
 String text = "String ist eine Klasse und kann somit auch mit new initialisiert werden";
@@ -347,8 +348,15 @@ Beim kompilieren wird das `new String()` automatisch hinzugefügt!
 
 :::info Compiler sind schlau!
 
-`"Hallo Welt" == "Hallo Welt";` ist `true`. Dies ist eine Ausnahme, da der Kompiler schlau ist und merkt, dass hier nicht zwei Objekte benötigt werden.
-Der Kompiler versucht Speicher zu sparen. Sobald aber zwei Strings dynamisch erstellt werden (`new`) geht dies nicht mehr!
+`"Hallo Welt" == "Hallo Welt";` ist `true`. Dies ist eine Ausnahme, da der Compiler schlau ist und merkt, dass hier nicht zwei Objekte benötigt werden.
+Der Compiler versucht Speicher zu sparen. Sobald aber zwei Strings dynamisch erstellt werden (`new`) geht dies nicht mehr!
+
+Nach dem compilieren sieht das in etwa wo aus:
+
+```java
+String text = new String("Hallo Welt");
+text == text; // true da gleiches Objekt und Speicherort!
+```
 
 :::
 

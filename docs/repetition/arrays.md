@@ -372,7 +372,7 @@ public class Noten {
    - Bei jedem Wurf zählen Sie für die gewürfelte Zahl der entsprechende index im Array hoch.
 3. Geben Sie aus wie häufig die jeweiligen Zahlen gewürfelt wurden.
 
-:::Tip
+:::tip
 
 Diese Aufgabe ist besonders interessant für das Projekt
 
