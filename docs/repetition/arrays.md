@@ -34,17 +34,17 @@ public class ArrayChars {
   public static void main(string[] args) {
     char[] text = {'h','e','l','l','o',' ','f','e','l','l','o','w'};
 
-    for(int i = 0; i < text.length; i++) {
-      system.out.print(text[i]);
+    for (int i = 0; i < text.length; i++) {
+      System.out.print(text[i]);
     }
 
-    system.out.println();
+    System.out.println();
 
-    for(int i = text.length - 1; i >= 0; i--) {
-      system.out.print(text[i]);
+    for (int i = text.length - 1; i >= 0; i--) {
+      System.out.print(text[i]);
     }
 
-    system.out.println();
+    System.out.println();
   }
 
 }
