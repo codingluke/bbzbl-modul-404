@@ -438,4 +438,6 @@ switch (day) {
 // Outputs "Thursday" (day 4)
 ```
 
-##
+## Methoden
+
+
