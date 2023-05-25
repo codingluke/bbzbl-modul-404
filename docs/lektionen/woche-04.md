@@ -13,9 +13,9 @@ sidebar_position: 4
 ## :brain: Input
 
 - Kontoverwaltung in Swing (Erläutern)
-- [Konstruktor](../konzepte/konstruktor.md)
 - [Formatierung](../konzepte/formatierung.md)
 - [UML Klassendiagram](../konzepte/uml.md)
+- [Konstruktor](../konzepte/konstruktor.md)
 
 ## :pencil: Aufgaben
 
