@@ -51,7 +51,6 @@ footer: BBZBL / Lukas Hodel / Objektbasiert programmieren nach Vorgabe
 
 > :scream: **Sonst compiliert euer Code auf meinem Mac nicht!**
 
-
 ---
 
 # <!--fit--> :bulb: `UML` Klassendiagram

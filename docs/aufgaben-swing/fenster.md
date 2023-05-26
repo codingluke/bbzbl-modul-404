@@ -6,6 +6,27 @@ sidebar_position: 2
 
 Das folgende Beispiel zeigt die Vorkehrungen, die notwendig sind, um ein Fenster anzuzeigen:
 
+## UML
+
+```mermaid
+classDiagram
+  direction LR
+  class JFrame
+  class Starter {
+    +main(args: String[])$
+  }
+  class PureWindow {
+    +showDialog()
+  }
+
+  Starter --> "1" PureWindow : uses
+  PureWindow --|> JFrame : extends
+```
+
+## Starter.java
+
+In der `main`-Methode der Klasse `Starter` wird ein Objekt der Klasse `PureWindow` erzeugt und in der Variable `pureWindow` gespeichert. Die Variable `pureWindow` wird dann verwendet, um die Methode `showDialog()` aufzurufen.
+
 ```java title="Starter.java"
 public class Starter {
   public static void main(String[] args) {
@@ -15,14 +36,18 @@ public class Starter {
 }
 ```
 
-- In der `main`-Methode der Klasse `Starter` wird ein Objekt der Klasse `PureWindow` erzeugt und in der Variable `pureWindow` gespeichert. Die Variable `pureWindow` wird dann verwendet, um die Methode `showDialog()` aufzurufen.
-
 :::tip
 
 - `PureWindow` ist die Klasse sowie der `Datentyp`
 - `pureWindow` (klein) ist die Variable, die das Objekt beinhaltet.
 
 :::
+
+## PureWindow.java
+
+- Die Klasse `PureWindow` muss von der Klasse `JFrame` alle Fähigkeiten übernehmen. Dies geschieht durch die Anweisung `extends JFrame`. Damit wird die Klasse `PureWindow` zu einem `JFrame`.
+- Die Methode `showDialog()` führt die **grundlegenden Konfigurationsschritte** aus. Diese werden bei allen Fenstern benötigt.
+- Die Methode `showDialog()` muss über das Objekt `pureWindow` aufgerufen werden. `pureWindow.showDialog()`
 
 ```java title="PureWindow.java"
 import javax.swing.JFrame;
@@ -38,11 +63,6 @@ public class PureWindow extends JFrame {
   }
 }
 ```
-
-- Die Klasse `PureWindow` muss von der Klasse `JFrame` alle Fähigkeiten übernehmen. Dies geschieht durch die Anweisung `extends JFrame`. Damit wird die Klasse `PureWindow` zu einem `JFrame`.
-- Die Methode `showDialog()` führt die **grundlegenden Konfigurationsschritte** aus. Diese werden bei allen Fenstern benötigt.
-- Die Methode `showDialog()` ist **nicht als static** markiert. Sie muss also über das Objekt `pureWindow.showDialog()` aufgerufen werden.
-  - `PureWindow.showDialog()` ist nicht zulässig!
 
 :::info
 

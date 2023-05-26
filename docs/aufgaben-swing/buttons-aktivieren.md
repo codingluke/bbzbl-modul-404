@@ -12,6 +12,53 @@ Erstellen Sie das Programm unten. Das Ziel ist, dass bei Anklicken der Schaltfl�
 
 ![](../img/Buttons-Aktivieren-Aufgabe1.png)
 
+### UML
+
+```mermaid
+classDiagram
+  direction LR
+    class JFrame {
+      +add(comp : Component)
+      +setDefaultCloseOperation(operation : int)
+      +setLayout(manager : LayoutManager)
+      +setSize(width : int, height : int)
+      +setTitle(title : String)
+      +setVisible(isVisible : boolean)
+    }
+    class ActionListener {
+      +actionPerformed(event : ActionEvent)
+    }
+    class JTextField {
+      +getText() String
+      +setText(value : String)
+    }
+    class JLabel {
+      +getText() String
+      +setText(value : String)
+    }
+    class JButton {
+      +addActionListener(actionListener : ActionListener)
+    }
+
+  class Starter {
+    +main(args: String[])$
+  }
+  class Aufgabe1 {
+    -textfield : JTextField
+    -label : JLabel
+    -button : JButton
+    +showDialog()
+    +actionPerformed(event : ActionEvent)
+  }
+
+  Starter --> "1" Aufgabe1 : uses
+  Aufgabe1 --|> JFrame : extends
+  Aufgabe1 ..|> ActionListener : implements
+  Aufgabe1 ..> JTextField : uses
+  Aufgabe1 ..> JLabel: uses
+  Aufgabe1 ..> JButton: uses
+```
+
 <details>
 <summary>Immer zuerste selber versuchen! Lösung abtippen, nicht kopieren ;)</summary>
 
@@ -58,9 +105,54 @@ public class Aufgabe1 extends JFrame implements ActionListener {
 
 ## Aufgabe 2: Mehrere Buttons auswerten
 
-Erstellen Sie das Programm unten. Das Ziel ist, dass bei Anklicken der Schaltfläche der Wert aus dem Textfeld in das Label unterhalb kopiert wird, während das obere Textfeld geleert wird.
+Erstellen Sie das Programm unten. Das Ziel ist, dass beim Anklicken der
+Schaltfläche der Wert aus dem Textfeld in das Label unterhalb kopiert
+wird, während das obere Textfeld geleert wird.
 
 ![](../img/Buttons-Aktivieren-Aufgabe2.png)
+
+### UML
+
+```mermaid
+classDiagram
+  direction LR
+  class JFrame {
+    +add(comp : Component)
+    +setDefaultCloseOperation(operation : int)
+    +setLayout(manager : LayoutManager)
+    +setSize(width : int, height : int)
+    +setTitle(title : String)
+    +setVisible(isVisible : boolean)
+  }
+  class ActionListener {
+    +actionPerformed(event : ActionEvent)
+  }
+  <<interface>> ActionListener
+  class Starter {
+    +main(args: String[])$
+  }
+  class Aufgabe2 {
+    -buttonA: JButton
+    -buttonB : JButton
+    -buttonC : JButton
+    -label : JLabel
+    +showDialog()
+    +actionPerformed(event : ActionEvent)
+  }
+  class JLabel {
+    +getText() String
+    +setText(value : String)
+  }
+  class JButton {
+    +addActionListener(actionListener : ActionListener)
+  }
+
+  Starter --> "1" Aufgabe2 : uses
+  Aufgabe2 --|> JFrame : extends
+  Aufgabe2 ..|> ActionListener : implements
+  Aufgabe2 ..> JLabel: uses
+  Aufgabe2 ..> JButton: uses
+```
 
 <details>
 <summary>Immer zuerste selber versuchen! Lösung abtippen, nicht kopieren ;)</summary>
