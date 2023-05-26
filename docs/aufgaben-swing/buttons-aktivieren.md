@@ -23,7 +23,7 @@ aufgelistet!
 ```mermaid
 classDiagram
   direction LR
-  class JFrame {
+  class JFrame:::javaBuiltIn {
     +add(comp : Component)
     +setDefaultCloseOperation(operation : int)
     +setLayout(manager : LayoutManager)
@@ -31,17 +31,17 @@ classDiagram
     +setTitle(title : String)
     +setVisible(isVisible : boolean)
   }
-  class ActionListener {
+  class ActionListener:::javaBuiltIn {
     +actionPerformed(event : ActionEvent)
   }
-  class JTextField {
+  class JTextField:::javaBuiltIn {
     +getText() String
     +setText(value : String)
   }
-  class JLabel {
+  class JLabel:::javaBuiltIn {
     +setText(value : String)
   }
-  class JButton {
+  class JButton:::javaBuiltIn {
     +addActionListener(actionListener : ActionListener)
   }
 
@@ -121,7 +121,7 @@ wird, während das obere Textfeld geleert wird.
 ```mermaid
 classDiagram
   direction LR
-  class JFrame {
+  class JFrame:::javaBuiltIn {
     +add(comp : Component)
     +setDefaultCloseOperation(operation : int)
     +setLayout(manager : LayoutManager)
@@ -129,7 +129,7 @@ classDiagram
     +setTitle(title : String)
     +setVisible(isVisible : boolean)
   }
-  class ActionListener {
+  class ActionListener:::javaBuiltIn {
     +actionPerformed(event : ActionEvent)
   }
   <<interface>> ActionListener
@@ -144,12 +144,14 @@ classDiagram
     +showDialog()
     +actionPerformed(event : ActionEvent)
   }
-  class JLabel {
+  class JLabel:::javaBuiltIn {
+    +setBounds(x : int, y : int, width: int, height : int)
     +setText(value : String)
   }
-  class JButton {
+  class JButton:::javaBuiltIn {
     +addActionListener(actionListener : ActionListener)
     +getText() String
+    +setBounds(x : int, y : int, width: int, height : int)
   }
 
   Starter --> "1" Aufgabe2 : uses

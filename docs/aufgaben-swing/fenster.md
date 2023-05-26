@@ -6,12 +6,10 @@ sidebar_position: 2
 
 Das folgende Beispiel zeigt die Vorkehrungen, die notwendig sind, um ein Fenster anzuzeigen:
 
-## UML
-
 ```mermaid
 classDiagram
   direction LR
-  class JFrame {
+  class JFrame:::javaBuiltIn {
    +add(comp : Component)
    +setDefaultCloseOperation(operation : int)
    +setLayout(manager : LayoutManager)
@@ -26,7 +24,7 @@ classDiagram
     +showDialog()
   }
 
-  Starter --> "1" PureWindow : uses
+  Starter --> PureWindow : uses
   PureWindow --|> JFrame : extends
 ```
 
@@ -124,3 +122,19 @@ JButton button = new JButton("press me"); // Ein Button
 button.setBounds(x, y, width, height); // Bestimmen wo sich der Button befindet
 add(button); // Textfeld hinzufügen
 ```
+
+#### UML
+
+```mermaid
+classDiagram
+  direction LR
+  class JFrame {
+    +add(comp : Component)
+    +setDefaultCloseOperation(operation : int)
+    +setLayout(manager : LayoutManager)
+    +setSize(width : int, height : int)
+    +setTitle(title : String)
+    +setVisible(isVisible : boolean)
+  }
+```
+

@@ -21,14 +21,33 @@ String text = label.getText(); // gibt den Text des Labels zurück
 
 - Der Parameter dient zur Initialisierung eines Textes
 
+### UML
+
+```mermaid
+classDiagram
+  class JLabel {
+    +JLabel()
+    +JLabel(text : String)
+    +setBounds(x : int, y : int, width: int, height : int)
+    +setText(value : String)
+    +getText() String
+  }
+```
+
 ### Wann wird `JLabel` es eingesetzt?
+
+<div class="grid"><div>
 
 - Zur **Beschriftung** von Textfelder
 - Zur Ausgabe von berechnetem Text
   - z.B. Bei einer Umwandlung von Einheiten
 - Labels sind vom GUI schreibgeschützt
 
+</div><div>
+
 ![](../img/JLabel.png)
+
+</div></div>
 
 ## `JTextField`
 
@@ -43,15 +62,36 @@ String text = textfield.getText(); // gibt den Text des Textfeldes zurück
 textfield.setText("setzt ein Text"); // Setzt einen neuen Text
 ```
 
+### UML
+
+```mermaid
+classDiagram
+  class JTextField {
+    +JTextField()
+    +JTextField(text : String)
+    +setBounds(x : int, y : int, width: int, height : int)
+    +setText(value : String)
+    +getText() String
+  }
+```
+
 ### Wann wird `JTextField` es eingesetzt?
+
+<div class="grid"><div>
 
 - Zur **Eingabe von Text** durch den Benutzer (z.B. Spielernamen Eingabe)
 - Zur Ausgabe von Text (Hierzu eignen sich `JLabel` meistens besser!)
 
+</div><div>
+
 ![](../img/JTextField.png)
 
+</div></div>
+
 :::tip
+
 Der `Scanner` wird in einer GUI Applikation **nicht mehr verwendet**. Dafür existiert nun das `JTextField`.
+
 :::
 
 ## `JButton`
@@ -72,14 +112,38 @@ button.addActionListener(this); // Wird zu einem späteren Zeitpunkt genauer erl
 
 - Ohne `button.addActionListener(this)` und der Methode `actionPerformed(ActionEvent event)` passiert noch nichts wenn man auf den Button drückt. Dies wird später eingeführt.
 
+### UML
+
+```mermaid
+classDiagram
+  class JButton {
+    +JButton()
+    +JButton(label : String)
+    +setBounds(x : int, y : int, width: int, height : int)
+    +setText(value : String)
+    +getText() String
+    +setEnabled(isEnabled : boolean)
+    +addActionListener(listener : ActionListener)
+  }
+```
+
 ### Wann wird `JButton` es eingesetzt?
 
-- Zur Aktionsausführung durch den Benutzer (z.B. würfeln, Formular abschicken, usw...)
+<div class="grid"><div>
+
+- Zur Aktionsausführung durch den Benutzer
+  - (z.B. würfeln, Formular abschicken, usw...)
+
+</div><div>
 
 ![](../img/JButton.png)
 
+</div></div>
+
 :::tip
+
 Der Elementare `do/while`-Loop einer Konsolenapplikation wird in einer GUI Applikation nicht mehr benötigt. Hier wird durch Buttons einen **Aktions-Event** erstellt und abgearbeitet. Wenn der Benutzer den Button mehrmals drückt, wird der Aktions-Event auch mehrmals abgearbeitet. **Dies macht den Loop überflüssig!**
+
 :::
 
 ## Komponenten in ein Fenster einfügen
@@ -97,9 +161,9 @@ Der Aufruf von `component.setBounds(x, y, width, heigth)` **positioniert die Kom
   - 100 Pixel lang und
   - 15 Pixel hoch.
 
-### `this.add(component)`
+### `add(component)`
 
-Schliesslich muss die Komponente auch noch wirklich dem Fenster hinzugefügt werden. Der Aufruf dazu lautet `this.add(component);` wobei `this` ein `JFrame` sein muss:
+Schliesslich muss die Komponente auch noch wirklich dem Fenster hinzugefügt werden. Der Aufruf dazu lautet `add(component);` wobei `this` ein `JFrame` sein muss:
 
 ### ComponentWindow als Beispiel mit JLabel
 
@@ -116,7 +180,7 @@ public class ComponentWindow extends JFrame {
 
   // highlight-start
     label.setBounds(10, 10, 100, 15); // setzt die Position und Grösse vom Label
-    this.add(label); // fügt das Label ins Fenster ein
+    add(label); // fügt das Label ins Fenster ein
   // highlight-end
 
     setDefaultCloseOperation(EXIT_ON_CLOSE); // Beended beim Schliessen des Fensters ebenfalls den Prozess
@@ -126,11 +190,12 @@ public class ComponentWindow extends JFrame {
   }
 
 }
-
 ```
 
 :::tip
+
 Komponenten sollte immer als **Instanz-Variablen** initialisiert werden! So hat man von der gesamten Klasse aus darauf Zugriff! Darum wurde hier das `JLabel label = new JLabel("Ich bin ein Label");` **nicht** in der Methode `showDialog()` initialisiert, sondern im Klassen-Body.
+
 :::
 
 ## Aufgaben
@@ -139,9 +204,49 @@ Komponenten sollte immer als **Instanz-Variablen** initialisiert werden! So hat 
 
 > Ein Fenster mit zwei Label
 
-Erstellen Sie ein Swing-Fenster-Programm gemäss der Vorgabe. Es sollen zwei Label angezeigt werden.
+<div class="grid"><div>
+
+- Erstellen Sie ein Swing-Fenster-Programm gemäss der Vorgabe rechts.
+- Es sollen zwei Labels angezeigt werden.
+- Verwenden Sie das folgende UML zur Hilfe.
+
+</div><div>
 
 ![](../img/komponenten-aufgabe1.png)
+
+</div></div>
+
+#### UML
+
+```mermaid
+classDiagram
+  direction LR
+  class Starter {
+    +main(args: String[])$
+  }
+  class Aufgabe1 {
+    -labelA : JLabel
+    -labelB : JLabel
+    +showDialog()
+  }
+  class JFrame:::javaBuiltIn {
+    +add(comp : Component)
+    +setDefaultCloseOperation(operation : int)
+    +setLayout(manager : LayoutManager)
+    +setSize(width : int, height : int)
+    +setTitle(title : String)
+    +setVisible(isVisible : boolean)
+  }
+  class JLabel:::javaBuiltIn {
+    +JLabel(text : String)
+  }
+  Starter --> Aufgabe1 : uses
+  Aufgabe1 --|> JFrame : extends
+  Aufgabe1 ..> JLabel: uses
+```
+
+
+#### Musterlösung
 
 <details>
 <summary>Immer zuerste selber versuchen! Lösung abtippen, nicht kopieren ;)</summary>
@@ -161,9 +266,9 @@ public class Aufgabe1 extends JFrame {
     // highlight-start
 
     labelA.setBounds(10, 10, 50, 30);
-    this.add(labelA);
+    add(labelA);
     labelB.setBounds(150, 10, 50, 30);
-    this.add(labelB);
+    add(labelB);
 
     // highlight-end
     setDefaultCloseOperation(EXIT_ON_CLOSE);
@@ -181,9 +286,61 @@ public class Aufgabe1 extends JFrame {
 
 > ein Fenster mit je einem Label, TextField und Button
 
-Erstellen Sie ein Swing-Fenster-Programm gemäss der Vorgabe. Es soll eine Komponente jeder Art auf dem JFrame angezeigt werden, so wie links gezeigt. Die Befehlsschaltfläche reagiert noch nicht auf Mausklicks.
+<div class="grid"><div>
+
+- Erstellen Sie ein Swing-Fenster-Programm gemäss der Vorgabe rechts. 
+- Es soll eine Komponente jeder Art auf dem JFrame angezeigt werden, so wie rechts gezeigt. 
+- Die Befehlsschaltfläche reagiert noch nicht auf Mausklicks.
+- Verwenden Sie das folgende UML als Hilfe
+
+</div><div>
 
 ![](../img/komponenten-aufgabe2.png)
+
+</div></div>
+
+#### UML
+
+```mermaid
+classDiagram
+  direction LR
+  class Starter {
+    +main(args: String[])$
+  }
+  class Aufgabe2 {
+    -label : JLabel
+    -textField: JTextField
+    -button : JButton
+    +showDialog()
+  }
+  class JFrame:::javaBuiltIn {
+    +add(comp : Component)
+    +setDefaultCloseOperation(operation : int)
+    +setLayout(manager : LayoutManager)
+    +setSize(width : int, height : int)
+    +setTitle(title : String)
+    +setVisible(isVisible : boolean)
+  }
+  class JButton:::javaBuiltIn {
+    +JButton(label : String)
+    +setBounds(x : int, y : int, width: int, height : int)
+  }
+  class JLabel:::javaBuiltIn {
+    +JLabel(text : String)
+    +setBounds(x : int, y : int, width: int, height : int)
+  }
+  class JTextField:::javaBuiltIn {
+    +JTextField()
+    +setBounds(x : int, y : int, width: int, height : int)
+  }
+  Starter --> Aufgabe2 : uses
+  Aufgabe2 --|> JFrame : extends
+  Aufgabe2 ..> JLabel: uses
+  Aufgabe2 ..> JTextField: uses
+  Aufgabe2 ..> JButton: uses
+```
+
+#### Musterlösung
 
 <details>
 <summary>Immer zuerste selber versuchen! Lösung abtippen, nicht kopieren ;)</summary>
@@ -194,7 +351,7 @@ import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JTextField;
 
-public class Aufgabe3 extends JFrame {
+public class Aufgabe2 extends JFrame {
   // highlight-start
   JLabel label = new JLabel("A");
   JTextField textField = new JTextField();
@@ -227,9 +384,60 @@ public class Aufgabe3 extends JFrame {
 
 > Beschriftete Textfelder
 
+<div class="grid"><div>
+
 Programmieren Sie das Fenster auf der rechten Seite. Es enthält links zwei JLabel, rechts zwei JTextField, unterhalb ein JButton. Der JButton reagiert noch nicht auf Mausklicks.
 
+</div><div>
+
 ![](../img/komponenten-aufgabe3.png)
+
+</div></div>
+
+#### UML
+
+```mermaid
+classDiagram
+  direction TD
+  class Starter {
+    +main(args: String[])$
+  }
+  class Aufgabe3 {
+    -labelName : JLabel
+    -labelFirstName : JLabel
+    -textFieldName : JTextField
+    -textFieldFirstName :JTextField
+    -submitButton : JButton
+    +showDialog()
+  }
+  class JFrame:::javaBuiltIn {
+    +add(comp : Component)
+    +setDefaultCloseOperation(operation : int)
+    +setLayout(manager : LayoutManager)
+    +setSize(width : int, height : int)
+    +setTitle(title : String)
+    +setVisible(isVisible : boolean)
+  }
+  class JButton:::javaBuiltIn {
+    +JButton(label : String)
+    +setBounds(x : int, y : int, width: int, height : int)
+  }
+  class JLabel:::javaBuiltIn {
+    +JLabel(text : String)
+    +setBounds(x : int, y : int, width: int, height : int)
+  }
+  class JTextField:::javaBuiltIn {
+    +JTextField()
+    +setBounds(x : int, y : int, width: int, height : int)
+  }
+  Starter --> Aufgabe3 : uses
+  Aufgabe3 --|> JFrame : extends
+  Aufgabe3 ..> JLabel: uses
+  Aufgabe3 ..> JTextField: uses
+  Aufgabe3 ..> JButton: uses
+```
+
+#### Musterlösung
 
 <details>
 <summary>Immer zuerste selber versuchen! Lösung abtippen, nicht kopieren ;)</summary>
@@ -240,13 +448,13 @@ import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JTextField;
 
-public class Aufgabe4 extends JFrame {
+public class Aufgabe3 extends JFrame {
   // highlight-start
-  JLabel labelName = new JLabel("Name");
-  JLabel labelFirstName = new JLabel("Vorname");
-  JTextField textFieldName = new JTextField();
-  JTextField textFieldFirstName = new JTextField();
-  JButton submitButton = new JButton("submit");
+  private JLabel labelName = new JLabel("Name");
+  private JLabel labelFirstName = new JLabel("Vorname");
+  private JTextField textFieldName = new JTextField();
+  private JTextField textFieldFirstName = new JTextField();
+  private JButton submitButton = new JButton("submit");
   // highlight-end
 
   public void showDialog() {
