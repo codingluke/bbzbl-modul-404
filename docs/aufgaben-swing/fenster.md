@@ -11,7 +11,14 @@ Das folgende Beispiel zeigt die Vorkehrungen, die notwendig sind, um ein Fenster
 ```mermaid
 classDiagram
   direction LR
-  class JFrame
+  class JFrame {
+   +add(comp : Component)
+   +setDefaultCloseOperation(operation : int)
+   +setLayout(manager : LayoutManager)
+   +setSize(width : int, height : int)
+   +setTitle(title : String)
+   +setVisible(isVisible : boolean)
+  }
   class Starter {
     +main(args: String[])$
   }

@@ -14,31 +14,36 @@ Erstellen Sie das Programm unten. Das Ziel ist, dass bei Anklicken der SchaltflÃ
 
 ### UML
 
+:::info
+JFrame, ActionListener, JLabel, JButton und JTextField wird im UML beschrieben,
+ist jedoch direkt in Java vorhanden. Es werden die verwendeten Methoden
+aufgelistet!
+:::
+
 ```mermaid
 classDiagram
   direction LR
-    class JFrame {
-      +add(comp : Component)
-      +setDefaultCloseOperation(operation : int)
-      +setLayout(manager : LayoutManager)
-      +setSize(width : int, height : int)
-      +setTitle(title : String)
-      +setVisible(isVisible : boolean)
-    }
-    class ActionListener {
-      +actionPerformed(event : ActionEvent)
-    }
-    class JTextField {
-      +getText() String
-      +setText(value : String)
-    }
-    class JLabel {
-      +getText() String
-      +setText(value : String)
-    }
-    class JButton {
-      +addActionListener(actionListener : ActionListener)
-    }
+  class JFrame {
+    +add(comp : Component)
+    +setDefaultCloseOperation(operation : int)
+    +setLayout(manager : LayoutManager)
+    +setSize(width : int, height : int)
+    +setTitle(title : String)
+    +setVisible(isVisible : boolean)
+  }
+  class ActionListener {
+    +actionPerformed(event : ActionEvent)
+  }
+  class JTextField {
+    +getText() String
+    +setText(value : String)
+  }
+  class JLabel {
+    +setText(value : String)
+  }
+  class JButton {
+    +addActionListener(actionListener : ActionListener)
+  }
 
   class Starter {
     +main(args: String[])$
@@ -140,11 +145,11 @@ classDiagram
     +actionPerformed(event : ActionEvent)
   }
   class JLabel {
-    +getText() String
     +setText(value : String)
   }
   class JButton {
     +addActionListener(actionListener : ActionListener)
+    +getText() String
   }
 
   Starter --> "1" Aufgabe2 : uses
