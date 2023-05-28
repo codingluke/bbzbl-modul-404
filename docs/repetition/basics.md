@@ -371,21 +371,23 @@ In [Ruby](https://www.ruby-lang.org) ist z.B. alles ein Objekt. Auch Zahlen. Da 
 
 ## Kontrollstrukturen
 
-### if
+### if-Kontrollstrucktur
 
 <div class="grid"><div>
 
-```java title="if-Kontrollstrucktur"
+```java title="Pseudo-Code"
 // highlight-start
-if (bedingung1) {
+if (<Bedingung1>) {
   // Codeblock bei wahrer bedingung1
+  <Anweisung1>
 }
 // highlight-end
 // highlight-green-start
-else if (bedingung2) {
+else if (<Bedingung2>) {
   // Codeblock bei
   //   - unwahrer bedingung1
   //   - aber wahrer bedingung2
+  <Anweisung2>
 }
 // highlight-green-end
 // highlight-blue-start
@@ -393,6 +395,7 @@ else {
   // Codeblock bei
   //   - unwahrer bedingung1
   //   - unwahrer bedingung2
+  <Anweisung3>
 }
 // highlight-blue-end
 ```
@@ -418,8 +421,10 @@ flowchart TD
 
 ```java title="if Beispiel"
 int time = 22;
+// highlight-red-next-line
 if (time < 10) {
   System.out.println("Good morning.");
+// highlight-red-next-line
 } else if (time < 18) {
   System.out.println("Good day.");
 } else {
@@ -450,59 +455,90 @@ flowchart TD
 
 <div class="grid"><div>
 
-```java title="switch"
-switch(Wert) {
-  case VergleichsWert1:
+```java title="Pseudo-Code"
+switch(wert) {
+  case vergleichsWert1:
     <Anweisung1>;
     // ohne `break` wird auch <Anweisung2>
     // bis zum `break` ausgeführt.
-  case VergleichsWert2:
+  // highlight-green-start
+  case vergleichsWert2:
     <Anweisung2>;
     break;
+  // highlight-green-end
+  // highlight-blue-start
   default:
     <StarndardAnweisung>;
-    // code block
+  // highlight-blue-end
 }
 ```
+
+:::info Wertevergleich immer mit `==`, `equals`
+
+Der `Wert` wird bei einer `switch-case`-Kontrollstruktur pro `case` mit dem
+VergleichsWert verglichen. Dabei gilt immer `==` rsp. für höhere Datentypen `equals`
+
+:::
+
+:::info `break`
+
+Wird eine Anweisung eines `case` nicht mit `brake` beendet, wird ebenfalls
+die Anweisung des nächsten `case` ausgeführt. Solange bis ein `break` erscheint.
+Dies gilt auch für die Standard Anweisung (`default`)!
+
+:::
 
 </div><div>
 
 ```mermaid
 flowchart TB
-    A["switch(Wert)"]
+    A["switch(wert)"]
     A --> B
 
-    B{"case Wert ==\n VergleichsWert1"}
-    C{"case Wert ==\n VergleichsWert2"}
+    B{"case wert ==\n vergleichsWert1"}
+    C{"case wert ==\n vergleichsWert2"}
 
     E["Anweisung1;"]
-    F["Anweisung2;\nbreak;"]
-    D["StandardAnweisung"]
+    F["Anweisung2;\n <b>break;</b>"]
+    D["StandardAnweisung;"]
 
     E --> |"ohne `break` wird auch\nAnweisung2 ausgeführt"| F
     B --> |"false"| C
     B --> |"true"| E
     C --> |"true"| F
     C --> |"false"| D
+
+    style C fill:#00A17020,stroke:#00A17080,stroke-width:2px
+    style F fill:#00A17020,stroke:#00A17080,stroke-width:2px
+    style D fill:#0072B520,stroke:#0072B580,stroke-width:2px
 ```
 
 </div></div>
 
+### Switch-Beispiel
+
+<div class="grid"><div>
+
 ```java title="switch Beispiel"
 int day = 4;
 switch (day) {
+// highlight-red-next-line
   case 1:
     System.out.println("Monday");
     break;
+// highlight-red-next-line
   case 2:
     System.out.println("Tuesday");
     break;
+// highlight-red-next-line
   case 3:
     System.out.println("Wednesday");
     break;
+// highlight-yellow-start
   case 4:
     System.out.println("Thursday");
     break;
+// highlight-yellow-end
   case 5:
     System.out.println("Friday");
     break;
@@ -515,5 +551,90 @@ switch (day) {
 }
 // Outputs "Thursday" (day 4)
 ```
+
+:::info `break` wird eigentlich immer verwendet
+
+Es gibt fast keine realen Szenarien, in denen es Sinn macht mehrere cases auszuführen.
+Deswegen sind `switch-case` statements nicht all zu oft anzutreffen.
+
+Eine `switch-case`-Kontrollstruktur die für jede Anweisung ein `break` verwendet, kann
+immer mit einer `if-else`-Kontrollstruktur mit `==` Bedingungen ersetzt werden.
+Damit lassen sich die breaks sparen.
+
+```java title="switch-case als if-else"
+if (wert == 1) {
+  <Anweisung1>
+} else if (wert == 2) {
+  <Anweisung2>
+} else {
+  <StandardAnweisung>
+}
+```
+
+:::
+
+:::tip Arrays sind toll!
+
+:superhero: Mit einem _Array_ kann teilweise sogar eine Kontrollstruktur vermieden werden.
+
+```java
+String[] days = {"Monday", "Tuesday",
+    "Wednesday", "Thursday", "Friday",
+    "Saturday", "Sunday"};
+int day = 4;
+// Arrays starten bei 0! deswegen day-1
+System.out.println(days[day-1]);
+// Outputs "Thursday"
+```
+
+:::
+
+</div><div>
+
+```mermaid
+flowchart TB
+    X["day = 4;"]
+    X-->A
+    A["switch(day)"]
+    A --> B1
+
+    B1{"case wert == 1"}
+    B2{"case wert == 2"}
+    B3{"case wert == 3"}
+    B4{"case wert == 4"}
+    B5{"case wert == 5"}
+    B6{"case wert == 6"}
+    B7{"case wert == 7"}
+
+    A1["Monday"]
+    A2["Tuesday"]
+    A3["Wednesday"]
+    A4["Thursday"]
+    A5["Friday"]
+    A6["Saturday"]
+    A7["Sunday"]
+
+    B1 --> |"true"| A1
+    B1 --> |"false"| B2
+    B2 --> |"true"| A2
+    B2 --> |"false"| B3
+    B3 --> |"true"| A3
+    B3 --> |"false"| B4
+    B4 --> |"true"| A4
+    B4 --> |"false"| B5
+    B5 --> |"true"| A5
+    B5 --> |"false"| B6
+    B6 --> |"true"| A6
+    B6 --> |"false"| B7
+    B7 --> |"true"| A7
+
+    style B1 fill:#FF000020,stroke:#FF000060,stroke-width:2px
+    style B2 fill:#FF000020,stroke:#FF000060,stroke-width:2px
+    style B3 fill:#FF000020,stroke:#FF000060,stroke-width:2px
+    style B4 fill:#FFFF0020,stroke:#aaaa0060,stroke-width:2px
+    style A4 fill:#FFFF0020,stroke:#aaaa0060,stroke-width:2px
+```
+
+</div></div>
 
 ## Methoden
