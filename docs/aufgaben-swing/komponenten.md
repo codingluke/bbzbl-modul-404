@@ -34,7 +34,7 @@ classDiagram
   }
 ```
 
-### Wann wird `JLabel` es eingesetzt?
+### Wann wird das `JLabel` eingesetzt?
 
 <div class="grid"><div>
 
@@ -75,7 +75,7 @@ classDiagram
   }
 ```
 
-### Wann wird `JTextField` es eingesetzt?
+### Wann wird das `JTextField` eingesetzt?
 
 <div class="grid"><div>
 
@@ -127,7 +127,7 @@ classDiagram
   }
 ```
 
-### Wann wird `JButton` es eingesetzt?
+### Wann wird der `JButton` eingesetzt?
 
 <div class="grid"><div>
 
@@ -216,7 +216,7 @@ Komponenten sollte immer als **Instanz-Variablen** initialisiert werden! So hat 
 
 </div></div>
 
-#### UML
+#### UML der Musterlösung
 
 ```mermaid
 classDiagram
@@ -240,11 +240,10 @@ classDiagram
   class JLabel:::javaBuiltIn {
     +JLabel(text : String)
   }
-  Starter --> Aufgabe1 : uses
+  Starter ..> Aufgabe1 : uses
   Aufgabe1 --|> JFrame : extends
   Aufgabe1 ..> JLabel: uses
 ```
-
 
 #### Musterlösung
 
@@ -288,8 +287,8 @@ public class Aufgabe1 extends JFrame {
 
 <div class="grid"><div>
 
-- Erstellen Sie ein Swing-Fenster-Programm gemäss der Vorgabe rechts. 
-- Es soll eine Komponente jeder Art auf dem JFrame angezeigt werden, so wie rechts gezeigt. 
+- Erstellen Sie ein Swing-Fenster-Programm gemäss der Vorgabe rechts.
+- Es soll eine Komponente jeder Art auf dem JFrame angezeigt werden, so wie rechts gezeigt.
 - Die Befehlsschaltfläche reagiert noch nicht auf Mausklicks.
 - Verwenden Sie das folgende UML als Hilfe
 
@@ -299,7 +298,7 @@ public class Aufgabe1 extends JFrame {
 
 </div></div>
 
-#### UML
+#### UML der Musterlösung
 
 ```mermaid
 classDiagram
@@ -333,7 +332,7 @@ classDiagram
     +JTextField()
     +setBounds(x : int, y : int, width: int, height : int)
   }
-  Starter --> Aufgabe2 : uses
+  Starter ..> Aufgabe2 : uses
   Aufgabe2 --|> JFrame : extends
   Aufgabe2 ..> JLabel: uses
   Aufgabe2 ..> JTextField: uses
@@ -394,7 +393,7 @@ Programmieren Sie das Fenster auf der rechten Seite. Es enthält links zwei JLab
 
 </div></div>
 
-#### UML
+#### UML der Musterlösung
 
 ```mermaid
 classDiagram
@@ -430,7 +429,7 @@ classDiagram
     +JTextField()
     +setBounds(x : int, y : int, width: int, height : int)
   }
-  Starter --> Aufgabe3 : uses
+  Starter ..> Aufgabe3 : uses
   Aufgabe3 --|> JFrame : extends
   Aufgabe3 ..> JLabel: uses
   Aufgabe3 ..> JTextField: uses

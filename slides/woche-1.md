@@ -310,3 +310,4 @@ String command = sc.nextString();
 <!-- _class: big center -->
 
 # Abschluss / Lernjournal
+

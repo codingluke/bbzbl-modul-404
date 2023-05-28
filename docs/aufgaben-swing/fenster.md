@@ -6,38 +6,18 @@ sidebar_position: 2
 
 Das folgende Beispiel zeigt die Vorkehrungen, die notwendig sind, um ein Fenster anzuzeigen:
 
-```mermaid
-classDiagram
-  direction LR
-  class JFrame:::javaBuiltIn {
-   +add(comp : Component)
-   +setDefaultCloseOperation(operation : int)
-   +setLayout(manager : LayoutManager)
-   +setSize(width : int, height : int)
-   +setTitle(title : String)
-   +setVisible(isVisible : boolean)
-  }
-  class Starter {
-    +main(args: String[])$
-  }
-  class PureWindow {
-    +showDialog()
-  }
-
-  Starter --> PureWindow : uses
-  PureWindow --|> JFrame : extends
-```
-
 ## Starter.java
 
 In der `main`-Methode der Klasse `Starter` wird ein Objekt der Klasse `PureWindow` erzeugt und in der Variable `pureWindow` gespeichert. Die Variable `pureWindow` wird dann verwendet, um die Methode `showDialog()` aufzurufen.
 
 ```java title="Starter.java"
 public class Starter {
+
   public static void main(String[] args) {
     PureWindow pureWindow = new PureWindow(); // Ertellt ein `PureWindow` Objekt und speichert es in der Variable `pureWindow`
     pureWindow.showDialog(); // Führt die Methode `showDialog()` aus
   }
+
 }
 ```
 
@@ -66,10 +46,11 @@ public class PureWindow extends JFrame {
     setTitle("Mein toller Titel"); // Setzt den Titel des Fensters
     setVisible(true); // Muss am Ende stehen! Ohne das wird nichts angezeigt!
   }
+
 }
 ```
 
-:::info
+:::note
 
 Die Klasse haben wir `PureWindow` genannt. Deutsch heisst das soviel wie "reines Fenster". Die Klasse kann beliebig benannt werden. `PureWindow` eignet sich, da es sich um ein Beispiel für das Grundgerüst handelt, ohne weiteren Inhalt.
 
@@ -81,25 +62,63 @@ Lesen Sie auch die Kommentare im Code, löschen Sie die einzelnen Zeilen und sch
 
 :::
 
-## Programm starten
+## UML des ganzen Programms
 
-Wenn das Programm gestartet wird, erscheint ein Fenster das ca. wie folgt aussieht:
+```mermaid
+classDiagram
+  direction LR
+  class JFrame:::javaBuiltIn {
+   +add(comp : Component)
+   +setDefaultCloseOperation(operation : int)
+   +setLayout(manager : LayoutManager)
+   +setSize(width : int, height : int)
+   +setTitle(title : String)
+   +setVisible(isVisible : boolean)
+  }
+  class Starter {
+    +main(args: String[])$
+  }
+  class PureWindow {
+    +showDialog()
+  }
 
-![](../img/purewindow.png)
+  Starter ..> PureWindow : uses
+  PureWindow --|> JFrame : extends
+```
 
-## Aufgabe
+:::info extends
 
-Erstellt nun ein neues Programm, kopiert den Code von Oben und schaut, ob es bei euch auch funktioniert.
+`extends` bedeutet, dass die Klasse von der der solide Pfeil mit **Dreieckspize** (UML oben) ausgeht alle Methoden und
+Instanzvariablen der Klasse auf welche der Pfeil zeigt übernimmt/erbt/sich erweitert.
 
+- Die Klasse `PureWindow` erbt somit alle Methoden und Instanzvariablen der Klasse `JFrame`.
+- Die Signatur der Klasse PureWindow lautet `class PureWindow extends JFrame`
+
+:::
+
+## Aufgabe - Programm starten
+
+<div class="grid"><div>
+
+- Erstellt ein neues Java Project (z.B. SwingPureWindow)
+- Kopiert den Code von Oben (`Starter.java`, `PureWindow.java`)
+- Startet das Programm und geniesst den Blick auf ein Fenster ähnlich dem Bild
 - Löscht einzelne Zeilen und analysiert den Effekt
 
-:::tip Anstatt copy/paste tippt ihr den Text am besten selber ab!
+:::tip Anstatt copy/paste den Text selber abtippen!
 
 1. Lernt Ihr so besser
 2. Merkt Ihr, dass der Editor vorschläge macht!
 3. Erhält Ihr ein besseres "Gefühl" wie es ist zu programmieren :superhero:
 
 :::
+
+</div><div>
+
+![](../img/purewindow.png)
+
+</div></div>
+
 
 ## Cheat Sheet
 

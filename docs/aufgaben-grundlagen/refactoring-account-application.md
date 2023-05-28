@@ -69,18 +69,59 @@ System.out.println(girokonto.getBalance()); // => -20;
 
 - Das Objekt `sparkonto` und `girokonto` **teilen sich den Code** der Klasse `Account`.
 - Die **Werte der Instanz-Variable** `private double balance;` sind jedoch **unabhängig**!
-  :::
+
+:::
 
 ## Aufgabe
 
 Bauen Sie Ihr Programm nun so um, dass es aus zwei Klassen besteht (die ursprüngliche Klasse und die Klasse `Account`).
 
+- Kopieren Sie die Klasse `AccountApplication` und benennen Sie die neue `AccountApplicationV2`.
 - Erstellen und implementieren Sie die Klasse `Account`.
-- Löschen Sie in der ursprüngliche Klasse (`AccountApplication`) die Variable `double balance`;
+- Löschen Sie in der neuen Klasse (`AccountApplicationV2`) die Variable `double balance`;
 - Legen Sie dafür ein **Objekt** der Klasse `Account` an.
 - Jetzt erscheinen Fehler im Quellcode.
   - Überall dort müssen Sie das Programm anpassen und mit dem **Objekt** der Klasse `Account` arbeiten.
-- Die Methoden `deposit` und `withdraw` der ursprünglichen Klasse `AccountApplication` **müssen nun gelöscht werden können**.
+- Die Methoden `deposit` und `withdraw` müssen nun in der Klasse `AccountApplicationV2` gelöscht werden.
+
+### UML der Musterlösung
+
+Verwenden Sie das UML um die Struktur der Aufgabe zu verstehen.
+
+```mermaid
+classDiagram
+  direction LR
+  class AccountApplicationV2 {
+    +main(args: String[])$
+  }
+  class Account {
+    -balance : double
+    +getBalance() double
+    +deposit(amount : double)
+    +withdraw(amount : double)
+  }
+  class Scanner:::javaBuiltIn {
+    +Scanner(System.in)  Scanner
+    +next() String
+    +nextDouble() double
+  }
+  AccountApplicationV2 ..> Account : uses
+  AccountApplicationV2 ..> Scanner : uses
+```
+
+:::tip
+
+Für jeden **gepunkteter Pfeil der mit "uses" beschrifetet** ist, muss in der Klasse, von der der Pfeil 
+abgeht (hier `AccountApplicationV2`) **ein Objekte der Klasse auf die gezeigt wird** 
+vorhanden sein (hier `Account` und `Scanner`).
+
+In der Klasse `AccountApplicationV2` muss somit irgendwo `new Account()` und `new Scanner(System.in)` 
+stehen! Da die Klasse `AccountApplicationV2` nur die `main`-Methode beinhaltet, wird es wohl darin sein.
+
+:superhero: Theoretisch könnte das Objekt auch über einen Parameter der Klasse übergeben werden.
+Das nennt sich _Dependency Injection_.
+
+:::
 
 ## Musterlösung
 

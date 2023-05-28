@@ -56,7 +56,7 @@ classDiagram
     +actionPerformed(event : ActionEvent)
   }
 
-  Starter --> "1" Aufgabe1 : uses
+  Starter ..> "1" Aufgabe1 : uses
   Aufgabe1 --|> JFrame : extends
   Aufgabe1 ..|> ActionListener : implements
   Aufgabe1 ..> JTextField : uses
@@ -154,7 +154,7 @@ classDiagram
     +setBounds(x : int, y : int, width: int, height : int)
   }
 
-  Starter --> "1" Aufgabe2 : uses
+  Starter ..> "1" Aufgabe2 : uses
   Aufgabe2 --|> JFrame : extends
   Aufgabe2 ..|> ActionListener : implements
   Aufgabe2 ..> JLabel: uses

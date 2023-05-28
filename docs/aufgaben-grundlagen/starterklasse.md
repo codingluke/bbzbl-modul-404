@@ -20,17 +20,46 @@ public class Starter {
 
 ## Aufgabe
 
-### 1. Umbau der `AccountApplication` Klasse
+### 1. Umbau der `AccountApplicationV2` Klasse
 
+- Kopieren Sie die Klasse und benennen Sie dies neue `AccountApplicationV3`
 - Ändern Sie die Definition der Methode `public static void main(String[] args)` um in `public void start()`
-- Falls Ihre Applikation mit Methoden gearbeitet hat, löschen Sie das `static` aus jeder Methodendeklaration.
 
 ### 2. Erstellen der Starterklasse
 
 - Erstellen Sie eine neue Klasse `Starter`
 - Diese Klasse muss die Methode `public static void main(String[] args)` besitzen
-- Erstellen Sie in der `main` Methode ein **Objekt** Ihrer Applikationsklasse (`AccountApplication`)
+- Erstellen Sie in der `main` Methode ein **Objekt** Ihrer Applikationsklasse (`AccountApplicationV3`)
 - Rufen Sie dann die Methode `start()` des Objekts auf
+
+### UML der Musterlösung
+
+Verwenden Sie das UML um die Struktur der Aufgabe zu verstehen.
+
+```mermaid
+classDiagram
+  direction LR
+  class Starter {
+    +main(args: String[])$
+  }
+  class AccountApplicationV3 {
+    +start()
+  }
+  class Account {
+    -balance : double
+    +getBalance() double
+    +deposit(amount : double)
+    +withdraw(amount : double)
+  }
+  class Scanner:::javaBuiltIn {
+    +Scanner(System.in)  Scanner
+    +next() String
+    +nextDouble() double
+  }
+  Starter ..> AccountApplicationV3 : uses
+  AccountApplicationV3 ..> Account : uses
+  AccountApplicationV3 ..> Scanner : uses
+```
 
 ## Musterlösung
 
@@ -41,17 +70,17 @@ public class Starter {
 public class Starter {
 
   public static void main(String[] args) {
-    ApplicationForStarter app = new ApplicationForStarter();
+    AccountApplicationV3 app = new AccountApplicationV3();
     app.start();
   }
 
 }
 ```
 
-```java title="AccountApplication.java"
+```java title="AccountApplicationV3.java"
 import java.util.Scanner;
 
-public class ApplicationForStarter {
+public class AccountApplicationV3 {
 
   public void start() {
     System.out.println("Welcome to the account application");

@@ -84,8 +84,8 @@ logic.do();
 <!--     +do() -->
 <!--   } -->
 
-<!--   Starter --> "1" Gui : uses -->
-<!--   Gui --> "1" Logic : uses -->
+<!--   Starter ..> "1" Gui : uses -->
+<!--   Gui ..> "1" Logic : uses -->
 <!--   Gui --|> JFrame : extends -->
 <!--   Gui ..|> ActionListener : implements -->
 <!-- ``` -->

@@ -51,7 +51,36 @@ Please enter the amount, 0 (zero) to terminate
 Final balance: 35.0
 ```
 
-:::info Erste Hilfe
+### UML der Musterlösung
+
+Verwenden Sie das UML um die Struktur der Aufgabe zu verstehen.
+
+```mermaid
+classDiagram
+  direction LR
+  class AccountApplication {
+    +main(args: String[])$
+    -withdraw(balance : double, amount : double)$  double
+    -deposit(balance : double, amount : double)$  double
+  }
+  class Scanner:::javaBuiltIn {
+    +Scanner(System.in) Scanner
+    +next() String
+    +nextDouble() double
+  }
+  AccountApplication ..> Scanner : uses
+```
+
+:::info
+
+Das UML von verwendeten built-in Java Klassen, welche Sie also nicht selber
+implementieren müssen, sind ausgebleicht dargestellt. Hier also der `Scanner`.
+Es werden immer nur die Methoden angegeben, welche verwendet werden, auch wenn
+die eigentliche Klasse mehr Methoden besitzt.
+
+:::
+
+### Erste Hilfe
 
 <details>
 <summary> Bitte diese Tipps versuchen bevor Ihr zur Musterlösung greift!</summary>
@@ -98,8 +127,6 @@ public class AccountApplication {
 ```
 
 </details>
-
-:::
 
 ### Zusatzaufgaben für Schnelle
 
