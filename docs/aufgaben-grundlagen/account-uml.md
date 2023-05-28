@@ -1,8 +1,8 @@
 ---
-sidebar_position: 8
+sidebar_position: 4
 ---
 
-# 7. Account - Klassendiagramm
+# 4. Account - Klassendiagramm
 
 :::danger WICHTIG
 

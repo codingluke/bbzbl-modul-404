@@ -312,7 +312,7 @@ text.equals(text2) // true!  Der Inhalt von beiden Objekte ist jedoch gleich.
 2. Stellen wir uns **ein zweites Paket**, Paket2, vor, in welches ebenfalls die Druckletter H,a,l,l,o, ,W,e,l und t gelegt werden
 3. Zwei Pakete mit gleichem Inhalt sind auch in der uns bekannten Welt immer noch zwei unterschiedliche Pakete, oder?
    - **Mit `==` werden die Pakete** und nicht deren Inhalt "Hallo Welt" verglichen.
-4. Vergleicht man jedoch der Inhalt befinden sich in Beiden Paketen die gleichen Druckletter in der gleichen Reihenfolge.
+4. Vergleicht man jedoch der Inhalt befinden sich in beiden Paketen die gleichen Druckletter in der gleichen Reihenfolge.
    - **Mit `equals` wird der Inhalt** und nicht die Pakete verglichen.
 
 #### Und wieso darf man nun primitiven Datentypen mit == vergleichen?
@@ -321,15 +321,15 @@ Primitive Datentypen sind in Java **keine Objekte**, sie werden somit nicht in e
 
 - Die Nummer `4` ist die Nummer `4`. Punkt.
 - Das Zeichen `c` ist das Zeichen `c`. Punkt.
-- Aber der Satz "Hallo Welt" Könnte man
+- Aber der Satz "Hallo Welt" könnte man
   - alphabetisch sortieren
   - gross schreiben
   - klein schreiben
   - ...
 
-:::info String ist eine Klasse
+:::info String ist eine Klasse und somit ein Objekt
 
-Eigentlich müsste man einen String wie folgt initialisieren:
+Eigentlich müsste man einen `String` wie folgt initialisieren:
 
 ```java
 String text = new String("String ist eine Klasse und kann somit auch mit new initialisiert werden");
@@ -373,15 +373,48 @@ In [Ruby](https://www.ruby-lang.org) ist z.B. alles ein Objekt. Auch Zahlen. Da 
 
 ### if
 
+<div class="grid"><div>
+
 ```java title="if-Kontrollstrucktur"
+// highlight-start
 if (bedingung1) {
-  // block of code to be executed if condition1 is true
-} else if (bedingung2) {
-  // block of code to be executed if the condition1 is false and condition2 is true
-} else {
-  // block of code to be executed if the condition1 is false and condition2 is false
+  // Codeblock bei wahrer bedingung1
 }
+// highlight-end
+// highlight-green-start
+else if (bedingung2) {
+  // Codeblock bei
+  //   - unwahrer bedingung1
+  //   - aber wahrer bedingung2
+}
+// highlight-green-end
+// highlight-blue-start
+else {
+  // Codeblock bei
+  //   - unwahrer bedingung1
+  //   - unwahrer bedingung2
+}
+// highlight-blue-end
 ```
+
+</div><div>
+
+```mermaid
+flowchart TD
+    C{Wertestand}
+    C -->|"if\n< Bedingung1 >"| D["< Anweisung1 >"]
+    C -->|"else if\n< Bedingung2 >"| E["< Anweisung2 >"]
+    C -->|else| F["< Anweisung3 >"]
+
+    style E fill:#00A17020,stroke:#00A17080,stroke-width:2px
+    style F fill:#0072B520,stroke:#0072B580,stroke-width:2px
+```
+
+</div></div>
+
+### if-Beispiel
+
+<div class="grid"><div>
 
 ```java title="if Beispiel"
 int time = 22;
@@ -390,27 +423,72 @@ if (time < 10) {
 } else if (time < 18) {
   System.out.println("Good day.");
 } else {
+  // highlight-yellow-next-line
   System.out.println("Good evening.");
 }
 // Outputs "Good evening." (else).
 ```
 
+- Es wird der Code-Block von `else` ausgeführt, da die Variabe `time` sowohl grösser
+  als 10 wie auch wie auch grösser als 18 ist.
+
+</div><div>
+
+```mermaid
+flowchart TD
+    C{time = 22}
+    C -->|"if (time < 10)"| D["Good morning."]
+    C -->|"else if (time < 18)"| E["Good day."]
+    C -->|else| F["Good evening"]
+
+    style F fill:#FFFF0020,stroke:#aaaa0060,stroke-width:2px
+```
+
+</div></div>
+
 ### switch
 
+<div class="grid"><div>
+
 ```java title="switch"
-switch(expression) {
-  case x:
-    // code block
-    break;
-  case y:
-    // code block
+switch(Wert) {
+  case VergleichsWert1:
+    <Anweisung1>;
+    // ohne `break` wird auch <Anweisung2>
+    // bis zum `break` ausgeführt.
+  case VergleichsWert2:
+    <Anweisung2>;
     break;
   default:
+    <StarndardAnweisung>;
     // code block
 }
 ```
 
-```java
+</div><div>
+
+```mermaid
+flowchart TB
+    A["switch(Wert)"]
+    A --> B
+
+    B{"case Wert ==\n VergleichsWert1"}
+    C{"case Wert ==\n VergleichsWert2"}
+
+    E["Anweisung1;"]
+    F["Anweisung2;\nbreak;"]
+    D["StandardAnweisung"]
+
+    E --> |"ohne `break` wird auch\nAnweisung2 ausgeführt"| F
+    B --> |"false"| C
+    B --> |"true"| E
+    C --> |"true"| F
+    C --> |"false"| D
+```
+
+</div></div>
+
+```java title="switch Beispiel"
 int day = 4;
 switch (day) {
   case 1:
@@ -439,5 +517,3 @@ switch (day) {
 ```
 
 ## Methoden
-
-

@@ -68,6 +68,7 @@ Es gibt viele UML Diagrammtypen, wirklich Verwendung finden vor allem folgende:
 
 ```mermaid
 classDiagram
+    direction TB
     class ActionListener
     class JFrame
     <<interface>> ActionListener

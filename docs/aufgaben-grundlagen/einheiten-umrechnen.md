@@ -1,8 +1,8 @@
 ---
-sidebar_position: 5
+sidebar_position: 6
 ---
 
-# 5. Fahrenheit-Celsius Konverter
+# 6. Fahrenheit-Celsius Konverter
 
 :::danger WICHTIG
 

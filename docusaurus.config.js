@@ -126,6 +126,39 @@ const config = {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
         additionalLanguages: ['java'],
+        magicComments: [
+          // Remember to extend the default highlight class name as well!
+          {
+            className: "theme-code-block-highlighted-line",
+            line: "highlight-next-line",
+            block: { start: "highlight-start", end: "highlight-end" },
+          },
+          {
+            className: "code-block-red-line",
+            line: "highlight-red-next-line",
+            block: { start: "highlight-red-start", end: "highlight-red-end" },
+          },
+          {
+            className: "code-block-green-line",
+            line: "highlight-green-next-line",
+            block: { start: "highlight-green-start", end: "highlight-green-end" },
+          },
+          {
+            className: "code-block-yellow-line",
+            line: "highlight-yellow-next-line",
+            block: { start: "highlight-yellow-start", end: "highlight-yellow-end" },
+          },
+          {
+            className: "code-block-orange-line",
+            line: "highlight-orange-next-line",
+            block: { start: "highlight-orange-start", end: "highlight-orange-end" },
+          },
+          {
+            className: "code-block-blue-line",
+            line: "highlight-blue-next-line",
+            block: { start: "highlight-blue-start", end: "highlight-blue-end" },
+          },
+        ],
       },
     }),
 };

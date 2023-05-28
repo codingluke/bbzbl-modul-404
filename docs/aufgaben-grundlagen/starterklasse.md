@@ -1,8 +1,8 @@
 ---
-sidebar_position: 4
+sidebar_position: 5
 ---
 
-# 4. Starterklasse
+# 5. Starterklasse
 
 - Es ist eine gute Praxis in der `main` Methode nicht viel Logik zu implementieren.
 - Bestenfalls besteht die `main` Methode nur aus der **Instanzisierung einer Applikations Klasse** welche die eigentliche App verwaltet.

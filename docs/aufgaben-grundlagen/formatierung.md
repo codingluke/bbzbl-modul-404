@@ -1,8 +1,8 @@
 ---
-sidebar_position: 6
+sidebar_position: 7
 ---
 
-# 6. Formatierung
+# 7. Formatierung
 
 > :point_up: **Machen Sie sich mit dem Konzept der [Formatierung](../konzepte/formatierung.md) bekannt bevor Sie weiterfahren!**
 
