@@ -1,10 +1,11 @@
 /* @theme bbzbl */
-@import 'default';
+@import "default";
 @import url(https://cdn.jsdelivr.net/npm/firacode@6.2.0/distr/fira_code.css);
 @import url(https://code.cdn.mozilla.net/fonts/fira.css);
 
 :root {
-  font-family: 'Fira Sans', 'Segoe UI', 'Liberation Sans', 'Helvetica', 'Arial', sans-serif;
+  font-family: "Fira Sans", "Segoe UI", "Liberation Sans", "Helvetica", "Arial",
+    sans-serif;
 }
 
 /* body { */
@@ -12,23 +13,38 @@
 /* } */
 
 /* * { font-family: 'Fira', sans-serif;  } */
-code * { font-family: 'Fira Code', monospace;  }
+code * {
+  font-family: "Fira Code", monospace;
+}
 @supports (font-variation-settings: normal) {
-  code * { font-family: 'Fira Code VF', monospace; font-size: 95%; }
+  code * {
+    font-family: "Fira Code VF", monospace;
+    font-size: 95%;
+  }
 }
 
-section.code { font-family: 'Fira Code', monospace;  }
+section.code {
+  font-family: "Fira Code", monospace;
+}
 @supports (font-variation-settings: normal) {
-  section.code { font-family: 'Fira Code VF', monospace; }
+  section.code {
+    font-family: "Fira Code VF", monospace;
+  }
 }
 
 * {
-  font-family: 'Fira Sans', sans-serif;
+  font-family: "Fira Sans", sans-serif;
   font-weight: 400;
 }
-.bold{font-weight:bold;}
-.italic{font-style: italic;}
-.oblique{font-style: oblique;}
+.bold {
+  font-weight: bold;
+}
+.italic {
+  font-style: italic;
+}
+.oblique {
+  font-style: oblique;
+}
 
 .mermaid {
   text-align: center;
@@ -106,7 +122,7 @@ section h2 {
 section h1 strong,
 section h2 strong,
 section h3 strong {
-  color:  var(--color-fg-strong) ;
+  color: var(--color-fg-strong);
   font-style: italic;
 }
 section h1 a {
@@ -115,16 +131,16 @@ section h1 a {
 section h1 sup a {
   float: unset;
 }
-section sup a::before, 
+section sup a::before,
 section sup a::after {
   content: unset;
 }
 section a,
-section a:visited{
+section a:visited {
   color: darkblue;
 }
 section hr {
-  padding-top: .10em;
+  padding-top: 0.1em;
 }
 
 /* big */
@@ -160,10 +176,9 @@ section.big h2 {
   float: right;
 }
 
-
 /* small-text */
-section.small-text ul, 
-section.small-text ol, 
+section.small-text ul,
+section.small-text ol,
 section.small-text p {
   font-size: 0.8rem;
 }
@@ -192,16 +207,39 @@ section blockquote {
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 1rem;
 }
-.columns h1:first-child, h2:first-child, h3:first-child {
+.columns h1:first-child,
+h2:first-child,
+h3:first-child {
   margin-top: 0;
 }
+
+/* section.h-columns { */
+/*   display: grid; */
+/*   grid-template-columns: repeat(2, minmax(0, 1fr)); */
+/* } */
+
+/* section.h-columns h1 { */
+/*   grid-column: 1 / -1; */
+/* } */
+
+/* section.h-columns p { */
+/*   grid */
+/* } */
+
+/* section.h-columns h1 { */
+/*   column-span: all; */
+/* } */
+
+/* section.h-columns h2 { */
+/*   break-before: column; */
+/* } */
 
 /* variables */
 
 section {
   --color-border-default: rgb(100, 100, 100);
-  --header-footer-color: hsla(0,0%,20%,.65);
-  --color-fg-blockquote: hsla(0,0%,10%,.9);
+  --header-footer-color: hsla(0, 0%, 20%, 0.65);
+  --color-fg-blockquote: hsla(0, 0%, 10%, 0.9);
   --color-canvas-default: #fff;
   /* --h1-color: rgb(34, 68, 102); */
   /* --h2-color: rgb(70, 70, 145) */
