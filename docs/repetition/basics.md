@@ -582,8 +582,7 @@ String[] days = {"Monday", "Tuesday",
     "Wednesday", "Thursday", "Friday",
     "Saturday", "Sunday"};
 int day = 4;
-// Arrays starten bei 0! deswegen day-1
-System.out.println(days[day-1]);
+System.out.println(days[day-1]); // Arrays starten bei 0! deswegen day-1
 // Outputs "Thursday"
 ```
 
