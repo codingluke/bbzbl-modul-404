@@ -12,6 +12,7 @@ public class RoundPanel extends JPanel {
 
 	// Ein Array für 5 Würfe!
 	private JLabel[] diceLabels = new JLabel[5];
+	private JLabel total = new JLabel("total");
 
 	// Könnte man hier noch Ergänzungen machen um auch das Total und die Rundensumme
 	// darzustellen? Es fehlt auch noch die Rundennummer.
@@ -24,6 +25,9 @@ public class RoundPanel extends JPanel {
 			diceLabels[i].setBounds(10 + (i * 30), 10, 30, 30);
 			add(diceLabels[i]);
 		}
+		
+		total.setBounds(190, 10, 30, 30);
+		add(total);
 
 		this.setBackground(Color.LIGHT_GRAY);
 	}
@@ -37,5 +41,11 @@ public class RoundPanel extends JPanel {
 	public void setDiceLabelValue(int index, int value) {
 		diceLabels[index].setText("" + value);
 	}
+	
+	public void setTotal(int value) {
+		total.setText("" + value);
+	}
+	
+	
 
 }

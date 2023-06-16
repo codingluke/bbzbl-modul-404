@@ -9,13 +9,12 @@ import javax.swing.JPanel;
  */
 public class PlayerPanel extends JPanel {
 
-	// private JPanel parentPanel = new JPanel();
 	private RoundPanel currentRoundPanel;
 	private int y = 1; // Vertikale verschiebung der Panels
 
 	public PlayerPanel() {
 		this.setLayout(null);
-		this.setBorder(BorderFactory.createLineBorder(Color.black));
+		this.setBorder(BorderFactory.createLineBorder(Color.red));
 		this.setVisible(true);
 	}
 
@@ -33,6 +32,16 @@ public class PlayerPanel extends JPanel {
 		// Hier werden die Werte delegiert, also weitergereicht
 		this.currentRoundPanel.setDiceLabelValue(index, value);
 	}
+	
+	public void setTotal(int value) {
+		if (this.currentRoundPanel == null) {
+			return; // Schützt vor NullPointer!
+		}
+		// Hier werden die Werte delegiert, also weitergereicht
+		this.currentRoundPanel.setTotal(value);
+	}
+	
+	
 
 	/**
 	 * Startet eine neue Runde. Erstellt ein neues RoundPanel und speichert es als

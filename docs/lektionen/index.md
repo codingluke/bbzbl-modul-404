@@ -8,8 +8,8 @@
 |                    |                        |  _19.05.2023_  | :star: _Auffahrt_ :star:                          |                    |
 |                    |   [Woche&nbsp;4][w4]   |   26.05.2023   | Konstruktor / Formatierung / UML                  |                    |
 |                    | [**Woche&nbsp;5**][w5] | **02.06.2023** | **LB 1** / Projektstart                           | **[LB1]**          |
-| :steam_locomotive: |   [Woche&nbsp;6][w6]   |   09.06.2023   | Arbeiten am Projekt                               |                    |
-|                    |   [Woche&nbsp;7][w7]   |   16.06.2023   | Arbeiten am Projekt                               |                    |
+|                    |   [Woche&nbsp;6][w6]   |   09.06.2023   | Arbeiten am Projekt                               |                    |
+| :steam_locomotive: |   [Woche&nbsp;7][w7]   |   16.06.2023   | Arbeiten am Projekt                               |                    |
 |                    |   [Woche&nbsp;8][w8]   |   23.06.2023   | Arbeiten am Projekt                               |                    |
 |                    | [**Woche&nbsp;9**][w9] | **30.06.2023** | **Abgabe / Präsentation des Projekts**            | **[LB2]**          |
 

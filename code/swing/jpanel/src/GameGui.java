@@ -52,10 +52,14 @@ public class GameGui extends JFrame implements ActionListener {
 			// 5 mal würfeln hintereinander,
 			// Natürlich muss dass dan schritt für schritt passieren
 			// und auch abgebrochen werden können
+			int total = 0;
 			for (int i = 0; i < 5; i++) {
 				int rand = (int) (Math.random() * 6 + 1);
 				this.player1Panel.setDiceValue(i, rand);
+				total += rand;
 			}
+			this.player1Panel.setTotal(total);
+			
 		}
 	}
 
