@@ -27,7 +27,10 @@ import java.util.Scanner; public class XYZ { public static void main(String[] ar
 
 - Damit andere Entwickler unseren Code gut lesen können (und wir selbst auch), werden wir uns an [**einige Regeln**](#unsere-regeln) halten.
 - Viele Firmen haben übrigens eine ganze Reihe definierter Regeln, wie Quellcode aussehen soll. [Hier](https://google.github.io/styleguide/javaguide.html) finden Sie zum Beispiel die Regeln, wie bei [Google Java Code zu formatieren ist](https://google.github.io/styleguide/javaguide.html).
-  :::
+
+:::
+
+<div class="break" />
 
 ## Formatiert mit schlechte Namen
 
