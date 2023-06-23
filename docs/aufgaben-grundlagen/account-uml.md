@@ -6,7 +6,8 @@ sidebar_position: 4
 
 :::danger WICHTIG
 
-:point_up: **Machen Sie sich mit den [UML Klassendiagrammen](../konzepte/uml.md) bekannt bevor Sie weiterfahren!**
+:point_up: **Machen Sie sich mit den [UML Klassendiagrammen](../konzepte/uml.md)
+bekannt bevor Sie weiterfahren!**
 
 :::
 

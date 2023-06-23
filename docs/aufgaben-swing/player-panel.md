@@ -4,12 +4,16 @@ sidebar_position: 10
 
 # 10. PlayerPanel
 
-Hier gibt es nun noch ein JPanel Beispiel welches es durch folgende Methoden ermöglicht von aussen die neue Runden zu erstellen und auch die Würfelwerte der aktuellen Runde zu setzen.
+Hier gibt es nun noch ein JPanel Beispiel welches es durch folgende Methoden
+ermöglicht von aussen die neue Runden zu erstellen und auch die Würfelwerte der
+aktuellen Runde zu setzen.
 
 - `playerPanel.startNewRound()`
 - `playerPanel.setDiceValue(index, value)`
 
-So ist es möglich für zwei Spieler <u>je eine eigene Instanz</u> der gleichen Klasse `PlayerPanel` zu erstellen. Dies ermöglicht die Darstellung der Runden und den Punkteverlauf.
+So ist es möglich für zwei Spieler <u>je eine eigene Instanz</u> der gleichen
+Klasse `PlayerPanel` zu erstellen. Dies ermöglicht die Darstellung der Runden
+und den Punkteverlauf.
 
 :::tip `JPanel` wie `<div></div>` in HTML
 
@@ -243,7 +247,9 @@ public class RoundPanel extends JPanel {
 
 ## Aufgabe
 
-- Schreiben Sie den oben bestehenden Code ab, sodass das Bild oben reproduzierbar ist.
+- Schreiben Sie den oben bestehenden Code ab, sodass das Bild oben
+  reproduzierbar ist.
 - Dies darf als Grundlage fürs Projekt genommen werden!
-- Lesen Sie den [Projektbeschrieb](../beurteilungen/lb2.md) gut durch und ergänzen Sie das Spiel.
+- Lesen Sie den [Projektbeschrieb](../beurteilungen/lb2.md) gut durch und
+  ergänzen Sie das Spiel.
 - Schauen Sie dass die Logik in einer eigenen Klasse geschrieben wird!

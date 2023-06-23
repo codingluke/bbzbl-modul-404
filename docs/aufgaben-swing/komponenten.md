@@ -4,7 +4,9 @@ sidebar_position: 3
 
 # 3. JFrame Komponenten
 
-Neben JFrame werden hier drei für unser Modul unverzichtbare Komponenten vorgestellt. Der dazu nötige Quelltext wird zwischen die beiden Blöcke der Konfiguration des JFrame geschrieben.
+Neben JFrame werden hier drei für unser Modul unverzichtbare Komponenten
+vorgestellt. Der dazu nötige Quelltext wird zwischen die beiden Blöcke der
+Konfiguration des JFrame geschrieben.
 
 ## `JLabel`
 
@@ -90,7 +92,8 @@ classDiagram
 
 :::tip
 
-Der `Scanner` wird in einer GUI Applikation **nicht mehr verwendet**. Dafür existiert nun das `JTextField`.
+Der `Scanner` wird in einer GUI Applikation **nicht mehr verwendet**. Dafür
+existiert nun das `JTextField`.
 
 :::
 
@@ -110,7 +113,9 @@ button.setEnabled(true); // aktivieren (true) / deaktivieren (false) vom Button
 button.addActionListener(this); // Wird zu einem späteren Zeitpunkt genauer erläutert!
 ```
 
-- Ohne `button.addActionListener(this)` und der Methode `actionPerformed(ActionEvent event)` passiert noch nichts wenn man auf den Button drückt. Dies wird später eingeführt.
+- Ohne `button.addActionListener(this)` und der Methode
+  `actionPerformed(ActionEvent event)` passiert noch nichts wenn man auf den
+  Button drückt. Dies wird später eingeführt.
 
 ### UML
 
@@ -142,17 +147,25 @@ classDiagram
 
 :::tip
 
-Der Elementare `do/while`-Loop einer Konsolenapplikation wird in einer GUI Applikation nicht mehr benötigt. Hier wird durch Buttons einen **Aktions-Event** erstellt und abgearbeitet. Wenn der Benutzer den Button mehrmals drückt, wird der Aktions-Event auch mehrmals abgearbeitet. **Dies macht den Loop überflüssig!**
+Der Elementare `do/while`-Loop einer Konsolenapplikation wird in einer GUI
+Applikation nicht mehr benötigt. Hier wird durch Buttons einen **Aktions-Event**
+erstellt und abgearbeitet. Wenn der Benutzer den Button mehrmals drückt, wird
+der Aktions-Event auch mehrmals abgearbeitet. **Dies macht den Loop
+überflüssig!**
 
 :::
 
 ## Komponenten in ein Fenster einfügen
 
-Um eine Swing-Komponente in einem Fenster sichtbar zu machen, sind noch **zwei Anweisungen** notwendig. Dafür nehmen wir eine Komponente in der Variable `component` an. Die Variable `component` darf also auch anders heissen! Muss jedoch ein Objekt einer der oben vorgestellten Komponenten beinhalten.
+Um eine Swing-Komponente in einem Fenster sichtbar zu machen, sind noch **zwei
+Anweisungen** notwendig. Dafür nehmen wir eine Komponente in der Variable
+`component` an. Die Variable `component` darf also auch anders heissen! Muss
+jedoch ein Objekt einer der oben vorgestellten Komponenten beinhalten.
 
 ### `component.setBounds(x, y, width, heigth)`
 
-Der Aufruf von `component.setBounds(x, y, width, heigth)` **positioniert die Komponente im Fenster und legt die Grösse fest**:
+Der Aufruf von `component.setBounds(x, y, width, heigth)` **positioniert die
+Komponente im Fenster und legt die Grösse fest**:
 
 - In einem Fenster liegt die Koordinate `(0, 0)` oben links
 - `component.setBounds(10, 10, 100, 15);` bedeutet somit:
@@ -163,7 +176,9 @@ Der Aufruf von `component.setBounds(x, y, width, heigth)` **positioniert die Kom
 
 ### `add(component)`
 
-Schliesslich muss die Komponente auch noch wirklich dem Fenster hinzugefügt werden. Der Aufruf dazu lautet `add(component);` wobei `this` ein `JFrame` sein muss:
+Schliesslich muss die Komponente auch noch wirklich dem Fenster hinzugefügt
+werden. Der Aufruf dazu lautet `add(component);` wobei `this` ein `JFrame` sein
+muss:
 
 ### ComponentWindow als Beispiel mit JLabel
 
@@ -194,7 +209,10 @@ public class ComponentWindow extends JFrame {
 
 :::tip
 
-Komponenten sollte immer als **Instanz-Variablen** initialisiert werden! So hat man von der gesamten Klasse aus darauf Zugriff! Darum wurde hier das `JLabel label = new JLabel("Ich bin ein Label");` **nicht** in der Methode `showDialog()` initialisiert, sondern im Klassen-Body.
+Komponenten sollte immer als **Instanz-Variablen** initialisiert werden! So hat
+man von der gesamten Klasse aus darauf Zugriff! Darum wurde hier das
+`JLabel label = new JLabel("Ich bin ein Label");` **nicht** in der Methode
+`showDialog()` initialisiert, sondern im Klassen-Body.
 
 :::
 
@@ -288,7 +306,8 @@ public class Aufgabe1 extends JFrame {
 <div class="grid"><div>
 
 - Erstellen Sie ein Swing-Fenster-Programm gemäss der Vorgabe rechts.
-- Es soll eine Komponente jeder Art auf dem JFrame angezeigt werden, so wie rechts gezeigt.
+- Es soll eine Komponente jeder Art auf dem JFrame angezeigt werden, so wie
+  rechts gezeigt.
 - Die Befehlsschaltfläche reagiert noch nicht auf Mausklicks.
 - Verwenden Sie das folgende UML als Hilfe
 
@@ -385,7 +404,9 @@ public class Aufgabe2 extends JFrame {
 
 <div class="grid"><div>
 
-Programmieren Sie das Fenster auf der rechten Seite. Es enthält links zwei JLabel, rechts zwei JTextField, unterhalb ein JButton. Der JButton reagiert noch nicht auf Mausklicks.
+Programmieren Sie das Fenster auf der rechten Seite. Es enthält links zwei
+JLabel, rechts zwei JTextField, unterhalb ein JButton. Der JButton reagiert noch
+nicht auf Mausklicks.
 
 </div><div>
 

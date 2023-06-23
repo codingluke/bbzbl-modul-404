@@ -4,21 +4,23 @@ sidebar_position: 4
 
 # 4. JButton Aktivieren
 
-> :point_up: **Machen Sie sich mit dem Konzept des [ActionListener](../konzepte/actionlistener.md) bekannt bevor Sie weiterfahren!**
+> :point_up: **Machen Sie sich mit dem Konzept des
+> [ActionListener](../konzepte/actionlistener.md) bekannt bevor Sie
+> weiterfahren!**
 
 ## Aufgabe 1: Einen Wert kopieren
 
-Erstellen Sie das Programm unten. Das Ziel ist, dass bei Anklicken der Schaltfläche der Wert aus dem Textfeld in das Label unterhalb kopiert wird, während das obere Textfeld geleert wird.
+Erstellen Sie das Programm unten. Das Ziel ist, dass bei Anklicken der
+Schaltfläche der Wert aus dem Textfeld in das Label unterhalb kopiert wird,
+während das obere Textfeld geleert wird.
 
 ![](../img/Buttons-Aktivieren-Aufgabe1.png)
 
 ### UML
 
-:::info
-JFrame, ActionListener, JLabel, JButton und JTextField wird im UML beschrieben,
-ist jedoch direkt in Java vorhanden. Es werden die verwendeten Methoden
-aufgelistet!
-:::
+:::info JFrame, ActionListener, JLabel, JButton und JTextField wird im UML
+beschrieben, ist jedoch direkt in Java vorhanden. Es werden die verwendeten
+Methoden aufgelistet! :::
 
 ```mermaid
 classDiagram
@@ -111,8 +113,8 @@ public class Aufgabe1 extends JFrame implements ActionListener {
 ## Aufgabe 2: Mehrere Buttons auswerten
 
 Erstellen Sie das Programm unten. Das Ziel ist, dass beim Anklicken der
-Schaltfläche der Wert aus dem Textfeld in das Label unterhalb kopiert
-wird, während das obere Textfeld geleert wird.
+Schaltfläche der Wert aus dem Textfeld in das Label unterhalb kopiert wird,
+während das obere Textfeld geleert wird.
 
 ![](../img/Buttons-Aktivieren-Aufgabe2.png)
 
@@ -221,8 +223,7 @@ public class Aufgabe2 extends JFrame implements ActionListener {
 
 ## Cheat Sheet
 
-:::note Code snippets funktionieren nur im richtigen Kontext ;)
-:::
+:::note Code snippets funktionieren nur im richtigen Kontext ;) :::
 
 ```java
 // Die Klasse definieren

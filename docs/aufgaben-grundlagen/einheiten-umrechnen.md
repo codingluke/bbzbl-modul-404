@@ -6,7 +6,8 @@ sidebar_position: 6
 
 :::danger WICHTIG
 
-:point_up: **Machen Sie sich mit dem Konzept der [Static](../konzepte/static.md) bekannt bevor Sie weiterfahren!**
+:point_up: **Machen Sie sich mit dem Konzept der [Static](../konzepte/static.md)
+bekannt bevor Sie weiterfahren!**
 
 :::
 
@@ -90,9 +91,11 @@ public class DegreesConverter {
 
 ## Aufgabe
 
-1. Kopieren Sie den Code der Klassen `Starter`, `Converter` und `DegreesConverter` von oben
+1. Kopieren Sie den Code der Klassen `Starter`, `Converter` und
+   `DegreesConverter` von oben
 2. Bringen Sie die Applikation in Eclipse zum laufen.
-3. Ändern Sie die Methoden `toFahrenheit` und `toCelsius` so dass die Klasse `DegreesConverter` **statisch, also ohne `new`** verwendet werden kann.
+3. Ändern Sie die Methoden `toFahrenheit` und `toCelsius` so dass die Klasse
+   `DegreesConverter` **statisch, also ohne `new`** verwendet werden kann.
 
 ## Musterlösung
 

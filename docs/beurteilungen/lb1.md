@@ -8,10 +8,13 @@
 
 - Multiple-Choice-Fragen beantworten
 - [Klassen](../konzepte/fachklassen.md) schreiben oder ergänzen
-- Konsolen-Programm schreiben (ähnlich der [Account Applikation](../aufgaben-grundlagen/account-application.md))
+- Konsolen-Programm schreiben (ähnlich der
+  [Account Applikation](../aufgaben-grundlagen/account-application.md))
 - [Starterklasse](../aufgaben-grundlagen/starterklasse.md) schreiben
-- [Swing-Programm](../aufgaben-swing/fenster.md) schreiben (Erweitern von `JFrame`)
-- [Swing-Komponenten](../aufgaben-swing/komponenten.md) anwenden (`JLabel`, `JTextField`, `JButton`)
+- [Swing-Programm](../aufgaben-swing/fenster.md) schreiben (Erweitern von
+  `JFrame`)
+- [Swing-Komponenten](../aufgaben-swing/komponenten.md) anwenden (`JLabel`,
+  `JTextField`, `JButton`)
 - [`ActionListener`](../konzepte/actionlistener.md) implementieren
 - [Klassendiagramm](../konzepte/uml.md) zeichnen
   - Programmieren gemäss einem Klassendiagramm
@@ -19,9 +22,11 @@
 
 :::tip
 
-- :point_up: Vergesst nicht wie ein Konsolen-Programm, **ohne Swing**, geschrieben wird!
+- :point_up: Vergesst nicht wie ein Konsolen-Programm, **ohne Swing**,
+  geschrieben wird!
 
-- :point_up: Vergewissert euch, dass ihr eine Fachklasse auch alleine in einer `main` Methode verwenden könnt!
+- :point_up: Vergewissert euch, dass ihr eine Fachklasse auch alleine in einer
+  `main` Methode verwenden könnt!
 
 :::
 
@@ -32,6 +37,7 @@
 
 :::danger
 
-- Das Faktenblatt, **doppelseitig** ausdrucken, es sind nur **handgeschriebene Notizen** darauf erlaubt!
+- Das Faktenblatt, **doppelseitig** ausdrucken, es sind nur **handgeschriebene
+  Notizen** darauf erlaubt!
 
 :::

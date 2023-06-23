@@ -16,6 +16,7 @@ sidebar_position: 1
 
 :::tip
 
-Wenn Ihr die Faktenblätter **aktiv** verwendet, sind sie euch eine bessere Hilfe bei der Prüfung!
+Wenn Ihr die Faktenblätter **aktiv** verwendet, sind sie euch eine bessere Hilfe
+bei der Prüfung!
 
 :::

@@ -4,26 +4,41 @@ sidebar_position: 6
 
 # 6. Account Applikation
 
-In der ersten Woche haben wir eine Konsolenapplikation implementiert, wobei man einen Betrag auf ein Konto einzahlen und abheben konnte, zusätzlich wurde zum Schluss der Kontostand angezeigt.
+In der ersten Woche haben wir eine Konsolenapplikation implementiert, wobei man
+einen Betrag auf ein Konto einzahlen und abheben konnte, zusätzlich wurde zum
+Schluss der Kontostand angezeigt.
 
-Sie haben sich mittlerweile schon ein grosses Wissen angeeignet, wie wir mit Swing Programme mit einer graphischen Benutzeroberfläche schreiben können. Sie wissen auch, wie Sie vom Benutzer Eingaben erhalten und Werte ausgeben können.
+Sie haben sich mittlerweile schon ein grosses Wissen angeeignet, wie wir mit
+Swing Programme mit einer graphischen Benutzeroberfläche schreiben können. Sie
+wissen auch, wie Sie vom Benutzer Eingaben erhalten und Werte ausgeben können.
 
-Jetzt geht es darum, unser Einstiegsbeispiel einer einfachen Kontoverwaltung zu überarbeiten. Versuchen Sie alles Wissen anzuwenden, das Sie sich angeeignet haben. Arbeiten Sie mit dem Faktenblatt zusammen, wenn Sie unsicher sind. Es enthält sehr viele Informationen, aber man muss wissen, wo sie stehen. Wenn Sie sich jetzt an dieses Blatt gewöhnen, kann es Ihnen bei einer Leistungsbeurteilung eine Hilfe sein.
+Jetzt geht es darum, unser Einstiegsbeispiel einer einfachen Kontoverwaltung zu
+überarbeiten. Versuchen Sie alles Wissen anzuwenden, das Sie sich angeeignet
+haben. Arbeiten Sie mit dem Faktenblatt zusammen, wenn Sie unsicher sind. Es
+enthält sehr viele Informationen, aber man muss wissen, wo sie stehen. Wenn Sie
+sich jetzt an dieses Blatt gewöhnen, kann es Ihnen bei einer
+Leistungsbeurteilung eine Hilfe sein.
 
 ![](../img/account-application-swing.png)
 
-Das Programm muss nicht genau so aussehen. Aber vielleicht möchten Sie etwas ausprobieren.
+Das Programm muss nicht genau so aussehen. Aber vielleicht möchten Sie etwas
+ausprobieren.
 
 - Die Applikation startet mit Kontostand 0
 - Im Textfeld kann man einen Betrag eingeben
-- Durch Betätigen des Buttons «Deposit!» wird der eingegebene Betrag dem Konto gutgeschrieben und die Anzeige oberhalb (Balance:) aktualisiert. Anschliessend wird das Textfeld mit der Eingabe geleert.
-- Durch Betätigen des Buttons «Withdraw!» wird der eingegebene Betrag dem Konto abgezogen und die Anzeige oberhalb (Balance:) aktualisiert. Anschliessend wird das Textfeld mit der Eingabe geleert.
+- Durch Betätigen des Buttons «Deposit!» wird der eingegebene Betrag dem Konto
+  gutgeschrieben und die Anzeige oberhalb (Balance:) aktualisiert. Anschliessend
+  wird das Textfeld mit der Eingabe geleert.
+- Durch Betätigen des Buttons «Withdraw!» wird der eingegebene Betrag dem Konto
+  abgezogen und die Anzeige oberhalb (Balance:) aktualisiert. Anschliessend wird
+  das Textfeld mit der Eingabe geleert.
 
 ## Musterlösung
 
 :::info
 
-Die Musterlösung ist mit einem [Konstruktor](../konzepte/Konstruktor) erstellt, Ihr müsst es jedoch nicht so machen!
+Die Musterlösung ist mit einem [Konstruktor](../konzepte/Konstruktor) erstellt,
+Ihr müsst es jedoch nicht so machen!
 
 :::
 

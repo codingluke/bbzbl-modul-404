@@ -1,12 +1,15 @@
 # Konstruktor
 
-Konstruktoren sind spezielle Methoden einer Klasse, die von aussen nicht als Methode aufgerufen werden können, aber bei der Instanziierung eines Objektes aufgerufen werden können.
+Konstruktoren sind spezielle Methoden einer Klasse, die von aussen nicht als
+Methode aufgerufen werden können, aber bei der Instanziierung eines Objektes
+aufgerufen werden können.
 
 Ein Konstruktor:
 
 - Methodename ist **immer gleich** wie die Klasse
 - ist **nicht explizit aufrufbar**
-- wird **ausgeführt wenn ein Objekt erstellt wird** (:bulb: in Verbindung mit **`new`**)
+- wird **ausgeführt wenn ein Objekt erstellt wird** (:bulb: in Verbindung mit
+  **`new`**)
 - hat **keinen Rückgabewert**
 - es können mehrere Konstruktoren bestehen (:bulb: andere Anzahl Parameter)
 - werden **keine Parameter** angegeben, nennt man ihn **Standardkonstruktor**
@@ -54,9 +57,14 @@ public class Starter {
 ## Erläuterung
 
 - **Jede** Klasse besitzt einen Defaultkonstruktor
-  - Wenn wir ihn nicht explizit hinschreiben, dann erzeugt der Java-Compiler einfach selbst einen, der nichts macht
+  - Wenn wir ihn nicht explizit hinschreiben, dann erzeugt der Java-Compiler
+    einfach selbst einen, der nichts macht
   - Der Defaultkonstruktor hat **keine Parameter**
-- Wenn wir einem **Konstruktor mit Parametern** Werte übergeben, kann er diese als Startwerte für das Objekt verwenden
-  - Das Objekt im zweiten Aufruf in main ist also gleich mit dem Startwert "Neuer Startwert" inizialisiert
-- Wenn der **Name von Parametern gleich ist wie der Name einer Variablen**, dann muss mit dem Schlüsselwort `this` gearbeitet werden
-  - Der Einsatz dieses Wortes bedeutet, dass damit die Instanzvariable gemeint ist und nicht der Parameter
+- Wenn wir einem **Konstruktor mit Parametern** Werte übergeben, kann er diese
+  als Startwerte für das Objekt verwenden
+  - Das Objekt im zweiten Aufruf in main ist also gleich mit dem Startwert
+    "Neuer Startwert" inizialisiert
+- Wenn der **Name von Parametern gleich ist wie der Name einer Variablen**, dann
+  muss mit dem Schlüsselwort `this` gearbeitet werden
+  - Der Einsatz dieses Wortes bedeutet, dass damit die Instanzvariable gemeint
+    ist und nicht der Parameter

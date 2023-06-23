@@ -4,8 +4,10 @@ sidebar_position: 5
 
 # 5. Starterklasse
 
-- Es ist eine gute Praxis in der `main` Methode nicht viel Logik zu implementieren.
-- Bestenfalls besteht die `main` Methode nur aus der **Instanzisierung einer Applikations Klasse** welche die eigentliche App verwaltet.
+- Es ist eine gute Praxis in der `main` Methode nicht viel Logik zu
+  implementieren.
+- Bestenfalls besteht die `main` Methode nur aus der **Instanzisierung einer
+  Applikations Klasse** welche die eigentliche App verwaltet.
 
 ```java title="Starter.java als Beispiel"
 public class Starter {
@@ -23,13 +25,16 @@ public class Starter {
 ### 1. Umbau der `AccountApplicationV2` Klasse
 
 - Kopieren Sie die Klasse und benennen Sie dies neue `AccountApplicationV3`
-- Ändern Sie die Definition der Methode `public static void main(String[] args)` um in `public void start()`
+- Ändern Sie die Definition der Methode `public static void main(String[] args)`
+  um in `public void start()`
 
 ### 2. Erstellen der Starterklasse
 
 - Erstellen Sie eine neue Klasse `Starter`
-- Diese Klasse muss die Methode `public static void main(String[] args)` besitzen
-- Erstellen Sie in der `main` Methode ein **Objekt** Ihrer Applikationsklasse (`AccountApplicationV3`)
+- Diese Klasse muss die Methode `public static void main(String[] args)`
+  besitzen
+- Erstellen Sie in der `main` Methode ein **Objekt** Ihrer Applikationsklasse
+  (`AccountApplicationV3`)
 - Rufen Sie dann die Methode `start()` des Objekts auf
 
 ### UML der Musterlösung

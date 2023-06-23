@@ -4,7 +4,9 @@ sidebar_position: 5
 
 # 5. Strings in Zahlen umwandeln
 
-Das nachfolgende Programm zeigt ein Swing-Programm, bei dem eine Zahl eingelesen wird, damit eine einfache Rechnung angestellt und das Ergebnis wieder ausgegeben wird.
+Das nachfolgende Programm zeigt ein Swing-Programm, bei dem eine Zahl eingelesen
+wird, damit eine einfache Rechnung angestellt und das Ergebnis wieder ausgegeben
+wird.
 
 ## Beispiel: Umwandeln und 5 hinzufügen
 
@@ -49,21 +51,26 @@ public class CastingExample extends JFrame implements ActionListener {
 
 ### Erläuterung zum Code:
 
-- Neu ist hier `Double.parseDouble(String string)`, welches demnach einen String als Parameter entgegen nimmt. Diese Methode verwandelt den String, welcher durch `entryField.getText()` zurück gegeben wird in eine Zahl vom Typ `double`, mit der dann gerechnet wird. Anschliessend wird das Resultat im outputLabel ausgegeben.
-- Da das `outputLabel` aber einen String-Wert erwartet, wird der Datentyp durch die Methode `Double.toString(double value)` in einen String umgewandelt.
+- Neu ist hier `Double.parseDouble(String string)`, welches demnach einen String
+  als Parameter entgegen nimmt. Diese Methode verwandelt den String, welcher
+  durch `entryField.getText()` zurück gegeben wird in eine Zahl vom Typ
+  `double`, mit der dann gerechnet wird. Anschliessend wird das Resultat im
+  outputLabel ausgegeben.
+- Da das `outputLabel` aber einen String-Wert erwartet, wird der Datentyp durch
+  die Methode `Double.toString(double value)` in einen String umgewandelt.
 
-:::tip
-Solche Methoden gibt es nicht nur für den Datentyp `double`, sondern auch für `foat` und `int`. Da heissen die Methoden dann entsprechend `Float.parseFloat(String value)` und `Integer.parseInt(String value)`.
+:::tip Solche Methoden gibt es nicht nur für den Datentyp `double`, sondern auch
+für `foat` und `int`. Da heissen die Methoden dann entsprechend
+`Float.parseFloat(String value)` und `Integer.parseInt(String value)`.
 
-- :bulb: Nach `String` kann **jeder Datentyp** mit `"" + variable` umgewandelt werden! :bulb:
-  :::
+- :bulb: Nach `String` kann **jeder Datentyp** mit `"" + variable` umgewandelt
+  werden! :bulb: :::
 
 ## Aufgabe
 
 - Erweitern Sie das Programm mit einem weiteren Textfeld `entryField2`
 - Benennen Sie den Button nach "Sum" um
-- Bei einem Klick auf den Button "Sum" sollen die Eingaben vom `entryField` und `entryField2` aufsummiert werden und im `outputLabel` ausgegeben werden.
+- Bei einem Klick auf den Button "Sum" sollen die Eingaben vom `entryField` und
+  `entryField2` aufsummiert werden und im `outputLabel` ausgegeben werden.
 
-:::note
-zu dieser Aufgabe gibt es keine Musterlösung
-:::
+:::note zu dieser Aufgabe gibt es keine Musterlösung :::

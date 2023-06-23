@@ -4,9 +4,13 @@ sidebar_position: 9
 
 # 9. JPanel
 
-Für diejenigen, die mit JPanels arbeiten wollen, dient folgendes Beispielprogramm als Inspiration.
+Für diejenigen, die mit JPanels arbeiten wollen, dient folgendes
+Beispielprogramm als Inspiration.
 
-Dadurch, dass wir alles mit `setBounds` fix positionieren, ist es zusammen mit der Scrollbar nicht die schönste Variante, aber zumindest eine Verbesserung. Die Arbeit mit sogenannten Layouts wäre hier schöner, dies behandeln wir aber in einem Folgemodul.
+Dadurch, dass wir alles mit `setBounds` fix positionieren, ist es zusammen mit
+der Scrollbar nicht die schönste Variante, aber zumindest eine Verbesserung. Die
+Arbeit mit sogenannten Layouts wäre hier schöner, dies behandeln wir aber in
+einem Folgemodul.
 
 ![](../img/JPanel.png)
 
@@ -113,7 +117,9 @@ public class RoundPanel extends JPanel {
 
 ## Aufgabe
 
-- Schreiben Sie den oben bestehenden Code ab, sodass das Bild oben reproduzierbar ist.
+- Schreiben Sie den oben bestehenden Code ab, sodass das Bild oben
+  reproduzierbar ist.
 - Versuchen Sie die einzuelnen Label **im nachhinein** zu ändern
-- Versuchen Sie einen Button `diceButton` hinzuzufügen, welcher würfelt und das Resultat in das entsprechende `RoundPanel` `label` schreibt
+- Versuchen Sie einen Button `diceButton` hinzuzufügen, welcher würfelt und das
+  Resultat in das entsprechende `RoundPanel` `label` schreibt
 - Nach 5 `würfen` soll ein neues `RoundPanel` erstellt werden.

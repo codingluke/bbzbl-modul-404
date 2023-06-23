@@ -11,8 +11,11 @@
 
 - `ActionListener` ist ein Interface, welches von Java mitgeliefert wird.
 - Es **definiert** die Methode `public void actionPerformed(ActionEvent e);`
-- Alle Klassen die den ActionListener implementieren (`implements ActionListener`) **müssen** auch die Methode `public void actionPerformed(ActionEvent e);` implementieren
-- Die JavaDoc findet man [hier](https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/ActionListener.html)
+- Alle Klassen die den ActionListener implementieren
+  (`implements ActionListener`) **müssen** auch die Methode
+  `public void actionPerformed(ActionEvent e);` implementieren
+- Die JavaDoc findet man
+  [hier](https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/ActionListener.html)
 
 ```java title="java.awt.event.ActionListener"
 package java.awt.event;
@@ -28,7 +31,9 @@ public interface ActionListener extends EventListener {
 
 ## ActionListener Beispiel: TimeButton Klasse
 
-Das nachfolgende Programm zeigt ein Swing-Programm, das in einfacher Art interaktiv ist. Bei jedem Klick auf den Button wird in einem `JLabel` das aktuelle Datum mit Uhrzeit angezeigt. (Die Starterklasse ist weggelassen.)
+Das nachfolgende Programm zeigt ein Swing-Programm, das in einfacher Art
+interaktiv ist. Bei jedem Klick auf den Button wird in einem `JLabel` das
+aktuelle Datum mit Uhrzeit angezeigt. (Die Starterklasse ist weggelassen.)
 
 ```java
 import java.awt.event.ActionEvent;
@@ -81,16 +86,36 @@ public class TimeButton extends JFrame implements ActionListener {
 
 ### Erläuterung zum Code
 
-- Die Komponenten sind im Klassen-Body initialisiert. Sie sind dadurch **Instanz-Variablen**, das heisst sie sind überall in der Klasse sichtbar und nicht nur in dem Codeblock, in welchem sie erzeugt wurden. Statt von Variablen spricht man bei Deklarationen an dieser Stelle von Attributen, Instanz-Variablen oder Felder.
-- `implements ActionListener`: Dies bewirkt, dass die Klasse in der Lage ist, Meldungen zu verarbeiten. `JButtons` können zum Beispiel solche Meldungen verschicken. Unsere Klasse ist nun **gezwungen** die Methode `actionPerformed(ActionEvent e)` zu implementieren.
-- In `showDialog()` wird die Methode `commandButton.addActionListener(this);` aufgerufen. Mit diesem Aufruf kann sich eine Klasse bei einem `JButton` **registrieren** und wird anschliessend immer benachrichtigt, wenn die Schaltfläche betätigt wurde. Mit dem Schlüsselwort `this` wird ausgesagt, dass sich die Klasse selbst als “Listener” (also Zuhörer) hinzufügt.
-- Wird die Schaltfläche betätigt, so benachrichtigt der `JButton` die Klasse, indem er die Methode `actionPerformed(ActionEvent e)` aufruft. Der Parameter beim Aufruf ist vom Typ `ActionEvent`. Mit diesem Event kann über die Methode `getSource()` herausgefunden werden, welche Komponente den Aufruf ausgelöst hat. So kann mittels verschiedenen if-Abfragen entschieden werden, welcher `JButton` betätigt wurde. (Unten folgt ein Beispiel dazu.)
-- Zudem zeigt das Beispiel wie Werte in Komponenten mit der Methode `setText(String message)` gesetzt werden.
+- Die Komponenten sind im Klassen-Body initialisiert. Sie sind dadurch
+  **Instanz-Variablen**, das heisst sie sind überall in der Klasse sichtbar und
+  nicht nur in dem Codeblock, in welchem sie erzeugt wurden. Statt von Variablen
+  spricht man bei Deklarationen an dieser Stelle von Attributen,
+  Instanz-Variablen oder Felder.
+- `implements ActionListener`: Dies bewirkt, dass die Klasse in der Lage ist,
+  Meldungen zu verarbeiten. `JButtons` können zum Beispiel solche Meldungen
+  verschicken. Unsere Klasse ist nun **gezwungen** die Methode
+  `actionPerformed(ActionEvent e)` zu implementieren.
+- In `showDialog()` wird die Methode `commandButton.addActionListener(this);`
+  aufgerufen. Mit diesem Aufruf kann sich eine Klasse bei einem `JButton`
+  **registrieren** und wird anschliessend immer benachrichtigt, wenn die
+  Schaltfläche betätigt wurde. Mit dem Schlüsselwort `this` wird ausgesagt, dass
+  sich die Klasse selbst als “Listener” (also Zuhörer) hinzufügt.
+- Wird die Schaltfläche betätigt, so benachrichtigt der `JButton` die Klasse,
+  indem er die Methode `actionPerformed(ActionEvent e)` aufruft. Der Parameter
+  beim Aufruf ist vom Typ `ActionEvent`. Mit diesem Event kann über die Methode
+  `getSource()` herausgefunden werden, welche Komponente den Aufruf ausgelöst
+  hat. So kann mittels verschiedenen if-Abfragen entschieden werden, welcher
+  `JButton` betätigt wurde. (Unten folgt ein Beispiel dazu.)
+- Zudem zeigt das Beispiel wie Werte in Komponenten mit der Methode
+  `setText(String message)` gesetzt werden.
 
 ## Feststellen, welcher Button gedrückt wurde
 
-Falls ein Fenster mehrere Buttons hat, muss sich die Fensterklasse bei jedem Button registrieren, damit sie bei einem Klick benachrichtigt wird. Jedes Mal, wenn ein Button gedrückt wird, erfolgt ein Aufruf der Methode actionPerformed. In dieser Methode muss nun herausgefunden werden, wer
-der Urheber des Aufrufs ist.
+Falls ein Fenster mehrere Buttons hat, muss sich die Fensterklasse bei jedem
+Button registrieren, damit sie bei einem Klick benachrichtigt wird. Jedes Mal,
+wenn ein Button gedrückt wird, erfolgt ein Aufruf der Methode actionPerformed.
+In dieser Methode muss nun herausgefunden werden, wer der Urheber des Aufrufs
+ist.
 
 Dies lässt sich wie folgt feststellen:
 

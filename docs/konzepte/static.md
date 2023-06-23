@@ -1,10 +1,19 @@
 # Static
 
-Wenn wir ein Java-Programm starten, gibt es noch kein Objekt, das wir ausführen könnten. Das Java-Schlüsselwort `static` ist die Lösung für dieses Problem. Elemente einer Klasse, die mit `static` markiert werden, sind nicht abhängig davon, ob es ein Objekt der Klasse gibt oder nicht. Diese Elemente existieren immer.
+Wenn wir ein Java-Programm starten, gibt es noch kein Objekt, das wir ausführen
+könnten. Das Java-Schlüsselwort `static` ist die Lösung für dieses Problem.
+Elemente einer Klasse, die mit `static` markiert werden, sind nicht abhängig
+davon, ob es ein Objekt der Klasse gibt oder nicht. Diese Elemente existieren
+immer.
 
-Wenn wir also eine Methode `public static void main(String[] args)` geschrieben haben, dann existiert diese Methode beim Programmstart im Speicher und ist ausführbar. Auf diese Weise können wir unsere Programme starten.
+Wenn wir also eine Methode `public static void main(String[] args)` geschrieben
+haben, dann existiert diese Methode beim Programmstart im Speicher und ist
+ausführbar. Auf diese Weise können wir unsere Programme starten.
 
-In der Regel erstellt man eine **Starterklasse**, welche die Methode `public static void main(String[] args)` enthält. In dieser Methode erstellt man dann ein Objekt des eigentlichen Programms und ruft die Methode auf, die den Programmfluss steuert.
+In der Regel erstellt man eine **Starterklasse**, welche die Methode
+`public static void main(String[] args)` enthält. In dieser Methode erstellt man
+dann ein Objekt des eigentlichen Programms und ruft die Methode auf, die den
+Programmfluss steuert.
 
 ## Was kann `static`? :rock: <- in Stein gemeisselt
 
@@ -15,13 +24,15 @@ In der Regel erstellt man eine **Starterklasse**, welche die Methode `public sta
 
 ## Für was sind `static` Methoden gut?
 
-- Die Java `public static void main(String[] args)` Methode ist immer `static` (Entrypoint)
+- Die Java `public static void main(String[] args)` Methode ist immer `static`
+  (Entrypoint)
 - Generelle/Universelle Helfermethoden :toolbox: **ohne Datenstand**
   - Z.B. die Java Klasse `Math` ist komplett statisch `Math.sqrt(64);`
 
 ## Static vs Instanz-Methoden
 
-Eine `static` Methode einer `Klasse` kann direkt aufgerufen werden, ohne dass ein `Object`/`Instanz` der Klasse erstellt werden muss.
+Eine `static` Methode einer `Klasse` kann direkt aufgerufen werden, ohne dass
+ein `Object`/`Instanz` der Klasse erstellt werden muss.
 
 ```java
 public class MixedExample {

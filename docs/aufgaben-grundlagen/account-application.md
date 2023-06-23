@@ -6,7 +6,8 @@ sidebar_position: 1
 
 :::note Live Coding!
 
-Sicherzustellen, dass alle die Entwicklungsumgebung zum laufen haben und auch wieder in Schwung gekommen ist, werden wir diese Aufgabe zusammen lösen!
+Sicherzustellen, dass alle die Entwicklungsumgebung zum laufen haben und auch
+wieder in Schwung gekommen ist, werden wir diese Aufgabe zusammen lösen!
 
 :::
 
@@ -17,8 +18,9 @@ Sicherzustellen, dass alle die Entwicklungsumgebung zum laufen haben und auch wi
 
 ## Auftrag
 
-Erstellen Sie anhand des Wissens und Könnens aus dem Modul 403 ein Programm, welches einen einfachen Dialog für ein Bankkonto realisiert.
-Es soll möglich sein Geld:
+Erstellen Sie anhand des Wissens und Könnens aus dem Modul 403 ein Programm,
+welches einen einfachen Dialog für ein Bankkonto realisiert. Es soll möglich
+sein Geld:
 
 - **einzuzahlen**
 - **abzuheben**
@@ -26,7 +28,8 @@ Es soll möglich sein Geld:
 
 :::info Wichtig!
 
-Die Operationen zum `einzuzahlen` und `abzuheben` sollen jeweils **durch eine Methode realisiert** sein.
+Die Operationen zum `einzuzahlen` und `abzuheben` sollen jeweils **durch eine
+Methode realisiert** sein.
 
 :::
 
@@ -130,8 +133,10 @@ public class AccountApplication {
 
 ### Zusatzaufgaben für Schnelle
 
-- Ermöglichen Sie zusätzlich zu `+` und `-` die Menüauswahl `=` um jederzeit den Kontostand abzufragen.
-- Geben Sie am Schluss vor dem Schlusssaldo eine Auflistung aller Transaktionen (Ein- und Auszahlungen) aus.
+- Ermöglichen Sie zusätzlich zu `+` und `-` die Menüauswahl `=` um jederzeit den
+  Kontostand abzufragen.
+- Geben Sie am Schluss vor dem Schlusssaldo eine Auflistung aller Transaktionen
+  (Ein- und Auszahlungen) aus.
 
 ## Musterlösung
 

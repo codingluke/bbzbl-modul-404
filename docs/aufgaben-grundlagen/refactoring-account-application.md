@@ -6,19 +6,23 @@ sidebar_position: 3
 
 :::danger WICHTIG
 
-:point_up: **Machen Sie sich mit dem Konzept der [Fachklassen](../konzepte/fachklassen.md) bekannt bevor Sie weiterfahren!**
+:point_up: **Machen Sie sich mit dem Konzept der
+[Fachklassen](../konzepte/fachklassen.md) bekannt bevor Sie weiterfahren!**
 
 :::
 
 :::note Refactoring
 
-Bezeichnung im Programmieren, dass man den **vorhandenen Code neu Strukturiert, ohne neue Funktionalität hinzuzufügen**. Refactoring dient dazu, dass die Applikation/Software auf lange Zeit besser wartbar und erweiterbar ist.
+Bezeichnung im Programmieren, dass man den **vorhandenen Code neu Strukturiert,
+ohne neue Funktionalität hinzuzufügen**. Refactoring dient dazu, dass die
+Applikation/Software auf lange Zeit besser wartbar und erweiterbar ist.
 
 :::
 
 ## Ausgangslage
 
-1. Das Konto-Programm bearbeitet zu viele Aufgaben (Verantwortlichkeiten) in einer Klasse
+1. Das Konto-Programm bearbeitet zu viele Aufgaben (Verantwortlichkeiten) in
+   einer Klasse
 1. Die Arbeit wollen wir **in zwei Klassen aufteilen**
 
 - `AccountApplication` (Beinhaltet die Benutzerinteraktion und `main` Methode)
@@ -26,7 +30,8 @@ Bezeichnung im Programmieren, dass man den **vorhandenen Code neu Strukturiert, 
 
 ## Einführung der Klasse `Account`/`Konto`
 
-Die **Fachlogik** der `AccountApplication` kann in eine eigene Klasse `Account` ausgelagert werden.
+Die **Fachlogik** der `AccountApplication` kann in eine eigene Klasse `Account`
+ausgelagert werden.
 
 ```java title="Account.java"
 public class Account {
@@ -46,11 +51,14 @@ public class Account {
 }
 ```
 
-:::info Dazu muss man folgendes beachten:
-Die Variable `private double balance;` ist nicht mehr in einer Methode deklariert, sondern gleich zu Beginn, **vor** den einzelnen Methoden (_im Klassen-Body_). Dadurch ist die Variable **überall in der Klasse sichtbar**.
-:::
+:::info Dazu muss man folgendes beachten: Die Variable `private double balance;`
+ist nicht mehr in einer Methode deklariert, sondern gleich zu Beginn, **vor**
+den einzelnen Methoden (_im Klassen-Body_). Dadurch ist die Variable **überall
+in der Klasse sichtbar**. :::
 
-Dies hat nun auch den Vorteil, dass wir daraus viele Konto-Objekte erstellen können, die komplett eigenständig einen Kontostand verwalten können. Somit wird ermöglicht, theoretisch mehrere Konti anzulegen.
+Dies hat nun auch den Vorteil, dass wir daraus viele Konto-Objekte erstellen
+können, die komplett eigenständig einen Kontostand verwalten können. Somit wird
+ermöglicht, theoretisch mehrere Konti anzulegen.
 
 ```java title="Beispiel: Mehrere Objekte der Klasse 'Account'"
 Account sparkonto = new Account(); // neues `Account` Objekt gespeichert in der Variable `sparkonto`
@@ -67,22 +75,29 @@ System.out.println(girokonto.getBalance()); // => -20;
 
 :::tip Objekte haben eigenen Speicherbereich!
 
-- Das Objekt `sparkonto` und `girokonto` **teilen sich den Code** der Klasse `Account`.
-- Die **Werte der Instanz-Variable** `private double balance;` sind jedoch **unabhängig**!
+- Das Objekt `sparkonto` und `girokonto` **teilen sich den Code** der Klasse
+  `Account`.
+- Die **Werte der Instanz-Variable** `private double balance;` sind jedoch
+  **unabhängig**!
 
 :::
 
 ## Aufgabe
 
-Bauen Sie Ihr Programm nun so um, dass es aus zwei Klassen besteht (die ursprüngliche Klasse und die Klasse `Account`).
+Bauen Sie Ihr Programm nun so um, dass es aus zwei Klassen besteht (die
+ursprüngliche Klasse und die Klasse `Account`).
 
-- Kopieren Sie die Klasse `AccountApplication` und benennen Sie die neue `AccountApplicationV2`.
+- Kopieren Sie die Klasse `AccountApplication` und benennen Sie die neue
+  `AccountApplicationV2`.
 - Erstellen und implementieren Sie die Klasse `Account`.
-- Löschen Sie in der neuen Klasse (`AccountApplicationV2`) die Variable `double balance`;
+- Löschen Sie in der neuen Klasse (`AccountApplicationV2`) die Variable
+  `double balance`;
 - Legen Sie dafür ein **Objekt** der Klasse `Account` an.
 - Jetzt erscheinen Fehler im Quellcode.
-  - Überall dort müssen Sie das Programm anpassen und mit dem **Objekt** der Klasse `Account` arbeiten.
-- Die Methoden `deposit` und `withdraw` müssen nun in der Klasse `AccountApplicationV2` gelöscht werden.
+  - Überall dort müssen Sie das Programm anpassen und mit dem **Objekt** der
+    Klasse `Account` arbeiten.
+- Die Methoden `deposit` und `withdraw` müssen nun in der Klasse
+  `AccountApplicationV2` gelöscht werden.
 
 ### UML der Musterlösung
 
@@ -111,15 +126,16 @@ classDiagram
 
 :::tip
 
-Für jeden **gepunkteter Pfeil der mit "uses" beschrifetet** ist, muss in der Klasse, von der der Pfeil 
-abgeht (hier `AccountApplicationV2`) **ein Objekte der Klasse auf die gezeigt wird** 
-vorhanden sein (hier `Account` und `Scanner`).
+Für jeden **gepunkteter Pfeil der mit "uses" beschrifetet** ist, muss in der
+Klasse, von der der Pfeil abgeht (hier `AccountApplicationV2`) **ein Objekte der
+Klasse auf die gezeigt wird** vorhanden sein (hier `Account` und `Scanner`).
 
-In der Klasse `AccountApplicationV2` muss somit irgendwo `new Account()` und `new Scanner(System.in)` 
-stehen! Da die Klasse `AccountApplicationV2` nur die `main`-Methode beinhaltet, wird es wohl darin sein.
+In der Klasse `AccountApplicationV2` muss somit irgendwo `new Account()` und
+`new Scanner(System.in)` stehen! Da die Klasse `AccountApplicationV2` nur die
+`main`-Methode beinhaltet, wird es wohl darin sein.
 
-:superhero: Theoretisch könnte das Objekt auch über einen Parameter der Klasse übergeben werden.
-Das nennt sich _Dependency Injection_.
+:superhero: Theoretisch könnte das Objekt auch über einen Parameter der Klasse
+übergeben werden. Das nennt sich _Dependency Injection_.
 
 :::
 
