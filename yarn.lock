@@ -9328,10 +9328,10 @@ wildcard@^2.0.0:
   resolved "https://registry.npmjs.org/wildcard/-/wildcard-2.0.0.tgz"
   integrity sha512-JcKqAHLPxcdb9KM49dufGXn2x3ssnfjbcaQdLlfZsL9rH9wgDQjUtDxbo8NE0F6SFvydeu1VhZe7hZuHsB2/pw==
 
-wireit@^0.8.0:
-  version "0.8.0"
-  resolved "https://registry.npmjs.org/wireit/-/wireit-0.8.0.tgz"
-  integrity sha512-WaTaSmu6oc68dogY7u7BpWNNRNvd8wRJbXrOAQRVe0BvU6K5nnFkLH5YAwf/GHOGSCdMN1ss8HpAQfICgPNBdQ==
+wireit@^0.9.5:
+  version "0.9.5"
+  resolved "https://registry.yarnpkg.com/wireit/-/wireit-0.9.5.tgz#7c3622f6ff5e63b7fac05783baf82f967f52562c"
+  integrity sha512-dKKNAwLxQjbPPMrltPxMUFKvLy2z6hlVjvR/qitvPm8GEQyb/1QYBG7ObvOQLsi95uAXpkWLJXBYkCKeVcMVgA==
   dependencies:
     braces "^3.0.2"
     chokidar "^3.5.3"
