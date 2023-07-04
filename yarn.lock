@@ -7732,10 +7732,10 @@ react-loadable-ssr-addon-v5-slorber@^1.0.1:
   dependencies:
     "@babel/runtime" "^7.10.3"
 
-react-rough-notation@^1.0.3:
-  version "1.0.3"
-  resolved "https://registry.yarnpkg.com/react-rough-notation/-/react-rough-notation-1.0.3.tgz#5ee1035a8b4a5f131e351d0a37eb8ff68caa71c7"
-  integrity sha512-hMmyWNZTpPO9QOwj0g1SGgRiPWhJLhQje9ZtpQiAa1h0147oCL5C49OLXEZZYCxfMhXOqYBxSNkbndM09o3hUQ==
+react-rough-notation@^1.0.5:
+  version "1.0.5"
+  resolved "https://registry.yarnpkg.com/react-rough-notation/-/react-rough-notation-1.0.5.tgz#442a2eff084806c817ef404d5fd4982e7ae123c7"
+  integrity sha512-TTDnw1Qn96PwitGsBsjNh4911+o26Vivj/dhHbsHHhN6lDgkQsFhv1X/eOnCjHA2EOyDE5JBQ1HEZ1yW8sCmKA==
   dependencies:
     rough-notation "^0.5.1"
 
