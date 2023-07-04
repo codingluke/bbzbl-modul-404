@@ -57,7 +57,7 @@
     "wireit": "^0.9.5"
   },
   "devDependencies": {
-    "@docusaurus/module-type-aliases": "^2.4.0"
+    "@docusaurus/module-type-aliases": "^2.4.1"
   },
   "prettier": {
     "proseWrap": "always",
