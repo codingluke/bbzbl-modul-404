@@ -96,7 +96,7 @@ Das Klassendiagramm gehört in die [Dokumentation].
 |                            | Punkte | Kriterium                                                                                                                                    |
 | -------------------------- | :----: | :------------------------------------------------------------------------------------------------------------------------------------------- |
 |                            |   1    | Die Starterklasse funktioniert                                                                                                               |
-|                            |   3    | Das Programm läuft und lässt das beschriebene Spiel zu                                                                                       |
+|                            |   3    | Das Programm läuft und lässt das beschriebene Spiel zu _(Spielregeln)_                                                                       |
 |                            |   2    | Die Spieler können Ihre Namen selber eingeben                                                                                                |
 |                            |   2    | Der aktuelle Punktestand wird pro Spieler angezeigt                                                                                          |
 |                            |   2    | Der aktuelle Spieler kann eine Runde beenden                                                                                                 |
@@ -117,9 +117,16 @@ Das Klassendiagramm gehört in die [Dokumentation].
 
 ## Termin
 
-Das a Produkt (inklusive der [Dokumentation]) muss bis am **Freitag, 30.06.2023,
+Das a Produkt (inklusive der [Dokumentation]) muss bis am **Freitag, xx.xx.2024,
 16:15** über den eigenen Unterordner im **[Google Drive Abgabeordner]**
 abgegeben werden.
+
+:::caution Kurzes Verständnisgespräch
+
+Nach der Pause, **um 14:40**, werde ich kurz bei jedem vorbei schauen, den Code
+durchsehen und kurze Verständnisfragen stellen! Diese werden nicht benotet.
+
+:::
 
 ## Strukturidee
 
