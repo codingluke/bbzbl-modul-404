@@ -16,7 +16,7 @@
 :::tip Privates Git Repository
 
 - Wenn Ihr euren Code mit **git** versioniert ist das super!
-- Aber bitte verwendet ein **privates Repository** auf Github und co., damit
+- Aber bitte verwendet ein **privates Repository** auf GitHub und co., damit
   nicht zukünftige Kameraden von Ihnen klauen könnt!
 
 :::
