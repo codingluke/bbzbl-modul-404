@@ -1980,10 +1980,10 @@
   resolved "https://registry.npmjs.org/@leichtgewicht/ip-codec/-/ip-codec-2.0.4.tgz"
   integrity sha512-Hcv+nVC0kZnQ3tD9GVu5xSMR4VVYOteQIr/hwFPVEvPdlXqgGEuRjiheChHgdM+JyqdgNcmzZOX/tnl0JOiI7A==
 
-"@marp-team/marp-cli@^3.2.0":
-  version "3.2.0"
-  resolved "https://registry.yarnpkg.com/@marp-team/marp-cli/-/marp-cli-3.2.0.tgz#9f0a8cf95524d8b939da5dc0f4dd2db129bf4427"
-  integrity sha512-nGRAaQuDKZu2UUDtHDOgkHG/tnT2+ODoKSW5Wu7BsUByD4C3DKYTT1SrWu7E7sjyURWfXiwKHfT9tnvuqbfrRQ==
+"@marp-team/marp-cli@^3.2.1":
+  version "3.2.1"
+  resolved "https://registry.yarnpkg.com/@marp-team/marp-cli/-/marp-cli-3.2.1.tgz#0b2067e3f3c172037e87edf82041f01017e2787c"
+  integrity sha512-M7ar3JjCba9PV31pa2sn/KXBzI/qlrmRkNZbzWFsIkOVnJK36QHUsqe34cqCrJ/rrd7rQwk26ItzYwpM0HJUlQ==
   dependencies:
     "@marp-team/marp-core" "^3.8.0"
     "@marp-team/marpit" "^2.5.0"
