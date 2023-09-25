@@ -37,7 +37,7 @@
     "@agentofuser/remark-oembed": "^1.0.4",
     "@docusaurus/core": "^2.4.1",
     "@docusaurus/preset-classic": "^2.4.3",
-    "@docusaurus/theme-mermaid": "^2.4.1",
+    "@docusaurus/theme-mermaid": "^2.4.3",
     "@easyops-cn/docusaurus-search-local": "^0.36.0",
     "@marp-team/marp-cli": "^3.2.1",
     "@mdx-js/react": "^1.6.22",
