@@ -28,7 +28,8 @@ Code der **Musterlösung** mit Nummern versehen worden
 
 ## Lösung
 
-<details><summary>Nur zum Überprüfen der eigenen Ideen!</summary>
+<details>
+<summary>Nur zum Überprüfen der eigenen Ideen!</summary>
 
 1. Begrüssung im Terminal
 2. Anweisung einen Betrag im Terminal einzugeben

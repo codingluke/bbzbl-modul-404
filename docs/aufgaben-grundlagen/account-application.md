@@ -86,7 +86,7 @@ die eigentliche Klasse mehr Methoden besitzt.
 ### Erste Hilfe
 
 <details>
-<summary> Bitte diese Tipps versuchen bevor Ihr zur Musterlösung greift!</summary>
+<summary>Bitte diese Tipps versuchen bevor Ihr zur Musterlösung greift!</summary>
 
 ```java
 import java.util.Scanner;

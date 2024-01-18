@@ -1,9 +1,10 @@
 // @ts-check
 // Note: type annotations allow type checking and IDEs autocompletion
 
-const lightCodeTheme = require('prism-react-renderer/themes/github');
-const darkCodeTheme = require('prism-react-renderer/themes/dracula');
-const oembed = require('@agentofuser/remark-oembed');
+const {themes} = require('prism-react-renderer');
+const lightCodeTheme = themes.github;
+const darkCodeTheme = themes.dracula;
+// const oembed = require('@agentofuser/remark-oembed');
 const modulConfig = require('./modul.config');
 
 /** @type {import('@docusaurus/types').Config} */
@@ -47,21 +48,28 @@ const config = {
   ],
 
   plugins: [
-    ["devserver-config",
+    // "@orama/plugin-docusaurus",
+    [
+      "devserver-config",
       {
         proxy: {
           [`/${modulConfig.repoName}/slides`]: {
             target: "http://localhost:3003",
-            pathRewrite: function(/** @type {string} */ path, /** @type {any} */ _req) {
+            pathRewrite: function (
+              /** @type {string} */ path,
+              /** @type {any} */ _req
+            ) {
               if (path.match(/.*\..*$/)) {
-                return path.replace(`/${modulConfig.repoName}/slides`, '');
+                return path.replace(`/${modulConfig.repoName}/slides`, "");
               }
-              return path.replace(`/${modulConfig.repoName}/slides`, '') + ".md";
-            }
-          }
-        }
-      }
-    ]
+              return (
+                path.replace(`/${modulConfig.repoName}/slides`, "") + ".md"
+              );
+            },
+          },
+        },
+      },
+    ],
   ],
 
   presets: [
@@ -75,7 +83,7 @@ const config = {
           // Remove this to remove the "edit this page" links.
           editUrl:
             `https://github.com/codingluke/${modulConfig.repoName}/tree/main/`,
-          remarkPlugins: [oembed],
+          // remarkPlugins: [oembed],
         },
         // blog: {
         //   showReadingTime: true,
@@ -112,6 +120,11 @@ const config = {
           },
           { to: '/slides/', label: 'Präsentationen', position: 'left' },
           {
+            to: `${modulConfig.url}/${modulConfig.repoName}/assets/pdf/${modulConfig.repoName}.pdf`,
+            label: "PDF Download",
+            position: "right",
+          },
+          {
             href: `https://github.com/codingluke/${modulConfig.repoName}`,
             label: 'GitHub',
             position: 'right',
@@ -125,7 +138,7 @@ const config = {
       prism: {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
-        additionalLanguages: ['java'],
+        additionalLanguages: ["java", "bash", "diff", "json"],
         magicComments: [
           // Remember to extend the default highlight class name as well!
           {

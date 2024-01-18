@@ -15,7 +15,7 @@ In der Regel erstellt man eine **Starterklasse**, welche die Methode
 dann ein Objekt des eigentlichen Programms und ruft die Methode auf, die den
 Programmfluss steuert.
 
-## Was kann `static`? :rock: <- in Stein gemeisselt
+## Was kann `static`? :rock: < in Stein gemeisselt
 
 - Kann ohne `new` aufgerufen werden.
 - Kann wiederum andere `static` Methoden aufrufen

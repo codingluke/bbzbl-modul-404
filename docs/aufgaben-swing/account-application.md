@@ -43,7 +43,7 @@ Ihr müsst es jedoch nicht so machen!
 :::
 
 <details>
-<summary>Immer zuerste selber versuchen! Lösung abtippen, nicht kopieren ;)</summary>
+<summary>Immer zuerst selber versuchen! Lösung abtippen, nicht kopieren ;)</summary>
 
 ```java title="Starter.java"
 public class Starter {

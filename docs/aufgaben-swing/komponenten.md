@@ -266,7 +266,7 @@ classDiagram
 #### Musterlösung
 
 <details>
-<summary>Immer zuerste selber versuchen! Lösung abtippen, nicht kopieren ;)</summary>
+<summary>Immer zuerst selber versuchen! Lösung abtippen, nicht kopieren ;)</summary>
 
 ```java
 import javax.swing.JFrame;
@@ -361,7 +361,7 @@ classDiagram
 #### Musterlösung
 
 <details>
-<summary>Immer zuerste selber versuchen! Lösung abtippen, nicht kopieren ;)</summary>
+<summary>Immer zuerst selber versuchen! Lösung abtippen, nicht kopieren ;)</summary>
 
 ```java
 import javax.swing.JButton;
@@ -460,7 +460,7 @@ classDiagram
 #### Musterlösung
 
 <details>
-<summary>Immer zuerste selber versuchen! Lösung abtippen, nicht kopieren ;)</summary>
+<summary>Immer zuerst selber versuchen! Lösung abtippen, nicht kopieren ;)</summary>
 
 ```java
 import javax.swing.JButton;
