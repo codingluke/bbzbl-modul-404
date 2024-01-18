@@ -6,19 +6,29 @@ hide_table_of_contents: true
 <Timeline title="Woche 1">
 <Event time="12:45">
 
-## 👋 Vorstellung
-
-- Modulidentifikation
+## 👋 Begrüssung
 
 </Event>
 <Event time="13:00">
 
-## :butterfly: Algorithmus / Programm
+## Modelleinführung
 
-- :man_teacher: Präsentation / **Diskussion**
-- :tv: code.org / :coffee: 13:30
+- :man_teacher: Quartalsplan
+- 🏅 LB1 / LB2 erläutern
 
-- :man_student: Lesen und Lösen
+</Event>
+<Event time="13:10">
+
+## :recycle: Refresher
+
+- :brain: Cards2Brain
+
+</Event>
+<Event time="13:35">
+
+## :bank: Account Application
+
+- :performing_arts: Aufgabe zusammen lösen
 
 </Event>
 <Event time="14:20">
@@ -28,19 +38,17 @@ hide_table_of_contents: true
 </Event>
 <Event time="14:40">
 
-## :waning_crescent_moon: Hallo Eclipse
-
-- :man_teacher: Wir lösen die Aufgaben zusammen
-- :coffee: **15:30**
-- 🧐 Analyse des bisherigen Programms
-
-- :sparkles: Vom Quellcode zum Programm
-
+## 🧐 Analyse der Aufgabe
 
 </Event>
-<Event time="15:50">
+<Event time="15:00">
 
-## :triangular_ruler: Code-Konventionen
+## :brain: Input Fachklassen
+
+</Event>
+<Event time="15:35">
+
+## 🏭 Refactoring Account Applicaiton
 
 </Event>
 <Event time="16:15">
