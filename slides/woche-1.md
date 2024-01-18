@@ -28,7 +28,7 @@ footer: BBZBL / Lukas Hodel / Objektbasiert programmieren nach Vorgabe
   [WarmUp](https://codingluke.github.io/bbzbl-modul-404/docs/repetition/lernkarten)
   / [Card2Brain](https://card2brain.ch/box/20200416_repetition)
 - **13:30** | 5 Min. Pause
-- **13:35** | :teacher:
+- **13:35** | :man_teacher:
   [Erste Aufgabe](https://codingluke.github.io/bbzbl-modul-404/docs/aufgaben-grundlagen/account-application)
 - **14:20** | 20 Min. Pause
 
@@ -103,7 +103,7 @@ footer: BBZBL / Lukas Hodel / Objektbasiert programmieren nach Vorgabe
 
 ## LB1 50%
 
-### :pencil: Prüfung
+### :pen: Prüfung
 
 - Woche 5 / 90 Minuten
 - Schriftlich + Praktisch am PC
@@ -114,7 +114,7 @@ footer: BBZBL / Lukas Hodel / Objektbasiert programmieren nach Vorgabe
 
 ## LB2 50%
 
-### :pencil: Projektarbeit
+### :pen: Projektarbeit
 
 - Woche 5 bis 9
 - Erstellen einer Applikation inkl. GUI
@@ -163,9 +163,9 @@ footer: BBZBL / Lukas Hodel / Objektbasiert programmieren nach Vorgabe
 
 ::: split
 
-**:pencil: Aufgaben Grundlagen** Alle Grunlegenden Aufgaben
+**:pen: Aufgaben Grundlagen** Alle Grunlegenden Aufgaben
 
-**:pencil: Aufgaben Swing** _(GUI)_ Alle Aufgaben bezüglich `Swing`
+**:pen: Aufgaben Swing** _(GUI)_ Alle Aufgaben bezüglich `Swing`
 
 **:bulb: Konzepte** Allgemeine Konzepte Isoliert erklärt
 
@@ -177,7 +177,7 @@ footer: BBZBL / Lukas Hodel / Objektbasiert programmieren nach Vorgabe
 
 <!-- _class: big center -->
 
-# :superhero:
+# :woman_superhero:
 
 Die Aufgaben unter **Aufgaben Grundlagen / Swing** sind aufeinander aufbauend.
 
@@ -227,7 +227,7 @@ Ihr könnt zu Hause im **Selbststudium** alle Aufgaben lösen.
 - :keyboard: Es handelt sich um eine Teminal Applikation
 - :keyboard: Lesen und lösen Sie die Aufgabe
 - :black_joker: Unterhalb existierte eine Musterlösung <sup>\*</sup>
-- :teacher: Die machen wir zusammen!
+- :man_teacher: Die machen wir zusammen!
 
 ::: split
 
@@ -257,7 +257,7 @@ nicht genau so :sweat_smile:
 
 <!-- _class: emoji-list -->
 
-# :pencil: Analyse Account Applikation (20 Minuten) [:link:](https://drive.google.com/file/d/104nqkozBNkwxKqdJlWUBEvMcH6sgoAG9/view)
+# :pen: Analyse Account Applikation (20 Minuten) [:link:](https://drive.google.com/file/d/104nqkozBNkwxKqdJlWUBEvMcH6sgoAG9/view)
 
 - :link:
   [Analyse Account Applikation](https://codingluke.github.io/bbzbl-modul-404/docs/aufgaben-grundlagen/analyse-account-application)

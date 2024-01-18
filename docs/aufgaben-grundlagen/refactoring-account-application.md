@@ -134,7 +134,7 @@ In der Klasse `AccountApplicationV2` muss somit irgendwo `new Account()` und
 `new Scanner(System.in)` stehen! Da die Klasse `AccountApplicationV2` nur die
 `main`-Methode beinhaltet, wird es wohl darin sein.
 
-:superhero: Theoretisch könnte das Objekt auch über einen Parameter der Klasse
+:woman_superhero: Theoretisch könnte das Objekt auch über einen Parameter der Klasse
 übergeben werden. Das nennt sich _Dependency Injection_.
 
 :::

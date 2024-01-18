@@ -121,7 +121,7 @@ Klasse auf welche der Pfeil zeigt übernimmt/erbt/sich erweitert.
 
 1. Lernt Ihr so besser
 2. Merkt Ihr, dass der Editor vorschläge macht!
-3. Erhält Ihr ein besseres "Gefühl" wie es ist zu programmieren :superhero:
+3. Erhält Ihr ein besseres "Gefühl" wie es ist zu programmieren :woman_superhero:
 
 :::
 

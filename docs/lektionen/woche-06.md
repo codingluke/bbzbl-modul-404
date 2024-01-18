@@ -4,7 +4,7 @@ sidebar_position: 6
 
 # Woche 6
 
-## :teacher: Präsentation
+## :man_teacher: Präsentation
 
 [:computer: Open in Browser](pathname:///slides/woche-6) |
 [:floppy_disk: download PDF](pathname:///slides/woche-6.pdf)
@@ -16,9 +16,9 @@ sidebar_position: 6
 - Klassenstruktur Beispiel wiederholen
 - Beispielprojekt zeigen
 
-## :pencil: Aufgaben
+## :pen: Aufgaben
 
 - :checkered_flag: [LB1](../beurteilungen/lb1.md)
 - :alembic: Arbeiten am [Projekt](../beurteilungen/lb2.md)
-- :superhero: [JPanel](../aufgaben-swing/jpanel.md), wichtige Aufgabe um den
+- :woman_superhero: [JPanel](../aufgaben-swing/jpanel.md), wichtige Aufgabe um den
   Punktestand anzuzeigen

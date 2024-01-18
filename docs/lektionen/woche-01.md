@@ -4,7 +4,7 @@ sidebar_position: 1
 
 # Woche 1
 
-## :teacher: Präsentation
+## :man_teacher: Präsentation
 
 [:computer: Open in Browser](pathname:///slides/woche-1) |
 [:floppy_disk: download PDF](pathname:///slides/woche-1.pdf)
@@ -16,7 +16,7 @@ sidebar_position: 1
 - [Modulidentifikation](../index.md)
 - [Fachklasse](../konzepte/fachklassen.md)
 
-## :pencil: Aufgaben
+## :pen: Aufgaben
 
 <div class="grid"><div>
 

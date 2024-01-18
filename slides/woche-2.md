@@ -37,7 +37,7 @@ footer: BBZBL / Lukas Hodel / Objektbasiert programmieren nach Vorgabe
 
 <hr>
 
-- [:superhero: Optional Repetition Arrays](https://codingluke.github.io/bbzbl-modul-404/docs/repetition/arrays) ([PDF](https://drive.google.com/file/d/1Bt4NgySXrhMeorOTuSBs_6thNwXPRbNN/view))
+- [:woman_superhero: Optional Repetition Arrays](https://codingluke.github.io/bbzbl-modul-404/docs/repetition/arrays) ([PDF](https://drive.google.com/file/d/1Bt4NgySXrhMeorOTuSBs_6thNwXPRbNN/view))
 
 :::
 
@@ -157,7 +157,7 @@ public class Starter {
 
 - [Aufgabe Starterklasse](https://codingluke.github.io/bbzbl-modul-404/docs/aufgaben-grundlagen/starterklasse)
 - [Aufgabe Temperaturkonvertierer](https://codingluke.github.io/bbzbl-modul-404/docs/aufgaben-grundlagen/einheiten-umrechnen)
-## <!--fit--> :superhero: Versucht es immer zuerst ohne Musterlösung!
+## <!--fit--> :woman_superhero: Versucht es immer zuerst ohne Musterlösung!
 
 ---
 
@@ -187,7 +187,7 @@ www.java-tutorial.org ist eine Webseite die Java, sowie `Swing` im Detail erklä
   - **Relevante Themen**: [JFrame](https://www.java-tutorial.org/jframe.html), [JLabel](https://www.java-tutorial.org/bedienelemente.html), [JButton](https://www.java-tutorial.org/jbutton.html), [JTextField](https://www.java-tutorial.org/jtextfield.html), [JPanel](https://www.java-tutorial.org/jpanel.html)
   - Auch wichtig, wird nächste Woche behandelt [Event-Handling](https://www.java-tutorial.org/event-handling.html)
   
-## <!--fit--> :superhero: Ich würde alle in den Aufgaben verwendeten Klassen hier nachschlagen
+## <!--fit--> :woman_superhero: Ich würde alle in den Aufgaben verwendeten Klassen hier nachschlagen
 
 ---
 
@@ -247,7 +247,7 @@ add(button) // Textfeld hinzufügen
 - [JFrame](https://codingluke.github.io/bbzbl-modul-404/docs/aufgaben-swing/fenster)
 - [Komponenten](https://codingluke.github.io/bbzbl-modul-404/docs/aufgaben-swing/komponenten)
 
-## <!--fit--> :superhero: Versucht es immer zuerst ohne Musterlösung!
+## <!--fit--> :woman_superhero: Versucht es immer zuerst ohne Musterlösung!
 
 ---
 
@@ -266,11 +266,11 @@ Im folgenden PDF ist beschrieben wie man in Java mit Arrays, also Listen von Dat
 - Am Ende der Sildes wird auf eine weitere Art von Arrays (Listen) eingeganen. 
     - Diese ist **nicht Pflicht** jedoch häufig einfacher.
 
-### :superhero: Dies ist eine Grundlage, welche Ihr im allgemeinen begreifen müsst um die beiden LBs mit einer `6` zu bestehen
+### :woman_superhero: Dies ist eine Grundlage, welche Ihr im allgemeinen begreifen müsst um die beiden LBs mit einer `6` zu bestehen
 
 ---
 
-## :superhero: Die Klasse `List` oder auch `ArrayList`
+## :woman_superhero: Die Klasse `List` oder auch `ArrayList`
 
 Primitive Java Arrays sind umständlich und können häufig durch die Klasse `List<Datetyp>` oder `ArrayList<Datentype>` abgelöst werden.
 

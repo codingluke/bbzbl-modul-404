@@ -24,7 +24,7 @@ footer: BBZBL / Lukas Hodel / Objektbasiert programmieren nach Vorgabe
 
 <!-- _class: big -->
 
-# <!--fit--> :alembic: Projekt - **Schlusspurt!** :superhero:
+# <!--fit--> :alembic: Projekt - **Schlusspurt!** :woman_superhero:
 
 - Gebt nochmals alles bis zur grossen Pause!
 - Läuft das Programm?

@@ -4,7 +4,7 @@ sidebar_position: 3
 
 # Woche 3
 
-## :teacher: Präsentation
+## :man_teacher: Präsentation
 
 [:computer: Open in Browser](pathname:///slides/woche-3) |
 [:floppy_disk: download PDF](pathname:///slides/woche-3.pdf)
@@ -16,7 +16,7 @@ sidebar_position: 3
 - [Projekt Klassenstruktur](../konzepte/uml.md#abhängigkeiten)
 - [Java Interface](../konzepte/actionlistener.md)
 
-## :pencil: Aufgaben
+## :pen: Aufgaben
 
 <div class="grid"><div>
 
@@ -26,7 +26,7 @@ sidebar_position: 3
 - [Strings in Zahlen umwandeln](../aufgaben-swing/strings-nach-int-umwandeln.md)
 - [Account Applikation in Swing](../aufgaben-swing/account-application.md)
 
-### :superhero: Optional
+### :woman_superhero: Optional
 
 - [Weitere Swing-Aufgaben](../aufgaben-swing/zusatz.md)
 - Vertieftes Wissen zu Interfaces **in den Folien am Schluss!**

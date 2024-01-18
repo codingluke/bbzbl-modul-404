@@ -113,7 +113,7 @@ Das Klassendiagramm gehört in die [Dokumentation].
 | :sushi:                    |   3    | Die **Fachklassen** beinhalten die **Logik** / verwalten den **Spielstand** (ohne UI-Elemente)                                               |
 | :checkered_flag:           | **36** | **TOTAL**                                                                                                                                    |
 |                            |        | **Bonus**                                                                                                                                    |
-| :superhero:                |  _2_   | _Das Programm übersteigt die oben beschriebenen Minimalanforderungen an das Spiel **wesentlich** und **ist auch vollumfänglich lauffähig**._ |
+| :woman_superhero:                |  _2_   | _Das Programm übersteigt die oben beschriebenen Minimalanforderungen an das Spiel **wesentlich** und **ist auch vollumfänglich lauffähig**._ |
 
 ## Termin
 
