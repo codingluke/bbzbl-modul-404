@@ -9,7 +9,7 @@ einen Betrag auf ein Konto einzahlen und abheben konnte, zusätzlich wurde zum
 Schluss der Kontostand angezeigt.
 
 Sie haben sich mittlerweile schon ein grosses Wissen angeeignet, wie wir mit
-Swing Programme mit einer graphischen Benutzeroberfläche schreiben können. Sie
+Swing Programme mit einer grafischen Benutzeroberfläche schreiben können. Sie
 wissen auch, wie Sie vom Benutzer Eingaben erhalten und Werte ausgeben können.
 
 Jetzt geht es darum, unser Einstiegsbeispiel einer einfachen Kontoverwaltung zu
@@ -24,13 +24,13 @@ Leistungsbeurteilung eine Hilfe sein.
 Das Programm muss nicht genau so aussehen. Aber vielleicht möchten Sie etwas
 ausprobieren.
 
-- Die Applikation startet mit Kontostand 0
-- Im Textfeld kann man einen Betrag eingeben
+- Die Applikation startet mit Kontostand 0.
+- Im Textfeld kann man einen Betrag eingeben.
 - Durch Betätigen des Buttons «Deposit!» wird der eingegebene Betrag dem Konto
-  gutgeschrieben und die Anzeige oberhalb (Balance:) aktualisiert. Anschliessend
+  gutgeschrieben und die Anzeige oberhalb (Balance) aktualisiert. Anschliessend
   wird das Textfeld mit der Eingabe geleert.
 - Durch Betätigen des Buttons «Withdraw!» wird der eingegebene Betrag dem Konto
-  abgezogen und die Anzeige oberhalb (Balance:) aktualisiert. Anschliessend wird
+  abgezogen und die Anzeige oberhalb (Balance) aktualisiert. Anschliessend wird
   das Textfeld mit der Eingabe geleert.
 
 ## Musterlösung

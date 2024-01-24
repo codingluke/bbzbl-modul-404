@@ -6,8 +6,8 @@ sidebar_position: 5
 
 - Es ist eine gute Praxis in der `main` Methode nicht viel Logik zu
   implementieren.
-- Bestenfalls besteht die `main` Methode nur aus der **Instanzisierung einer
-  Applikations Klasse** welche die eigentliche App verwaltet.
+- Bestenfalls besteht die `main` Methode nur aus der **Instanziierung einer
+  Applikationsklasse** welche die eigentliche App verwaltet.
 
 ```java title="Starter.java als Beispiel"
 public class Starter {
@@ -30,9 +30,9 @@ public class Starter {
 
 ### 2. Erstellen der Starterklasse
 
-- Erstellen Sie eine neue Klasse `Starter`
+- Erstellen Sie eine neue Klasse `Starter`.
 - Diese Klasse muss die Methode `public static void main(String[] args)`
-  besitzen
+  besitzen.
 - Erstellen Sie in der `main` Methode ein **Objekt** Ihrer Applikationsklasse
   (`AccountApplicationV3`)
 - Rufen Sie dann die Methode `start()` des Objekts auf

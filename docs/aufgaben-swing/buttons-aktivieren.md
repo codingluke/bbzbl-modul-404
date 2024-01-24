@@ -223,7 +223,7 @@ public class Aufgabe2 extends JFrame implements ActionListener {
 
 ## Cheat Sheet
 
-:::note Code snippets funktionieren nur im richtigen Kontext ;) :::
+:::note Code Snippets funktionieren nur im richtigen Kontext ;) :::
 
 ```java
 // Die Klasse definieren

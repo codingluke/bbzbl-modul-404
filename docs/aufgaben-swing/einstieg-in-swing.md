@@ -4,7 +4,7 @@ sidebar_position: 1
 
 # 1. Einstieg in Swing
 
-> Eine Bibliothek für graphische Oberflächen
+> Eine Bibliothek für grafische Oberflächen
 
 Die bisherigen Programme im **Modul 403** sowie die ersten Aufgaben im **Modul
 404** waren zwar in der Lage mit dem Benutzer zu kommunizieren oder Ausgaben
@@ -18,8 +18,8 @@ erstellen.
 :::danger Macht möglichst viele der Swing-Aufgaben! Je besser Ihr diese
 beherrscht, desto einfacher fällt euch das Projekt!
 
-- **Ihr werdet nur besser beim machen! :muscle:**
-- Programmieren kann man nicht lesend lernen :nerd_face:
-- Lest trotzdem alle Seiten vorsichtig und dann MACHT die Aufgaben :yum:
-- Kopieren der aufgaben ist nicht klug, es bringt euch nix! :bulb:
-  - Tippt die Aufgaben ab wenn ihr nicht weiter kommt! :technologist: :::
+- **Ihr werdet nur besser beim Machen! :muscle:**.
+- Programmieren kann man nicht lesend lernen :nerd_face:.
+- Lest trotzdem alle Seiten vorsichtig und dann MACHT die Aufgaben :yum:.
+- Kopieren der Aufgaben ist nicht klug, es bringt euch nix! :bulb:.
+  - Tippt die Aufgaben ab, wenn ihr nicht weiter kommt! :technologist: :::

@@ -93,8 +93,8 @@ public class DegreesConverter {
 
 1. Kopieren Sie den Code der Klassen `Starter`, `Converter` und
    `DegreesConverter` von oben
-2. Bringen Sie die Applikation in Eclipse zum laufen.
-3. Ändern Sie die Methoden `toFahrenheit` und `toCelsius` so dass die Klasse
+2. Bringen Sie die Applikation in Eclipse zum Laufen.
+3. Ändern Sie die Methoden `toFahrenheit` und `toCelsius` sodass, die Klasse
    `DegreesConverter` **statisch, also ohne `new`** verwendet werden kann.
 
 ## Musterlösung

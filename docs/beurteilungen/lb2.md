@@ -16,7 +16,7 @@
 :::tip Privates Git Repository
 
 - Wenn Ihr euren Code mit **git** versioniert ist das super!
-- Aber bitte verwendet ein **privates Repository** auf GitHub und co., damit
+- Aber bitte verwendet ein **privates Repository** auf GitHub und Co., damit
   nicht zukünftige Kameraden von Ihnen klauen könnt!
 
 :::
@@ -123,7 +123,7 @@ abgegeben werden.
 
 :::caution Kurzes Verständnisgespräch
 
-Nach der Pause, **um 14:40**, werde ich kurz bei jedem vorbei schauen, den Code
+Nach der Pause, **um 14:40**, werde ich kurz bei jedem vorbeischauen, den Code
 durchsehen und kurze Verständnisfragen stellen! Diese werden nicht benotet.
 
 :::

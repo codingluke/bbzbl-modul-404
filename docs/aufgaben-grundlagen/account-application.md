@@ -6,7 +6,7 @@ sidebar_position: 1
 
 :::note Live Coding!
 
-Sicherzustellen, dass alle die Entwicklungsumgebung zum laufen haben und auch
+Sicherzustellen, dass alle die Entwicklungsumgebung zum Laufen haben und auch
 wieder in Schwung gekommen ist, werden wir diese Aufgabe zusammen lösen!
 
 :::
