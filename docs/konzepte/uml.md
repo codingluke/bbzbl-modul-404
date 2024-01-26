@@ -4,7 +4,7 @@ Mit dem Aufkommen der Programmierung wurde auch die Frage der Kommunikation übe
 Programme immer wichtiger. Bei Einführung der Objektorientierung kam man bald
 nicht mehr mit Flussdiagrammen weiter und behalf sich mit einer neuen Notation,
 der **UML, Unified Modelling Language**. Sie hat sich inzwischen breit
-durchgesetzt, beispielsweise bis in den Businessbereich und damit der
+durchgesetzt, beispielsweise bis in den Geschäftsbereich und damit der
 **Vermittlung zwischen Fachabteilung und Softwareentwicklung**, und für komplexe
 Projekte mit Tools, die eine automatische Umwandlung zwischen bestimmten
 Diagrammtypen und Quelltext beherrschen.
@@ -24,7 +24,7 @@ Es gibt viele UML Diagrammtypen, wirklich Verwendung finden vor allem folgende:
 - Sichtbarkeit
   - `-` ist `private`
   - `+` ist `public`
-- Obenhalb: Instanz**variablen**
+- Oberhalb: Instanz**variablen**
 - Unterhalb: Instanz**methoden**
 - <u>`Unterstrichen`</u>: `static`
 
@@ -106,7 +106,7 @@ classDiagram
 :::info die einfachste Art!
 
 - [IntelliJ Diagrams](https://www.jetbrains.com/help/idea/class-diagram.html)
-  _jedoch nicht 100% UML Standard!!_
+  _jedoch nicht 100% UML Standard!_
   - IntelliJ finden Sie auf unseren **Widnows VMs**
 
 :::

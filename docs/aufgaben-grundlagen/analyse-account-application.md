@@ -21,7 +21,7 @@ Code der **Musterlösung** mit Nummern versehen worden
 1. **Notieren Sie sich die Antworten in elektronischer Art oder auf einem Blatt
    Papier**
 
-// verwende neueres Bild!
+<!-- verwende neueres Bild! -->
 
 ![Analyse Account Application](../img/Analyse-Account-Application-new.png)
 
