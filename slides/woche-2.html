@@ -90,7 +90,8 @@
 </ul>
 <hr>
 <ul>
-<li><a href="https://codingluke.github.io/bbzbl-modul-404/docs/repetition/arrays" class="external-link" target="_blank" rel="noopener noreferrer">:woman_superhero: Optional Repetition Arrays</a> (<a href="https://drive.google.com/file/d/1Bt4NgySXrhMeorOTuSBs_6thNwXPRbNN/view" class="external-link" target="_blank" rel="noopener noreferrer">PDF</a>)</li>
+<li><a href="https://codingluke.github.io/bbzbl-modul-404/docs/repetition/arrays" class="external-link" target="_blank" rel="noopener noreferrer"><img class="emoji" draggable="false" alt="🦸" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@14.1.2/assets/svg/1f9b8.svg" data-marp-twemoji=""> Optional Repetition Arrays</a><br>
+(<a href="https://drive.google.com/file/d/1Bt4NgySXrhMeorOTuSBs_6thNwXPRbNN/view" class="external-link" target="_blank" rel="noopener noreferrer">PDF</a>)</li>
 </ul>
 </div></div>
 
@@ -115,14 +116,15 @@
 </ul>
 </li>
 <li>
-<p>Nennen wir es <img class="emoji" draggable="false" alt="🍣" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@14.1.2/assets/svg/1f363.svg" data-marp-twemoji=""> <strong>Sushi-Code</strong>, das Gegenteil von <img class="emoji" draggable="false" alt="🍝" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@14.1.2/assets/svg/1f35d.svg" data-marp-twemoji=""> <em>Spaghetti-Code</em></p>
+<p>Nennen wir es <img class="emoji" draggable="false" alt="🍣" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@14.1.2/assets/svg/1f363.svg" data-marp-twemoji=""> <strong>Sushi-Code</strong>, das Gegenteil von <img class="emoji" draggable="false" alt="🍝" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@14.1.2/assets/svg/1f35d.svg" data-marp-twemoji=""><br>
+<em>Spaghetti-Code</em></p>
 </li>
 </ul>
 <footer>BBZBL / Lukas Hodel / Objektbasiert programmieren nach Vorgabe</footer>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="4" data-paginate="true" data-header="Modul 404 - Woche 2" data-footer="BBZBL / Lukas Hodel / Objektbasiert programmieren nach Vorgabe" data-theme="bbzbl" lang="C" data-marpit-pagination="4" style="--paginate:true;--header:Modul 404 - Woche 2;--footer:BBZBL / Lukas Hodel / Objektbasiert programmieren nach Vorgabe;--theme:bbzbl;" data-marpit-pagination-total="16">
 <header>Modul 404 - Woche 2</header>
-<h1 id="%F0%9F%A7%A0-konzept-static-%F0%9F%AA%A8---in-stein-gemeisselt"><img class="emoji" draggable="false" alt="🧠" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@14.1.2/assets/svg/1f9e0.svg" data-marp-twemoji=""> Konzept <code>static</code>: <img class="emoji" draggable="false" alt="🪨" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@14.1.2/assets/svg/1faa8.svg" data-marp-twemoji=""> &lt;- in Stein gemeisselt</h1>
+<h1 id="%F0%9F%A7%A0-konzept-static"><img class="emoji" draggable="false" alt="🧠" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@14.1.2/assets/svg/1f9e0.svg" data-marp-twemoji=""> Konzept <code>static</code></h1>
 <ul>
 <li>Kann ohne <code>new</code> aufgerufen werden</li>
 <li>Kann wiederum andere <code>static</code> Methoden aufrufen</li>
@@ -133,12 +135,13 @@
 <h3 id="f%C3%BCr-was-sind-static-methoden-gut">Für was sind <code>static</code> Methoden gut?</h3>
 <ul>
 <li>Die Java <code>main</code> Methode (entrypoint)</li>
-<li>Helfermethoden <strong>(ohne Datenstand)</strong><br>
-<em>Z.B. <code>Math.sqrt(64);</code></em></li>
+<li>Helfermethoden <strong>(ohne eigenen Datenstand)</strong> <em>Z.B. <code>Math.sqrt(64);</code></em></li>
 </ul>
 </div><div class="undefined">
 <h3 id="%F0%9F%98%B1-limitationen"><img class="emoji" draggable="false" alt="😱" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@14.1.2/assets/svg/1f631.svg" data-marp-twemoji=""> Limitationen</h3>
-<p><strong>Können nicht</strong> auf <strong>eigene</strong> <code>Instanz-Methoden/Varaiblen</code> zugreifen!</p>
+<ul>
+<li><strong>Können nicht</strong> auf <code>Instanz-Methoden/Varaiblen</code> zugreifen!</li>
+</ul>
 </div></div>
 
 <footer>BBZBL / Lukas Hodel / Objektbasiert programmieren nach Vorgabe</footer>
@@ -156,7 +159,7 @@
 <li>Es können von einer <strong>Klasse mehrere Instanzen</strong> erstellt werden</li>
 <li>Ein <code>Instanz</code> wird durch <code>Klasse variableName = new Klasse()</code> erstellt</li>
 </ul>
-<h3 id="%E2%84%B9%EF%B8%8F-instanzen-sind-gekapselt-und-besitzen-einen-individuellen-datenstand"><img class="emoji" draggable="false" alt="ℹ️" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@14.1.2/assets/svg/2139.svg" data-marp-twemoji=""> Instanzen sind gekapselt und <strong>besitzen einen individuellen Datenstand</strong></h3>
+<h3 id="%E2%84%B9%EF%B8%8F-instanzen-besitzen-einen-individuellen-datenstand"><img class="emoji" draggable="false" alt="ℹ️" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@14.1.2/assets/svg/2139.svg" data-marp-twemoji=""> Instanzen <strong>besitzen einen individuellen Datenstand</strong></h3>
 <pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-java"><span class="hljs-type">Account</span> <span class="hljs-variable">accountObject1</span> <span class="hljs-operator">=</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">Account</span>();
 <span class="hljs-type">Account</span> <span class="hljs-variable">accountObject2</span> <span class="hljs-operator">=</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">Account</span>();
 </code></pre>
@@ -167,12 +170,12 @@
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="6" data-paginate="true" data-header="Modul 404 - Woche 2" data-footer="BBZBL / Lukas Hodel / Objektbasiert programmieren nach Vorgabe" data-theme="bbzbl" lang="C" data-marpit-pagination="6" style="--paginate:true;--header:Modul 404 - Woche 2;--footer:BBZBL / Lukas Hodel / Objektbasiert programmieren nach Vorgabe;--theme:bbzbl;" data-marpit-pagination-total="16">
 <header>Modul 404 - Woche 2</header>
 <h1 id="%F0%9F%A7%A0-static-vs-instanz-methoden"><img class="emoji" draggable="false" alt="🧠" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@14.1.2/assets/svg/1f9e0.svg" data-marp-twemoji=""> Static vs Instanz-Methoden</h1>
-<p>Eine <code>static</code> Methode einer <code>Klasse</code> kann direkt aufgerufen werden, ohne dass ein <code>Object</code>/<code>Instanz</code> der Klasse erstellt werden muss:</p>
+<p>Eine <code>static</code> Methode einer <code>Klasse</code> kann direkt (ohne new) aufgerufen werden</p>
 <pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-Java"><span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">MixedExample</span> {
   <span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">final</span> <span class="hljs-type">double</span> <span class="hljs-variable">PI</span> <span class="hljs-operator">=</span> <span class="hljs-number">3.14</span>; <span class="hljs-comment">// Konstante, kann nicht geändert werden!</span>
   <span class="hljs-keyword">private</span> <span class="hljs-type">String</span> <span class="hljs-variable">greeting</span> <span class="hljs-operator">=</span> <span class="hljs-string">"Hello"</span>;     <span class="hljs-comment">// Instanz-Variablen, kann geändert werden</span>
 
-  <span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-type">double</span> <span class="hljs-title function_">staticCircle</span><span class="hljs-params">(<span class="hljs-type">double</span> radiant)</span> { 
+  <span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-type">double</span> <span class="hljs-title function_">staticCircle</span><span class="hljs-params">(<span class="hljs-type">double</span> radiant)</span> {
     <span class="hljs-keyword">return</span> radiant * radiant * PI; <span class="hljs-comment">// Kann auf `PI` zugreifen nicht aber auf `greeting`</span>
   }
 
@@ -191,12 +194,12 @@
 <h1 id="%F0%9F%A7%A0-verwenden-von-mixedexample"><img class="emoji" draggable="false" alt="🧠" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@14.1.2/assets/svg/1f9e0.svg" data-marp-twemoji=""> Verwenden von <code>MixedExample</code></h1>
 <pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-java"><span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">Starter</span> {
   <span class="hljs-comment">// Startpunkt des Programms, ist immer static!</span>
-  <span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">main</span><span class="hljs-params">(String[] args)</span> { 
+  <span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">main</span><span class="hljs-params">(String[] args)</span> {
     <span class="hljs-comment">// Statische Methoden können ohne new ausgeführt werden!</span>
-    <span class="hljs-type">double</span> <span class="hljs-variable">circle</span> <span class="hljs-operator">=</span> MixedExample.staticCircle(<span class="hljs-number">1.5d</span>); 
+    <span class="hljs-type">double</span> <span class="hljs-variable">circle</span> <span class="hljs-operator">=</span> MixedExample.staticCircle(<span class="hljs-number">1.5d</span>);
 
     <span class="hljs-comment">// Um instanceMethoden aufzurufen, muss zuerst eine Instanz erstellt werden</span>
-    <span class="hljs-type">MixedExample</span> <span class="hljs-variable">mixedExampleInstance</span> <span class="hljs-operator">=</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">MixedExample</span>(); 
+    <span class="hljs-type">MixedExample</span> <span class="hljs-variable">mixedExampleInstance</span> <span class="hljs-operator">=</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">MixedExample</span>();
     <span class="hljs-type">String</span> <span class="hljs-variable">greeting</span> <span class="hljs-operator">=</span> mixedExampleInstance.instanceGreeting(<span class="hljs-string">"Lukas"</span>);
     <span class="hljs-comment">// Wert ist "Hallo Lukas";</span>
 
@@ -215,13 +218,15 @@
 <li><a href="https://codingluke.github.io/bbzbl-modul-404/docs/aufgaben-grundlagen/starterklasse" class="external-link" target="_blank" rel="noopener noreferrer">Aufgabe Starterklasse</a></li>
 <li><a href="https://codingluke.github.io/bbzbl-modul-404/docs/aufgaben-grundlagen/einheiten-umrechnen" class="external-link" target="_blank" rel="noopener noreferrer">Aufgabe Temperaturkonvertierer</a></li>
 </ul>
-<h2 is="marp-h2" data-auto-scaling="" id="woman_superhero-versucht-es-immer-zuerst-ohne-musterl%C3%B6sung"> :woman_superhero: Versucht es immer zuerst ohne Musterlösung!</h2>
+<h2 is="marp-h2" data-auto-scaling="" id="%F0%9F%A6%B8-versucht-es-immer-zuerst-ohne-musterl%C3%B6sung"> <img class="emoji" draggable="false" alt="🦸" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@14.1.2/assets/svg/1f9b8.svg" data-marp-twemoji=""> Versucht es immer zuerst ohne Musterlösung!</h2>
 <footer>BBZBL / Lukas Hodel / Objektbasiert programmieren nach Vorgabe</footer>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="9" data-paginate="true" data-header="Modul 404 - Woche 2" data-footer="BBZBL / Lukas Hodel / Objektbasiert programmieren nach Vorgabe" data-theme="bbzbl" lang="C" data-marpit-pagination="9" style="--paginate:true;--header:Modul 404 - Woche 2;--footer:BBZBL / Lukas Hodel / Objektbasiert programmieren nach Vorgabe;--theme:bbzbl;" data-marpit-pagination-total="16">
 <header>Modul 404 - Woche 2</header>
 <h1 id="%F0%9F%A7%A0-einstieg-swing"><img class="emoji" draggable="false" alt="🧠" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@14.1.2/assets/svg/1f9e0.svg" data-marp-twemoji=""> Einstieg <code>Swing</code></h1>
-<p><code>Swing</code> ist eine <strong>Bibliothek für grafische Oberflächen</strong> <img class="emoji" draggable="false" alt="🖼️" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@14.1.2/assets/svg/1f5bc.svg" data-marp-twemoji="">. Dadurch ist es möglich die bis jetzt textuelle Benutzerinteraktion mit grafischen Elemente umzusetzen.</p>
+<p><code>Swing</code> ist eine <strong>Bibliothek für grafische Oberflächen</strong> <img class="emoji" draggable="false" alt="🖼️" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@14.1.2/assets/svg/1f5bc.svg" data-marp-twemoji="">.<br>
+Dadurch ist es möglich die bis jetzt textuelle Benutzerinteraktion mit<br>
+grafischen Elemente umzusetzen.</p>
 <ul>
 <li><strong><code>GUI</code></strong> - <code>Graphical User Interface</code> genannt</li>
 </ul>
@@ -230,7 +235,7 @@
 <li>Das Verständnis davon ist essenziell um im <strong>LB1</strong> eine gute Note zu erhalten!</li>
 <li>Auf dieser Grundlage wird auch das Projekt (<strong>LB2</strong>) umgesetzt!</li>
 </ul>
-<h2 id="%E2%98%9D%EF%B8%8F-nehmt-euch-also-die-zeit-dies-zu-verstehen"><img class="emoji" draggable="false" alt="☝️" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@14.1.2/assets/svg/261d.svg" data-marp-twemoji="">  Nehmt euch also die <strong>Zeit</strong> dies zu verstehen!</h2>
+<h2 id="%E2%98%9D%EF%B8%8F-nehmt-euch-also-die-zeit-dies-zu-verstehen"><img class="emoji" draggable="false" alt="☝️" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@14.1.2/assets/svg/261d.svg" data-marp-twemoji=""> Nehmt euch also die <strong>Zeit</strong> dies zu verstehen!</h2>
 <footer>BBZBL / Lukas Hodel / Objektbasiert programmieren nach Vorgabe</footer>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="10" data-paginate="true" data-header="Modul 404 - Woche 2" data-footer="BBZBL / Lukas Hodel / Objektbasiert programmieren nach Vorgabe" data-theme="bbzbl" lang="C" data-marpit-pagination="10" style="--paginate:true;--header:Modul 404 - Woche 2;--footer:BBZBL / Lukas Hodel / Objektbasiert programmieren nach Vorgabe;--theme:bbzbl;" data-marpit-pagination-total="16">
@@ -243,17 +248,18 @@
 <p><a href="https://www.java-tutorial.org/swing.html" class="external-link" target="_blank" rel="noopener noreferrer">Deutsches <code>Swing</code>-Tutorial als Zusatzinfo für Interessierte</a></p>
 <ul>
 <li><strong>Relevante Themen</strong>: <a href="https://www.java-tutorial.org/jframe.html" class="external-link" target="_blank" rel="noopener noreferrer">JFrame</a>, <a href="https://www.java-tutorial.org/bedienelemente.html" class="external-link" target="_blank" rel="noopener noreferrer">JLabel</a>, <a href="https://www.java-tutorial.org/jbutton.html" class="external-link" target="_blank" rel="noopener noreferrer">JButton</a>, <a href="https://www.java-tutorial.org/jtextfield.html" class="external-link" target="_blank" rel="noopener noreferrer">JTextField</a>, <a href="https://www.java-tutorial.org/jpanel.html" class="external-link" target="_blank" rel="noopener noreferrer">JPanel</a></li>
-<li>Auch wichtig, wird nächste Woche behandelt <a href="https://www.java-tutorial.org/event-handling.html" class="external-link" target="_blank" rel="noopener noreferrer">Event-Handling</a></li>
+<li>Auch wichtig, wird nächste Woche behandelt: <a href="https://www.java-tutorial.org/event-handling.html" class="external-link" target="_blank" rel="noopener noreferrer">Event-Handling</a></li>
 </ul>
 </li>
 </ul>
-<h2 is="marp-h2" data-auto-scaling="" id="woman_superhero-ich-w%C3%BCrde-alle-in-den-aufgaben-verwendeten-klassen-hier-nachschlagen"> :woman_superhero: Ich würde alle in den Aufgaben verwendeten Klassen hier nachschlagen</h2>
+<h2 is="marp-h2" data-auto-scaling="" id="%F0%9F%A6%B8-ich-w%C3%BCrde-alle-in-den-aufgaben-verwendeten-klassen-hier-nachschlagen"> <img class="emoji" draggable="false" alt="🦸" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@14.1.2/assets/svg/1f9b8.svg" data-marp-twemoji=""> Ich würde alle in den Aufgaben verwendeten Klassen hier nachschlagen</h2>
 <footer>BBZBL / Lukas Hodel / Objektbasiert programmieren nach Vorgabe</footer>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="11" data-paginate="true" data-header="Modul 404 - Woche 2" data-footer="BBZBL / Lukas Hodel / Objektbasiert programmieren nach Vorgabe" data-theme="bbzbl" lang="C" data-marpit-pagination="11" style="--paginate:true;--header:Modul 404 - Woche 2;--footer:BBZBL / Lukas Hodel / Objektbasiert programmieren nach Vorgabe;--theme:bbzbl;" data-marpit-pagination-total="16">
 <header>Modul 404 - Woche 2</header>
 <h1 id="%F0%9F%A7%A0-swing-jframe"><img class="emoji" draggable="false" alt="🧠" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@14.1.2/assets/svg/1f9e0.svg" data-marp-twemoji=""> Swing: <code>JFrame</code></h1>
-<p>Möchte man eine Klasse als <code>Fenster</code> erstellen, muss man der Klasse die Java Klasse <code>JFrame</code> <strong>vererben</strong>. Dies geht mit dem Ausdruck <strong><code>extends JFrame</code></strong></p>
+<p>Möchte man eine Klasse als <code>Fenster</code> erstellen, muss man der Klasse die Java<br>
+Klasse <code>JFrame</code> <strong>vererben</strong>. Dies geht mit dem Ausdruck <strong><code>extends JFrame</code></strong></p>
 <pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-java"><span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">PureWindow</span> <span class="hljs-keyword">extends</span> <span class="hljs-title class_">JFrame</span> {
   <span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">start</span><span class="hljs-params">()</span> {                        <span class="hljs-comment">// oder auch showDialog, oder was gefällt</span>
     setLayout(<span class="hljs-literal">null</span>);                         <span class="hljs-comment">// Standard Layout deaktivieren</span>
@@ -265,7 +271,8 @@
 }
 </code></pre>
 <div class="footnotes undefined"><p><a href="https://www.java-tutorial.org/jframe.html" class="external-link" target="_blank" rel="noopener noreferrer"><img class="emoji" draggable="false" alt="🔗" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@14.1.2/assets/svg/1f517.svg" data-marp-twemoji=""> JFrame auf Java Tutorial</a><br>
-<em><img class="emoji" draggable="false" alt="ℹ️" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@14.1.2/assets/svg/2139.svg" data-marp-twemoji=""> Was genau Vererbung ist, und wie man es selbst verwendet ist Teil eines späteren Moduls. Hier wenden wir es einfach Mal an.</em></p>
+<em><img class="emoji" draggable="false" alt="ℹ️" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@14.1.2/assets/svg/2139.svg" data-marp-twemoji=""> Was genau Vererbung ist, und wie man es selbst verwendet<br>
+ist Teil eines späteren Moduls. Hier wenden wir es einfach Mal an.</em></p>
 </div>
 <footer>BBZBL / Lukas Hodel / Objektbasiert programmieren nach Vorgabe</footer>
 </section>
@@ -306,7 +313,7 @@ add(button) <span class="hljs-comment">// Textfeld hinzufügen</span>
 <p><a href="https://codingluke.github.io/bbzbl-modul-404/docs/aufgaben-swing/komponenten" class="external-link" target="_blank" rel="noopener noreferrer">Komponenten</a></p>
 </li>
 </ul>
-<h2 is="marp-h2" data-auto-scaling="" id="woman_superhero-versucht-es-immer-zuerst-ohne-musterl%C3%B6sung-1"> :woman_superhero: Versucht es immer zuerst ohne Musterlösung!</h2>
+<h2 is="marp-h2" data-auto-scaling="" id="%F0%9F%A6%B8-versucht-es-immer-zuerst-ohne-musterl%C3%B6sung-1"> <img class="emoji" draggable="false" alt="🦸" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@14.1.2/assets/svg/1f9b8.svg" data-marp-twemoji=""> Versucht es immer zuerst ohne Musterlösung!</h2>
 <footer>BBZBL / Lukas Hodel / Objektbasiert programmieren nach Vorgabe</footer>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="14" data-paginate="true" data-header="Modul 404 - Woche 2" data-footer="BBZBL / Lukas Hodel / Objektbasiert programmieren nach Vorgabe" data-class="big center" data-theme="bbzbl" lang="C" class="big center" data-marpit-pagination="14" style="--paginate:true;--header:Modul 404 - Woche 2;--footer:BBZBL / Lukas Hodel / Objektbasiert programmieren nach Vorgabe;--class:big center;--theme:bbzbl;" data-marpit-pagination-total="16">
@@ -318,23 +325,21 @@ add(button) <span class="hljs-comment">// Textfeld hinzufügen</span>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="15" data-paginate="true" data-header="Modul 404 - Woche 2" data-footer="BBZBL / Lukas Hodel / Objektbasiert programmieren nach Vorgabe" data-theme="bbzbl" lang="C" data-marpit-pagination="15" style="--paginate:true;--header:Modul 404 - Woche 2;--footer:BBZBL / Lukas Hodel / Objektbasiert programmieren nach Vorgabe;--theme:bbzbl;" data-marpit-pagination-total="16">
 <header>Modul 404 - Woche 2</header>
 <h1 id="%E2%8C%A8%EF%B8%8F-repetition-arrays-20min-%F0%9F%94%97"><img class="emoji" draggable="false" alt="⌨️" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@14.1.2/assets/svg/2328.svg" data-marp-twemoji=""> Repetition Arrays (20min) <a href="https://codingluke.github.io/bbzbl-modul-404/docs/repetition/arrays" class="external-link" target="_blank" rel="noopener noreferrer"><img class="emoji" draggable="false" alt="🔗" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@14.1.2/assets/svg/1f517.svg" data-marp-twemoji=""></a></h1>
-<p>Im folgenden PDF ist beschrieben wie man in Java mit Arrays, also Listen von Datentypen, arbeitet.</p>
+<p>Im folgenden PDF ist beschrieben wie man in Java mit Arrays, also Listen von<br>
+Datentypen, arbeitet.</p>
 <ul>
 <li><a href="https://codingluke.github.io/bbzbl-modul-404/docs/repetition/arrays" class="external-link" target="_blank" rel="noopener noreferrer">Repetition Arrays</a> (<a href="https://drive.google.com/file/d/1Bt4NgySXrhMeorOTuSBs_6thNwXPRbNN/view" class="external-link" target="_blank" rel="noopener noreferrer"><img class="emoji" draggable="false" alt="📖" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@14.1.2/assets/svg/1f4d6.svg" data-marp-twemoji=""> PDF</a>) bitte genau studieren</li>
 <li>Diese <strong>Aufgaben sind Optional</strong> und müssen im <strong>Selbststudium</strong> gemacht werden.</li>
-<li>Am Ende der Sildes wird auf eine weitere Art von Arrays (Listen) eingeganen.
-<ul>
-<li>Diese ist <strong>nicht Pflicht</strong> jedoch häufig einfacher.</li>
+<li>Am Ende der Sildes wird auf eine weitere Art von Arrays (Listen) eingeganen. Diese ist <strong>nicht Pflicht</strong> jedoch häufig einfacher.</li>
 </ul>
-</li>
-</ul>
-<h3 id="woman_superhero-dies-ist-eine-grundlage-welche-ihr-im-allgemeinen-begreifen-m%C3%BCsst-um-die-beiden-lbs-mit-einer-6-zu-bestehen">:woman_superhero: Dies ist eine Grundlage, welche Ihr im allgemeinen begreifen müsst um die beiden LBs mit einer <code>6</code> zu bestehen</h3>
+<h3 id="%F0%9F%A6%B8-dies-ist-eine-grundlage-welche-ihr-im-allgemeinen-begreifen-m%C3%BCsst-um-die-beiden-lbs-mit-einer-6-zu-bestehen"><img class="emoji" draggable="false" alt="🦸" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@14.1.2/assets/svg/1f9b8.svg" data-marp-twemoji=""> Dies ist eine Grundlage, welche Ihr im allgemeinen begreifen müsst um die beiden LBs mit einer <code>6</code> zu bestehen</h3>
 <footer>BBZBL / Lukas Hodel / Objektbasiert programmieren nach Vorgabe</footer>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="16" data-paginate="true" data-header="Modul 404 - Woche 2" data-footer="BBZBL / Lukas Hodel / Objektbasiert programmieren nach Vorgabe" data-theme="bbzbl" lang="C" data-marpit-pagination="16" style="--paginate:true;--header:Modul 404 - Woche 2;--footer:BBZBL / Lukas Hodel / Objektbasiert programmieren nach Vorgabe;--theme:bbzbl;" data-marpit-pagination-total="16">
 <header>Modul 404 - Woche 2</header>
-<h2 id="woman_superhero-die-klasse-list-oder-auch-arraylist">:woman_superhero: Die Klasse <code>List</code> oder auch <code>ArrayList</code></h2>
-<p>Primitive Java Arrays sind umständlich und können häufig durch die Klasse <code>List&lt;Datetyp&gt;</code> oder <code>ArrayList&lt;Datentype&gt;</code> abgelöst werden.</p>
+<h2 id="%F0%9F%A6%B8-die-klasse-list-oder-auch-arraylist"><img class="emoji" draggable="false" alt="🦸" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@14.1.2/assets/svg/1f9b8.svg" data-marp-twemoji=""> Die Klasse <code>List</code> oder auch <code>ArrayList</code></h2>
+<p>Primitive Java Arrays sind umständlich und können häufig durch die Klasse<br>
+<code>List&lt;Datetyp&gt;</code> oder <code>ArrayList&lt;Datentype&gt;</code> abgelöst werden.</p>
 <p>Hier ein Beispiel für eine <code>List&lt;String&gt;</code>, also eine Liste von Wörtern:</p>
 <pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-java">list&lt;string&gt; list = arrays.aslist(<span class="hljs-string">"element 1"</span>, <span class="hljs-string">"element 2"</span>);
 list.add(<span class="hljs-string">"element 3"</span>); <span class="hljs-comment">// es können Elemente dynamisch hinzugefügt werden</span>
