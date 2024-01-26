@@ -2,8 +2,8 @@
 
 |                    |         Woche          |           Datum           | Thema                                                  | Leistungsbewertung |
 | ------------------ | :--------------------: | :-----------------------: | :----------------------------------------------------- | :----------------- |
-| :steam_locomotive: |   [Woche&nbsp;1][w1]   |        26.01.2024         | Repetition / Klassen / Objekte                         |                    |
-|                    |   [Woche&nbsp;2][w2]   |        02.02.2024         | Fachklassen / Static / Swing                           |                    |
+|                    |   [Woche&nbsp;1][w1]   |        26.01.2024         | Repetition / Klassen / Objekte                         |                    |
+| :steam_locomotive: |   [Woche&nbsp;2][w2]   |        02.02.2024         | Fachklassen / Static / Swing                           |                    |
 |                    |   [Woche&nbsp;3][w3]   |        09.02.2024         | Klassenstruktur / Java Interface - ActionListener      |                    |
 |                    |                        | _16.02.2024 / 23.02.2024_ | :star: _Fasnachtsferien_ :star:                        |                    |
 |                    |   [Woche&nbsp;4][w4]   |        01.03.2024         | Konstruktor / Formatierung / UML                       |                    |
