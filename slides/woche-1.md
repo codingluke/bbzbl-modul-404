@@ -26,7 +26,7 @@ footer: BBZBL / Lukas Hodel / Objektbasiert programmieren nach Vorgabe
 
 - [319](https://www.modulbaukasten.ch/module/c6b67ea8-5e85-eb11-a812-0022486f644f/de-DE?title=Applikationen-entwerfen-und-implementieren)
   Applikationen entwerfen und implementieren
-- ## [404](https://www.modulbaukasten.ch/module/ba75c9da-716c-eb11-b0b1-000d3a830b2b/de-DE?title=Objektbasiert-programmieren-nach-Vorgabe) Objektbasiert programmieren nach Vorgabe
+- **[404](https://www.modulbaukasten.ch/module/ba75c9da-716c-eb11-b0b1-000d3a830b2b/de-DE?title=Objektbasiert-programmieren-nach-Vorgabe) Objektbasiert programmieren nach Vorgabe**
 
 ## Später
 
@@ -47,7 +47,7 @@ footer: BBZBL / Lukas Hodel / Objektbasiert programmieren nach Vorgabe
 
 ---
 
-# Modul Lernziele :dart:
+# :dart: Modul Lernziele
 
 1. Aufgrund einer Vorgabe den Ablauf darstellen. **_(UML Klassendiagram)_**
 
@@ -59,7 +59,7 @@ footer: BBZBL / Lukas Hodel / Objektbasiert programmieren nach Vorgabe
 
 ---
 
-# Modul Lernziele :dart:
+# :dart: Modul Lernziele 2
 
 5. Beim Programmieren vorgegebene Standards und Richtlinien einhalten, das
    Programm inline dokumentieren und dabei auf Wartbarkeit und
@@ -151,7 +151,7 @@ footer: BBZBL / Lukas Hodel / Objektbasiert programmieren nach Vorgabe
 
 :::
 
-## :link: https://codingluke.github.io/bbzbl-modul-404
+## :link: [https://codingluke.github.io/bbzbl-modul-404](https://codingluke.github.io/bbzbl-modul-404)
 
 ---
 
@@ -226,7 +226,7 @@ String command = sc.nextString();
 
 ::: footnotes
 
-\* Musterlösung nur verwenden, wenn Sie nicht mehr weiter kommen! 
+\* Musterlösung nur verwenden, wenn Sie nicht mehr weiter kommen!
 \*\* natürlich nicht genau so :sweat_smile:
 
 :::

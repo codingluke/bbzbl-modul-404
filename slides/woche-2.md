@@ -36,8 +36,7 @@ footer: BBZBL / Lukas Hodel / Objektbasiert programmieren nach Vorgabe
 - [Frame](https://codingluke.github.io/bbzbl-modul-404/docs/aufgaben-swing/fenster)
 - [Komponenten](https://codingluke.github.io/bbzbl-modul-404/docs/aufgaben-swing/komponenten)
 
-<hr>
-
+<hr />
 - [:superhero: Optional Repetition Arrays](https://codingluke.github.io/bbzbl-modul-404/docs/repetition/arrays)
   ([PDF](https://drive.google.com/file/d/1Bt4NgySXrhMeorOTuSBs_6thNwXPRbNN/view))
 
@@ -71,7 +70,7 @@ footer: BBZBL / Lukas Hodel / Objektbasiert programmieren nach Vorgabe
 
 ::: columns
 
-### Für was sind `static` Methoden gut?
+### Wofür sind `static` Methoden gut?
 
 - Die Java `main` Methode (entrypoint)
 - Helfermethoden **(ohne eigenen Datenstand)** _Z.B. `Math.sqrt(64);`_
@@ -86,13 +85,13 @@ footer: BBZBL / Lukas Hodel / Objektbasiert programmieren nach Vorgabe
 
 ---
 
-# :brain: Konzept `Instanz`<sup>\*</sup>: :hatching_chick: <- Es lebt!
+# :brain: Konzept `Instanz`<sup>\*</sup>: :hatching_chick: ← es lebt!
 
-- Beinhalten `Instanz-Methoden`:
+- Instanzen beinhalten `Instanz-Methoden`:
   - `Instanz-Methoden` können auf `Instanz-Variablen` zugreifen
   - `Instanz-Methoden` können andere `Instanz-Methoden` ausführen
-- Es können von einer **Klasse mehrere Instanzen** erstellt werden
-- Ein `Instanz` wird durch `Klasse variableName = new Klasse()` erstellt
+- es können von einer **Klasse mehrere Instanzen** erstellt werden
+- eine `Instanz` wird durch `Klasse variableName = new Klasse()` erstellt
 
 ### :information_source: Instanzen **besitzen einen individuellen Datenstand**
 
@@ -111,7 +110,7 @@ Account accountObject2 = new Account();
 
 # :brain: Static vs Instanz-Methoden
 
-Eine `static` Methode einer `Klasse` kann direkt (ohne new) aufgerufen werden
+Eine `static` Methode einer `Klasse` kann direkt (ohne `new`) aufgerufen werden
 
 ```Java
 public class MixedExample {
@@ -158,10 +157,10 @@ public class Starter {
 
 # :keyboard: Grundlagen Aufgaben [:link:](https://codingluke.github.io/bbzbl-modul-404/docs/aufgaben-grundlagen)
 
-- [Aufgabe Starterklasse](https://codingluke.github.io/bbzbl-modul-404/docs/aufgaben-grundlagen/starterklasse)
+- [Aufgabe Startklasse](https://codingluke.github.io/bbzbl-modul-404/docs/aufgaben-grundlagen/starterklasse)
 - [Aufgabe Temperaturkonvertierer](https://codingluke.github.io/bbzbl-modul-404/docs/aufgaben-grundlagen/einheiten-umrechnen)
 
-## <!--fit--> :superhero: Versucht es immer zuerst ohne Musterlösung!
+<!--fit--> **:superhero: Versucht es immer zuerst ohne Musterlösung!**
 
 ---
 
@@ -186,12 +185,12 @@ grafischen Elemente umzusetzen.
 
 Es ist immer gut sich im Internet weiterzubilden (:thinking: zumindest für IT-Themen)
 
-www.java-tutorial.org ist eine Webseite die Java, sowie `Swing` im Detail erklärt:
+[www.java-tutorial.org](www.java-tutorial.org) ist eine Webseite die Java, sowie `Swing` im Detail erklärt:
 
 - [Deutsches `Swing`-Tutorial als Zusatzinfo für Interessierte](https://www.java-tutorial.org/swing.html)
 
-  - **Relevante Themen**: [JFrame](https://www.java-tutorial.org/jframe.html), [JLabel](https://www.java-tutorial.org/bedienelemente.html), [JButton](https://www.java-tutorial.org/jbutton.html), [JTextField](https://www.java-tutorial.org/jtextfield.html), [JPanel](https://www.java-tutorial.org/jpanel.html)
-  - Auch wichtig, wird nächste Woche behandelt: [Event-Handling](https://www.java-tutorial.org/event-handling.html)
+  - **relevante Themen**: [JFrame](https://www.java-tutorial.org/jframe.html), [JLabel](https://www.java-tutorial.org/bedienelemente.html), [JButton](https://www.java-tutorial.org/jbutton.html), [JTextField](https://www.java-tutorial.org/jtextfield.html), [JPanel](https://www.java-tutorial.org/jpanel.html)
+  - auch wichtig, wird nächste Woche behandelt: [Event-Handling](https://www.java-tutorial.org/event-handling.html)
 
 ## <!--fit--> :superhero: Ich würde alle in den Aufgaben verwendeten Klassen hier nachschlagen
 
@@ -199,17 +198,18 @@ www.java-tutorial.org ist eine Webseite die Java, sowie `Swing` im Detail erklä
 
 # :brain: Swing: `JFrame`
 
-Möchte man eine Klasse als `Fenster` erstellen, muss man der Klasse die Java
-Klasse `JFrame` **vererben**. Dies geht mit dem Ausdruck **`extends JFrame`**
+Möchte man eine Klasse als `Fenster` erstellen, muss der Klasse, die Java
+Klasse `JFrame` **vererbt** werden. Dies geht mit dem Ausdruck **`extends JFrame`**
 
 ```java
 public class PureWindow extends JFrame {
-  public void start() {                        // oder auch showDialog, oder was gefällt
-    setLayout(null);                         // Standard Layout deaktivieren
-    setDefaultCloseOperation(EXIT_ON_CLOSE); // Beim schliessen des Fensters, das ganze Programm beenden
-    setSize(300, 300);                       // Grösse vom Fenster festlegen
-    setTitle("Ich bin der Fenster Titel");   // Titel des Fensters festlegen
-    setVisible(true);                        // Fenster sichtbar machen
+  public void start() { // oder auch showDialog, oder was gefällt
+    setLayout(null); // Standard Layout deaktivieren
+    setDefaultCloseOperation(
+        EXIT_ON_CLOSE); // Beim schliessen des Fensters, das ganze Programm beenden
+    setSize(300, 300); // Grösse vom Fenster festlegen
+    setTitle("Ich bin der Fenster Titel"); // Titel des Fensters festlegen
+    setVisible(true); // Fenster sichtbar machen
   }
 }
 ```
@@ -255,7 +255,7 @@ add(button) // Textfeld hinzufügen
 - [JFrame](https://codingluke.github.io/bbzbl-modul-404/docs/aufgaben-swing/fenster)
 - [Komponenten](https://codingluke.github.io/bbzbl-modul-404/docs/aufgaben-swing/komponenten)
 
-## <!--fit--> :superhero: Versucht es immer zuerst ohne Musterlösung!
+<!--fit--> **:superhero: Versucht es immer zuerst ohne Musterlösung!**
 
 ---
 
@@ -270,11 +270,12 @@ add(button) // Textfeld hinzufügen
 Im folgenden PDF ist beschrieben wie man in Java mit Arrays, also Listen von
 Datentypen, arbeitet.
 
-- [Repetition Arrays](https://codingluke.github.io/bbzbl-modul-404/docs/repetition/arrays) ([:book: PDF](https://drive.google.com/file/d/1Bt4NgySXrhMeorOTuSBs_6thNwXPRbNN/view)) bitte genau studieren
+- [Repetition Arrays](https://codingluke.github.io/bbzbl-modul-404/docs/repetition/arrays) ([:book: PDF](https://drive.google.com/file/d/1Bt4NgySXrhMeorOTuSBs_6thNwXPRbNN/view)) bitte genau studieren.
 - Diese **Aufgaben sind Optional** und müssen im **Selbststudium** gemacht werden.
-- Am Ende der Sildes wird auf eine weitere Art von Arrays (Listen) eingeganen. Diese ist **nicht Pflicht** jedoch häufig einfacher.
+- Am Ende der Sildes wird auf eine weitere Art von Arrays (Listen) eingegangen.
+  - Diese ist **nicht Pflicht** jedoch häufig einfacher.
 
-### :superhero: Dies ist eine Grundlage, welche Ihr im allgemeinen begreifen müsst um die beiden LBs mit einer `6` zu bestehen
+### :superhero: Dies ist eine Grundlage, welche Ihr im Allgemeinen begreifen müsst, um die beiden LBs mit einer `6` zu bestehen
 
 ---
 
