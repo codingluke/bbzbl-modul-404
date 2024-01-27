@@ -74,7 +74,7 @@
     "remark-html": "^15.0.1",
     "remark-oembed": "^1.2.2",
     "temp": "^0.9.4",
-    "wireit": "^0.9.5"
+    "wireit": "^0.14.4"
   },
   "devDependencies": {
     "@docusaurus/module-type-aliases": "^3.1.0",
