@@ -33,9 +33,7 @@ hide_table_of_contents: true
 - :man_teacher: Wir lösen die Aufgaben zusammen
 - :coffee: **15:30**
 - 🧐 Analyse des bisherigen Programms
-
-- :sparkles: Vom Quellcode zum Programm
-
+- :sparkles: vom Quellcode zum Programm
 
 </Event>
 <Event time="15:50">

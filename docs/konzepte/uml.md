@@ -3,7 +3,7 @@
 Mit dem Aufkommen der Programmierung wurde auch die Frage der Kommunikation über
 Programme immer wichtiger. Bei Einführung der Objektorientierung kam man bald
 nicht mehr mit Flussdiagrammen weiter und behalf sich mit einer neuen Notation,
-der **UML, Unified Modelling Language**. Sie hat sich inzwischen breit
+der **UML, Unified-Modelling-Language**. Sie hat sich inzwischen breit
 durchgesetzt, beispielsweise bis in den Geschäftsbereich und damit der
 **Vermittlung zwischen Fachabteilung und Softwareentwicklung**, und für komplexe
 Projekte mit Tools, die eine automatische Umwandlung zwischen bestimmten
@@ -13,7 +13,7 @@ Es gibt viele UML Diagrammtypen, wirklich Verwendung finden vor allem folgende:
 
 - [Klassendiagramm](#klassendiagramm)
 - [Sequenzdiagramm](https://www.websequencediagrams.com/)
-- ERM, Entity Relationship Diagram (Für Datenbanken)
+- ERM, Entity-Relationship-Diagram (Für Datenbanken)
 
 ## Klassendiagramm
 
@@ -30,7 +30,7 @@ Es gibt viele UML Diagrammtypen, wirklich Verwendung finden vor allem folgende:
 
 </div><div class="col col--6">
 
-![uml](../img/class-to-uml.png)
+![UML](../img/class-to-uml.png)
 
 </div></div></div>
 
@@ -107,7 +107,7 @@ classDiagram
 
 - [IntelliJ Diagrams](https://www.jetbrains.com/help/idea/class-diagram.html)
   _jedoch nicht 100% UML Standard!_
-  - IntelliJ finden Sie auf unseren **Widnows VMs**
+  - IntelliJ finden Sie auf unseren **Windows VMs**
 
 :::
 

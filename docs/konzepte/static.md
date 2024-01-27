@@ -18,18 +18,18 @@ Programmfluss steuert.
 ## Was kann `static`?
 
 - Kann ohne `new` aufgerufen werden.
-- Kann wiederum andere `static` Methoden aufrufen
-- Kann `static` Variablen verwenden
+- Kann wiederum andere `static` Methoden aufrufen.
+- Kann `static` Variablen verwenden.
 - Kann mit `new` ein `Objekt`/`Instanz` einer beliebigen Klasse erstellen.
 
-## Für was sind `static` Methoden gut?
+## Wofür sind `static` Methoden gut?
 
 - Die Java `public static void main(String[] args)` Methode ist immer `static`
-  (Entrypoint)
+  (Programmanfang).
 - Generelle/Universelle Helfermethoden :toolbox: **ohne Datenstand**
   - Z.B. die Java Klasse `Math` ist komplett statisch `Math.sqrt(64);`
 
-## Static vs Instanz-Methoden
+## Static vs. Instanz-Methoden
 
 Eine `static` Methode einer `Klasse` kann direkt aufgerufen werden, ohne dass
 ein `Object`/`Instanz` der Klasse erstellt werden muss.
