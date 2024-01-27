@@ -51,10 +51,14 @@ public class Account {
 }
 ```
 
-:::info Dazu muss man folgendes beachten: Die Variable `private double balance;`
+:::info
+
+Dazu muss man folgendes beachten: Die Variable `private double balance;`
 ist nicht mehr in einer Methode deklariert, sondern gleich zu Beginn, **vor**
 den einzelnen Methoden (_im Klassen-Body_). Dadurch ist die Variable **überall
-in der Klasse sichtbar**. :::
+in der Klasse sichtbar**.
+
+:::
 
 Dies hat nun auch den Vorteil, dass wir daraus viele Konto-Objekte erstellen
 können, die komplett eigenständig einen Kontostand verwalten können. Somit wird
@@ -126,7 +130,7 @@ classDiagram
 
 :::tip
 
-Für jeden **gepunkteten Pfeil der mit "uses" beschriftet** ist, muss in der
+Für jeden **gepunkteten Pfeil der mit `uses` beschriftet** ist, muss in der
 Klasse, von der der Pfeil abgeht (hier `AccountApplicationV2`) **ein Objekt der
 Klasse auf die gezeigt wird** vorhanden sein (hier `Account` und `Scanner`).
 
@@ -135,7 +139,7 @@ In der Klasse `AccountApplicationV2` muss somit irgendwo `new Account()` und
 `main`-Methode beinhaltet, wird es wohl darin sein.
 
 :woman_superhero: Theoretisch könnte das Objekt auch über einen Parameter der Klasse
-übergeben werden. Das nennt sich _Dependency Injection_.
+übergeben werden. Das nennt sich _Dependency-Injection_.
 
 :::
 

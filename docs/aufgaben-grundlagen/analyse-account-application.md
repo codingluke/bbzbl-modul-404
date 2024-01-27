@@ -23,7 +23,7 @@ Code der **Musterlösung** mit Nummern versehen worden
 
 <!-- verwende neueres Bild! -->
 
-![Analyse Account Application](../img/Analyse-Account-Application-new.png)
+![Analyse Account Applikation](../img/Analyse-Account-Application-new.png)
 
 ## Lösung
 
