@@ -8,7 +8,7 @@ Ein Konstruktor:
 
 - Methodename ist **immer gleich** wie die Klasse
 - ist **nicht explizit aufrufbar**
-- wird **ausgeführt wenn ein Objekt erstellt wird** (:bulb: in Verbindung mit
+- wird **ausgeführt, wenn ein Objekt erstellt wird** (:bulb: in Verbindung mit
   **`new`**)
 - hat **keinen Rückgabewert**
 - es können mehrere Konstruktoren bestehen (:bulb: andere Anzahl Parameter)
@@ -56,15 +56,15 @@ public class Starter {
 
 ## Erläuterung
 
-- **Jede** Klasse besitzt einen Defaultkonstruktor
-  - Wenn wir ihn nicht explizit hinschreiben, dann erzeugt der Java-Compiler
-    einfach selbst einen, der nichts macht
-  - Der Defaultkonstruktor hat **keine Parameter**
+- **Jede** Klasse besitzt einen Defaultkonstruktor,
+  - wenn wir ihn nicht explizit hinschreiben, dann erzeugt der Java-Compiler
+    einfach selbst einen, der Nichts macht
+  - der Defaultkonstruktor hat **keine Parameter**.
 - Wenn wir einem **Konstruktor mit Parametern** Werte übergeben, kann er diese
-  als Startwerte für das Objekt verwenden
-  - Das Objekt im zweiten Aufruf in main ist also gleich mit dem Startwert
-    "Neuer Startwert" inizialisiert
+  als Startwerte für das Objekt verwenden.
+  - Das Objekt im zweiten Aufruf in `main` ist also gleich mit dem Startwert
+    "Neuer Startwert" initialisiert.
 - Wenn der **Name von Parametern gleich ist wie der Name einer Variablen**, dann
-  muss mit dem Schlüsselwort `this` gearbeitet werden
+  muss mit dem Schlüsselwort `this` gearbeitet werden.
   - Der Einsatz dieses Wortes bedeutet, dass damit die Instanzvariable gemeint
     ist und nicht der Parameter

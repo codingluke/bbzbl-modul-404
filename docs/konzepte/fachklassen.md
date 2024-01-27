@@ -106,7 +106,8 @@ public class ClassName { // Klassendeklaration Start
 } // Klassendeklaration Ende
 ```
 
-- Sind Methoden innerhalb einer Klasse, welche **nicht `static`** deklariert, ist.
+- Sind Methoden innerhalb einer Klasse, welche **nicht `static`** deklariert,
+  ist.
 - Können auf alle `Instanz-Variablen` zugreifen.
 - In ihnen wird die **Fachlogik** ausprogrammiert
   - Häufig werden `Instanz-Variablen` mutiert, verarbeitet und oder
