@@ -11,7 +11,7 @@ Diagrammtypen und Quelltext beherrschen.
 
 Es gibt viele UML Diagrammtypen, wirklich Verwendung finden vor allem folgende:
 
-- [Klassendiagramm](#Klassendiagramm)
+- [Klassendiagramm](#klassendiagramm)
 - [Sequenzdiagramm](https://www.websequencediagrams.com/)
 - ERM, Entity Relationship Diagram (Für Datenbanken)
 
@@ -30,7 +30,7 @@ Es gibt viele UML Diagrammtypen, wirklich Verwendung finden vor allem folgende:
 
 </div><div class="col col--6">
 
-![](../img/class-to-uml.png)
+![uml](../img/class-to-uml.png)
 
 </div></div></div>
 
