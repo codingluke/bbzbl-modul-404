@@ -67,7 +67,7 @@ classDiagram
 ```
 
 <details>
-<summary>Immer zuerste selber versuchen! Lösung abtippen, nicht kopieren ;)</summary>
+<summary>Immer zuerst selber versuchen! Lösung abtippen, nicht kopieren ;)</summary>
 
 ```java
 import java.awt.event.ActionEvent;
@@ -164,7 +164,7 @@ classDiagram
 ```
 
 <details>
-<summary>Immer zuerste selber versuchen! Lösung abtippen, nicht kopieren ;)</summary>
+<summary>Immer zuerst selber versuchen! Lösung abtippen, nicht kopieren ;)</summary>
 
 ```java
 import java.awt.event.ActionEvent;
@@ -223,7 +223,7 @@ public class Aufgabe2 extends JFrame implements ActionListener {
 
 ## Cheat Sheet
 
-:::note Code snippets funktionieren nur im richtigen Kontext ;) :::
+:::note Code Snippets funktionieren nur im richtigen Kontext ;) :::
 
 ```java
 // Die Klasse definieren

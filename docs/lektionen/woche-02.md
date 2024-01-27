@@ -4,7 +4,7 @@ sidebar_position: 2
 
 # Woche 2
 
-## :teacher: Präsentation
+## :man_teacher: Präsentation
 
 [:computer: Open in Browser](pathname:///slides/woche-2) |
 [:floppy_disk: download PDF](pathname:///slides/woche-2.pdf)
@@ -17,7 +17,7 @@ sidebar_position: 2
 - [Static](../konzepte/static.md)
 - [Einstieg in Swing](../aufgaben-swing/einstieg-in-swing.md)
 
-## :pencil: Aufgaben
+## :pen: Aufgaben
 
 <div class="grid"><div>
 

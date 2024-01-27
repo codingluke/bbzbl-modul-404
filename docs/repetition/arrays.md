@@ -131,7 +131,7 @@ public class SortString {
 
 ## Array negativ
 
-Gegeben ist Array a. Geben Sie alle Elemente mit einem negativen Wert
+Gegeben ist Array `a`. Geben Sie alle Elemente mit einem negativen Wert
 untereinander auf der Konsole aus. Verwenden Sie auch wieder eine for-Schleife.
 
 ```java

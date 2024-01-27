@@ -20,7 +20,7 @@ footer: BBZBL / Lukas Hodel / Objektbasiert programmieren nach Vorgabe
 
 ## :brain: Input
 
-- :teacher: Kontoverwaltung in Swing
+- :man_teacher: Kontoverwaltung in Swing
 - :triangular_ruler: [Formatierung](https://codingluke.github.io/bbzbl-modul-404/docs/konzepte/formatierung)
 - :crayon: [UML Klassendiagram](https://codingluke.github.io/bbzbl-modul-404/docs/konzepte/uml)
 - :hammer: [Konstruktor](https://codingluke.github.io/bbzbl-modul-404/docs/konzepte/konstruktor)
@@ -32,7 +32,7 @@ footer: BBZBL / Lukas Hodel / Objektbasiert programmieren nach Vorgabe
 - [Account UML](https://codingluke.github.io/bbzbl-modul-404/docs/aufgaben-grundlagen/account-uml)
 - [:performing_arts: DiceGame](https://codingluke.github.io/bbzbl-modul-404/docs/aufgaben-swing/dice-game)
 - [Konstruktor](https://codingluke.github.io/bbzbl-modul-404/docs/aufgaben-swing/konstruktor)
-- [:superhero: Weitere Swing-Aufgaben](https://codingluke.github.io/bbzbl-modul-404/docs/aufgaben-swing/zusatz)
+- [:woman_superhero: Weitere Swing-Aufgaben](https://codingluke.github.io/bbzbl-modul-404/docs/aufgaben-swing/zusatz)
 
 :::
 
@@ -42,7 +42,7 @@ footer: BBZBL / Lukas Hodel / Objektbasiert programmieren nach Vorgabe
 
 # Kontoverwaltung in Swing
 
-## :teacher: Musterlösung erläutern
+## :man_teacher: Musterlösung erläutern
 
 ---
 
@@ -52,7 +52,7 @@ footer: BBZBL / Lukas Hodel / Objektbasiert programmieren nach Vorgabe
 
 - :monocle_face: Wichtig um die **Lesbarkeit** zu erhöhen
 
-- :superhero: Ist ein **Zeichen von Professionalität**
+- :woman_superhero: Ist ein **Zeichen von Professionalität**
 
 - :juggling_person: Hilft **Flüchtigkeitsfehlern vorzubeugen**
 
@@ -196,14 +196,14 @@ footer: BBZBL / Lukas Hodel / Objektbasiert programmieren nach Vorgabe
 
 ---
 
-# :keyboard: UML-Klassendiagram / **Auftrag** :pencil:
+# :keyboard: UML-Klassendiagram / **Auftrag** :pen:
 
 1. lesen Sie das [Konzept UML](https://codingluke.github.io/bbzbl-modul-404/docs/uml)
 2. Erstellen Sie ein UML-Klassendiagram der Fachklasse [`Account`](https://codingluke.github.io/bbzbl-modul-404/docs/aufgaben-grundlagen/account-uml)
 3. Implementieren Sie das [DiceGame](https://codingluke.github.io/bbzbl-modul-404/docs/aufgaben-swing/dice-game)
    - **Diese Aufgabe würde ich besonders gut anschauen! :wink:**
 
-- [:superhero: Weitere Swing-Aufgaben](https://codingluke.github.io/bbzbl-modul-404/docs/aufgaben-swing/zusatz)
+- [:woman_superhero: Weitere Swing-Aufgaben](https://codingluke.github.io/bbzbl-modul-404/docs/aufgaben-swing/zusatz)
 
 ---
 
@@ -262,7 +262,7 @@ public class Starter {
 }
 ```
 
-## <!--fit--> :superhero: Das nennt sich auch _[Methoden überladen](https://www.java-tutorial.org/ueberladen_von_methoden.html)_ und geht auch für normale Methoden
+## <!--fit--> :woman_superhero: Das nennt sich auch _[Methoden überladen](https://www.java-tutorial.org/ueberladen_von_methoden.html)_ und geht auch für normale Methoden
 
 ---
 
@@ -280,7 +280,7 @@ public class Starter {
 
 - :bulb: [Details auf der Modulwebseite](https://codingluke.github.io/bbzbl-modul-404/docs/beurteilungen/lb1)
 
-- :superhero: Geht **alle Aufgaben** nochmals durch und **versteht Sie**!
+- :woman_superhero: Geht **alle Aufgaben** nochmals durch und **versteht Sie**!
 - :superhero_woman: Lernt ein UML-Klassendiagram in Java umzuwandeln :wink:
 - :mage: **Arrays** sollte man anwenden können
 - :supervillain: Schaut euch die **DiceGame** Würfel-Logik genau an

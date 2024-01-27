@@ -6,7 +6,7 @@ sidebar_position: 1
 
 :::note Live Coding!
 
-Sicherzustellen, dass alle die Entwicklungsumgebung zum laufen haben und auch
+Sicherzustellen, dass alle die Entwicklungsumgebung zum Laufen haben und auch
 wieder in Schwung gekommen ist, werden wir diese Aufgabe zusammen lösen!
 
 :::
@@ -26,7 +26,7 @@ sein Geld:
 - **abzuheben**
 - den Kontostand **anzuzeigen**
 
-:::info Wichtig!
+:::info wichtig!
 
 Die Operationen zum `einzuzahlen` und `abzuheben` sollen jeweils **durch eine
 Methode realisiert** sein.
@@ -76,7 +76,7 @@ classDiagram
 
 :::info
 
-Das UML von verwendeten built-in Java Klassen, welche Sie also nicht selber
+Das UML von verwendeten Java Standard Klassen, welche Sie also nicht selber
 implementieren müssen, sind ausgebleicht dargestellt. Hier also der `Scanner`.
 Es werden immer nur die Methoden angegeben, welche verwendet werden, auch wenn
 die eigentliche Klasse mehr Methoden besitzt.
@@ -86,7 +86,7 @@ die eigentliche Klasse mehr Methoden besitzt.
 ### Erste Hilfe
 
 <details>
-<summary> Bitte diese Tipps versuchen bevor Ihr zur Musterlösung greift!</summary>
+<summary>Bitte diese Tipps versuchen bevor Ihr zur Musterlösung greift!</summary>
 
 ```java
 import java.util.Scanner;

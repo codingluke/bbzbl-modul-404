@@ -13,10 +13,10 @@ sidebar_position: 8
 ## Aufgabe
 
 - Es soll ein **Würfelspiel** realisiert werden, wobei der **Spieler in eine
-  Fachklasse ausgelagert** wird
-- Es soll das untenstehende UML-Klassendiagramm als Struktur verwendet werden
-- Die Fachklasse `GamePlayer` (Würfelspieler), kann würfeln und verwaltet das
-  Punktetotal
+  Fachklasse ausgelagert** wird.
+- Es soll das untenstehende UML-Klassendiagramm als Struktur verwendet werden.
+- Die Fachklasse `GamePlayer` (Würfelspieler), kann würfeln und verwaltet die
+  total Punkte.
 - Es soll ein GUI in der Klasse `GameGui` mit zwei Spielern programmiert werden
 
 **UML-Klassendiagramm**

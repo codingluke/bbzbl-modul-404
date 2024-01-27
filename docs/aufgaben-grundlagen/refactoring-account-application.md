@@ -13,7 +13,7 @@ sidebar_position: 3
 
 :::note Refactoring
 
-Bezeichnung im Programmieren, dass man den **vorhandenen Code neu Strukturiert,
+Bezeichnung im Programmieren, dass man den **vorhandenen Code neu strukturiert,
 ohne neue Funktionalität hinzuzufügen**. Refactoring dient dazu, dass die
 Applikation/Software auf lange Zeit besser wartbar und erweiterbar ist.
 
@@ -22,11 +22,11 @@ Applikation/Software auf lange Zeit besser wartbar und erweiterbar ist.
 ## Ausgangslage
 
 1. Das Konto-Programm bearbeitet zu viele Aufgaben (Verantwortlichkeiten) in
-   einer Klasse
+   einer Klasse.
 1. Die Arbeit wollen wir **in zwei Klassen aufteilen**
 
 - `AccountApplication` (Beinhaltet die Benutzerinteraktion und `main` Methode)
-- `Account` rsp. `Konto` (Beinhaltet die Fachlogik)
+- `Account` resp. `Konto` (Beinhaltet die Fachlogik)
 
 ## Einführung der Klasse `Account`/`Konto`
 
@@ -51,14 +51,18 @@ public class Account {
 }
 ```
 
-:::info Dazu muss man folgendes beachten: Die Variable `private double balance;`
+:::info
+
+Dazu muss man folgendes beachten: Die Variable `private double balance;`
 ist nicht mehr in einer Methode deklariert, sondern gleich zu Beginn, **vor**
 den einzelnen Methoden (_im Klassen-Body_). Dadurch ist die Variable **überall
-in der Klasse sichtbar**. :::
+in der Klasse sichtbar**.
+
+:::
 
 Dies hat nun auch den Vorteil, dass wir daraus viele Konto-Objekte erstellen
 können, die komplett eigenständig einen Kontostand verwalten können. Somit wird
-ermöglicht, theoretisch mehrere Konti anzulegen.
+ermöglicht, theoretisch mehrere Konten anzulegen.
 
 ```java title="Beispiel: Mehrere Objekte der Klasse 'Account'"
 Account sparkonto = new Account(); // neues `Account` Objekt gespeichert in der Variable `sparkonto`
@@ -84,7 +88,7 @@ System.out.println(girokonto.getBalance()); // => -20;
 
 ## Aufgabe
 
-Bauen Sie Ihr Programm nun so um, dass es aus zwei Klassen besteht (die
+Bauen Sie Ihr Programm jetzt so um, dass es aus zwei Klassen besteht (die
 ursprüngliche Klasse und die Klasse `Account`).
 
 - Kopieren Sie die Klasse `AccountApplication` und benennen Sie die neue
@@ -126,16 +130,16 @@ classDiagram
 
 :::tip
 
-Für jeden **gepunkteter Pfeil der mit "uses" beschrifetet** ist, muss in der
-Klasse, von der der Pfeil abgeht (hier `AccountApplicationV2`) **ein Objekte der
+Für jeden **gepunkteten Pfeil der mit `uses` beschriftet** ist, muss in der
+Klasse, von der der Pfeil abgeht (hier `AccountApplicationV2`) **ein Objekt der
 Klasse auf die gezeigt wird** vorhanden sein (hier `Account` und `Scanner`).
 
 In der Klasse `AccountApplicationV2` muss somit irgendwo `new Account()` und
 `new Scanner(System.in)` stehen! Da die Klasse `AccountApplicationV2` nur die
 `main`-Methode beinhaltet, wird es wohl darin sein.
 
-:superhero: Theoretisch könnte das Objekt auch über einen Parameter der Klasse
-übergeben werden. Das nennt sich _Dependency Injection_.
+:woman_superhero: Theoretisch könnte das Objekt auch über einen Parameter der Klasse
+übergeben werden. Das nennt sich _Dependency-Injection_.
 
 :::
 

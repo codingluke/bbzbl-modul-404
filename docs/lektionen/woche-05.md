@@ -4,7 +4,7 @@ sidebar_position: 5
 
 # Woche 5
 
-## :teacher: Präsentation
+## :man_teacher: Präsentation
 
 [:computer: Open in Browser](pathname:///slides/woche-5) |
 [:floppy_disk: download PDF](pathname:///slides/woche-5.pdf)
@@ -15,7 +15,7 @@ sidebar_position: 5
 
 - [UML](../konzepte/uml.md) kurze Repetition
 
-## :pencil: Aufgaben
+## :pen: Aufgaben
 
 - :checkered_flag: [LB1](../beurteilungen/lb1.md)
 - :alembic: [Projektstart](../beurteilungen/lb2.md)

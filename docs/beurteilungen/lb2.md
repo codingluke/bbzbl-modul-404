@@ -16,7 +16,7 @@
 :::tip Privates Git Repository
 
 - Wenn Ihr euren Code mit **git** versioniert ist das super!
-- Aber bitte verwendet ein **privates Repository** auf Github und co., damit
+- Aber bitte verwendet ein **privates Repository** auf GitHub und Co., damit
   nicht zukünftige Kameraden von Ihnen klauen könnt!
 
 :::
@@ -96,7 +96,7 @@ Das Klassendiagramm gehört in die [Dokumentation].
 |                            | Punkte | Kriterium                                                                                                                                    |
 | -------------------------- | :----: | :------------------------------------------------------------------------------------------------------------------------------------------- |
 |                            |   1    | Die Starterklasse funktioniert                                                                                                               |
-|                            |   3    | Das Programm läuft und lässt das beschriebene Spiel zu                                                                                       |
+|                            |   3    | Das Programm läuft und lässt das beschriebene Spiel zu _(Spielregeln)_                                                                       |
 |                            |   2    | Die Spieler können Ihre Namen selber eingeben                                                                                                |
 |                            |   2    | Der aktuelle Punktestand wird pro Spieler angezeigt                                                                                          |
 |                            |   2    | Der aktuelle Spieler kann eine Runde beenden                                                                                                 |
@@ -113,13 +113,20 @@ Das Klassendiagramm gehört in die [Dokumentation].
 | :sushi:                    |   3    | Die **Fachklassen** beinhalten die **Logik** / verwalten den **Spielstand** (ohne UI-Elemente)                                               |
 | :checkered_flag:           | **36** | **TOTAL**                                                                                                                                    |
 |                            |        | **Bonus**                                                                                                                                    |
-| :superhero:                |  _2_   | _Das Programm übersteigt die oben beschriebenen Minimalanforderungen an das Spiel **wesentlich** und **ist auch vollumfänglich lauffähig**._ |
+| :woman_superhero:                |  _2_   | _Das Programm übersteigt die oben beschriebenen Minimalanforderungen an das Spiel **wesentlich** und **ist auch vollumfänglich lauffähig**._ |
 
 ## Termin
 
-Das a Produkt (inklusive der [Dokumentation]) muss bis am **Freitag, 30.06.2023,
+Das a Produkt (inklusive der [Dokumentation]) muss bis am **Freitag, xx.xx.2024,
 16:15** über den eigenen Unterordner im **[Google Drive Abgabeordner]**
 abgegeben werden.
+
+:::caution Kurzes Verständnisgespräch
+
+Nach der Pause, **um 14:40**, werde ich kurz bei jedem vorbeischauen, den Code
+durchsehen und kurze Verständnisfragen stellen! Diese werden nicht benotet.
+
+:::
 
 ## Strukturidee
 

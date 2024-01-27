@@ -4,7 +4,7 @@ sidebar_position: 4
 
 # Woche 4
 
-## :teacher: Präsentation
+## :man_teacher: Präsentation
 
 [:computer: Open in Browser](pathname:///slides/woche-4) |
 [:floppy_disk: download PDF](pathname:///slides/woche-4.pdf)
@@ -18,7 +18,7 @@ sidebar_position: 4
 - [UML Klassendiagram](../konzepte/uml.md)
 - [Konstruktor](../konzepte/konstruktor.md)
 
-## :pencil: Aufgaben
+## :pen: Aufgaben
 
 <div class="grid"><div>
 
@@ -27,7 +27,7 @@ sidebar_position: 4
 - [Konstruktor](../aufgaben-swing/konstruktor.md)
 - [DiceGame](../aufgaben-swing/dice-game.md) (:performing_arts: **Live-Coding**)
 
-### :superhero: Optional
+### :woman_superhero: Optional
 
 - [Weitere Swing-Aufgaben](../aufgaben-swing/zusatz.md)
 

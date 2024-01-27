@@ -20,6 +20,6 @@ Formatierung jeweils eingehalten haben.
 
 :::tip
 
-:superhero: Je besser die Namen, desto weniger Kommentare sind nötig!
+:woman_superhero: Je besser die Namen, desto weniger Kommentare sind nötig!
 
 :::

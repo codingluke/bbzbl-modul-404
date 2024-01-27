@@ -35,7 +35,7 @@ footer: BBZBL / Lukas Hodel / Objektbasiert programmieren nach Vorgabe
 
 Optional
 
-- [:superhero: Weitere Swing-Aufgaben](https://codingluke.github.io/bbzbl-modul-404/docs/aufgaben-swing/zusatz)
+- [:woman_superhero: Weitere Swing-Aufgaben](https://codingluke.github.io/bbzbl-modul-404/docs/aufgaben-swing/zusatz)
 - :bulb: Vertieftes Wissen zu Interfaces
 
 :::
@@ -223,19 +223,19 @@ public class GUI extends JFrame implements ActionListener {
 
 # <!--fit--> Ab hier ist alles Freiwillig!
 
-## <!--fit--> :superhero: Blättert erst weiter, wenn Ihr alle Aufgaben gelöst habt
+## <!--fit--> :woman_superhero: Blättert erst weiter, wenn Ihr alle Aufgaben gelöst habt
 
 ---
 
-# :superhero: Weitere Swing Aufgaben 
+# :woman_superhero: Weitere Swing Aufgaben 
 
 Programmieren lernt man nur durch Übung! 
 
 Ich kann euch nur wärmstens empfehlen diese Aufgaben zu machen. Die Erste Seite könnt ihr ignorieren. Die Aufgaben werden nicht bewertet. Es zählt der LB1 und die Projektarbeit.
 
-## <!--fit--> :superhero: Natürlich wird die Projektarbeit davon profitieren!
+## <!--fit--> :woman_superhero: Natürlich wird die Projektarbeit davon profitieren!
 
-- [:superhero: Weitere Swing-Aufgaben](https://codingluke.github.io/bbzbl-modul-404/docs/aufgaben-swing/zusatz)
+- [:woman_superhero: Weitere Swing-Aufgaben](https://codingluke.github.io/bbzbl-modul-404/docs/aufgaben-swing/zusatz)
 
 ---
 

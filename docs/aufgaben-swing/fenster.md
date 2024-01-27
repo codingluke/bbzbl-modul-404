@@ -98,9 +98,9 @@ classDiagram
 
 :::info extends
 
-`extends` bedeutet, dass die Klasse von der der solide Pfeil mit
-**Dreieckspize** (UML oben) ausgeht alle Methoden und Instanzvariablen der
-Klasse auf welche der Pfeil zeigt übernimmt/erbt/sich erweitert.
+`extends` bedeutet, dass die Klasse von der, der solide Pfeil mit
+**Dreieckspitze** (UML oben) ausgeht alle Methoden und Instanzvariablen der
+Klasse, auf welche der Pfeil zeigt, übernimmt/erbt/sich erweitert.
 
 - Die Klasse `PureWindow` erbt somit alle Methoden und Instanzvariablen der
   Klasse `JFrame`.
@@ -112,16 +112,16 @@ Klasse auf welche der Pfeil zeigt übernimmt/erbt/sich erweitert.
 
 <div class="grid"><div>
 
-- Erstellt ein neues Java Project (z.B. SwingPureWindow)
-- Kopiert den Code von Oben (`Starter.java`, `PureWindow.java`)
-- Startet das Programm und geniesst den Blick auf ein Fenster ähnlich dem Bild
-- Löscht einzelne Zeilen und analysiert den Effekt
+- Erstellt ein neues Java Project (z.B. SwingPureWindow):
+- Kopiert den Code von Oben (`Starter.java`, `PureWindow.java`).
+- Startet das Programm und geniesst den Blick auf ein Fenster ähnlich dem Bild.
+- Löscht einzelne Zeilen und analysiert den Effekt.
 
 :::tip Anstatt copy/paste den Text selber abtippen!
 
 1. Lernt Ihr so besser
-2. Merkt Ihr, dass der Editor vorschläge macht!
-3. Erhält Ihr ein besseres "Gefühl" wie es ist zu programmieren :superhero:
+2. Merkt Ihr, dass der Editor Vorschläge macht!
+3. Erhält Ihr ein besseres "Gefühl" wie es ist zu programmieren :woman_superhero:
 
 :::
 

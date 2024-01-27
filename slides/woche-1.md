@@ -8,41 +8,17 @@ footer: BBZBL / Lukas Hodel / Objektbasiert programmieren nach Vorgabe
 
 <!-- _class: big center -->
 
-# Woche 1
+# Woche 1 / Modul 404
 
-## Modul 404
+### Objektbasiert programmieren nach Vorgabe
 
 ---
 
+<!-- _class: big center -->
+
 # Agenda
 
-::: columns
-
-- **12:45** | Begrüssung
-- **13:00** |
-  [Moduleinführung](https://codingluke.github.io/bbzbl-modul-404/docs)
-  - [Quartalsplan](https://codingluke.github.io/bbzbl-modul-404/docs/lektionen)
-  - [LB1](https://codingluke.github.io/bbzbl-modul-404/docs/beurteilungen/lb1),
-    [LB2 - Projektarbeit](https://codingluke.github.io/bbzbl-modul-404/docs/beurteilungen/lb2/)
-- **13:10** |
-  [WarmUp](https://codingluke.github.io/bbzbl-modul-404/docs/repetition/lernkarten)
-  / [Card2Brain](https://card2brain.ch/box/20200416_repetition)
-- **13:30** | 5 Min. Pause
-- **13:35** | :teacher:
-  [Erste Aufgabe](https://codingluke.github.io/bbzbl-modul-404/docs/aufgaben-grundlagen/account-application)
-- **14:20** | 20 Min. Pause
-
-::: split
-
-- **14:40** |
-  [Analyse der ersten Aufgabe](https://codingluke.github.io/bbzbl-modul-404/docs/aufgaben-grundlagen/analyse-account-application)
-- **15:00** |
-  [Input Fachklassen](https://codingluke.github.io/bbzbl-modul-404/docs/konzepte/fachklassen)
-- **15:30** | 5 Min. Pause
-- **15:35** |
-  [Refactoring Account](https://codingluke.github.io/bbzbl-modul-404/docs/aufgaben-grundlagen/refactoring-account-application)
-
-:::
+## Siehe Screen
 
 ---
 
@@ -50,7 +26,7 @@ footer: BBZBL / Lukas Hodel / Objektbasiert programmieren nach Vorgabe
 
 - [319](https://www.modulbaukasten.ch/module/c6b67ea8-5e85-eb11-a812-0022486f644f/de-DE?title=Applikationen-entwerfen-und-implementieren)
   Applikationen entwerfen und implementieren
-- ## [404](https://www.modulbaukasten.ch/module/ba75c9da-716c-eb11-b0b1-000d3a830b2b/de-DE?title=Objektbasiert-programmieren-nach-Vorgabe) Objektbasiert programmieren nach Vorgabe
+- **[404](https://www.modulbaukasten.ch/module/ba75c9da-716c-eb11-b0b1-000d3a830b2b/de-DE?title=Objektbasiert-programmieren-nach-Vorgabe) Objektbasiert programmieren nach Vorgabe**
 
 ## Später
 
@@ -71,22 +47,19 @@ footer: BBZBL / Lukas Hodel / Objektbasiert programmieren nach Vorgabe
 
 ---
 
-# Modul Lernziele :dart:
+# :dart: Modul Lernziele
 
 1. Aufgrund einer Vorgabe den Ablauf darstellen. **_(UML Klassendiagram)_**
 
 2. Eine Benutzerschnittstelle entwerfen und implementieren. **_(Java Swing)_**
 
-3. Erforderliche Daten bestimmen und Datentypen festlegen. **_(Java
-   Variablen)_**
+3. Erforderliche Daten bestimmen und Datentypen festlegen. **_(Java Variablen)_**
 
-4. Programmvorgabe unter Nutzung vorhandener Komponenten mit deren Eigenschaften
-   und Methoden, sowie Operatoren und Kontrollstrukturen implementieren.
-   **_(Java Basics)_**
+4. Programmvorgabe unter Nutzung vorhandener Komponenten mit deren Eigenschaften und Methoden, sowie Operatoren und Kontrollstrukturen implementieren. **_(Java Basics)_**
 
 ---
 
-# Modul Lernziele :dart:
+# :dart: Modul Lernziele 2
 
 5. Beim Programmieren vorgegebene Standards und Richtlinien einhalten, das
    Programm inline dokumentieren und dabei auf Wartbarkeit und
@@ -103,7 +76,7 @@ footer: BBZBL / Lukas Hodel / Objektbasiert programmieren nach Vorgabe
 
 ## LB1 50%
 
-### :pencil: Prüfung
+### :pen: Prüfung
 
 - Woche 5 / 90 Minuten
 - Schriftlich + Praktisch am PC
@@ -114,7 +87,7 @@ footer: BBZBL / Lukas Hodel / Objektbasiert programmieren nach Vorgabe
 
 ## LB2 50%
 
-### :pencil: Projektarbeit
+### :pen: Projektarbeit
 
 - Woche 5 bis 9
 - Erstellen einer Applikation inkl. GUI
@@ -127,12 +100,19 @@ footer: BBZBL / Lukas Hodel / Objektbasiert programmieren nach Vorgabe
 
 <!-- _class: big -->
 
-# Regeln :cop:
+# :cop: Regeln
 
 - Pünktlichkeit
 - Aufmerksamkeit während des Unterrichts
 - Selbständiges Arbeiten
 - Internet als Arbeitsmittel
+
+---
+
+<!-- _class: big center -->
+# :cop: Regeln / Zocken :joystick:
+
+### Wie wollen wir vorgehen, wenn ich jemand beim zocken erwische?
 
 ---
 
@@ -163,15 +143,15 @@ footer: BBZBL / Lukas Hodel / Objektbasiert programmieren nach Vorgabe
 
 ::: split
 
-**:pencil: Aufgaben Grundlagen** Alle Grunlegenden Aufgaben
+**:pen: Aufgaben Grundlagen** Alle Grunlegenden Aufgaben
 
-**:pencil: Aufgaben Swing** _(GUI)_ Alle Aufgaben bezüglich `Swing`
+**:pen: Aufgaben Swing** _(GUI)_ Alle Aufgaben bezüglich `Swing`
 
 **:bulb: Konzepte** Allgemeine Konzepte Isoliert erklärt
 
 :::
 
-## :link: https://codingluke.github.io/bbzbl-modul-404
+## :link: [https://codingluke.github.io/bbzbl-modul-404](https://codingluke.github.io/bbzbl-modul-404)
 
 ---
 
@@ -220,14 +200,12 @@ Ihr könnt zu Hause im **Selbststudium** alle Aufgaben lösen.
 
 ::: columns
 
-- :link:
-  [Account Application](https://codingluke.github.io/bbzbl-modul-404/docs/aufgaben-grundlagen/account-application)
-  öffnen
+- :link: [Account Application](https://codingluke.github.io/bbzbl-modul-404/docs/aufgaben-grundlagen/account-application) öffnen
 
 - :keyboard: Es handelt sich um eine Teminal Applikation
 - :keyboard: Lesen und lösen Sie die Aufgabe
 - :black_joker: Unterhalb existierte eine Musterlösung <sup>\*</sup>
-- :teacher: Die machen wir zusammen!
+- :man_teacher: Die machen wir zusammen!
 
 ::: split
 
@@ -248,8 +226,8 @@ String command = sc.nextString();
 
 ::: footnotes
 
-\* Musterlösung nur verwenden, wenn Sie nicht mehr weiter kommen! \*\* natürlich
-nicht genau so :sweat_smile:
+\* Musterlösung nur verwenden, wenn Sie nicht mehr weiter kommen!
+\*\* natürlich nicht genau so :sweat_smile:
 
 :::
 
@@ -257,11 +235,9 @@ nicht genau so :sweat_smile:
 
 <!-- _class: emoji-list -->
 
-# :pencil: Analyse Account Applikation (20 Minuten) [:link:](https://drive.google.com/file/d/104nqkozBNkwxKqdJlWUBEvMcH6sgoAG9/view)
+# :pen: Analyse Account Applikation (20 Minuten) [:link:](https://drive.google.com/file/d/104nqkozBNkwxKqdJlWUBEvMcH6sgoAG9/view)
 
-- :link:
-  [Analyse Account Applikation](https://codingluke.github.io/bbzbl-modul-404/docs/aufgaben-grundlagen/analyse-account-application)
-  öffnen
+- :link: [Analyse Account Applikation](https://codingluke.github.io/bbzbl-modul-404/docs/aufgaben-grundlagen/analyse-account-application) öffnen
 
 - :compass: Gehen Sie nach der Anleitung vor
 - :brain: Analysieren Sie die dargestellte Klasse **zu zweit**
@@ -287,6 +263,4 @@ nicht genau so :sweat_smile:
 
 # :brain: Gemeinsame Analyse AccountApplication
 
-::: columns
-
-![fit](./images/Analyse-AccountApplication.png)
+![w:600](./images/Analyse-AccountApplication.png)

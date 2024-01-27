@@ -622,7 +622,7 @@ if (wert == 1) {
 
 :::tip Arrays sind toll!
 
-:superhero: Mit einem _Array_ kann teilweise sogar eine Kontrollstruktur
+:woman_superhero: Mit einem _Array_ kann teilweise sogar eine Kontrollstruktur
 vermieden werden.
 
 ```java

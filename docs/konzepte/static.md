@@ -10,16 +10,16 @@ Wenn wir also eine Methode `public static void main(String[] args)` geschrieben
 haben, dann existiert diese Methode beim Programmstart im Speicher und ist
 ausführbar. Auf diese Weise können wir unsere Programme starten.
 
-In der Regel erstellt man eine **Starterklasse**, welche die Methode
+In der Regel erstellt man eine **Startklasse**, welche die Methode
 `public static void main(String[] args)` enthält. In dieser Methode erstellt man
 dann ein Objekt des eigentlichen Programms und ruft die Methode auf, die den
 Programmfluss steuert.
 
-## Was kann `static`? :rock: <- in Stein gemeisselt
+## Was kann `static`?
 
 - Kann ohne `new` aufgerufen werden.
 - Kann wiederum andere `static` Methoden aufrufen
-- Kann `static` Variablen verwenden (diese können nicht geändert werden!)
+- Kann `static` Variablen verwenden
 - Kann mit `new` ein `Objekt`/`Instanz` einer beliebigen Klasse erstellen.
 
 ## Für was sind `static` Methoden gut?

@@ -33,7 +33,8 @@ anzuzeigen.
 
 </div></div>
 
-<details><summary>Musterlösung:</summary>
+<details>
+<summary>Musterlösung:</summary>
 
 ```java title="Profile.java"
 public class Profile {
@@ -178,7 +179,8 @@ Punkte:
 - 3 Punkte, wenn auch Fachklasse selbst programmiert,
 -->
 
-<details><summary>Musterlösung:</summary>
+<details>
+<summary>Musterlösung:</summary>
 
 ```java title="Dice.java"
 public class Dice {
@@ -256,7 +258,8 @@ public class DiceGUIStarter {
 
 </div></div>
 
-<details><summary>Musterlösung:</summary>
+<details>
+<summary>Musterlösung:</summary>
 
 ```java title="MultiDice.java"
 public class MultiDice {

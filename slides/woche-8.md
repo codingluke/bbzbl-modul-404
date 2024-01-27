@@ -64,7 +64,7 @@ footer: BBZBL / Lukas Hodel / Objektbasiert programmieren nach Vorgabe
 
 ---
 
-# :pencil: Dokumentation [:book: **Google Docs Dokument**](https://docs.google.com/document/d/1mD7wykSI7ge63gUXXk2SVPEKErBKok09cdiTBuET7VQ/edit)
+# :pen: Dokumentation [:book: **Google Docs Dokument**](https://docs.google.com/document/d/1mD7wykSI7ge63gUXXk2SVPEKErBKok09cdiTBuET7VQ/edit)
 
 **:triangular_ruler: Planung**
 
