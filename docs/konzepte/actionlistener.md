@@ -1,6 +1,6 @@
 # ActionListener
 
-:::danger Allerwesentlichster Part!
+:::danger allerwesentlichster Part!
 
 - Dies sollen alle **vor dem LB1 verstanden und verinnerlicht haben**!
 - Ohne dieses Wissen ist das Projekt und auch die Prüfung nicht zu bestehen!
@@ -10,12 +10,11 @@
 ## Das Interface `ActionListener`
 
 - `ActionListener` ist ein Interface, welches von Java mitgeliefert wird.
-- Es **definiert** die Methode `public void actionPerformed(ActionEvent e);`
-- Alle Klassen die den ActionListener implementieren
+- Es **definiert** die Methode `public void actionPerformed(ActionEvent e);`.
+- Alle Klassen, die den ActionListener implementieren
   (`implements ActionListener`) **müssen** auch die Methode
-  `public void actionPerformed(ActionEvent e);` implementieren
-- Die JavaDoc findet man
-  [hier](https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/ActionListener.html)
+  `public void actionPerformed(ActionEvent e);` implementieren:
+- Die JavaDoc findet man [hier](https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/ActionListener.html)
 
 ```java title="java.awt.event.ActionListener"
 package java.awt.event;
@@ -24,12 +23,11 @@ import java.util.EventListener;
 
 public interface ActionListener extends EventListener {
 
-    public void actionPerformed(ActionEvent e);
-
+  public void actionPerformed(ActionEvent e);
 }
 ```
 
-## ActionListener Beispiel: TimeButton Klasse
+## ActionListener Beispiel: `TimeButton` Klasse
 
 Das nachfolgende Programm zeigt ein Swing-Programm, das in einfacher Art
 interaktiv ist. Bei jedem Klick auf den Button wird in einem `JLabel` das
@@ -42,13 +40,14 @@ import java.util.Date;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
+
 // highlight-start
 
 // `implements ActionListener` wird neu hinzugefügt.
 // Damit wird die Methode `actionPerformed(ActionEvent e)` der Klasse hinzugefügt.
 public class TimeButton extends JFrame implements ActionListener {
 
-// highlight-end
+  // highlight-end
   private JButton commandButton = new JButton("show time");
   private JLabel outputLabel = new JLabel();
 
@@ -71,6 +70,7 @@ public class TimeButton extends JFrame implements ActionListener {
     setTitle("JFrame TimeButton");
     setVisible(true);
   }
+
   // highlight-start
 
   // Diese Methode wird immer ausgeführt, wenn der `commandButton` gedrückt wird
@@ -99,13 +99,13 @@ public class TimeButton extends JFrame implements ActionListener {
   aufgerufen. Mit diesem Aufruf kann sich eine Klasse bei einem `JButton`
   **registrieren** und wird anschliessend immer benachrichtigt, wenn die
   Schaltfläche betätigt wurde. Mit dem Schlüsselwort `this` wird ausgesagt, dass
-  sich die Klasse selbst als “Listener” (also Zuhörer) hinzufügt.
+  sich die Klasse selbst als `Listener` (also Zuhörer) hinzufügt.
 - Wird die Schaltfläche betätigt, so benachrichtigt der `JButton` die Klasse,
   indem er die Methode `actionPerformed(ActionEvent e)` aufruft. Der Parameter
   beim Aufruf ist vom Typ `ActionEvent`. Mit diesem Event kann über die Methode
   `getSource()` herausgefunden werden, welche Komponente den Aufruf ausgelöst
   hat. So kann mittels verschiedenen if-Abfragen entschieden werden, welcher
-  `JButton` betätigt wurde. (Unten folgt ein Beispiel dazu.)
+  `JButton` betätigt wurde (Unten folgt ein Beispiel dazu.).
 - Zudem zeigt das Beispiel wie Werte in Komponenten mit der Methode
   `setText(String message)` gesetzt werden.
 
@@ -113,7 +113,7 @@ public class TimeButton extends JFrame implements ActionListener {
 
 Falls ein Fenster mehrere Buttons hat, muss sich die Fensterklasse bei jedem
 Button registrieren, damit sie bei einem Klick benachrichtigt wird. Jedes Mal,
-wenn ein Button gedrückt wird, erfolgt ein Aufruf der Methode actionPerformed.
+wenn ein Button gedrückt wird, erfolgt ein Aufruf der Methode `actionPerformed`.
 In dieser Methode muss nun herausgefunden werden, wer der Urheber des Aufrufs
 ist.
 
@@ -149,6 +149,5 @@ public class TimeButton extends JFrame implements ActionListener {
 
     // highlight-end
   }
-
 }
 ```

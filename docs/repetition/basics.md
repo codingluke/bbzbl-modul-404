@@ -1,15 +1,15 @@
 # Basics
 
-Hier werden nochmals in kürze alle Konzepte vom Modul 319 aufgeführt
+Hier werden nochmals in Kürze alle Konzepte vom Modul 319 aufgeführt
 
 ## Variablen
 
 Variablen sind Platzhalter um Werte zu Speichern.
 
-- Jede Variable reserviert einen Speicherplatz im Computerspeicher
-- Durch den eindeutigen Namen kann auf diesen Speicherplatz zugegriffen werden
+- Jede Variable reserviert einen Speicherplatz im Computerspeicher.
+- Durch den eindeutigen Namen kann auf diesen Speicherplatz zugegriffen werden.
 
-Um eine Variable zu definieren muss ein **Type**, einen **Namen** und einen
+Um eine Variable zu definieren, muss ein **Typ**, einen **Namen** und einen
 **Wert** angegeben werden.
 
 ```java title="Variable syntax"
@@ -24,14 +24,14 @@ Vorerst nutzen wir die _primitiven_ Datentypen. Diese sind erkennbar, indem der
 
 | Datentyp | Grösse  | Beschreibung                                                                              | Spezifika |
 | -------- | ------- | ----------------------------------------------------------------------------------------- | --------- |
-| boolean  | 1 bit   | Speichert `true` _(wahr)_ oder `false` _(falsch)_ Werte                                   |
-| byte     | 1 byte  | Speichert ganze Zahlen von `-128` bis `127`                                               |
-| short    | 2 bytes | Speichert ganze Zahlen von `-32'768` bis `32'767`                                         |
-| char     | 2 bytes | Speichert ein einzelnes Zeichen oder [ASCII]                                              | `''`      |
-| int      | 4 bytes | Speichert ganze Zahlen `-2'147'483'648` bis `2'147'483'647`                               |
-| float    | 4 bytes | Speichert Gleitkommazahlen von `6` bis `7` Dezimalstellen                                 | `f`       |
-| long     | 8 bytes | Speichert ganze Zahlen von `-9'223'372'036'854'775'808l` bis `9'223'372'036'854'775'807l` | `l`       |
-| double   | 8 bytes | Speichert Gleitkommazahlen von `15` Dezimalstellen                                        | `d`       |
+| `boolean ` | 1 Bit   | speichert `true` _(wahr)_ oder `false` _(falsch)_ Werte                                   |
+| `byte`     | 1 Byte  | speichert ganze Zahlen von `-128` bis `127`                                               |
+| `short`    | 2 Bytes | speichert ganze Zahlen von `-32'768` bis `32'767`                                         |
+| `char`     | 2 Bytes | speichert ein einzelnes Zeichen oder [ASCII]                                              | `''`      |
+| `int`      | 4 Bytes | speichert ganze Zahlen `-2'147'483'648` bis `2'147'483'647`                               |
+| `float`    | 4 Bytes | speichert Gleitkommazahlen von `6` bis `7` Dezimalstellen                                 | `f`       |
+| `long`     | 8 Bytes | speichert ganze Zahlen von `-9'223'372'036'854'775'808l` bis `9'223'372'036'854'775'807l` | `l`       |
+| `double`   | 8 Bytes | speichert Gleitkommazahlen von `15` Dezimalstellen                                        | `d`       |
 
 [ASCII]:
   https://de.wikipedia.org/wiki/American_Standard_Code_for_Information_Interchange
@@ -49,8 +49,8 @@ der Übersichtlichkeit.
 ```
 
 Die Initialisierung der Werte verwendet spezifische Zeichen für die
-verscheidenen Datentypen. So endet ein `float`-Wert immer mit `f` oder `long`
-mit `l`. Die Spezifikas pro Datentyp finden Sie in der Tabelle oberhalb unter
+verschiedenen Datentypen. So endet ein `float`-Wert immer mit `f` oder `long`
+mit `l`. Die Spezifika pro Datentyp finden Sie in der Tabelle oberhalb unter
 "Spezifika".
 
 ```java title="Deklarierung & Initialisierung von Variablen"
@@ -72,7 +72,7 @@ Anführungszeichen"** gestellt werden.
 
 | Datentyp | Grösse             | Beschreibung              | Spezifika |
 | -------- | ------------------ | ------------------------- | --------- |
-| String   | 2 byte pro Zeichen | Speichert beliebigen Text | `""`      |
+| String   | 2 byte pro Zeichen | speichert beliebigen Text | `""`      |
 
 ### Strings initialisieren
 
@@ -99,13 +99,13 @@ System.out.println("Your name is" + name);
 //                  Your name isMr Robot
 ```
 
-:::note Höhere Datentypen sind Grossgeschrieben
+:::note höhere Datentypen sind Grossgeschrieben
 
-- `String` ist Gross geschrieben, da es sich um einen _höheren_ Datentyp
+- `String` ist grossgeschrieben, da es sich um einen _höheren_ Datentyp
   handelt.
 - Ein `String` baut auf dem _primitiven_ Datentyp `char` auf _(:bulb: daher
   höher)_
-  - Evt. Hilft die Analogie von "Atome (primitiv)" zu "Moleküle (höher)".
+  - Evtl. Hilft die Analogie von "Atome (primitiv)" zu "Moleküle (höher)".
 - _Höhere_ Datentypen sind auch Objekte.
   - Was Objekte genau sind, erfahrt ihr im Folgemodul 404 und ist noch nicht
     relevant!
@@ -123,9 +123,9 @@ System.out.println("Ihre Geschwindigkeit lautet " + 21);
 //                  Ihre Geschwindigkeit lautet 21
 ```
 
-:::tip Eine Zahl in einen String umwandeln
+:::tip eine Zahl in einen String umwandeln
 
-Werden Zahlen mit einem **leeren String ""** konkatiniert, wird die Zahl alleine
+Werden Zahlen mit einem **leeren String ""** konkateniert, wird die Zahl alleine
 in einen String umgewandelt. Dies ist ein gängiger Java "Hack".
 
 ```java title="Zahl in String umwandeln"
@@ -140,7 +140,7 @@ String zahl = "" + 21;
 ### Arithmetische `+`, `-`, `/`, `*`, `%`
 
 Arithmetische Operatoren kennt Ihr bereits von der Mathematik. Damit lassen sich
-die gängigen Mathematischen Operationen durchführen. Neu ist einzig der Rest
+die gängigen mathematischen Operationen durchführen. Neu ist einzig der Rest
 Operator `%`. Dieser dividiert eine Zahl und gibt den Rest zurück.
 
 ```java title="+ - / * % Arithmetische Operatoren"
@@ -157,8 +157,8 @@ result = number % anotherNumber; // Rest der Division
 
 :::tip Gerade/Ungerade berechnen mit `%`
 
-Der Rest-Operator `%` gibt bei einer division immer den Rest zurück. Wenn man
-nun eine Division durch 2 durchführt lässt sich herausfinden ob eine Zahl gerade
+Der Rest-Operator `%` gibt bei einer Division immer den Rest zurück. Wenn man
+nun eine Division durch 2 durchführt lässt sich herausfinden, ob eine Zahl gerade
 oder ungerade ist.
 
 ```java
@@ -175,7 +175,7 @@ public boolean even(int number) {
 ### Verkürzte arithmetische Operation mit sich selbst `+=`, `-=`, `*=`, `/=`
 
 Oft möchte man den Wert einer Variablen direkt verändern. Das Resultat also
-nicht in eine neue Variable, sonder in sich selber speichern. Gegeben ist z.B.
+nicht in eine neue Variable, sondern in sich selber speichern. Gegeben ist z.B.
 die Variable `number` vom Typ `int` mit dem Initialwert `3`.
 
 ```java
@@ -188,9 +188,9 @@ Möchte man dieser Variable `4` hinzuaddieren geht das folgendermassen:
 number = number + 4; // Addition und Zuweisung zu sich selbst
 ```
 
-Da dies sehr oft vorkommt ist in allen gängigen Programmiersprachen dafür ein
-kombinierten Operator vorgesehen. Es wird dem Zuweisungsoperator den
-arithmetische Operator **vorangestellt**.
+Da dies sehr oft vorkommt, ist in allen gängigen Programmiersprachen dafür
+ein kombinierter Operator vorgesehen. Es wird dem Zuweisungsoperator, den
+arithmetischen Operator **vorangestellt**.
 
 ```java
 number += 4; // Verkürzte Addition und Zuweisung zu sich selbst
@@ -212,7 +212,7 @@ Noch häufiger als die verkürzte arithmetische Operation mit sich selbst wird i
 Programmieren schrittweise hoch und runtergezählt **was auch Iteration genannt
 wird**.
 
-Möchte man also von 0 - 3 hochzählen geht dies so:
+Möchte man also von 0 bis 3 hochzählen geht dies so:
 
 ```java
 int number = 0;
@@ -222,7 +222,7 @@ number += 1;
 ```
 
 Der Unäre Operator `++` zählt der links vorangestellten Variable eines
-nummerischen Typ eine 1 hinzu. Der obere Code ist somit identisch zu diesem:
+nummerischen Typs eine 1 hinzu. Der obere Code ist somit identisch zu diesem:
 
 ```java
 int number = 0;
@@ -231,7 +231,7 @@ number++;
 number++;
 ```
 
-:::info Unär => einstellig
+:::info Unär → einstellig
 
 Unär bedeutet einstellig, es braucht daher **nur der linke** und nicht auch
 einen rechten Teil beim Operator.
@@ -253,8 +253,8 @@ for (int i = 0; i < text.length; i++) {
 ```
 
 - Es wird Schrittweise jede Stelle vom Array `char[] text` in einem `for`-Loop
-  ausgegeben
-- Die Variable `i`, Iterator, wird durch `i++` für jeden Schritt +1 hochgezählt
+  ausgegeben.
+- Die Variable `i`, Iterator, wird durch `i++`, für jeden Schritt +1 hochgezählt
 - `i++` könnte auch mit `i += 1` oder `i = i + 1` ersetzt werden.
 - `i++` ist jedoch viel kürzer.
 
@@ -263,14 +263,14 @@ for (int i = 0; i < text.length; i++) {
 :::note Funfact
 
 C++ erweitert die Programmiersprache C. Um diese Verwandtschaft ein bisschen
-NERDisch Auszudrücken wurde das Wortspiel C++ gewählt. C++ ist eine weitere
+"nerdisch" Auszudrücken wurde das Wortspiel C++ gewählt. C++ ist eine weitere
 Iteration von C.
 
 :::
 
 ### Vergleichsoperatoren `==`, `!=`, `!`
 
-Vergleichsoperatoren ergeben immer einen **boolean (true/false)**. Sie werden in
+Vergleichsoperatoren ergeben immer einen **boolean (`true`/`false`)**. Sie werden in
 Kontrollstrukturen als Bedingungen verwendet.
 
 <div className="grid three"><div>
@@ -310,8 +310,8 @@ true  != true; // false
 Strings und andere höhere Datentypen, können **nicht durch Vergleichsoperatoren
 verglichen werden**.
 
-- Höhere Datentypen sind Datentypen die durch **Klassen** definiert werden
-- Diese sind **immer gross geschrieben**
+- Höhere Datentypen sind Datentypen die durch **Klassen** definiert werden.
+- Diese sind **immer grossgeschrieben**.
 - Höhere Datentypen besitzen die **Methode `equals`** (was auf Deutsch "gleicht"
   heisst)
 
@@ -329,21 +329,21 @@ text.equals(text2) // true!  Der Inhalt von beiden Objekte ist jedoch gleich.
 
 1. Durch **`String text = new String("Hallo Welt");`** wird ein **Objekt**
    erzeugt. Dieses besitzt einen **eigenen Speicherbereich** in der Variable
-   `text`
+   `text`.
 2. Durch **`String text2 = new String("Hallo Welt");`** wird ebenfalls ein
    **neues Objekt** erzeugt. Dieses besitzt wiederum einen **eigenen
-   Speicherbereich** in der Variable `text2`
-3. Werden nun die zwei Objekte durch `==` verglichen, wird nicht deren Inhalt,
+   Speicherbereich** in der Variable `text2`:
+3. Werden jetzt die zwei Objekte durch `==` verglichen, wird nicht deren Inhalt,
    sondern deren **Speicherort verglichen**!
-4. **Mit `equals` wird nun aber der Inhalt verglichen.** Zwei Pakete mit dem
+4. **Mit `equals` wird jedoch aber der Inhalt verglichen.** Zwei Pakete mit dem
    gleichen Inhalt sind zwar eigenständig, aber sie sind sich gleich.
 
 **Verständlich:**
 
 1. Stellen wir uns **ein Paket**, Paket1, vor, in welches die Druckletter
-   H,a,l,l,o, ,W,e,l und t gelegt werden
-2. Stellen wir uns **ein zweites Paket**, Paket2, vor, in welches ebenfalls die
-   Druckletter H,a,l,l,o, ,W,e,l und t gelegt werden
+   `H`,`a`,`l`,`l`,`o`,` `,`W`,`e`,`l` und `t` gelegt werden
+2. Stellen wir uns **ein zweites Paket**, Paket2, vor, in welches **ebenfalls** die
+   Druckletter `H`,`a`,`l`,`l`,`o`,` `,`W`,`e`,`l` und `t` gelegt werden
 3. Zwei Pakete mit gleichem Inhalt sind auch in der uns bekannten Welt immer
    noch zwei unterschiedliche Pakete, oder?
    - **Mit `==` werden die Pakete** und nicht deren Inhalt "Hallo Welt"
@@ -361,8 +361,8 @@ ein Paket verpackt.
 - Das Zeichen `c` ist das Zeichen `c`. Punkt.
 - Aber der Satz "Hallo Welt" könnte man
   - alphabetisch sortieren
-  - gross schreiben
-  - klein schreiben
+  - grossschreiben
+  - kleinschreiben
   - ...
 
 :::info String ist eine Klasse und somit ein Objekt
@@ -381,7 +381,7 @@ verliehen**. So kann das `new String()` weggelassen werden.
 String text = "String ist eine Klasse und kann somit auch mit new initialisiert werden";
 ```
 
-Beim kompilieren wird das `new String()` automatisch hinzugefügt!
+Beim Kompilieren wird das `new String()` automatisch hinzugefügt!
 
 :::
 
@@ -401,7 +401,7 @@ text == text; // true da gleiches Objekt und Speicherort!
 
 :::
 
-:::note Nicht alle Programmiersprachen sind gleich
+:::note nicht alle Programmiersprachen sind gleich
 
 In [Ruby](https://www.ruby-lang.org) ist z.B. alles ein Objekt. Auch Zahlen. Da
 gehen lustige Dinge wie:
@@ -416,7 +416,7 @@ gehen lustige Dinge wie:
 
 ## Kontrollstrukturen
 
-### if-Kontrollstrucktur
+### `if`-Kontrollstruktur
 
 <div class="grid"><div>
 
@@ -460,7 +460,7 @@ flowchart TD
 
 </div></div>
 
-### if-Beispiel
+### `if`-Beispiel
 
 <div class="grid"><div>
 
@@ -479,8 +479,8 @@ if (time < 10) {
 // Outputs "Good evening." (else).
 ```
 
-- Es wird der Code-Block von `else` ausgeführt, da die Variabe `time` sowohl
-  grösser als 10 wie auch wie auch grösser als 18 ist.
+- Es wird der Code-Block von `else` ausgeführt, da die Variable `time` sowohl
+  grösser als 10, als auch grösser als 18 ist.
 
 </div><div>
 
@@ -496,7 +496,7 @@ flowchart TD
 
 </div></div>
 
-### switch
+### `switch`
 
 <div class="grid"><div>
 
@@ -521,7 +521,7 @@ switch(wert) {
 :::info Wertevergleich immer mit `==`, `equals`
 
 Der `Wert` wird bei einer `switch-case`-Kontrollstruktur pro `case` mit dem
-VergleichsWert verglichen. Dabei gilt immer `==` rsp. für höhere Datentypen
+Vergleichswert verglichen. Dabei gilt immer `==` resp. für höhere Datentypen
 `equals`
 
 :::
@@ -530,7 +530,7 @@ VergleichsWert verglichen. Dabei gilt immer `==` rsp. für höhere Datentypen
 
 Wird eine Anweisung eines `case` nicht mit `brake` beendet, wird ebenfalls die
 Anweisung des nächsten `case` ausgeführt. Solange bis ein `break` erscheint.
-Dies gilt auch für die Standard Anweisung (`default`)!
+Dies gilt auch für die Standardanweisung (`default`)!
 
 :::
 
@@ -600,13 +600,13 @@ switch (day) {
 
 :::info `break` wird eigentlich immer verwendet
 
-Es gibt fast keine realen Szenarien, in denen es Sinn macht mehrere cases
-auszuführen. Deswegen sind `switch-case` statements nicht all zu oft
+Es gibt fast keine realen Szenarien, in denen es Sinn macht mehrere `case` Fälle
+auszuführen. Deswegen sind `switch-case` Statements nicht allzu oft
 anzutreffen.
 
 Eine `switch-case`-Kontrollstruktur die für jede Anweisung ein `break`
 verwendet, kann immer mit einer `if-else`-Kontrollstruktur mit `==` Bedingungen
-ersetzt werden. Damit lassen sich die breaks sparen.
+ersetzt werden. Damit lassen sich die `break` Statements sparen.
 
 ```java title="switch-case als if-else"
 if (wert == 1) {

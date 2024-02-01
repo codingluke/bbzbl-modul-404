@@ -32,5 +32,6 @@ sidebar_position: 2
 
 - [Fenster (JFrame)](../aufgaben-swing/fenster.md)
 - [JFrame Komponenten](../aufgaben-swing/komponenten.md)
+- [:superhero: Optional Repetition Arrays](https://codingluke.github.io/bbzbl-modul-404/docs/repetition/arrays) ([PDF](https://drive.google.com/file/d/1Bt4NgySXrhMeorOTuSBs_6thNwXPRbNN/view))
 
 </div></div>

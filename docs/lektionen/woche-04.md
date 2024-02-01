@@ -15,7 +15,7 @@ sidebar_position: 4
 
 - Kontoverwaltung in Swing (Erläutern)
 - [Formatierung](../konzepte/formatierung.md)
-- [UML Klassendiagram](../konzepte/uml.md)
+- [UML Klassendiagramm](../konzepte/uml.md)
 - [Konstruktor](../konzepte/konstruktor.md)
 
 ## :pen: Aufgaben

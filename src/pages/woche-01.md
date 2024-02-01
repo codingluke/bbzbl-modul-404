@@ -48,7 +48,7 @@ hide_table_of_contents: true
 </Event>
 <Event time="15:35">
 
-## 🏭 Refactoring Account Applicaiton
+## 🏭 Refactoring Account Applikation
 
 </Event>
 <Event time="16:15">

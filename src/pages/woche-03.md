@@ -36,7 +36,6 @@ hide_table_of_contents: true
 
 - :sparkles: Vom Quellcode zum Programm
 
-
 </Event>
 <Event time="15:50">
 

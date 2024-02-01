@@ -7,9 +7,7 @@ Eine **Fachklasse** ist eine Klasse, die nur "im Hintergrund" arbeitet und
 
 Gemäss aktuellem Wissensstand folgen Klassen folgendem **Schema**:
 
-import Tabs from '@theme/Tabs'; import TabItem from '@theme/TabItem';
-
-<Tabs >
+<Tabs>
 <TabItem className="shadow--tl" value="apple" label="Klassen-Deklaration" default>
 
 ```java
@@ -54,9 +52,9 @@ public class ClassName { // Klassendeklaration Start
 } // Klassendeklaration Ende
 ```
 
-- Der Klassenbody beinhaltet die **Deklaration der `Instanz-Variablen` und
-  `Instanz-Methoden`**
-- Innerhalb des Body darf **kein ausführenden Code** stehen!
+- Der Klassenkörper beinhaltet die **Deklaration der `Instanz-Variablen` und
+  `Instanz-Methoden`**.
+- Innerhalb des Body darf **kein ausführender Code** stehen!
   - Dieser befindet sich **immer** innerhalb vom `Methoden-Body`
 
 </TabItem>
@@ -108,9 +106,9 @@ public class ClassName { // Klassendeklaration Start
 } // Klassendeklaration Ende
 ```
 
-- sind Methoden innerhalb einer Klasse, welche **nicht `static`** deklariert
-  sind
-- können auf alle `Instanz-Variablen` zugreifen
+- Sind Methoden innerhalb einer Klasse, welche **nicht `static`** deklariert,
+  ist.
+- Können auf alle `Instanz-Variablen` zugreifen.
 - In ihnen wird die **Fachlogik** ausprogrammiert
   - Häufig werden `Instanz-Variablen` mutiert, verarbeitet und oder
     zurückgegeben
@@ -138,25 +136,25 @@ public class ClassName { // Klassendeklaration Start
 
 - Im `Methoden-Body` befindet sich der **eigentliche Code für die Fachlogik**
 - Werden `Variablen` innerhalb vom Methoden-Body deklariert, sind diese
-  **ausschliesslich innerhalb diesem**, ab deren deklaration
+  **ausschliesslich innerhalb diesem**, ab deren Deklaration
   verwendbar/sichtbar.
 
 </TabItem>
 </Tabs>
 
-:::tip Keine `main` Methode in einer Fachklasse
+:::tip keine `main` Methode in einer Fachklasse
 
 - Es gibt **keine** Methode `public static void main(String[] args)`.
-- Diese sollte **nur** in der `Starter` Klasse existieren
+- Diese sollte **nur** in der `Starter` Klasse existieren.
 - Es ist theoretisch möglich mehrere `main` Methoden zu haben, dies ist jedoch
   **schlechter Stil**
 
 :::
 
-:::danger Klickt durch die Tabs!
+:::danger klickt durch die Tabs!
 
-Bitte clicked alle Tabs oberhalb einmal an und **versucht zu verstehen**, wie
-eine Klasse genau aufgebaut ist!
+Bitte alle Tabs einmal durchgeben und **versucht zu verstehen**, wie eine Klasse
+genau aufgebaut ist!
 
 :::
 
@@ -181,12 +179,12 @@ Objekte lassen sich im Code wie folgt erstellen:
    otherObject.setMyInstanceVariable(variablenName.getMyInstanceVariable());
 ```
 
-:::tip Je besser die Namen desto leserlicher wird der Code!
+:::tip je besser die Namen, desto leserlicher wird der Code!
 
 `ClassName` ist in dem oberen Beispiel generisch gewählt da es sich um ein
-generelles Beispiel handelt. Anstatt `ClassName` sollte später ein
-**spezifischer Namen** gewählt werden, wie z.B. `Account`. Der Name der Variable
-kann beliebig sein. Das gleiche gilt für `Variablen` und `Methoden`
+generelles Beispiel handelt. Anstatt `ClassName` sollte später ein spezifischer
+Name gewählt werden, wie z.B. `Account`. Der Name der Variable kann beliebig
+sein. Das Gleiche gilt für `Variablen` und `Methoden`
 
 ```java
 Account savingAccount = new Account(); // Toll
@@ -195,7 +193,7 @@ Xyz b = new Xzy();                     // Evt. nicht ganz so toll ;)
 
 :::
 
-:::note Instanz oder Objekt, WTF :confused: ?!?
+:::note Instanz oder Objekt?
 
 Die Wörter Objekt und Instanz sind **Synonyme**, können also beliebig vertauscht
 werden.
@@ -204,8 +202,8 @@ werden.
 
 ## 🦸 Unterschied von einem Objekt und einer Variable
 
-- Ein Objekt ist **immer in einer Variable** gespeichert
-- Eine Variable muss aber nicht immer ein Objekt beinhalten
+- Ein Objekt ist **immer in einer Variable** gespeichert.
+- Eine Variable muss aber nicht immer ein Objekt beinhalten.
 
 ```java
 Account accountObjektVariable = new Account();
@@ -221,11 +219,11 @@ intVariable.getClass(); // führt zu einem ERROR. (versuche es in `eclipse`!)
 :::tip Faustregel
 
 - Wenn der **Datentyp** mit einem **Grossbuchstaben** anfängt (`String`,
-  `Account`, ...) handelt es sich um ein **Objekt**
+  `Account`, ...) handelt es sich um ein **Objekt**.
 - Wenn der **Datentyp** mit einem **Kleinbuchstaben** anfängt (`int`, `double`,
-  `char`, ...) ist es **kein Objekt**
+  `char`, ...) ist es **kein Objekt**.
 - Ein **Objekt besitzt Methoden**, welche man ausführen kann, ein **primitiver
-  Datentyp nicht**
+  Datentyp nicht**.
   - **Jedes Objekt** besitzt die Methode `getClass()`;
 
 :::

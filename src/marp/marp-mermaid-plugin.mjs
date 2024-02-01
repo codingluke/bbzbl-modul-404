@@ -91,6 +91,15 @@ async function processMermaidDivCli(div) {
     },
     parseMMDOptions: {
       viewport: { height: 600, width: 800, deviceScaleFactor: 2 },
+      myCSS: `
+        .javaBuiltIn > rect {
+          stroke: #00000040 !important;
+          fill: #00000005 !important;
+        }
+        .javaBuiltIn .nodeLabel {
+          color: #00000090 !important;
+        }
+      `,
     },
   });
   if (div.dataset.type === "png") {

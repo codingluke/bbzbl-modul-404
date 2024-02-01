@@ -32,6 +32,6 @@ sidebar_position: 1
 
 ### :nail_care: Swing
 
-- startet nächste Woche!
+- Startet nächste Woche!
 
 </div></div>

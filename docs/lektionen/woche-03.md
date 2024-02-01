@@ -29,7 +29,7 @@ sidebar_position: 3
 ### :woman_superhero: Optional
 
 - [Weitere Swing-Aufgaben](../aufgaben-swing/zusatz.md)
-- Vertieftes Wissen zu Interfaces **in den Folien am Schluss!**
+- vertieftes Wissen zu Interfaces **in den Folien am Schluss!**
 
 </div><div>
 

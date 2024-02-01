@@ -14,33 +14,11 @@ footer: BBZBL / Lukas Hodel / Objektbasiert programmieren nach Vorgabe
 
 ---
 
+<!-- _class: big center -->
+
 # Agenda
 
-::: columns
-
-## :brain: Input
-
-- [Repetition Fachklassen](https://codingluke.github.io/bbzbl-modul-404/docs/konzepte/fachklassen)
-- [Konzept Static](https://codingluke.github.io/bbzbl-modul-404/docs/konzepte/static)
-- [Einstieg in Swing](https://codingluke.github.io/bbzbl-modul-404/docs/aufgaben-swing/einstieg-in-swing)
-
-::: split
-
-## :keyboard: Aufgaben Grundlagen
-
-- [Starterklasse](https://codingluke.github.io/bbzbl-modul-404/docs/aufgaben-grundlagen/starterklasse)
-- [Temperaturkonvertierer](https://codingluke.github.io/bbzbl-modul-404/docs/aufgaben-grundlagen/einheiten-umrechnen)
-
-## :keyboard: Aufgaben Swing
-
-- [Frame](https://codingluke.github.io/bbzbl-modul-404/docs/aufgaben-swing/fenster)
-- [Komponenten](https://codingluke.github.io/bbzbl-modul-404/docs/aufgaben-swing/komponenten)
-
-<hr />
-- [:superhero: Optional Repetition Arrays](https://codingluke.github.io/bbzbl-modul-404/docs/repetition/arrays)
-  ([PDF](https://drive.google.com/file/d/1Bt4NgySXrhMeorOTuSBs_6thNwXPRbNN/view))
-
-:::
+## Siehe Screen
 
 ---
 
@@ -48,7 +26,7 @@ footer: BBZBL / Lukas Hodel / Objektbasiert programmieren nach Vorgabe
 
 - **Fachklassen** beinhalten die **generalisierte Logik** für ein Fachproblem
 
-  - _In unserem Fall wäre das Fachproblem die Kontoverwaltung_
+  - _In unserem Fall wäre das Fachproblem die ==Kontoverwaltung==_
 
 - Mit **Fachklassen** lassen sich **Programme entkoppeln**
 
@@ -58,6 +36,57 @@ footer: BBZBL / Lukas Hodel / Objektbasiert programmieren nach Vorgabe
 
 - Nennen wir es :sushi: **Sushi-Code**, das Gegenteil von :spaghetti:
   _Spaghetti-Code_
+
+---
+
+# Account Applikation
+
+::: columns
+
+## :spaghetti: Spagetti
+
+```mermaid width=80%
+classDiagram
+  direction TB
+  class AccountApplication {
+    +main(args: String[])$
+    -withdraw(balance : double, amount : double)$  double
+    -deposit(balance : double, amount : double)$  double
+  }
+  class Scanner:::javaBuiltIn {
+    +Scanner(System.in) Scanner
+    +next() String
+    +nextDouble() double
+  }
+  AccountApplication ..> Scanner : uses
+```
+
+::: split
+
+## :sushi: Sushi
+
+```mermaid
+classDiagram
+  direction TB
+  class AccountApplicationV2 {
+    +main(args: String[])$
+  }
+  class Account {
+    -balance : double
+    +getBalance() double
+    +deposit(amount : double)
+    +withdraw(amount : double)
+  }
+  class Scanner:::javaBuiltIn {
+    +Scanner(System.in)  Scanner
+    +next() String
+    +nextDouble() double
+  }
+  AccountApplicationV2 ..> Account : uses
+  AccountApplicationV2 ..> Scanner : uses
+```
+
+:::
 
 ---
 
@@ -82,6 +111,30 @@ footer: BBZBL / Lukas Hodel / Objektbasiert programmieren nach Vorgabe
 - **Können nicht** auf `Instanz-Methoden/Varaiblen` zugreifen!
 
 :::
+
+---
+
+![bg right](./images/static-account.drawio.svg)
+
+# `static` Beispiel
+
+```java
+private static double zins;
+```
+
+```java
+private static void setZins(double zins) {
+  this.zins = zins;
+}
+```
+
+Den Zins kann nun direkt auf der Klasse gesetzt werden. **Ohne `new`**
+
+```java
+Account.setZins(4.3)
+```
+
+Er ist für alle Instanzen gleich.
 
 ---
 
@@ -177,7 +230,7 @@ grafischen Elemente umzusetzen.
 - Das Verständnis davon ist essenziell um im **LB1** eine gute Note zu erhalten!
 - Auf dieser Grundlage wird auch das Projekt (**LB2**) umgesetzt!
 
-## :point_up: Nehmt euch also die **Zeit** dies zu verstehen!
+> :point_up: Nehmt euch also die **Zeit** dies zu verstehen!
 
 ---
 
@@ -189,24 +242,23 @@ Es ist immer gut sich im Internet weiterzubilden (:thinking: zumindest für IT-T
 
 - [Deutsches `Swing`-Tutorial als Zusatzinfo für Interessierte](https://www.java-tutorial.org/swing.html)
 
-  - **relevante Themen**: [JFrame](https://www.java-tutorial.org/jframe.html), [JLabel](https://www.java-tutorial.org/bedienelemente.html), [JButton](https://www.java-tutorial.org/jbutton.html), [JTextField](https://www.java-tutorial.org/jtextfield.html), [JPanel](https://www.java-tutorial.org/jpanel.html)
-  - auch wichtig, wird nächste Woche behandelt: [Event-Handling](https://www.java-tutorial.org/event-handling.html)
+  - **relevante Themen**: [JFrame](https://www.java-tutorial.org/jframe.html), [JLabel](https://www.java-tutorial.org/bedienelemente.html), [JButton](https://www.java-tutorial.org/jbutton.html), [JTextField](https://www.java-tutorial.org/jtextfield.html), [JPanel](https://www.java-tutorial.org/jpanel.html) 
+- auch wichtig, wird nächste Woche behandelt: [Event-Handling](https://www.java-tutorial.org/event-handling.html)
 
-## <!--fit--> :superhero: Ich würde alle in den Aufgaben verwendeten Klassen hier nachschlagen
+> :superhero: Ich würde alle in den Aufgaben verwendeten Klassen nachschlagen
 
 ---
 
 # :brain: Swing: `JFrame`
 
-Möchte man eine Klasse als `Fenster` erstellen, muss der Klasse, die Java
-Klasse `JFrame` **vererbt** werden. Dies geht mit dem Ausdruck **`extends JFrame`**
+Möchte man eine Klasse als `Fenster` erstellen, muss der Klasse, die Java Klasse
+`JFrame` ==vererbt== werden. Dies geht mit dem Ausdruck ==**`extends JFrame`**==
 
 ```java
 public class PureWindow extends JFrame {
   public void start() { // oder auch showDialog, oder was gefällt
     setLayout(null); // Standard Layout deaktivieren
-    setDefaultCloseOperation(
-        EXIT_ON_CLOSE); // Beim schliessen des Fensters, das ganze Programm beenden
+    setDefaultCloseOperation(EXIT_ON_CLOSE); // Beim schliessen des Fensters, alles beenden
     setSize(300, 300); // Grösse vom Fenster festlegen
     setTitle("Ich bin der Fenster Titel"); // Titel des Fensters festlegen
     setVisible(true); // Fenster sichtbar machen
@@ -217,8 +269,7 @@ public class PureWindow extends JFrame {
 ::: footnotes
 
 [:link: JFrame auf Java Tutorial](https://www.java-tutorial.org/jframe.html)
-_:information_source: Was genau Vererbung ist, und wie man es selbst verwendet
-ist Teil eines späteren Moduls. Hier wenden wir es einfach Mal an._
+_:information_source: Was genau Vererbung ist, und wie man es selbst verwendet ist Teil eines späteren Moduls. Hier wenden wir es einfach Mal an._
 
 :::
 
@@ -228,7 +279,7 @@ ist Teil eines späteren Moduls. Hier wenden wir es einfach Mal an._
 
 ```java
 setLayout(null); // Standard Layout deaktivieren
-setDefaultCloseOperation(EXIT_ON_CLOSE); // Beim schliessen des Fensters, das ganze Programm beenden
+setDefaultCloseOperation(EXIT_ON_CLOSE); // Beim Fensterschliessen, alles beenden
 setSize(300, 300); // Grösse vom Fenster festlegen
 setTitle("Ich bin der Fenster Titel"); // Titel des Fensters festlegen
 setVisible(true); // Fenster sichtbar machen
@@ -275,7 +326,7 @@ Datentypen, arbeitet.
 - Am Ende der Sildes wird auf eine weitere Art von Arrays (Listen) eingegangen.
   - Diese ist **nicht Pflicht** jedoch häufig einfacher.
 
-### :superhero: Dies ist eine Grundlage, welche Ihr im Allgemeinen begreifen müsst, um die beiden LBs mit einer `6` zu bestehen
+> :superhero: Dies ist eine Grundlage, welche Ihr im Allgemeinen begreifen müsst, um die beiden LBs mit einer `6` zu bestehen
 
 ---
 

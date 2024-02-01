@@ -3,22 +3,23 @@ wrapperClassName: blank
 hide_table_of_contents: true
 ---
 
-<Timeline title="Woche 1">
+<Timeline title="Woche 2">
 <Event time="12:45">
 
-## 👋 Vorstellung
-
-- Modulidentifikation
+## ♻️ Repetition Fachklassen
 
 </Event>
 <Event time="13:00">
 
-## :butterfly: Algorithmus / Programm
+## :brain: Konzept Static
 
-- :man_teacher: Präsentation / **Diskussion**
-- :tv: code.org / :coffee: 13:30
+</Event>
+<Event time="13:15">
 
-- :man_student: Lesen und Lösen
+## :man_student: Grundlagen Aufgaben
+
+- :pen: Starterklasse
+- :pen: Temperaturkonvertierer
 
 </Event>
 <Event time="14:20">
@@ -28,19 +29,15 @@ hide_table_of_contents: true
 </Event>
 <Event time="14:40">
 
-## :waning_crescent_moon: Hallo Eclipse
-
-- :man_teacher: Wir lösen die Aufgaben zusammen
-- :coffee: **15:30**
-- 🧐 Analyse des bisherigen Programms
-
-- :sparkles: Vom Quellcode zum Programm
-
+## :nail_care: Einstieg in Swing
 
 </Event>
 <Event time="15:50">
 
-## :triangular_ruler: Code-Konventionen
+## :woman_student: Swing Aufgaben
+
+- :pen: Ein Fenster erstellen (`JFrame`)
+- :pen: `JFrame` Komponenten kennenlernen
 
 </Event>
 <Event time="16:15">

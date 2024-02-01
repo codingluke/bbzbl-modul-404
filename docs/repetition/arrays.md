@@ -5,11 +5,11 @@ sidebar_position: 2
 # Arrays
 
 Arrays sind ein besonderer Datentyp, da sie es erlauben, mehrere Werte in einer
-Variablen zu speichern. Diese Variable kann dazu mit einem int Wert angesprochen
+Variablen zu speichern. Diese Variable kann dazu mit einem `int` Wert angesprochen
 werden, der als Index benutzt wird, und den Zugriff auf die unterschiedlichen
 Werte ermöglicht.
 
-Anschliessend findet Ihr Aufgaben für die wichtigsten use-cases von Arrays.
+Anschliessend findet Ihr Aufgaben für die wichtigsten Anwendungszwecke von Arrays.
 
 :::tip
 
@@ -17,9 +17,9 @@ Diese Aufgaben werden euch im Projekt sicher was bringen!
 
 :::
 
-## Array Chars
+## Array Zeichen
 
-Verwenden Sie eine for-Schleife, um den folgenden Array auszugeben:
+Verwenden Sie eine `for`-Schleife, um den folgenden Array auszugeben:
 
 ```java
 char[] text = {'h','a','l','l','o',' ','w','e','l','t'};
@@ -27,7 +27,7 @@ char[] text = {'h','a','l','l','o',' ','w','e','l','t'};
 
 - Geben Sie danach den Array in **umgekehrter Reihenfolge** aus, also von hinten
   nach vorne.
-- Verwenden Sie dafür auch wieder eine for-Schleife.
+- Verwenden Sie dafür auch wieder eine `for`-Schleife.
 
 <details>
 <summary>Lösung Array Chars</summary>
@@ -132,7 +132,7 @@ public class SortString {
 ## Array negativ
 
 Gegeben ist Array `a`. Geben Sie alle Elemente mit einem negativen Wert
-untereinander auf der Konsole aus. Verwenden Sie auch wieder eine for-Schleife.
+untereinander auf der Konsole aus. Verwenden Sie auch wieder eine `for`-Schleife.
 
 ```java
 int[] a = { 1, -2, -25, 6, -3, 5 };
@@ -159,7 +159,7 @@ public class ArrayNegativ {
 
 </details>
 
-## Add Arrays
+## Addiere Arrays
 
 Gegeben sind drei Arrays `a`, `b` und `c`. Verändern Sie durch Java-Code den
 Array `c` so, dass im Element `c[0]` die Summe `a[0]` plus `b[0]` steht und
@@ -198,7 +198,7 @@ public class AddArrays {
 
 </details>
 
-## Combine Arrays
+## Kombiniere Arrays
 
 Gegeben sind zwei Arrays `a` und `b`. Erzeugen Sie einen neuen Array `c`, der so
 lang ist wie `a` und `b` zusammengenommen und auch die Werte von `a` und `b` (in
@@ -261,18 +261,18 @@ public class CombineArrays {
 
 </details>
 
-## Combine Arrays with Methods
+## Kombiniere Arrays mit Methode
 
-Verwende den Code von [Combine Arrays](#combine-arrays).
+Verwende den Code von [Kombiniere Arrays](#kombiniere-arrays).
 
 Nun versuche die Aufgabe so zu lösen, dass das Kopieren und Ausgeben in zwei
-Methoden gemacht wird. Die Signatur der Methoden sind folgende:
+Methoden gemacht wird. Die Signaturen der Methoden sind folgende:
 
 - `public static void copyArray(int[] source, int[] destination, int destination_index)`
 - `public static void showArray(String name, int[] array)`
 
 <details>
-<summary>Lösung: Combine Arrays with Methods</summary>
+<summary>Lösung: Kombiniere Arrays mit Methode</summary>
 
 ```java
 public class CombineArraysWithMethods {
@@ -323,9 +323,9 @@ public class CombineArraysWithMethods {
 Erstellen Sie ein Programm, welches Noten einlesen kann und in einem Array
 speichert.
 
-- Zuerst soll es nach der Anzahl Noten fragen...
+- Zuerst soll es nach der Anzahl Noten fragen.
   - ... und dann mit diesem Wert einen neuen Array anlegen.
-- Dann sollen alle Werte vom Benutzer eingegeben werden, wobei...
+- Dann sollen alle Werte vom Benutzer eingegeben werden, wobei.
   - ... nach jedem Wert der Durchschnitt der bisher eingegebenen Noten berechnet
     und angezeigt wird.
 
@@ -378,11 +378,11 @@ public class Noten {
 
 </details>
 
-## Dice
+## Würfel
 
 1. Erstellen Sie einen Array mit sechs 0en.
-2. Würfeln Sie 100 mal mit der Methode `rollDice()`
-   - Bei jedem Wurf zählen Sie für die gewürfelte Zahl der entsprechende index
+2. Würfeln Sie 100 Mal mit der Methode `rollDice()`.
+   - Bei jedem Wurf zählen Sie für die gewürfelte Zahl der entsprechende Index
      im Array hoch.
 3. Geben Sie aus wie häufig die jeweiligen Zahlen gewürfelt wurden.
 

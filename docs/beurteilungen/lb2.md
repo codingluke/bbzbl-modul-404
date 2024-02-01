@@ -2,7 +2,7 @@
 
 | Dauer                       | Gewichtung            |
 | :-------------------------- | :-------------------- |
-| **02.06.2023 - 30.06.2023** | **50%** der Modulnote |
+| **15.03.2024 - 19.04.2024** | **50%** der Modulnote |
 
 :::danger Plagiat
 
@@ -13,9 +13,9 @@
 
 :::
 
-:::tip Privates Git Repository
+:::tip privates Git Repository
 
-- Wenn Ihr euren Code mit **git** versioniert ist das super!
+- Wenn Ihr Euren Code mit **`git`** versioniert ist das super!
 - Aber bitte verwendet ein **privates Repository** auf GitHub und Co., damit
   nicht zukünftige Kameraden von Ihnen klauen könnt!
 
@@ -41,7 +41,7 @@ Es geht darum, ein Würfelspiel für 2 Mitspieler zu programmieren. Das Ziel des
 Spieles ist es, in einer gegebenen Anzahl Runden möglichst viele Punkte zu
 erzielen.
 
-Pro Runde darf ein Spieler maximal 5 mal würfeln. Die gewürfelten Augenzahlen
+Pro Runde darf ein Spieler maximal 5 Mal würfeln. Die gewürfelten Augenzahlen
 ergeben die Rundenpunkte. Sie werden zu der Gesamtpunktzahl des Spielers
 addiert.
 
@@ -52,7 +52,7 @@ abzubrechen und weniger als fünfmal in seiner Runde zu würfeln.
 
 Hier sehen Sie einen möglichen Spielverlauf mit einer Visualisierung:
 
-![](../img/spielverlauf.jpg)
+![Spielverlauf](../img/spielverlauf.jpg)
 
 Wer am Ende der festgelegten Rundenzahl am meisten Punkte hat, gewinnt das
 Spiel.
@@ -95,33 +95,33 @@ Das Klassendiagramm gehört in die [Dokumentation].
 
 |                            | Punkte | Kriterium                                                                                                                                    |
 | -------------------------- | :----: | :------------------------------------------------------------------------------------------------------------------------------------------- |
-|                            |   1    | Die Starterklasse funktioniert                                                                                                               |
-|                            |   3    | Das Programm läuft und lässt das beschriebene Spiel zu _(Spielregeln)_                                                                       |
-|                            |   2    | Die Spieler können Ihre Namen selber eingeben                                                                                                |
-|                            |   2    | Der aktuelle Punktestand wird pro Spieler angezeigt                                                                                          |
-|                            |   2    | Der aktuelle Spieler kann eine Runde beenden                                                                                                 |
-|                            |   2    | Die Benutzerführung _(UX)_ macht Sinn _(Buttons werden ein/ausgeblendet rsp. de/aktiviert)_                                                  |
-|                            |   2    | Die gewürfelten Punkte pro Runde werden als Text angezeigt                                                                                   |
-|                            |   3    | Der Würfelverlauf wird über mehrere Runden angezeigt _(nicht nur die aktuelle)_                                                              |
-|                            |   3    | Der Quellcode ist korrekt formatiert _(Einrückungen)_                                                                                        |
-|                            |   3    | Die Namen der Klassen, Methoden und Attribute sind aussagekräftig und einheitlich                                                            |
-|                            |   3    | _Dokumentation:_ die Beschreibung des Programms ist vollständig                                                                              |
-|                            |   3    | _Dokumentation:_ die Reflexion ist tiefgründig und geht auf die Probleme ein                                                                 |
-| :sweat_smile:              | _(29)_ | _**Volle Punktzahl bis hier ergeben eine <u>5.0</u>**_                                                                                       |
-| :chart_with_upwards_trend: |   2    | Der **Verlauf des Punktestands** aller bereits gespielten Runden wird pro Spieler angezeigt                                                  |
-| :game_die:                 |   2    | Die gewürfelten Punkte pro Runde werden **bildlich** dargestellt                                                                             |
-| :sushi:                    |   3    | Die **Fachklassen** beinhalten die **Logik** / verwalten den **Spielstand** (ohne UI-Elemente)                                               |
+|                            |   1    | Die Starterklasse funktioniert.                                                                                                              |
+|                            |   3    | Das Programm läuft und lässt das beschriebene Spiel zu _(Spielregeln)_.                                                                       |
+|                            |   2    | Die Spieler können Ihre Namen selber eingeben.                                                                                                |
+|                            |   2    | Der aktuelle Punktestand, wird pro Spieler angezeigt.                                                                                         |
+|                            |   2    | Der aktuelle Spieler kann eine Runde beenden.                                                                                                 |
+|                            |   2    | Die Benutzerführung _(UX)_ macht Sinn _(Buttons werden ein/ausgeblendet resp. de/aktiviert)_.                                                 |
+|                            |   2    | Die gewürfelten Punkte pro Runde werden als Text angezeigt.                                                                                   |
+|                            |   3    | Der Würfelverlauf wird über mehrere Runden angezeigt _(nicht nur die aktuelle)_.                                                              |
+|                            |   3    | Der Quellcode ist korrekt formatiert _(Einrückungen)_.                                                                                        |
+|                            |   3    | Die Namen der Klassen, Methoden und Attribute sind aussagekräftig und einheitlich.                                                            |
+|                            |   3    | _Dokumentation:_ die Beschreibung des Programms ist vollständig.                                                                              |
+|                            |   3    | _Dokumentation:_ die Reflexion ist tiefgründig und geht auf die Probleme ein.                                                                 |
+| :sweat_smile:              | _(29)_ | _**Volle Punktzahl bis hier ergeben eine <u>5.0</u>**_.                                                                                       |
+| :chart_with_upwards_trend: |   2    | Der **Verlauf des Punktestands** aller bereits gespielten Runden wird pro Spieler angezeigt.                                                  |
+| :game_die:                 |   2    | Die gewürfelten Punkte pro Runde werden **bildlich** dargestellt.                                                                             |
+| :sushi:                    |   3    | Die **Fachklassen** beinhalten die **Logik** / verwalten den **Spielstand** (ohne UI-Elemente).                                               |
 | :checkered_flag:           | **36** | **TOTAL**                                                                                                                                    |
 |                            |        | **Bonus**                                                                                                                                    |
-| :woman_superhero:                |  _2_   | _Das Programm übersteigt die oben beschriebenen Minimalanforderungen an das Spiel **wesentlich** und **ist auch vollumfänglich lauffähig**._ |
+| :woman_superhero:          |  _2_   | _Das Programm übersteigt die oben beschriebenen Minimalanforderungen an das Spiel **wesentlich** und **ist auch vollumfänglich lauffähig**._ |
 
 ## Termin
 
-Das a Produkt (inklusive der [Dokumentation]) muss bis am **Freitag, xx.xx.2024,
+Das a Produkt (inklusive der [Dokumentation]) muss bis am **Freitag, 19.04.2024,
 16:15** über den eigenen Unterordner im **[Google Drive Abgabeordner]**
 abgegeben werden.
 
-:::caution Kurzes Verständnisgespräch
+:::caution kurzes Verständnisgespräch
 
 Nach der Pause, **um 14:40**, werde ich kurz bei jedem vorbeischauen, den Code
 durchsehen und kurze Verständnisfragen stellen! Diese werden nicht benotet.
@@ -130,7 +130,7 @@ durchsehen und kurze Verständnisfragen stellen! Diese werden nicht benotet.
 
 ## Strukturidee
 
-![](../img/projektstruktur.jpg)
+![Projektstruktur](../img/projektstruktur.jpg)
 
 [Dokumentation]:
   https://docs.google.com/document/d/1OhUYxLkwIWsxuk3SwcycjGUcRzkJQPRYRnbpkjiLEho/edit
