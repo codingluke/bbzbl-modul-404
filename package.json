@@ -96,6 +96,14 @@
       "last 1 safari version"
     ]
   },
+  "marp": {
+    "options": {
+      "markdown": {
+        "breaks": false,
+        "linkify": true
+      }
+    }
+  },
   "engines": {
     "node": ">=18.0"
   }

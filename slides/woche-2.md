@@ -236,14 +236,22 @@ grafischen Elemente umzusetzen.
 
 # :rocket: Hilfe im Web!
 
-Es ist immer gut sich im Internet weiterzubilden (:thinking: zumindest für IT-Themen)
+Es ist immer gut sich im Internet weiterzubilden (:thinking: zumindest für
+IT-Themen)
 
-[www.java-tutorial.org](www.java-tutorial.org) ist eine Webseite die Java, sowie `Swing` im Detail erklärt:
+https://www.java-tutorial.org ist eine Webseite die Java, sowie `Swing` im
+Detail erklärt:
 
 - [Deutsches `Swing`-Tutorial als Zusatzinfo für Interessierte](https://www.java-tutorial.org/swing.html)
 
-  - **relevante Themen**: [JFrame](https://www.java-tutorial.org/jframe.html), [JLabel](https://www.java-tutorial.org/bedienelemente.html), [JButton](https://www.java-tutorial.org/jbutton.html), [JTextField](https://www.java-tutorial.org/jtextfield.html), [JPanel](https://www.java-tutorial.org/jpanel.html) 
-- auch wichtig, wird nächste Woche behandelt: [Event-Handling](https://www.java-tutorial.org/event-handling.html)
+  - **relevante Themen**: [JFrame](https://www.java-tutorial.org/jframe.html),
+    [JLabel](https://www.java-tutorial.org/bedienelemente.html),
+    [JButton](https://www.java-tutorial.org/jbutton.html),
+    [JTextField](https://www.java-tutorial.org/jtextfield.html),
+    [JPanel](https://www.java-tutorial.org/jpanel.html)
+
+- auch wichtig, wird nächste Woche behandelt:
+  [Event-Handling](https://www.java-tutorial.org/event-handling.html)
 
 > :superhero: Ich würde alle in den Aufgaben verwendeten Klassen nachschlagen
 
@@ -269,7 +277,8 @@ public class PureWindow extends JFrame {
 ::: footnotes
 
 [:link: JFrame auf Java Tutorial](https://www.java-tutorial.org/jframe.html)
-_:information_source: Was genau Vererbung ist, und wie man es selbst verwendet ist Teil eines späteren Moduls. Hier wenden wir es einfach Mal an._
+_:information_source: Was genau Vererbung ist, und wie man es selbst verwendet
+ist Teil eines späteren Moduls. Hier wenden wir es einfach Mal an._
 
 :::
 
@@ -321,12 +330,16 @@ add(button) // Textfeld hinzufügen
 Im folgenden PDF ist beschrieben wie man in Java mit Arrays, also Listen von
 Datentypen, arbeitet.
 
-- [Repetition Arrays](https://codingluke.github.io/bbzbl-modul-404/docs/repetition/arrays) ([:book: PDF](https://drive.google.com/file/d/1Bt4NgySXrhMeorOTuSBs_6thNwXPRbNN/view)) bitte genau studieren.
-- Diese **Aufgaben sind Optional** und müssen im **Selbststudium** gemacht werden.
+- [Repetition Arrays](https://codingluke.github.io/bbzbl-modul-404/docs/repetition/arrays)
+  ([:book: PDF](https://drive.google.com/file/d/1Bt4NgySXrhMeorOTuSBs_6thNwXPRbNN/view))
+  bitte genau studieren.
+- Diese **Aufgaben sind Optional** und müssen im **Selbststudium** gemacht
+  werden.
 - Am Ende der Sildes wird auf eine weitere Art von Arrays (Listen) eingegangen.
   - Diese ist **nicht Pflicht** jedoch häufig einfacher.
 
-> :superhero: Dies ist eine Grundlage, welche Ihr im Allgemeinen begreifen müsst, um die beiden LBs mit einer `6` zu bestehen
+> :superhero: Dies ist eine Grundlage, welche Ihr im Allgemeinen begreifen
+> müsst, um die beiden LBs mit einer `6` zu bestehen
 
 ---
 
