@@ -64,7 +64,7 @@
     "markdown-it-container": "^3.0.0",
     "markdown-it-external-links": "^0.0.6",
     "markdown-it-mark": "^3.0.1",
-    "prettier": "^2.7.1",
+    "prettier": "^3.2.4",
     "prism-react-renderer": "^2.1.0",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
