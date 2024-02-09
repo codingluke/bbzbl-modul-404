@@ -8,9 +8,9 @@ footer: BBZBL / Lukas Hodel / Objektbasiert programmieren nach Vorgabe
 
 <!-- _class: big center -->
 
-# Woche 2
+# Woche 2 / Modul 404
 
-## Modul 404
+### Objektbasiert programmieren nach Vorgabe
 
 ---
 

@@ -3,22 +3,30 @@ wrapperClassName: blank
 hide_table_of_contents: true
 ---
 
-<Timeline title="Woche 1">
+<Timeline title="Woche 3">
 <Event time="12:45">
 
-## 👋 Vorstellung
-
-- Modulidentifikation
+## :recycle: JFrame Repetition
 
 </Event>
 <Event time="13:00">
 
-## :butterfly: Algorithmus / Programm
+## 🖼️ Projekt Klassenstruktur
 
-- :man_teacher: Präsentation / **Diskussion**
-- :tv: code.org / :coffee: 13:30
+</Event>
+<Event time="13:10">
 
-- :man_student: Lesen und Lösen
+## :brain: Java Interface
+
+- :zap: ActionListener
+
+</Event>
+<Event time="13:30">
+
+## :pen: Aufgaben
+
+- :zap: Buttons aktivieren
+- 🪄 Strings in Zahlen umwandeln
 
 </Event>
 <Event time="14:20">
@@ -28,18 +36,7 @@ hide_table_of_contents: true
 </Event>
 <Event time="14:40">
 
-## :waning_crescent_moon: Hallo Eclipse
-
-- :man_teacher: Wir lösen die Aufgaben zusammen
-- :coffee: **15:30**
-- 🧐 Analyse des bisherigen Programms
-
-- :sparkles: Vom Quellcode zum Programm
-
-</Event>
-<Event time="15:50">
-
-## :triangular_ruler: Code-Konventionen
+## :nail_care: Account Application in Swing
 
 </Event>
 <Event time="16:15">

@@ -11,6 +11,8 @@ sidebar_position: 2
 
 <iframe src="/bbzbl-modul-404/slides/woche-2" width="100%" height="400px"></iframe>
 
+**[:compass: Ablauf im Detail](pathname:///woche-02)**
+
 ## :brain: Input
 
 - [Repetition Fachklassen](../konzepte/fachklassen.md)

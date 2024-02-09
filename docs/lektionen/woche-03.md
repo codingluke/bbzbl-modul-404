@@ -11,6 +11,8 @@ sidebar_position: 3
 
 <iframe src="/bbzbl-modul-404/slides/woche-3" width="100%" height="400px"></iframe>
 
+**[:compass: Ablauf im Detail](pathname:///woche-03)**
+
 ## :brain: Input
 
 - [Projekt Klassenstruktur](../konzepte/uml.md#abhängigkeiten)

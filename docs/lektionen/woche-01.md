@@ -11,6 +11,8 @@ sidebar_position: 1
 
 <iframe src="/bbzbl-modul-404/slides/woche-1" width="100%" height="400px"></iframe>
 
+**[:compass: Ablauf im Detail](pathname:///woche-01)**
+
 ## :brain: Input
 
 - [Modulidentifikation](../index.md)
