@@ -76,15 +76,18 @@ h1 {
   top: 5px;
 }
 .timeline .event.active:after {
-  background: var(--ifm-color-danger);
-  box-shadow: 0 0 15px 1px var(--ifm-color-danger);
-  /* border: 1px solid var(--ifm-color-danger); */
+  background: var(--ifm-color-success);
+  box-shadow: 0 0 15px 1px var(--ifm-color-success);
   height: 12px;
   width: 12px;
 }
 
-.timeline .event.active {
-  font-weight: 600;
+.timeline .event.active div {
+  border-right: 3px solid var(--ifm-color-success);
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  padding: 0.3rem;
+  background-color: var(--ifm-color-success-contrast-background)
 }
 
 .timeline ul,
@@ -142,7 +145,8 @@ h1 {
 .timeline .event.active h1,
 .timeline .event.active h2,
 .timeline .event.active h3 {
-  font-weight: 600;
+  font-weight: 500;
+  /* color: var(--ifm-color-success-darker) */
 }
 
 /* in grid view */

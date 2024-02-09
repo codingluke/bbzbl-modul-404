@@ -3,22 +3,36 @@ wrapperClassName: blank
 hide_table_of_contents: true
 ---
 
-<Timeline title="Woche 1">
+<Timeline title="Woche 4">
 <Event time="12:45">
 
-## 👋 Vorstellung
+## Kontoverwaltung in Swing
 
-- Modulidentifikation
+- Musterlösung erläutern
 
 </Event>
-<Event time="13:00">
+<Event time="13:15">
 
-## :butterfly: Algorithmus / Programm
+## 📐 Formatierung
 
-- :man_teacher: Präsentation / **Diskussion**
-- :tv: code.org / :coffee: 13:30
+- :man_teacher: Präsentation
+- :pen: Aufgaben Formatieren
 
-- :man_student: Lesen und Lösen
+</Event>
+<Event time="13:35">
+
+## UML Klassendiagram
+
+- :man_teacher: Präsentation
+- :pen: UML für Account erstellen
+
+</Event>
+<Event time="13:50">
+
+## Konstruktor
+
+- :man_teacher: Präsentation
+- :pen: Aufgabe Konstruktor
 
 </Event>
 <Event time="14:20">
@@ -26,20 +40,11 @@ hide_table_of_contents: true
 ## :coffee: Grosse Pause
 
 </Event>
-<Event time="14:40">
+<Event time="13:50">
 
-## :waning_crescent_moon: Hallo Eclipse
+## :game_die: DiceGame 
 
-- :man_teacher: Wir lösen die Aufgaben zusammen
-- :coffee: **15:30**
-- 🧐 Analyse des bisherigen Programms
-
-- :sparkles: Vom Quellcode zum Programm
-
-</Event>
-<Event time="15:50">
-
-## :triangular_ruler: Code-Konventionen
+- :performing_arts: Live Coding
 
 </Event>
 <Event time="16:15">

@@ -1,15 +1,26 @@
-import React, { useEffect, useRef, useState } from "react";
-import styles from "./timeline.module.css";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import clsx from "clsx";
+import React, { useEffect, useRef, useState } from "react";
+import styles from "./timeline.module.css";
 
 export const Event = ({ time, active, children }) => {
+  const element = useRef({});
+  setTimeout(() => {
+    if (!active) return;
+    element.current.scrollIntoView({
+      behavior: "auto",
+      block: "center",
+      inline: "center",
+    });
+  });
+
   return (
     <li
+      ref={element}
       className={clsx(styles.event, active ? styles.active : "")}
       data-date={time}
     >
-      {children}
+      <div>{children}</div>
     </li>
   );
 };
@@ -46,7 +57,7 @@ const Timeline = ({ title, children }) => {
         {React.Children.map(children, (element, index) =>
           timeComperator(element?.props.time, children[index + 1]?.props.time)
             ? React.cloneElement(element, { active: true })
-            : React.cloneElement(element)
+            : React.cloneElement(element),
         )}
       </ul>
     </div>

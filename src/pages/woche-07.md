@@ -3,22 +3,62 @@ wrapperClassName: blank
 hide_table_of_contents: true
 ---
 
-<Timeline title="Woche 1">
-<Event time="12:45">
+<Timeline title="Woche 7">
+<Event time="11:50">
 
-## 👋 Vorstellung
+## Begrüssung
 
-- Modulidentifikation
+- 🏅 Heute ist **Lehrprobe**
 
 </Event>
-<Event time="13:00">
+<Event time="12:00">
 
-## :butterfly: Algorithmus / Programm
+## 💡 Kahoot
 
-- :man_teacher: Präsentation / **Diskussion**
-- :tv: code.org / :coffee: 13:30
+- Quiz über alle bisherigen Themen
 
-- :man_student: Lesen und Lösen
+</Event>
+<Event time="13:10">
+
+## 👭 Pair Programming
+
+- :man_teacher: Präsentation
+
+</Event>
+<Event time="12:03">
+
+## 🖊️ Auftrag 1 - :clock2: 10'
+
+- 2er-Gruppenfinden
+- Programm-Code austauschen
+- Fremder Code versuchen zu verstehen
+
+</Event>
+<Event time="13:30">
+
+## :coffee: 5 min. Pause
+
+</Event>
+<Event time="13:35">
+
+## 🖊️ Auftrag 2 - :clock4: 20'
+
+- Gleiche 2er-Gruppen
+- Gemeinsam die Programme analysieren
+- :pen: Notizen machen:
+  _Erkenntnisse, Schwierigkeiten, ..._
+
+</Event>
+<Event time="13:55">
+
+## :zap: Blitzlicht
+
+- Jeder sagt eine Erkenntniss :bulb: wärend dem Pair-Programming
+
+</Event>
+<Event time="14:00">
+
+## :alembic: Arbeiten am Projekt
 
 </Event>
 <Event time="14:20">
@@ -28,22 +68,7 @@ hide_table_of_contents: true
 </Event>
 <Event time="14:40">
 
-## :waning_crescent_moon: Hallo Eclipse
-
-- :man_teacher: Wir lösen die Aufgaben zusammen
-- :coffee: **15:30**
-- 🧐 Analyse des bisherigen Programms
-- :sparkles: vom Quellcode zum Programm
-
-</Event>
-<Event time="15:50">
-
-## :triangular_ruler: Code-Konventionen
-
-</Event>
-<Event time="16:15">
-
-## 🏝️ Ende
+## :alembic: Arbeiten am Projekt
 
 </Event>
 </Timeline>

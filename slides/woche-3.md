@@ -45,12 +45,12 @@ logic.do();
 
 ![bg right:40% w:80%](images/projekt-uml-klassenstruktur.png)
 
-<!-- ```mermaid -->
+<!-- ```mermaid width=85% -->
 <!-- classDiagram -->
 <!--   class JFrame -->
 <!--   class ActionListener { -->
 <!--     <<interface>> -->
-<!--     +actionPerformed(...)  -->
+<!--     +actionPerformed(...) -->
 <!--   } -->
 <!--   class Starter { -->
 <!--     +main(args: String[])$ -->
@@ -63,7 +63,7 @@ logic.do();
 <!--   class Logic { -->
 <!--     +do() -->
 <!--   } -->
-
+<!---->
 <!--   Starter ..> "1" Gui : uses -->
 <!--   Gui ..> "1" Logic : uses -->
 <!--   Gui --|> JFrame : extends -->

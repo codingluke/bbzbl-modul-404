@@ -8,9 +8,9 @@ footer: BBZBL / Lukas Hodel / Objektbasiert programmieren nach Vorgabe
 
 <!-- _class: big center -->
 
-# Woche 4
+# Woche 4 / Modul 404
 
-## Modul 404
+### Objektbasiert programmieren nach Vorgabe
 
 ---
 
@@ -21,9 +21,12 @@ footer: BBZBL / Lukas Hodel / Objektbasiert programmieren nach Vorgabe
 ## :brain: Input
 
 - :man_teacher: Kontoverwaltung in Swing
-- :triangular_ruler: [Formatierung](https://codingluke.github.io/bbzbl-modul-404/docs/konzepte/formatierung)
-- :crayon: [UML Klassendiagram](https://codingluke.github.io/bbzbl-modul-404/docs/konzepte/uml)
-- :hammer: [Konstruktor](https://codingluke.github.io/bbzbl-modul-404/docs/konzepte/konstruktor)
+- :triangular_ruler:
+  [Formatierung](https://codingluke.github.io/bbzbl-modul-404/docs/konzepte/formatierung)
+- :crayon:
+  [UML Klassendiagram](https://codingluke.github.io/bbzbl-modul-404/docs/konzepte/uml)
+- :hammer:
+  [Konstruktor](https://codingluke.github.io/bbzbl-modul-404/docs/konzepte/konstruktor)
 
 ::: split
 
@@ -32,7 +35,7 @@ footer: BBZBL / Lukas Hodel / Objektbasiert programmieren nach Vorgabe
 - [Account UML](https://codingluke.github.io/bbzbl-modul-404/docs/aufgaben-grundlagen/account-uml)
 - [:performing_arts: DiceGame](https://codingluke.github.io/bbzbl-modul-404/docs/aufgaben-swing/dice-game)
 - [Konstruktor](https://codingluke.github.io/bbzbl-modul-404/docs/aufgaben-swing/konstruktor)
-- [:woman_superhero: Weitere Swing-Aufgaben](https://codingluke.github.io/bbzbl-modul-404/docs/aufgaben-swing/zusatz)
+- [:superhero: Weitere Swing-Aufgaben](https://codingluke.github.io/bbzbl-modul-404/docs/aufgaben-swing/zusatz)
 
 :::
 
@@ -52,7 +55,7 @@ footer: BBZBL / Lukas Hodel / Objektbasiert programmieren nach Vorgabe
 
 - :monocle_face: Wichtig um die **Lesbarkeit** zu erhöhen
 
-- :woman_superhero: Ist ein **Zeichen von Professionalität**
+- :superhero: Ist ein **Zeichen von Professionalität**
 
 - :juggling_person: Hilft **Flüchtigkeitsfehlern vorzubeugen**
 
@@ -65,11 +68,14 @@ footer: BBZBL / Lukas Hodel / Objektbasiert programmieren nach Vorgabe
 - Wir verwenden **keine Umlaute** im Code (Ausnahmen sind Kommentare)
 - Jede **Klasse**
   - beginnt mit einem **Grossbuchstaben**
-  - hat einen `AusdrucksstarkenNamen` in :camel: [`UpperCamelCase` :link:](http://wiki.c2.com/?UpperCamelCase)
+  - hat einen `AusdrucksstarkenNamen` in :camel:
+    [`UpperCamelCase` :link:](http://wiki.c2.com/?UpperCamelCase)
 - Jede **Methode**
   - beginnt mit einem **Kleinbuchstaben**
-  - hat einen `ausdrucksstarkenNamen` in :camel: [`lowerCamelCase` :link:](http://wiki.c2.com/?LowerCamelCase)
-- Blöcke `{}` werden eingerückt (:keyboard: **Ctrl-Shift-F** :apple: **Command-Shift-F**)
+  - hat einen `ausdrucksstarkenNamen` in :camel:
+    [`lowerCamelCase` :link:](http://wiki.c2.com/?LowerCamelCase)
+- Blöcke `{}` werden eingerückt (:keyboard: **Ctrl-Shift-F** :apple:
+  **Command-Shift-F**)
 - **Standard-Encoding `UTF-8`**: `Preferences > General > Workspace` -> `UTF-8`
 
 ---
@@ -92,9 +98,12 @@ footer: BBZBL / Lukas Hodel / Objektbasiert programmieren nach Vorgabe
 
 # :keyboard: Formatierung / **Auftrag** [:link:](https://codingluke.github.io/bbzbl-modul-404/docs/aufgaben-grundlagen/formatierung)
 
-1. Lesen Sie das [Konzept Formatierung](https://codingluke.github.io/bbzbl-modul-404/docs/konzepte/formatierung) gut durch!
+1. Lesen Sie das
+   [Konzept Formatierung](https://codingluke.github.io/bbzbl-modul-404/docs/konzepte/formatierung)
+   gut durch!
 
-2. Lösen Sie folgende [Aufgabe Formatierung](https://codingluke.github.io/bbzbl-modul-404/docs/aufgaben-grundlagen/formatierung)
+2. Lösen Sie folgende
+   [Aufgabe Formatierung](https://codingluke.github.io/bbzbl-modul-404/docs/aufgaben-grundlagen/formatierung)
 
 ---
 
@@ -106,7 +115,8 @@ footer: BBZBL / Lukas Hodel / Objektbasiert programmieren nach Vorgabe
 
 - :artist: Sollte grafisches programmieren ermöglichen `UML -> Code`
 
-- :notebook_with_decorative_cover: Wird vor allem als Dokumentation verwendet `Code -> UML`
+- :notebook_with_decorative_cover: Wird vor allem als Dokumentation verwendet
+  `Code -> UML`
 
   - _Code ist konfortabler zu schreiben als UML zu malen :wink:_
 
@@ -188,7 +198,8 @@ footer: BBZBL / Lukas Hodel / Objektbasiert programmieren nach Vorgabe
 
 ### :robot: Automatisches Generieren
 
-- [IntelliJ Diagrams](https://www.jetbrains.com/help/idea/class-diagram.html) _jedoch nicht 100% UML Standard!!_
+- [IntelliJ Diagrams](https://www.jetbrains.com/help/idea/class-diagram.html)
+  _jedoch nicht 100% UML Standard!!_
 - [ObjektAid for Eclipse](https://github.com/AbbaouiAmine/objectAidArchive)
   - [Video mit Installationsanleitung](https://www.youtube.com/watch?v=UtSRX9swc1w)
 
@@ -198,12 +209,15 @@ footer: BBZBL / Lukas Hodel / Objektbasiert programmieren nach Vorgabe
 
 # :keyboard: UML-Klassendiagram / **Auftrag** :pen:
 
-1. lesen Sie das [Konzept UML](https://codingluke.github.io/bbzbl-modul-404/docs/uml)
-2. Erstellen Sie ein UML-Klassendiagram der Fachklasse [`Account`](https://codingluke.github.io/bbzbl-modul-404/docs/aufgaben-grundlagen/account-uml)
-3. Implementieren Sie das [DiceGame](https://codingluke.github.io/bbzbl-modul-404/docs/aufgaben-swing/dice-game)
+1. lesen Sie das
+   [Konzept UML](https://codingluke.github.io/bbzbl-modul-404/docs/uml)
+2. Erstellen Sie ein UML-Klassendiagram der Fachklasse
+   [`Account`](https://codingluke.github.io/bbzbl-modul-404/docs/aufgaben-grundlagen/account-uml)
+3. Implementieren Sie das
+   [DiceGame](https://codingluke.github.io/bbzbl-modul-404/docs/aufgaben-swing/dice-game)
    - **Diese Aufgabe würde ich besonders gut anschauen! :wink:**
 
-- [:woman_superhero: Weitere Swing-Aufgaben](https://codingluke.github.io/bbzbl-modul-404/docs/aufgaben-swing/zusatz)
+- [:superhero: Weitere Swing-Aufgaben](https://codingluke.github.io/bbzbl-modul-404/docs/aufgaben-swing/zusatz)
 
 ---
 
@@ -211,7 +225,8 @@ footer: BBZBL / Lukas Hodel / Objektbasiert programmieren nach Vorgabe
 
 - Methodenname ist **immer gleich** wie die Klasse
 - ist **nicht explizit aufrufbar**
-- wird **ausgeführt wenn ein Objekt erstellt wird** (:bulb: in Verbindung mit **`new`**)
+- wird **ausgeführt wenn ein Objekt erstellt wird** (:bulb: in Verbindung mit
+  **`new`**)
 - hat **keinen Rückgabewert**
 - es können mehrere Konstruktoren bestehen (:bulb: andere Anzahl Parameter)
 - werden **keine Parameter** angegeben, nennt man ihn **Standardkonstruktor**
@@ -262,15 +277,18 @@ public class Starter {
 }
 ```
 
-## <!--fit--> :woman_superhero: Das nennt sich auch _[Methoden überladen](https://www.java-tutorial.org/ueberladen_von_methoden.html)_ und geht auch für normale Methoden
+## <!--fit--> :superhero: Das nennt sich auch _[Methoden überladen](https://www.java-tutorial.org/ueberladen_von_methoden.html)_ und geht auch für normale Methoden
 
 ---
 
 # :keyboard: Konstrutkor / **Auftrag**
 
-1. Lesen Sie das [Konzept Konstruktor](https://codingluke.github.io/bbzbl-modul-404/docs/konzepte/konstruktor) gut durch!
+1. Lesen Sie das
+   [Konzept Konstruktor](https://codingluke.github.io/bbzbl-modul-404/docs/konzepte/konstruktor)
+   gut durch!
 
-2. Lösen Sie folgende Aufgabe [Konstruktor](https://codingluke.github.io/bbzbl-modul-404/docs/aufgaben-swing/konstruktor)
+2. Lösen Sie folgende Aufgabe
+   [Konstruktor](https://codingluke.github.io/bbzbl-modul-404/docs/aufgaben-swing/konstruktor)
 
 ---
 
@@ -278,9 +296,10 @@ public class Starter {
 
 # <!--fit--> :rotating_light: Nächste Woche gibts einen **Test!** :scream:
 
-- :bulb: [Details auf der Modulwebseite](https://codingluke.github.io/bbzbl-modul-404/docs/beurteilungen/lb1)
+- :bulb:
+  [Details auf der Modulwebseite](https://codingluke.github.io/bbzbl-modul-404/docs/beurteilungen/lb1)
 
-- :woman_superhero: Geht **alle Aufgaben** nochmals durch und **versteht Sie**!
+- :superhero: Geht **alle Aufgaben** nochmals durch und **versteht Sie**!
 - :superhero_woman: Lernt ein UML-Klassendiagram in Java umzuwandeln :wink:
 - :mage: **Arrays** sollte man anwenden können
 - :supervillain: Schaut euch die **DiceGame** Würfel-Logik genau an
