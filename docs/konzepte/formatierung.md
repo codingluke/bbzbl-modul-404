@@ -89,7 +89,7 @@ public class Xyz {
 }
 ```
 
-## Formatiert und gut Benannt
+## Formatiert und gut benannt
 
 ```java
 import java.util.Scanner;
