@@ -11,6 +11,8 @@ sidebar_position: 7
 
 <iframe src="/bbzbl-modul-404/slides/woche-7" width="100%" height="400px"></iframe>
 
+**[:compass: Ablauf im Detail](pathname:///woche-07)**
+
 ## :pen: Aufgaben
 
 - :alembic: Arbeiten am [Projekt](../beurteilungen/lb2.md)

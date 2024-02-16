@@ -4,28 +4,28 @@ hide_table_of_contents: true
 ---
 
 <Timeline title="Woche 7">
-<Event time="11:50">
+<Event time="12:45">
 
 ## Begrüssung
 
 - 🏅 Heute ist **Lehrprobe**
 
 </Event>
-<Event time="12:00">
+<Event time="12:50">
 
 ## 💡 Kahoot
 
 - Quiz über alle bisherigen Themen
 
 </Event>
-<Event time="13:10">
+<Event time="13:05">
 
 ## 👭 Pair Programming
 
 - :man_teacher: Präsentation
 
 </Event>
-<Event time="12:03">
+<Event time="13:15">
 
 ## 🖊️ Auftrag 1 - :clock2: 10'
 
@@ -45,15 +45,19 @@ hide_table_of_contents: true
 
 - Gleiche 2er-Gruppen
 - Gemeinsam die Programme analysieren
-- :pen: Notizen machen:
-  _Erkenntnisse, Schwierigkeiten, ..._
+- :pen: Notizen machen: _Erkenntnisse, Schwierigkeiten, ..._
+
+</Event>
+<Event time="13:35">
+
+## :sparkles: Erkenntniss teilen
+
+- Jeder teilt zwei Erkenntniss :bulb: wärend dem Pair-Programming
 
 </Event>
 <Event time="13:55">
 
-## :zap: Blitzlicht
-
-- Jeder sagt eine Erkenntniss :bulb: wärend dem Pair-Programming
+## :zap: Drei Worte
 
 </Event>
 <Event time="14:00">
