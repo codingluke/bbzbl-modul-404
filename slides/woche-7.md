@@ -8,7 +8,7 @@ footer: BBZBL / Lukas Hodel / Objektbasiert programmieren nach Vorgabe
 
 <!-- _class: big center compact -->
 
-# :two_men_holding_hands: :two_women_holding_hands: <br> Woche 7 / Modul 404
+# :two_men_holding_hands: :two_women_holding_hands:<br> Woche 7 / Modul 404
 
 ## Tandem programmieren
 
@@ -88,7 +88,7 @@ pie
 
 <!-- _class: big -->
 
-> Es ist wichtiger, das Richtige zu tun, als etwas richtig zu tun. <br> Es ist
+> Es ist wichtiger, das Richtige zu tun, als etwas richtig zu tun.<br> Es ist
 > nichts unbrauchbarer als **mit grosser Effizienz das Falsche** zu tun.
 >
 > -- Peter F. Drucker (:star2: 1909 - ✝️ 2005)
