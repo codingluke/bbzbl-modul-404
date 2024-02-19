@@ -112,15 +112,23 @@ pie
 
 # Tandem Programmieren / **Wieso?**
 
+:::columns
+
 - Fehler reduzieren
-- höhere Disziplin
+- Risikominimierung
 - Softwarequalität steigern
   - bessere Kommunikation
   - Missverständnisse vermeiden!
-- **Freude und Spass**!
-- Risikominimierung
-- **Wissensvermittlung**!
+
+::: split
+
+- **Freude und Spass** 😄
+- gegenseitiger Ansporn
+- höhere Disziplin
+- **Wissensvermittlung** 🧠
 - Teambildung
+
+:::
 
 ---
 
