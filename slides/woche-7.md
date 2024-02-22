@@ -132,6 +132,15 @@ pie
 
 ---
 
+<!-- _class: big -->
+
+> Programmiere immer so, als wäre der Typ, der am Ende mit deinem Code arbeiten
+> muss, ein Psychopath, der weiß, wo du wohnst.
+>
+> - Mehrere Möglichkeiten: John Woods, Martin Golding
+
+---
+
 <!-- _class: emoji-list -->
 
 # Auftrag 1 | 🕵️ **Fremder Code verstehen**
