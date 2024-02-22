@@ -5,12 +5,15 @@ import styles from "./timeline.module.css";
 
 export const Event = ({ time, active, children }) => {
   const element = useRef({});
-  setTimeout(() => {
-    if (!active) return;
-    element.current.scrollIntoView({
-      behavior: "auto",
-      block: "center",
-      inline: "center",
+
+  useEffect(() => {
+    setTimeout(() => {
+      if (!active) return;
+      element.current.scrollIntoView({
+        behavior: "auto",
+        block: "center",
+        inline: "center",
+      });
     });
   });
 
