@@ -79,6 +79,7 @@ async function processMermaidDivCli(div) {
   await run(inputFile, outputFile, {
     outputFormat: div.dataset.type || "png",
     puppeteerConfig: {
+      executablePath: process.env.CHROME_PATH || process.env.PUPPETEER_EXECUTABLE_PATH,
       headless: "new",
       args: [
         "--no-sandbox",

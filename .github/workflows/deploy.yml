@@ -11,25 +11,39 @@ jobs:
   deploy:
     name: Deploy to GitHub Pages
     runs-on: ubuntu-latest
-    env:
+    env: 
       PUPPETEER_SKIP_DOWNLOAD: true
     steps:
       - uses: actions/checkout@v3
+      - uses: browser-actions/setup-chrome@v1
+        id: setup-chrome
       - uses: actions/setup-node@v3
         with:
           node-version: 18
           cache: yarn
-      - uses: browser-actions/setup-chrome@latest
 
       - name: Install dependencies
         run: yarn install --frozen-lockfile
+      
       - name: Build website
         run: yarn build
-      - name: Build slides 
+
+      - name: Build slides
+        env: 
+          CHORME_PATH: ${{ steps.setup-chrome.outputs.chrome-path }}
+          PUPPETEER_EXECUTABLE_PATH: ${{ steps.setup-chrome.outputs.chrome-path }}
         run: yarn build-marp && yarn copy-marp-images && yarn copy-marp-js
-      - name: Build slides PDFs
+      
+      - name: Build slides PDF
+        env: 
+          CHORME_PATH: ${{ steps.setup-chrome.outputs.chrome-path }}
+          PUPPETEER_EXECUTABLE_PATH: ${{ steps.setup-chrome.outputs.chrome-path }}
         run: yarn build-marp-pdf
+
       - name: Build page PDF
+        env: 
+          CHORME_PATH: ${{ steps.setup-chrome.outputs.chrome-path }}
+          PUPPETEER_EXECUTABLE_PATH: ${{ steps.setup-chrome.outputs.chrome-path }}
         run: yarn build:pdf
 
       # Popular action to deploy to GitHub Pages:
