@@ -60,7 +60,7 @@
     "clsx": "^2.0.0",
     "devserver-config": "file:plugins/devserver-config",
     "docs-to-pdf": "^0.6.1",
-    "jsdom": "^22.1.0",
+    "jsdom": "^24.0.0",
     "markdown-it-container": "^3.0.0",
     "markdown-it-external-links": "^0.0.6",
     "markdown-it-mark": "^3.0.1",
