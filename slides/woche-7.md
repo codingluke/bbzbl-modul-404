@@ -45,6 +45,10 @@ footer: BBZBL / Lukas Hodel / Objektbasiert programmieren nach Vorgabe
 
 - Wir spielen auf kahoot.com
 
+  ![inline fit](./images/kahoot-woche7.png)
+
+<!-- https://create.kahoot.it/share/m404-theoriefragen/f645c0f8-7147-4d08-a060-f51b8e9d503a -->
+
 ::: split light-bg
 
 - 👪 Plenum
