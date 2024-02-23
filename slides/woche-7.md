@@ -137,7 +137,7 @@ pie
 > Programmiere immer so, als wäre der Typ, der am Ende mit deinem Code arbeiten
 > muss, ein Psychopath, der weiß, wo du wohnst.
 >
-> - Mehrere Möglichkeiten: John Woods, Martin Golding
+> -- Mehrere Möglichkeiten: John Woods, Martin Golding
 
 ---
 
