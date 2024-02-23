@@ -28,12 +28,12 @@ footer: BBZBL / Lukas Hodel / Objektbasiert programmieren nach Vorgabe
 
 # :dart: Ziele
 
-- 🏅 Sie kennen Faktoren für Projekt Misserfolge
-- 🕵️ Sie verstehen die Schwierigkeit **fremden Code zu lesen**
-  - 💅 Sie verstehen, wieso **Formatierung und gute Namen** wichtig sind
-- 👭 Sie können effizient im **Tandem programmieren**
+- :zap: Sie haben sich gegenseitig Feedback zu Ihrem Stand vom Projekt gegeben
 
-- :zap: Sie erhalten ==**Feedback**== zum Stand vom Ihrem Projekt
+- :bulb: Sie können zwei Erkenntnisse für den eigenen Projekterfolg benennen
+- 🏅 Sie kennen Faktoren für Projekt Misserfolge
+- 🕵️ Sie verstehen die Schwierigkeit fremden Code zu lesen
+- 💅 Sie verstehen, wieso Formatierung und gute Namen wichtig sind
 
 ---
 
@@ -78,64 +78,21 @@ pie
 # Gründe für Misserfolg _(Programmierer Sicht)_
 
 - Fehlendes **Wissen** oder fehlende **Fertigkeiten** der Teammitglieder.
+  - _(==Sach- und Selbstkompetenz==)_
 - **Kommunikation** ist ungenügend.
   - Aber ich dachte, das ist es, was gewünscht wird.
+  - _(==Sozialkompetenz==)_
 - Mitarbeiter**fluktuation** ist gross _(Braindrain)_.
   - Das hat immer der Hans gemacht, der ist leider nicht mehr im Team.
-- Nur einer weiss Bescheid und ist in den Ferien.
-
----
-
-<!-- _class: big -->
-
-> Es ist wichtiger, das Richtige zu tun, als etwas richtig zu tun.<br> Es ist
-> nichts unbrauchbarer als **mit grosser Effizienz das Falsche** zu tun.
->
-> -- Peter F. Drucker (:star2: 1909 - ✝️ 2005)
-
----
-
-<!-- _class: center big -->
-
-# 🪄<br> Tandem Programmieren
-
----
-
-# Tandem Programmieren / **Wie?**
-
-- Zwei Personen arbeiten **gleichzeitig** an der **gleichen Codebasis**.
-- **Einer** schreibt.
-- Der andere denkt, kontrolliert und spricht Probleme an.
-- Die Rollen sollen regelmässig getauscht werden.
-
----
-
-# Tandem Programmieren / **Wieso?**
-
-:::columns
-
-- Fehler reduzieren
-- Risikominimierung
-- Softwarequalität steigern
-  - bessere Kommunikation
-  - Missverständnisse vermeiden!
-
-::: split
-
-- **Freude und Spass** 😄
-- gegenseitiger Ansporn
-- höhere Disziplin
-- **Wissensvermittlung** 🧠
-- Teambildung
-
-:::
+  - Nur einer weiss Bescheid und ist in den Ferien.
+  - _(==Methodenkompetenz==)_
 
 ---
 
 <!-- _class: big -->
 
 > Programmiere immer so, als wäre der Typ, der am Ende mit deinem Code arbeiten
-> muss, ein Psychopath, der weiß, wo du wohnst.
+> muss, ein Psychopath, der weiss, wo du wohnst.
 >
 > -- Mehrere Möglichkeiten: John Woods, Martin Golding
 
@@ -167,6 +124,56 @@ pie
 
 ---
 
+<!-- _class: big -->
+
+> Es ist wichtiger, das Richtige zu tun, als etwas richtig zu tun.<br> Es ist
+> nichts unbrauchbarer als **mit grosser Effizienz das Falsche** zu tun.
+>
+> -- Peter F. Drucker (:star2: 1909 - ✝️ 2005)
+
+---
+
+<!-- _class: center big -->
+
+# 🪄<br> Tandem Programmieren
+
+---
+
+# Tandem Programmieren / **Wie?**
+
+- Zwei Personen arbeiten **gleichzeitig** an der **gleichen Codebasis**.
+- **Einer** schreibt.
+- Der andere denkt, kontrolliert und spricht Probleme an.
+- Die Rollen sollen regelmässig getauscht werden.
+
+---
+
+# Tandem Programmieren / **Wieso?**
+
+:::columns
+
+## Toll für den Mensch
+
+- Freude und Spass
+- Wissensvermittlung
+- Teambildung
+- gegenseitiger Ansporn
+- höhere Disziplin
+
+::: split
+
+## Gut für die Sache
+
+- Fehler reduzieren
+- Risikominimierung
+- Softwarequalität steigern
+  - bessere Kommunikation
+  - Missverständnisse vermeiden!
+
+:::
+
+---
+
 <!-- _class: emoji-list -->
 
 # Auftrag 2 | :two_men_holding_hands: **Tandem programmieren**
@@ -184,7 +191,7 @@ pie
 
 - :clock4: **20 Minuten**
 - :toolbox: Tandem Programmieren
-- :dart: Inspiration, Synergien, Kreativität
+- :dart: **Feedback**, Inspiration, Synergien, Kreativität
 
 :::
 
