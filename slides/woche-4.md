@@ -68,11 +68,11 @@ footer: BBZBL / Lukas Hodel / Objektbasiert programmieren nach Vorgabe
 - Wir verwenden **keine Umlaute** im Code (Ausnahmen sind Kommentare)
 - Jede **Klasse**
   - beginnt mit einem **Grossbuchstaben**
-  - hat einen `AusdrucksstarkenNamen` in :camel:
+  - hat einen **AusdrucksstarkenNamen** in :camel:
     [`UpperCamelCase` :link:](http://wiki.c2.com/?UpperCamelCase)
 - Jede **Methode**
   - beginnt mit einem **Kleinbuchstaben**
-  - hat einen `ausdrucksstarkenNamen` in :camel:
+  - hat einen **ausdrucksstarkenNamen** in :camel:
     [`lowerCamelCase` :link:](http://wiki.c2.com/?LowerCamelCase)
 - Blöcke `{}` werden eingerückt (:keyboard: **Ctrl-Shift-F** :apple:
   **Command-Shift-F**)

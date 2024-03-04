@@ -1,13 +1,14 @@
 # LB 2 - Projekt
 
-| Dauer                       | Gewichtung            |
-| :-------------------------- | :-------------------- |
-| **15.03.2024 - 19.04.2024** | **50%** der Modulnote |
+| Thema                          | Dauer                   | Gewichtung        |
+| :----------------------------- | :---------------------- | :---------------- |
+| Programmcode                   | 15.03.2024 - 19.04.2024 | 25% der Modulnote |
+| Dokumentation und Konventionen | 15.03.2024 - 19.04.2024 | 25% der Modulnote |
 
 :::danger Plagiat
 
 - Sollten Plagiate (auch Teilplagiate) abgegeben werden, so erhalten alle
-  Beteiligten für das Projekt die **Note 1**
+  Beteiligten **für den Programmcode** die **Note 1**
 - Es wird darauf verzichtet, Nachforschungen anzustellen, wer Quelle und wer
   Empfänger war
 
@@ -91,29 +92,38 @@ funktioniert und was das Problem ist.
 
 Das Klassendiagramm gehört in die [Dokumentation].
 
-## Bewertung
+## Bewertung Programm (30%)
 
 |                            | Punkte | Kriterium                                                                                                                                    |
 | -------------------------- | :----: | :------------------------------------------------------------------------------------------------------------------------------------------- |
 |                            |   1    | Die Starterklasse funktioniert.                                                                                                              |
-|                            |   3    | Das Programm läuft und lässt das beschriebene Spiel zu _(Spielregeln)_.                                                                       |
-|                            |   2    | Die Spieler können Ihre Namen selber eingeben.                                                                                                |
-|                            |   2    | Der aktuelle Punktestand, wird pro Spieler angezeigt.                                                                                         |
-|                            |   2    | Der aktuelle Spieler kann eine Runde beenden.                                                                                                 |
-|                            |   2    | Die Benutzerführung _(UX)_ macht Sinn _(Buttons werden ein/ausgeblendet resp. de/aktiviert)_.                                                 |
-|                            |   2    | Die gewürfelten Punkte pro Runde werden als Text angezeigt.                                                                                   |
-|                            |   3    | Der Würfelverlauf wird über mehrere Runden angezeigt _(nicht nur die aktuelle)_.                                                              |
-|                            |   3    | Der Quellcode ist korrekt formatiert _(Einrückungen)_.                                                                                        |
-|                            |   3    | Die Namen der Klassen, Methoden und Attribute sind aussagekräftig und einheitlich.                                                            |
-|                            |   3    | _Dokumentation:_ die Beschreibung des Programms ist vollständig.                                                                              |
-|                            |   3    | _Dokumentation:_ die Reflexion ist tiefgründig und geht auf die Probleme ein.                                                                 |
-| :sweat_smile:              | _(29)_ | _**Volle Punktzahl bis hier ergeben eine <u>5.0</u>**_.                                                                                       |
-| :chart_with_upwards_trend: |   2    | Der **Verlauf des Punktestands** aller bereits gespielten Runden wird pro Spieler angezeigt.                                                  |
-| :game_die:                 |   2    | Die gewürfelten Punkte pro Runde werden **bildlich** dargestellt.                                                                             |
-| :sushi:                    |   3    | Die **Fachklassen** beinhalten die **Logik** / verwalten den **Spielstand** (ohne UI-Elemente).                                               |
-| :checkered_flag:           | **36** | **TOTAL**                                                                                                                                    |
+|                            |   3    | Das Programm läuft und lässt das beschriebene Spiel zu _(Spielregeln)_.                                                                      |
+|                            |   2    | Die Spieler können Ihre Namen selber eingeben.                                                                                               |
+|                            |   2    | Der aktuelle Punktestand, wird pro Spieler angezeigt.                                                                                        |
+|                            |   2    | Der aktuelle Spieler kann eine Runde beenden.                                                                                                |
+|                            |   2    | Die Benutzerführung _(UX)_ macht Sinn _(Buttons werden ein/ausgeblendet resp. de/aktiviert)_.                                                |
+|                            |   2    | Die gewürfelten Punkte pro Runde werden als Text angezeigt.                                                                                  |
+|                            |   3    | Der Würfelverlauf wird über mehrere Runden angezeigt _(nicht nur die aktuelle)_.                                                             |
+| :sweat_smile:              | _(17)_ | _**Volle Punktzahl bis hier ergeben eine <u>5.0</u>**_.                                                                                      |
+| :chart_with_upwards_trend: |   2    | Der **Verlauf des Punktestands** aller bereits gespielten Runden wird pro Spieler angezeigt.                                                 |
+| :game_die:                 |   2    | Die gewürfelten Punkte pro Runde werden **bildlich** dargestellt.                                                                            |
+| :sushi:                    |   3    | Die **Fachklassen** beinhalten die **Logik** / verwalten den **Spielstand** (ohne UI-Elemente).                                              |
+| :checkered_flag:           | **24** | **TOTAL**                                                                                                                                    |
 |                            |        | **Bonus**                                                                                                                                    |
 | :woman_superhero:          |  _2_   | _Das Programm übersteigt die oben beschriebenen Minimalanforderungen an das Spiel **wesentlich** und **ist auch vollumfänglich lauffähig**._ |
+
+## Bewertung Dokumentation und Konventionen (20%)
+
+|                  | Punkte | Kriterium                                                                          |
+| ---------------- | :----: | :--------------------------------------------------------------------------------- |
+|                  |   3    | Die Beschreibung des Programms ist vollständig.                                    |
+|                  |   3    | Das Lernjournal ist vollständig und macht den Projektverlauf nachvollziehbar.      |
+|                  |   6    | Die Schlussreflexion ist tiefgründig und geht auf die Probleme ein.                |
+|                  |   3    | Der Quellcode ist korrekt formatiert _(`ctrl-shift-f`)_.                           |
+|                  |   3    | Java Namenskonventionen wurden eingehalten.                                        |
+|                  |   3    | Die Namen der Klassen, Methoden und Attribute sind aussagekräftig und einheitlich. |
+|                  |   3    | Rechtschreibung wurde eingehalten.                                                 |
+| :checkered_flag: | **24** | **TOTAL**                                                                          |
 
 ## Termin
 

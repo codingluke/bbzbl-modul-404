@@ -19,7 +19,7 @@ enthält sehr viele Informationen, aber man muss wissen, wo sie stehen. Wenn Sie
 sich jetzt an dieses Blatt gewöhnen, kann es Ihnen bei einer
 Leistungsbeurteilung eine Hilfe sein.
 
-![](../img/account-application-swing.png)
+![account application](../img/account-application-swing.png)
 
 Das Programm muss nicht genau so aussehen. Aber vielleicht möchten Sie etwas
 ausprobieren.

@@ -8,8 +8,9 @@ footer: BBZBL / Lukas Hodel / Objektbasiert programmieren nach Vorgabe
 
 <!-- _class: big center -->
 
-# Woche 5
-## Modul 404
+# Woche 3 / Modul 404
+
+### Objektbasiert programmieren nach Vorgabe
 
 ---
 
@@ -28,10 +29,10 @@ footer: BBZBL / Lukas Hodel / Objektbasiert programmieren nach Vorgabe
 
 # :checkered_flag: LB 1 / **Vorbereitung**
 
-- :arrows_counterclockwise: Workstation neustarten
-- :bust_in_silhouette: **`e-`** `vorname.nachname` _(wie gewohnt, mit **e-** vorangestellt!)_
+- 🔄 Workstation neustarten
 
-- :file_folder: **`L:\Klassenarbeiten\M404-LB1-INB21A`**
+- 👤 `e-vorname.nachname` ( ==**e-**== vorangestellt )
+- 📁 **`L:\Klassenarbeiten\M404-LB1-INB23AB`**
   - **`eclipse-workspace.7z`** entzippen
   - in Eclipse **`File -> Open Projects from File System...`**
 
@@ -50,7 +51,6 @@ footer: BBZBL / Lukas Hodel / Objektbasiert programmieren nach Vorgabe
 4. Speichern
 
 > :scream: **Sonst compiliert euer Code auf meinem Mac nicht!**
-
 
 ---
 
@@ -85,4 +85,3 @@ footer: BBZBL / Lukas Hodel / Objektbasiert programmieren nach Vorgabe
 ## <!--fit--> :book: Bitte studiert nun alle den [Projektbeschrieb](https://codingluke.github.io/bbzbl-modul-404/docs/beurteilungen/lb2)
 
 - Ab jetzt arbeiten wir nur noch am Projekt
-
