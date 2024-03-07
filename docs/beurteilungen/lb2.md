@@ -92,7 +92,7 @@ funktioniert und was das Problem ist.
 
 Das Klassendiagramm gehört in die [Dokumentation].
 
-## Bewertung Programm (30%)
+## Bewertung Programm (25%)
 
 |                            | Punkte | Kriterium                                                                                                                                    |
 | -------------------------- | :----: | :------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -112,17 +112,17 @@ Das Klassendiagramm gehört in die [Dokumentation].
 |                            |        | **Bonus**                                                                                                                                    |
 | :woman_superhero:          |  _2_   | _Das Programm übersteigt die oben beschriebenen Minimalanforderungen an das Spiel **wesentlich** und **ist auch vollumfänglich lauffähig**._ |
 
-## Bewertung Dokumentation und Konventionen (20%)
+## Bewertung Dokumentation und Konventionen (25%)
 
 |                  | Punkte | Kriterium                                                                          |
 | ---------------- | :----: | :--------------------------------------------------------------------------------- |
-|                  |   3    | Die Beschreibung des Programms ist vollständig.                                    |
+|                  |   3    | Die Dokumentation ist vollständig.                                                 |
 |                  |   3    | Das Lernjournal ist vollständig und macht den Projektverlauf nachvollziehbar.      |
 |                  |   6    | Die Schlussreflexion ist tiefgründig und geht auf die Probleme ein.                |
+|                  |   3    | Rechtschreibung wurde eingehalten.                                                 |
 |                  |   3    | Der Quellcode ist korrekt formatiert _(`ctrl-shift-f`)_.                           |
 |                  |   3    | Java Namenskonventionen wurden eingehalten.                                        |
 |                  |   3    | Die Namen der Klassen, Methoden und Attribute sind aussagekräftig und einheitlich. |
-|                  |   3    | Rechtschreibung wurde eingehalten.                                                 |
 | :checkered_flag: | **24** | **TOTAL**                                                                          |
 
 ## Termin
