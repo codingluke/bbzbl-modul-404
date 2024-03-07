@@ -8,7 +8,7 @@ footer: BBZBL / Lukas Hodel / Objektbasiert programmieren nach Vorgabe
 
 <!-- _class: big center -->
 
-# Woche 3 / Modul 404
+# Woche 5 / Modul 404
 
 ### Objektbasiert programmieren nach Vorgabe
 
@@ -80,7 +80,7 @@ footer: BBZBL / Lukas Hodel / Objektbasiert programmieren nach Vorgabe
 
 <!-- _class: big -->
 
-# :alembic: Start Projekt (LB 2)
+# :alembic: Start Projekt (LB 2 / LB 3)
 
 ## <!--fit--> :book: Bitte studiert nun alle den [Projektbeschrieb](https://codingluke.github.io/bbzbl-modul-404/docs/beurteilungen/lb2)
 
