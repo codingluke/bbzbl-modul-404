@@ -71,7 +71,7 @@
     "react-lite-youtube-embed": "^2.3.52",
     "react-rough-notation": "^1.0.5",
     "remark-docusaurus-tabs": "^0.2.0",
-    "remark-html": "^15.0.1",
+    "remark-html": "^16.0.1",
     "remark-oembed": "^1.2.2",
     "temp": "^0.9.4",
     "wireit": "^0.14.4"
