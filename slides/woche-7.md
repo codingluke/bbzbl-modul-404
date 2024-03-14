@@ -8,17 +8,23 @@ footer: BBZBL / Lukas Hodel / Objektbasiert programmieren nach Vorgabe
 
 <!-- _class: big center compact -->
 
-# :two_men_holding_hands: :two_women_holding_hands:<br> Woche 7 / Modul 404
+# :compass:<br> Woche 7 / Modul 404
 
-## Tandem programmieren
+## Projekterfolg / Standortbestimmung
 
-### englisch Pair-Programming
+---
+
+![bg w:50%](https://memeguy.com/photos/images/-miscommunication-43459.jpg)
+
+---
+
+![bg w:50%](./images/programming-meme.png)
 
 ---
 
 <!-- _class: big center emoji-list -->
 
-# :compass: Agenda
+# Agenda
 
 ## :point_left: Siehe **grosser** Screen
 
@@ -28,12 +34,12 @@ footer: BBZBL / Lukas Hodel / Objektbasiert programmieren nach Vorgabe
 
 # :dart: Ziele
 
-- :zap: Sie haben sich gegenseitig Feedback zu Ihrem Stand vom Projekt gegeben
+- :zap: Sie haben sich gegenseitig Feedback zu ihrem Stand vom Projekt gegeben.
 
-- :bulb: Sie können zwei Erkenntnisse für den eigenen Projekterfolg benennen
-- 🏅 Sie kennen Faktoren für Projekt Misserfolge
-- 🕵️ Sie verstehen die Schwierigkeit fremden Code zu lesen
-- 💅 Sie verstehen, wieso Formatierung und gute Namen wichtig sind
+- :bulb: Sie können zwei Erkenntnisse nennen, die sie näher zum eigenen
+  Projekterfolg bringen
+- 🏅 Sie kennen allgemeine Faktoren für Projekterfolge.
+- 💅 Sie verstehen, wieso Formatierung, Kommentare und gute Namen wichtig sind.
 
 ---
 
@@ -43,11 +49,14 @@ footer: BBZBL / Lukas Hodel / Objektbasiert programmieren nach Vorgabe
 
 ## :jigsaw: Quiz über alle bisherigen Themen
 
-- Wir spielen auf kahoot.com
+- Wir spielen auf kahoot.com.
+- Dies ist der
+  [Link zu den Fragen](https://create.kahoot.it/share/m404-theoriefragen/f645c0f8-7147-4d08-a060-f51b8e9d503a)
+  zum Selbststudium.
 
-  ![inline fit](./images/kahoot-woche7.png)
+- Der QR-Code für das Live-Spiel wird direkt aus Kahoot aufgeblendet.
 
-<!-- https://create.kahoot.it/share/m404-theoriefragen/f645c0f8-7147-4d08-a060-f51b8e9d503a -->
+  <!-- ![inline fit](./images/kahoot-woche7.png) -->
 
 ::: split light-bg
 
@@ -79,17 +88,96 @@ pie
 
 ---
 
-# Gründe für Misserfolg _(Programmierer Sicht)_
+<!-- _class: big center -->
 
-- Fehlendes **Wissen** oder fehlende **Fertigkeiten** der Teammitglieder.
-  - _(==Sach- und Selbstkompetenz==)_
-- **Kommunikation** ist ungenügend.
-  - Aber ich dachte, das ist es, was gewünscht wird.
-  - _(==Sozialkompetenz==)_
-- Mitarbeiter**fluktuation** ist gross _(Braindrain)_.
-  - Das hat immer der Hans gemacht, der ist leider nicht mehr im Team.
-  - Nur einer weiss Bescheid und ist in den Ferien.
-  - _(==Methodenkompetenz==)_
+# Faktoren für Projekterfolg
+
+## _Aus Sicht von :woman_technologist: Programmierenden_
+
+---
+
+# Projekterfolg<br>**Kommunikation**
+
+![bg right](./images/kommunikation-pexels-photo-4859049.webp)
+
+> ==**Was**== ist das :dart: Ziel?
+
+<br>
+
+Der 🧠 **Wissenstransfer** zwischen den Teammitglieder ist gut
+
+- Alle sprechen vom Gleichen
+
+:::footnotes
+
+Bild: pexels.com
+
+:::
+
+---
+
+# Projekterfolg<br>**Wissen**
+
+![bg right](./images/wissen-pexels-photo-2781195.jpeg)
+
+> ==**Wie**== ist das :dart: Ziel zu erreichen?
+
+<br>
+
+Das :bulb: **Wissen** und die 🦾 **Fertigkeiten** für das Ziel sind vorhanden.
+
+:::footnotes
+
+Bild: pexels.com
+
+:::
+
+---
+
+# Projekterfolg<br>**Methoden**
+
+![bg right](./images/methoden-pexels-photo-14124065.jpeg)
+
+> ==**Womit**== wird das :dart: Ziel eher erreicht?
+
+<br>
+
+Die :toolbox: **Werkzeuge** für das erlangen des Ziels
+
+- werden beherrscht
+- sind angebracht
+
+:::footnotes
+
+Bild: pexels.com
+
+:::
+
+---
+
+<!-- _class: emoji-list -->
+
+# :pencil: Aufgabe 1 : **Fremden Code verstehen**
+
+::: columns l65
+
+1. Vorgegebene Zweiergruppen
+
+2. Projektcode austauschen _(5')_
+3. Fremden Code versuchen zu verstehen _(10')_
+
+::: split light-bg
+
+- 🕵️ _"Einzelarbeit"_
+
+- :clock2: **15 Minuten**
+- :toolbox: Code lesen
+- :dart: Bewusstsein für Lesbarkeit
+
+:::
+
+> - 🖊 **Notieren Sie**
+> - ==Unklarheiten==, Erkenntnisse, Schwierigkeiten, ...
 
 ---
 
@@ -102,77 +190,59 @@ pie
 
 ---
 
-<!-- _class: emoji-list -->
-
-# Auftrag 1 | 🕵️ **Fremder Code verstehen**
-
-::: columns l65
-
-1. Vorgegebene Zweiergruppen
-
-2. Projektcode austauschen
-3. Fremder Code versuchen zu verstehen
-
-::: split light-bg
-
-- ⛹️ _"Einzelarbeit"_
-
-- :clock2: **10 Minuten**
-- :toolbox: Code lesen
-- :dart: Bewusstsein für verständlicher Code
-
-:::
-
-> - 🖊 **Notieren Sie**
-> - ==Unklarheiten==, Erkenntnisse, Schwierigkeiten, ...
-
----
-
-<!-- _class: big -->
-
-> Es ist wichtiger, das Richtige zu tun, als etwas richtig zu tun.<br> Es ist
-> nichts unbrauchbarer als **mit grosser Effizienz das Falsche** zu tun.
->
-> -- Peter F. Drucker (:star2: 1909 - ✝️ 2005)
-
----
-
 <!-- _class: center big -->
 
-# 🪄<br> Tandem Programmieren
+# 🧰<br> Tandem-Programmieren
 
 ---
 
-# Tandem Programmieren / **Wie?**
+# Tandem-Programmieren / **Wie?**
 
-- Zwei Personen arbeiten **gleichzeitig** an der **gleichen Codebasis**.
-- **Einer** schreibt.
-- Der andere denkt, kontrolliert und spricht Probleme an.
-- Die Rollen sollen regelmässig getauscht werden.
+<br>
+
+- **Zwei Personen** arbeiten gleichzeitig an der **gleichen Codebasis**.
+
+- Nur **Einer** ⌨️ tippt.
+- Der Andere 🤔 **denkt**, :cop: **kontrolliert** und 🗣️ **spricht Probleme
+  an**.
+- Die :tophat: **Rollen** sollen **regelmässig 🔂 getauscht** werden.
 
 ---
 
-# Tandem Programmieren / **Wieso?**
+# Tandem-Programmieren<br>**Toll für den Mensch**
 
-:::columns
-
-## Toll für den Mensch
+![bg right](./images/tandem-pexels-photo-11453442.jpeg)
 
 - Freude und Spass
+
 - Wissensvermittlung
 - Teambildung
-- gegenseitiger Ansporn
-- höhere Disziplin
+  - gegenseitiger Ansporn
+  - höhere Selbstdisziplin
 
-::: split
+:::footnotes
 
-## Gut für die Sache
+Bild: pexels.com
 
-- Fehler reduzieren
+:::
+
+---
+
+# Tandem-Programmieren<br>**Gut für die Sache**
+
+![bg right](./images/perfection-pexels-photo-1774931.jpeg)
+
+- Fehlerreduzierung
+
 - Risikominimierung
-- Softwarequalität steigern
+- Qualitätssteigerung
   - bessere Kommunikation
-  - Missverständnisse vermeiden!
+  - mehr Sorgfalt
+  - vermiedene Missverständnisse
+
+:::footnotes
+
+Bild: pexels.com
 
 :::
 
@@ -180,7 +250,7 @@ pie
 
 <!-- _class: emoji-list -->
 
-# Auftrag 2 | :two_men_holding_hands: **Tandem programmieren**
+# :pencil: Aufgabe 2 : **Tandem-Programmieren**
 
 ::: columns l65
 
@@ -194,8 +264,10 @@ pie
 - 👭 Partnerarbeit
 
 - :clock4: **20 Minuten**
-- :toolbox: Tandem Programmieren
-- :dart: **Feedback**, Inspiration, Synergien, Kreativität
+- :toolbox: Tandem-Programmieren
+- :dart: Feedback
+- :dart: Erkenntnisse
+- :dart: Projekterfolg
 
 :::
 
@@ -212,8 +284,38 @@ pie
 
 ---
 
+<!-- _class: big -->
+
+> Es ist wichtiger, das Richtige zu tun, als etwas richtig zu tun.<br> Es ist
+> nichts unbrauchbarer als **mit grosser Effizienz das Falsche** zu tun.
+>
+> -- Peter F. Drucker (:star2: 1909 - ✝️ 2005)
+
+---
+
+# :scroll: Lernjournal | **:clock2: 10'**
+
+:::columns
+
+## :question: Fragen beantworten
+
+- Das habe ich gemacht
+- Das habe ich gelernt
+- Das ist mir gut gelungen
+- Damit hatte ich Schwierigkeiten
+- So habe ich auf die Schwierigkeiten reagiert
+- So fühle ich mich jetzt
+
+::: split
+
+## :sparkles: Erkenntnisse festhalten!
+
+:::
+
+---
+
 <!-- _class: center big compact -->
 
-# In **drei Worten**
+# :zap: Blitzlicht :zap:
 
 ## Was geht euch gerade durch den Kopf?

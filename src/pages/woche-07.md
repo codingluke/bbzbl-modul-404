@@ -18,20 +18,20 @@ hide_table_of_contents: true
 - Quiz über alle bisherigen Themen
 
 </Event>
-<Event time="13:05">
+<Event time="13:10">
 
-## 👭 Pair Programming
+## 🎯 Projekterfolg
 
 - :man_teacher: Präsentation
 
 </Event>
 <Event time="13:15">
 
-## 🖊️ Auftrag 1 - :clock2: 10'
+## 🖊️ Auftrag 1 - :clock2: 15'
 
 - 2er-Gruppenfinden
 - Programm-Code austauschen
-- Fremder Code versuchen zu verstehen
+- Fremden Code versuchen zu verstehen
 
 </Event>
 <Event time="13:30">
@@ -41,6 +41,13 @@ hide_table_of_contents: true
 </Event>
 <Event time="13:35">
 
+## :two_men_holding_hands: Tandem Programmieren
+
+- :man_teacher: Präsentation
+
+</Event>
+<Event time="13:40">
+
 ## 🖊️ Auftrag 2 - :clock4: 20'
 
 - Gleiche 2er-Gruppen
@@ -48,21 +55,23 @@ hide_table_of_contents: true
 - :pen: Notizen machen: _Erkenntnisse, Schwierigkeiten, ..._
 
 </Event>
-<Event time="13:35">
+<Event time="14:00">
 
 ## :sparkles: Erkenntniss teilen
 
-- Jeder teilt zwei Erkenntniss :bulb: wärend dem Pair-Programming
+- Jeder teilt eine Erkenntniss
 
 </Event>
-<Event time="13:55">
+<Event time="14:10">
 
-## :zap: Drei Worte
+## :notebook: Lernjournal schreiben
+
+- Erkenntnisse festhalten
 
 </Event>
-<Event time="14:00">
+<Event time="14:18">
 
-## :alembic: Arbeiten am Projekt
+## :zap: Schnelles Feedback
 
 </Event>
 <Event time="14:20">
@@ -73,6 +82,12 @@ hide_table_of_contents: true
 <Event time="14:40">
 
 ## :alembic: Arbeiten am Projekt
+
+</Event>
+<Event time="16:00">
+
+## :notebook: Lernjournal schreiben
+- Fragen beantworten
 
 </Event>
 </Timeline>
