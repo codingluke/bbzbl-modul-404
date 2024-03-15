@@ -6,28 +6,19 @@ header: Modul 404 - Woche 6
 footer: BBZBL / Lukas Hodel / Objektbasiert programmieren nach Vorgabe
 ---
 
-<!-- _class: big center -->
+<!-- _class: big center compact -->
 
-# Woche 6
-## Modul 404
+# :alembic:<br> Woche 6 / Modul 404
+
+## Projektstart
 
 ---
 
-<!-- _class: big emoji-list -->
+<!-- _class: big center emoji-list -->
 
 # Agenda
 
-- :alembic: Start vom Projekt (LB2)
-
----
-
-<!-- _class: big -->
-
-# :alembic: Projekt 
-
-## <!--fit--> :book: Bitte studiert nun alle den [Projektbeschrieb](https://codingluke.github.io/bbzbl-modul-404/docs/beurteilungen/lb2)
-
-- Ab jetzt arbeiten wir nur noch am Projekt
+## :point_left: Siehe **grosser** Screen
 
 ---
 
@@ -58,24 +49,33 @@ footer: BBZBL / Lukas Hodel / Objektbasiert programmieren nach Vorgabe
 
 - Eingabe der Spielernamen
 - Darstellung des Spiels
-    - ([JPanel](https://codingluke.github.io/bbzbl-modul-404/docs/aufgaben-swing/jpanel), 
-    - [JTable](https://sites.google.com/bbzbl-it.ch/modul404-lh/themen/ui/jtable))
+  - ([JPanel](https://codingluke.github.io/bbzbl-modul-404/docs/aufgaben-swing/jpanel),
+    [PlayerPanel](https://codingluke.github.io/bbzbl-modul-404/docs/aufgaben-swing/player-panel))
 - Würfeln / Abbrechen
 
 ---
 
-# :pen: Dokumentation [:book: **Google Docs Dokument**](https://docs.google.com/document/d/1mD7wykSI7ge63gUXXk2SVPEKErBKok09cdiTBuET7VQ/edit)
+<!-- _class: big -->
 
-**:triangular_ruler: Planung**
+# :alembic: Projekt
 
-- Erste **Skizze** und mögliches **Klassendiagram**. Diese müssen nicht dem Endprodukt entsprechen
+## <!--fit--> :book: Bitte studiert nun alle den [Projektbeschrieb](https://codingluke.github.io/bbzbl-modul-404/docs/beurteilungen/lb2)
 
-**:hammer: Implementation**
+- Ab jetzt arbeiten wir nur noch am Projekt
+- [Die Aufgabe Player-Panel](https://codingluke.github.io/bbzbl-modul-404/docs/aufgaben-swing/player-panel)
+  darf als Grundlage genommen werden.
 
-- **Screenshots** und das **Klassendiagram** des **fertigen Programms** 
-- Die einzelnen Klassen sollen kurz erläutert werden
+---
 
-**:mirror: Arbeitsablauf und Reflexion** 
+# :pen: Dokumentation [:book: **Google Docs Dokument**](https://docs.google.com/document/d/1OhUYxLkwIWsxuk3SwcycjGUcRzkJQPRYRnbpkjiLEho)
 
-- Reflexion der Arbeit
-- Dokumentieren vorhandener Probleme _(nur wenn vorhanden)_
+Heute wichtig:
+
+### :triangular_ruler: Planung
+
+- Erste **Skizze**. Diese muss nicht dem Endprodukt entsprechen
+
+### :scroll: Lernjournal
+
+- Reflexion der Lektion
+- Dokumentieren der Erfolge und Probleme

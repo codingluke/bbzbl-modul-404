@@ -3,21 +3,28 @@ wrapperClassName: blank
 hide_table_of_contents: true
 ---
 
-<Timeline title="Woche 1">
+<Timeline title="Woche 6">
 <Event time="12:45">
 
-## 👋 Vorstellung
-
-- Modulidentifikation
+## 🏅 LB1 Besprechung
 
 </Event>
 <Event time="13:00">
 
-## :butterfly: Algorithmus / Programm
+## :brain: Input
 
-- :man_teacher: Präsentation / **Diskussion**
-- :tv: code.org / :coffee: 13:30
-- :man_student: Lesen und Lösen
+- Klassenstruktur Beispiel wiederholen
+- Beispielprojekt zeigen
+
+</Event>
+<Event time="13:15">
+
+## :pen: Aufgaben
+
+- :checkered_flag: [LB1](../beurteilungen/lb1.md)
+- :alembic: Arbeiten am [Projekt](../beurteilungen/lb2.md)
+- :woman_superhero: [JPanel](../aufgaben-swing/player-panel.md), wichtige
+  Aufgabe um den Punktestand anzuzeigen
 
 </Event>
 <Event time="14:20">
@@ -27,17 +34,22 @@ hide_table_of_contents: true
 </Event>
 <Event time="14:40">
 
-## :waning_crescent_moon: Hallo Eclipse
+## :pen: Aufgaben
 
-- :man_teacher: Wir lösen die Aufgaben zusammen
-- :coffee: **15:30**
-- 🧐 Analyse des bisherigen Programms
-- :sparkles: vom Quellcode zum Programm
+- :checkered_flag: [LB1](../beurteilungen/lb1.md)
+- :alembic: Arbeiten am [Projekt](../beurteilungen/lb2.md)
+- :woman_superhero: [JPanel](../aufgaben-swing/player-panel.md), wichtige
+  Aufgabe um den Punktestand anzuzeigen
 
 </Event>
 <Event time="15:50">
 
-## :triangular_ruler: Code-Konventionen
+## :information_source: Kurze Info zur nächsten Woche
+
+</Event>
+<Event time="16:00">
+
+## 📜 Lernjournal
 
 </Event>
 <Event time="16:15">
