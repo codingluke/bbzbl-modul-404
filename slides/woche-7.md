@@ -14,11 +14,23 @@ footer: BBZBL / Lukas Hodel / Objektbasiert programmieren nach Vorgabe
 
 ---
 
-![bg w:50%](https://memeguy.com/photos/images/-miscommunication-43459.jpg)
+![bg w:45%](https://memeguy.com/photos/images/-miscommunication-43459.jpg)
+
+::: footnotes
+
+Bild: https://www.buzzfeed.com/moustaches/no-thanks-i-dont-want-my-ipod-engraved-33cs
+
+:::
 
 ---
 
-![bg w:50%](./images/programming-meme.png)
+![bg w:45%](./images/programming-meme.png)
+
+::: footnotes
+
+Bild: https://9gag.com/gag/azj2w1z
+
+:::
 
 ---
 
@@ -34,9 +46,9 @@ footer: BBZBL / Lukas Hodel / Objektbasiert programmieren nach Vorgabe
 
 # :dart: Ziele
 
-- :zap: Sie haben sich gegenseitig Feedback zu ihrem Stand vom Projekt gegeben.
+- :zap: Sie haben sich gegenseitig Feedback zu Ihrem Stand vom Projekt gegeben.
 
-- :bulb: Sie können zwei Erkenntnisse nennen, die sie näher zum eigenen
+- :bulb: Sie können zwei Erkenntnisse nennen, die Sie näher zum eigenen
   Projekterfolg bringen
 - 🏅 Sie kennen allgemeine Faktoren für Projekterfolge.
 - 💅 Sie verstehen, wieso Formatierung, Kommentare und gute Namen wichtig sind.
@@ -49,12 +61,12 @@ footer: BBZBL / Lukas Hodel / Objektbasiert programmieren nach Vorgabe
 
 ## :jigsaw: Quiz über alle bisherigen Themen
 
-- Wir spielen auf kahoot.com.
-- Dies ist der
-  [Link zu den Fragen](https://create.kahoot.it/share/m404-theoriefragen/f645c0f8-7147-4d08-a060-f51b8e9d503a)
-  zum Selbststudium.
+- Wir spielen auf kahoot.it.
 
 - Der QR-Code für das Live-Spiel wird direkt aus Kahoot aufgeblendet.
+- Hier der
+  [Link zu den Fragen](https://create.kahoot.it/share/m404-theoriefragen/f645c0f8-7147-4d08-a060-f51b8e9d503a)
+  fürs Selbststudium.
 
   <!-- ![inline fit](./images/kahoot-woche7.png) -->
 
@@ -62,7 +74,7 @@ footer: BBZBL / Lukas Hodel / Objektbasiert programmieren nach Vorgabe
 
 - 👪 Plenum
 
-- :clock2: **10 Minuten**
+- :clock2: **20 Minuten**
 - :toolbox: Quiz
 - :dart: Vorwissen abfragen
 
@@ -100,7 +112,7 @@ pie
 
 ![bg right](./images/kommunikation-pexels-photo-4859049.webp)
 
-> ==**Was**== ist das :dart: Ziel?
+> **Was** ist das :dart: Ziel?
 
 <br>
 
@@ -120,7 +132,7 @@ Bild: pexels.com
 
 ![bg right](./images/wissen-pexels-photo-2781195.jpeg)
 
-> ==**Wie**== ist das :dart: Ziel zu erreichen?
+> **Wie** ist das :dart: Ziel zu erreichen?
 
 <br>
 
@@ -138,11 +150,11 @@ Bild: pexels.com
 
 ![bg right](./images/methoden-pexels-photo-14124065.jpeg)
 
-> ==**Womit**== wird das :dart: Ziel eher erreicht?
+> **Womit** wird das :dart: Ziel eher erreicht?
 
 <br>
 
-Die :toolbox: **Werkzeuge** für das erlangen des Ziels
+Die :toolbox: **Werkzeuge** für das Erlangen des Ziels
 
 - werden beherrscht
 - sind angebracht
@@ -157,7 +169,7 @@ Bild: pexels.com
 
 <!-- _class: emoji-list -->
 
-# :pencil: Aufgabe 1 : **Fremden Code verstehen**
+# :pencil: Aufgabe 1: **Fremden Code verstehen**
 
 ::: columns l65
 
@@ -177,7 +189,7 @@ Bild: pexels.com
 :::
 
 > - 🖊 **Notieren Sie**
-> - ==Unklarheiten==, Erkenntnisse, Schwierigkeiten, ...
+> - Erkenntnisse, Schwierigkeiten, Unklarheiten, ...
 
 ---
 
@@ -186,7 +198,7 @@ Bild: pexels.com
 > Programmiere immer so, als wäre der Typ, der am Ende mit deinem Code arbeiten
 > muss, ein Psychopath, der weiss, wo du wohnst.
 >
-> -- Mehrere Möglichkeiten: John Woods, Martin Golding
+> -- John Woods oder Martin Golding
 
 ---
 
@@ -202,8 +214,8 @@ Bild: pexels.com
 
 - **Zwei Personen** arbeiten gleichzeitig an der **gleichen Codebasis**.
 
-- Nur **Einer** ⌨️ tippt.
-- Der Andere 🤔 **denkt**, :cop: **kontrolliert** und 🗣️ **spricht Probleme
+- Nur **eine** ⌨️ tippt.
+- Die andere 🤔 **denkt**, :cop: **kontrolliert** und 🗣️ **spricht Probleme
   an**.
 - Die :tophat: **Rollen** sollen **regelmässig 🔂 getauscht** werden.
 
@@ -250,7 +262,7 @@ Bild: pexels.com
 
 <!-- _class: emoji-list -->
 
-# :pencil: Aufgabe 2 : **Tandem-Programmieren**
+# :pencil: Aufgabe 2: **Tandem-Programmieren**
 
 ::: columns l65
 
@@ -272,7 +284,7 @@ Bild: pexels.com
 :::
 
 > - 🖊 **Notieren Sie**
-> - ==Verbesserungen==, Erkenntnisse, Schwierigkeiten, ...
+> - Erkenntnisse, Verbesserungen, Schwierigkeiten, ...
 
 ---
 
