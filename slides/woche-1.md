@@ -26,7 +26,8 @@ footer: BBZBL / Lukas Hodel / Objektbasiert programmieren nach Vorgabe
 
 - [319](https://www.modulbaukasten.ch/module/c6b67ea8-5e85-eb11-a812-0022486f644f/de-DE?title=Applikationen-entwerfen-und-implementieren)
   Applikationen entwerfen und implementieren
-- **[404](https://www.modulbaukasten.ch/module/ba75c9da-716c-eb11-b0b1-000d3a830b2b/de-DE?title=Objektbasiert-programmieren-nach-Vorgabe) Objektbasiert programmieren nach Vorgabe**
+- **[404](https://www.modulbaukasten.ch/module/ba75c9da-716c-eb11-b0b1-000d3a830b2b/de-DE?title=Objektbasiert-programmieren-nach-Vorgabe)
+  Objektbasiert programmieren nach Vorgabe**
 
 ## Später
 
@@ -53,9 +54,12 @@ footer: BBZBL / Lukas Hodel / Objektbasiert programmieren nach Vorgabe
 
 2. Eine Benutzerschnittstelle entwerfen und implementieren. **_(Java Swing)_**
 
-3. Erforderliche Daten bestimmen und Datentypen festlegen. **_(Java Variablen)_**
+3. Erforderliche Daten bestimmen und Datentypen festlegen. **_(Java
+   Variablen)_**
 
-4. Programmvorgabe unter Nutzung vorhandener Komponenten mit deren Eigenschaften und Methoden, sowie Operatoren und Kontrollstrukturen implementieren. **_(Java Basics)_**
+4. Programmvorgabe unter Nutzung vorhandener Komponenten mit deren Eigenschaften
+   und Methoden, sowie Operatoren und Kontrollstrukturen implementieren.
+   **_(Java Basics)_**
 
 ---
 
@@ -110,9 +114,10 @@ footer: BBZBL / Lukas Hodel / Objektbasiert programmieren nach Vorgabe
 ---
 
 <!-- _class: big center -->
+
 # :cop: Regeln / Zocken :joystick:
 
-### Wie wollen wir vorgehen, wenn ich jemand beim zocken erwische?
+### Wie wollen <u style="font-size: 3rem;">**wir**</u> vorgehen, wenn jemand im Unterricht zockt?
 
 ---
 
@@ -200,7 +205,9 @@ Ihr könnt zu Hause im **Selbststudium** alle Aufgaben lösen.
 
 ::: columns
 
-- :link: [Account Application](https://codingluke.github.io/bbzbl-modul-404/docs/aufgaben-grundlagen/account-application) öffnen
+- :link:
+  [Account Application](https://codingluke.github.io/bbzbl-modul-404/docs/aufgaben-grundlagen/account-application)
+  öffnen
 
 - :keyboard: Es handelt sich um eine Teminal Applikation
 - :keyboard: Lesen und lösen Sie die Aufgabe
@@ -226,8 +233,8 @@ String command = sc.nextString();
 
 ::: footnotes
 
-\* Musterlösung nur verwenden, wenn Sie nicht mehr weiter kommen!
-\*\* natürlich nicht genau so :sweat_smile:
+\* Musterlösung nur verwenden, wenn Sie nicht mehr weiter kommen! \*\* natürlich
+nicht genau so :sweat_smile:
 
 :::
 
@@ -237,7 +244,9 @@ String command = sc.nextString();
 
 # :pen: Analyse Account Applikation (20 Minuten) [:link:](https://drive.google.com/file/d/104nqkozBNkwxKqdJlWUBEvMcH6sgoAG9/view)
 
-- :link: [Analyse Account Applikation](https://codingluke.github.io/bbzbl-modul-404/docs/aufgaben-grundlagen/analyse-account-application) öffnen
+- :link:
+  [Analyse Account Applikation](https://codingluke.github.io/bbzbl-modul-404/docs/aufgaben-grundlagen/analyse-account-application)
+  öffnen
 
 - :compass: Gehen Sie nach der Anleitung vor
 - :brain: Analysieren Sie die dargestellte Klasse **zu zweit**
