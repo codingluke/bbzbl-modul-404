@@ -27,7 +27,7 @@ hide_table_of_contents: true
 </Event>
 <Event time="13:15">
 
-## 🖊️ Auftrag 1 - :clock2: 15'
+## 🖊️ Aufgabe 1 - :clock2: 15'
 
 - 2er-Gruppenfinden
 - Programm-Code austauschen
@@ -41,14 +41,14 @@ hide_table_of_contents: true
 </Event>
 <Event time="13:35">
 
-## :two_men_holding_hands: Tandem Programmieren
+## :two_men_holding_hands: Tandem-Programmieren
 
 - :man_teacher: Präsentation
 
 </Event>
 <Event time="13:40">
 
-## 🖊️ Auftrag 2 - :clock4: 20'
+## 🖊️ Aufgabe 2 - :clock4: 20'
 
 - Gleiche 2er-Gruppen
 - Gemeinsam die Programme analysieren
@@ -59,7 +59,7 @@ hide_table_of_contents: true
 
 ## :sparkles: Erkenntniss teilen
 
-- Jeder teilt eine Erkenntniss
+- Jeder teilt eine Erkenntnis
 
 </Event>
 <Event time="14:10">
@@ -87,6 +87,7 @@ hide_table_of_contents: true
 <Event time="16:00">
 
 ## :notebook: Lernjournal schreiben
+
 - Fragen beantworten
 
 </Event>

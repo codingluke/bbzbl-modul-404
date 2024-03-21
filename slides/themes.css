@@ -253,6 +253,16 @@ h3:first-child {
   background-color: hsla(0, 0%, 10%, 0.08);
 }
 
+section.dark {
+  --h1-color: white;
+  --h2-color: white;
+}
+section.dark h1,
+section.dark h2 
+{
+  text-shadow: 2px 2px 5px black;
+}
+
 /* variables */
 
 section {

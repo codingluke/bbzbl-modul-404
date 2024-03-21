@@ -18,7 +18,8 @@ footer: BBZBL / Lukas Hodel / Objektbasiert programmieren nach Vorgabe
 
 ::: footnotes
 
-Bild: https://www.buzzfeed.com/moustaches/no-thanks-i-dont-want-my-ipod-engraved-33cs
+Bild:
+[https://www.buzzfeed.com/moustaches/no-thanks-i-dont-want-my-ipod-engraved-33cs](https://www.buzzfeed.com/moustaches/no-thanks-i-dont-want-my-ipod-engraved-33cs)
 
 :::
 
@@ -28,7 +29,7 @@ Bild: https://www.buzzfeed.com/moustaches/no-thanks-i-dont-want-my-ipod-engraved
 
 ::: footnotes
 
-Bild: https://9gag.com/gag/azj2w1z
+Bild: [https://9gag.com/gag/azj2w1z](https://9gag.com/gag/azj2w1z)
 
 :::
 
@@ -49,7 +50,7 @@ Bild: https://9gag.com/gag/azj2w1z
 - :zap: Sie haben sich gegenseitig Feedback zu Ihrem Stand vom Projekt gegeben.
 
 - :bulb: Sie können zwei Erkenntnisse nennen, die Sie näher zum eigenen
-  Projekterfolg bringen
+  Projekterfolg bringen.
 - 🏅 Sie kennen allgemeine Faktoren für Projekterfolge.
 - 💅 Sie verstehen, wieso Formatierung, Kommentare und gute Namen wichtig sind.
 
@@ -84,6 +85,10 @@ Bild: https://9gag.com/gag/azj2w1z
 
 # Projekterfolg in der Softwareentwicklung
 
+---
+
+# Projekterfolg in der Softwareentwicklung
+
 ```mermaid width=55%
 %%{init: {'theme': 'base', 'themeVariables': { 'pie1': 'DarkSeaGreen', 'pie2': 'SpringGreen', 'pie3': 'FireBrick'}}}%%
 pie
@@ -108,7 +113,7 @@ pie
 
 ---
 
-# Projekterfolg<br>**Kommunikation**
+# Projekterfolg <br>**Kommunikation**
 
 ![bg right](./images/kommunikation-pexels-photo-4859049.webp)
 
@@ -116,7 +121,7 @@ pie
 
 <br>
 
-Der 🧠 **Wissenstransfer** zwischen den Teammitglieder ist gut
+Der 🧠 **Wissenstransfer** zwischen den Teammitgliedern ist gut
 
 - Alle sprechen vom Gleichen
 
@@ -146,7 +151,7 @@ Bild: pexels.com
 
 ---
 
-# Projekterfolg<br>**Methoden**
+# Projekterfolg <br>**Methoden**
 
 ![bg right](./images/methoden-pexels-photo-14124065.jpeg)
 
@@ -221,7 +226,7 @@ Bild: pexels.com
 
 ---
 
-# Tandem-Programmieren<br>**Toll für den Mensch**
+# Tandem-Programmieren <br>**Toll für den Mensch**
 
 ![bg right](./images/tandem-pexels-photo-11453442.jpeg)
 
@@ -240,7 +245,7 @@ Bild: pexels.com
 
 ---
 
-# Tandem-Programmieren<br>**Gut für die Sache**
+# Tandem-Programmieren <br>**Gut für die Sache**
 
 ![bg right](./images/perfection-pexels-photo-1774931.jpeg)
 
@@ -305,22 +310,23 @@ Bild: pexels.com
 
 ---
 
+<!-- _class: emoji-list -->
+
 # :scroll: Lernjournal | **:clock2: 10'**
 
-:::columns
+:::columns l60
 
 ## :question: Fragen beantworten
-
-- Das habe ich gemacht
-- Das habe ich gelernt
-- Das ist mir gut gelungen
-- Damit hatte ich Schwierigkeiten
-- So habe ich auf die Schwierigkeiten reagiert
-- So fühle ich mich jetzt
+- \- Das habe ich gemacht.
+- \- Das habe ich gelernt.
+- \- Das ist mir gut gelungen.
+- \- Damit hatte ich Schwierigkeiten.
+- \- So habe ich auf die Schwierigkeiten reagiert.
+- \- So fühle ich mich jetzt.
 
 ::: split
 
-## :sparkles: Erkenntnisse festhalten!
+> - ## :sparkles: Erkenntnisse festhalten!
 
 :::
 
