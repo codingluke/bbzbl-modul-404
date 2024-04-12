@@ -14,7 +14,7 @@ Erstellen Sie das Programm unten. Das Ziel ist, dass bei Anklicken der
 Schaltfläche der Wert aus dem Textfeld in das Label unterhalb kopiert wird,
 während das obere Textfeld geleert wird.
 
-![](../img/Buttons-Aktivieren-Aufgabe1.png)
+![Buttons-Aktivieren-AufgabeButtons-Aktivieren-Aufgabe11](../img/Buttons-Aktivieren-Aufgabe1.png)
 
 ### UML
 
@@ -67,7 +67,9 @@ classDiagram
 ```
 
 <details>
-<summary>Immer zuerst selber versuchen! Lösung abtippen, nicht kopieren ;)</summary>
+  <summary>
+    Immer zuerst selber versuchen! Lösung abtippen, nicht kopieren ;)
+  </summary>
 
 ```java
 import java.awt.event.ActionEvent;
@@ -77,13 +79,11 @@ import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JTextField;
 
-public class Aufgabe1 extends JFrame implements ActionListener {
-  private JTextField textfield = new JTextField();
-  private JLabel label = new JLabel("");
-  private JButton button = new JButton("copy JTextField > JLabel");
+public class Aufgabe1 extends JFrame implements ActionListener { private
+JTextField textfield = new JTextField(); private JLabel label = new JLabel("");
+private JButton button = new JButton("copy JTextField > JLabel");
 
-  public void showDialog() {
-    setLayout(null);
+public void showDialog() { setLayout(null);
 
     textfield.setBounds(10, 10, 280, 30);
     add(textfield);
@@ -97,15 +97,13 @@ public class Aufgabe1 extends JFrame implements ActionListener {
     setSize(300, 300);
     setTitle("Buttons Aktivieren: Aufgabe1");
     setVisible(true);
-  }
 
-  @Override
-  public void actionPerformed(ActionEvent e) {
-    String text = textfield.getText(); // Auslesen vom Textfeld
-    label.setText(text); // Kopieren vom Textfeld
-    textfield.setText(""); // leeren des Textfeldes
-  }
 }
+
+@Override public void actionPerformed(ActionEvent e) { String text =
+textfield.getText(); // Auslesen vom Textfeld label.setText(text); // Kopieren
+vom Textfeld textfield.setText(""); // leeren des Textfeldes } }
+
 ```
 
 </details>
@@ -164,7 +162,9 @@ classDiagram
 ```
 
 <details>
-<summary>Immer zuerst selber versuchen! Lösung abtippen, nicht kopieren ;)</summary>
+  <summary>
+    Immer zuerst selber versuchen! Lösung abtippen, nicht kopieren ;)
+  </summary>
 
 ```java
 import java.awt.event.ActionEvent;
@@ -172,16 +172,12 @@ import java.awt.event.ActionListener;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
-import javax.swing.JTextField;
 
-public class Aufgabe2 extends JFrame implements ActionListener {
-  private JLabel label = new JLabel("");
-  private JButton buttonA = new JButton("a");
-  private JButton buttonB = new JButton("b");
-  private JButton buttonC = new JButton("c");
+public class Aufgabe2 extends JFrame implements ActionListener { private JLabel
+label = new JLabel(""); private JButton buttonA = new JButton("a"); private
+JButton buttonB = new JButton("b"); private JButton buttonC = new JButton("c");
 
-  public void showDialog() {
-    setLayout(null);
+public void showDialog() { setLayout(null);
 
     buttonA.setBounds(10, 10, 100, 30);
     add(buttonA);
@@ -199,25 +195,25 @@ public class Aufgabe2 extends JFrame implements ActionListener {
     setSize(300, 300);
     setTitle("Buttons Aktivieren: Aufgabe2");
     setVisible(true);
-  }
 
-  @Override
-  public void actionPerformed(ActionEvent e) {
-    // highlight-start
+}
+
+@Override public void actionPerformed(ActionEvent e) { // highlight-start
 
     // Hier werden nun die einzelnen Buttons identifiziert!
     if (e.getSource() == buttonA) {
       label.setText(buttonA.getText());
-    } else if(e.getSource() == buttonB) {
+    } else if (e.getSource() == buttonB) {
       label.setText(buttonB.getText());
-    } else if(e.getSource() == buttonC) {
+    } else if (e.getSource() == buttonC) {
       label.setText(buttonC.getText());
     }
 
     // highlight-end
-  }
-}
-```
+
+} }
+
+````
 
 </details>
 
@@ -241,4 +237,4 @@ public void actionPerformed(ActionEvent e) {
     // do that
   }
 }
-```
+````

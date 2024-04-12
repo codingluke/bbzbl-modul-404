@@ -1,11 +1,11 @@
 // @ts-check
 // Note: type annotations allow type checking and IDEs autocompletion
 
-const {themes} = require('prism-react-renderer');
+const { themes } = require("prism-react-renderer");
 const lightCodeTheme = themes.github;
 const darkCodeTheme = themes.dracula;
-// const oembed = require('@agentofuser/remark-oembed');
-const modulConfig = require('./modul.config');
+// const oembed = require("@agentofuser/remark-oembed");
+const modulConfig = require("./modul.config");
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
@@ -13,9 +13,9 @@ const config = {
   tagline: modulConfig.tagline || "Tolles Modul!",
   url: modulConfig.url,
   baseUrl: `/${modulConfig.repoName}/`,
-  onBrokenLinks: 'log',
-  onBrokenMarkdownLinks: 'warn',
-  favicon: 'img/favicon.png',
+  onBrokenLinks: "log",
+  onBrokenMarkdownLinks: "warn",
+  favicon: "img/favicon.png",
 
   markdown: {
     mermaid: true,
@@ -23,15 +23,15 @@ const config = {
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: modulConfig.organizationName || 'noname-corp', // Usually your GitHub org/user name.
+  organizationName: modulConfig.organizationName || "noname-corp", // Usually your GitHub org/user name.
   projectName: modulConfig.repoName, // Usually your repo name.
 
   // Even if you don't use internalization, you can use this field to set useful
   // metadata like html lang. For example, if your site is Chinese, you may want
   // to replace "en" with "zh-Hans".
   i18n: {
-    defaultLocale: 'de',
-    locales: ['de'],
+    defaultLocale: "de",
+    locales: ["de"],
   },
 
   themes: [
@@ -41,7 +41,7 @@ const config = {
         hashed: true,
         language: ["de"],
         indexBlog: false,
-        indexPages: true
+        indexPages: true,
       },
     ],
     require.resolve("@docusaurus/theme-mermaid"),
@@ -57,7 +57,7 @@ const config = {
             target: "http://localhost:4001",
             pathRewrite: function (
               /** @type {string} */ path,
-              /** @type {any} */ _req
+              /** @type {any} */ _req,
             ) {
               if (path.match(/.*\..*$/)) {
                 return path.replace(`/${modulConfig.repoName}/slides`, "");
@@ -74,15 +74,14 @@ const config = {
 
   presets: [
     [
-      '@docusaurus/preset-classic',
+      "@docusaurus/preset-classic",
       /** @type {import('@docusaurus/preset-classic').Options} */
       {
         docs: {
-          sidebarPath: require.resolve('./sidebars.js'),
+          sidebarPath: require.resolve("./sidebars.js"),
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl:
-            `https://github.com/codingluke/${modulConfig.repoName}/tree/main/`,
+          editUrl: `https://github.com/codingluke/${modulConfig.repoName}/tree/main/`,
           // remarkPlugins: [oembed],
         },
         // blog: {
@@ -93,7 +92,7 @@ const config = {
         //     'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         // },
         theme: {
-          customCss: require.resolve('./src/css/custom.css'),
+          customCss: require.resolve("./src/css/custom.css"),
         },
       },
     ],
@@ -103,22 +102,22 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       mermaid: {
-        theme: { light: 'neutral', dark: 'dark' },
+        theme: { light: "neutral", dark: "dark" },
       },
       navbar: {
         title: modulConfig.title,
         logo: {
-          alt: 'BBZBL Logo',
-          src: 'img/bbzbl-logo.png',
+          alt: "BBZBL Logo",
+          src: "img/bbzbl-logo.png",
         },
         items: [
           {
-            type: 'doc',
-            docId: 'index',
-            position: 'left',
-            label: 'Unterlagen',
+            type: "doc",
+            docId: "index",
+            position: "left",
+            label: "Unterlagen",
           },
-          { to: '/slides/', label: 'Präsentationen', position: 'left' },
+          { to: "/slides/", label: "Präsentationen", position: "left" },
           {
             to: `${modulConfig.url}/${modulConfig.repoName}/assets/pdf/${modulConfig.repoName}.pdf`,
             label: "PDF Download",
@@ -126,13 +125,13 @@ const config = {
           },
           {
             href: `https://github.com/codingluke/${modulConfig.repoName}`,
-            label: 'GitHub',
-            position: 'right',
+            label: "GitHub",
+            position: "right",
           },
         ],
       },
       footer: {
-        style: 'dark',
+        style: "dark",
         copyright: `Made with ❤️ in Pratteln`,
       },
       prism: {
@@ -154,17 +153,26 @@ const config = {
           {
             className: "code-block-green-line",
             line: "highlight-green-next-line",
-            block: { start: "highlight-green-start", end: "highlight-green-end" },
+            block: {
+              start: "highlight-green-start",
+              end: "highlight-green-end",
+            },
           },
           {
             className: "code-block-yellow-line",
             line: "highlight-yellow-next-line",
-            block: { start: "highlight-yellow-start", end: "highlight-yellow-end" },
+            block: {
+              start: "highlight-yellow-start",
+              end: "highlight-yellow-end",
+            },
           },
           {
             className: "code-block-orange-line",
             line: "highlight-orange-next-line",
-            block: { start: "highlight-orange-start", end: "highlight-orange-end" },
+            block: {
+              start: "highlight-orange-start",
+              end: "highlight-orange-end",
+            },
           },
           {
             className: "code-block-blue-line",
@@ -176,4 +184,3 @@ const config = {
     }),
 };
 module.exports = config;
-

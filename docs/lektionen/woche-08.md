@@ -14,3 +14,4 @@ sidebar_position: 8
 ## :pen: Aufgaben
 
 - :alembic: Arbeiten am [Projekt](../beurteilungen/lb2.md)
+- [📖 Google Docs Vorlage](https://docs.google.com/document/d/1OhUYxLkwIWsxuk3SwcycjGUcRzkJQPRYRnbpkjiLEho)

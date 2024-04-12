@@ -9,9 +9,9 @@
 |                    |   [Woche&nbsp;4][w4]   |        01.03.2024         | Konstruktor / Formatierung / UML                                                |                    |
 |                    | [**Woche&nbsp;5**][w5] |      **08.03.2024**       | **LB 1** / Projektstart                                                         | **[LB1]**          |
 |                    |   [Woche&nbsp;6][w6]   |        15.03.2024         | Kickoff Projekt / Arbeiten am Projekt                                           |                    |
-| :steam_locomotive: |   [Woche&nbsp;7][w7]   |        22.03.2024         | 👭 Tandem-Programmieren / 🍀 _**Lehrprobe**_<br/> :alembic: Arbeiten am Projekt |                    |
+|                    |   [Woche&nbsp;7][w7]   |        22.03.2024         | 👭 Tandem-Programmieren / 🍀 _**Lehrprobe**_<br/> :alembic: Arbeiten am Projekt |                    |
 |                    |                        | _29.03.2024 / 05.04.2024_ | :star: _Osterferien_ :star:                                                     |                    |
-|                    |   [Woche&nbsp;8][w8]   |        12.04.2024         | Arbeiten am Projekt                                                             |                    |
+| :steam_locomotive: |   [Woche&nbsp;8][w8]   |        12.04.2024         | Arbeiten am Projekt                                                             |                    |
 |                    | [**Woche&nbsp;9**][w9] |      **19.04.2024**       | **Abgabe / Präsentation des Projekts**                                          | **[LB2]**          |
 
 [w1]: ./woche-01.md
