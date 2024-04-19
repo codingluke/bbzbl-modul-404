@@ -143,6 +143,6 @@ durchsehen und kurze Verständnisfragen stellen! Diese werden nicht benotet.
 ![Projektstruktur](../img/projektstruktur.jpg)
 
 [Dokumentation]:
-  https://docs.google.com/document/d/1OhUYxLkwIWsxuk3SwcycjGUcRzkJQPRYRnbpkjiLEho/edit
+  https://docs.google.com/document/d/1OhUYxLkwIWsxuk3SwcycjGUcRzkJQPRYRnbpkjiLEho
 [Google Drive Abgabeordner]:
-  https://drive.google.com/drive/folders/11b3TCKZeapIwKUNCDz6ul-kLnfkrJAjN
+  https://drive.google.com/drive/folders/1seTWj6RLq1_Q_-KbIWtk-m70cYOAP2IH

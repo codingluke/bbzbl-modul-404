@@ -8,8 +8,9 @@ footer: BBZBL / Lukas Hodel / Objektbasiert programmieren nach Vorgabe
 
 <!-- _class: big center -->
 
-# Woche 9
-## Modul 404
+# :alembic:<br> Woche 9 / Modul 404
+
+## Projektabschluss
 
 ---
 
@@ -29,4 +30,7 @@ footer: BBZBL / Lukas Hodel / Objektbasiert programmieren nach Vorgabe
 - Gebt nochmals alles bis zur grossen Pause!
 - Läuft das Programm?
 - Ist die Dokumentation vollständig?
-- Liegt alles im Ordner auf Google Drive?
+- Liegt alles im Ordner im **[Google Drive Abgabeordner]**?
+
+[Google Drive Abgabeordner]:
+  https://drive.google.com/drive/folders/1seTWj6RLq1_Q_-KbIWtk-m70cYOAP2IH
