@@ -104,8 +104,8 @@ Das Klassendiagramm gehört in die [Dokumentation].
 |                            |   2    | Die Benutzerführung _(UX)_ macht Sinn _(Buttons werden ein/ausgeblendet resp. de/aktiviert)_.                                                |
 |                            |   2    | Die gewürfelten Punkte pro Runde werden als Text angezeigt.                                                                                  |
 |                            |   3    | Der Würfelverlauf wird über mehrere Runden angezeigt _(nicht nur die aktuelle)_.                                                             |
-| :sweat_smile:              | _(17)_ | _**Volle Punktzahl bis hier ergeben eine <u>5.0</u>**_.                                                                                      |
 | :chart_with_upwards_trend: |   2    | Der **Verlauf des Punktestands** aller bereits gespielten Runden wird pro Spieler angezeigt.                                                 |
+| :sweat_smile:              | _(19)_ | _**Volle Punktzahl bis hier ergeben eine <u>5.0</u>**_.                                                                                      |
 | :game_die:                 |   2    | Die gewürfelten Punkte pro Runde werden **bildlich** dargestellt.                                                                            |
 | :sushi:                    |   3    | Die **Fachklassen** beinhalten die **Logik** / verwalten den **Spielstand** (ohne UI-Elemente).                                              |
 | :checkered_flag:           | **24** | **TOTAL**                                                                                                                                    |
